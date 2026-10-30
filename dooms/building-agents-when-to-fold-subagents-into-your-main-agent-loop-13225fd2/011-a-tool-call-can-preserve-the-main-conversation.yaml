@@ -1,0 +1,15 @@
+schema_version: 1
+id: building-agents-when-to-fold-subagents-into-your-main-agent-loop-13225fd2-011
+title: A tool call can preserve the main conversation
+text: |-
+  When a subagent remains useful, expose it as a tool so the main agent continues handling the user’s conversation. A shared response schema can make outputs easier to check and synthesize.
+
+  Reserve a full conversational handoff for a specialist that actually needs to speak to the user. Calling a subagent as a tool is a migration step, though it still retains a nested model loop and summarized output.
+background_image: images/background.svg
+source_url: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+source_file: null
+source_title: 'Building agents: When to fold subagents into your main agent loop'
+source_type: article
+source_locator: 'Section: Subagents called as tools'
+sort_order: 11
+language: en

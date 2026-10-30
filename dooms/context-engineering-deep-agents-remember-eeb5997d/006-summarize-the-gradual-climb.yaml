@@ -1,0 +1,15 @@
+schema_version: 1
+id: context-engineering-deep-agents-remember-eeb5997d-006
+title: Summarize the gradual climb
+text: |-
+  Offloading limits sudden context spikes, but searches, notes, and conversation still accumulate. Before model calls, SummarizationMiddleware checks usage and, by default, condenses older messages when it crosses 85% of the model’s context window.
+
+  The recent messages stay verbatim. The model sees the summary followed by that recent history, reducing active context while preserving the latest details without paraphrase.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/context-engineering-deep-agents-remember
+source_file: null
+source_title: 'Context Engineering: How Deep Agents Remember'
+source_type: article
+source_locator: 'Section: Summarization: compacting what''s already there'
+sort_order: 6
+language: en

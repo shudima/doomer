@@ -1,0 +1,15 @@
+schema_version: 1
+id: context-engineering-deep-agents-remember-eeb5997d-004
+title: Offload large tool results before they enter
+text: |-
+  The article describes FilesystemMiddleware writing tool results larger than roughly 20,000 tokens to a file under /large_tool_results/. The model receives a short preview and a path instead of the complete result.
+
+  It can later page through the file to retrieve the relevant rows. This preserves access to a large export without forcing every subsequent model call to carry the full dataset.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/context-engineering-deep-agents-remember
+source_file: null
+source_title: 'Context Engineering: How Deep Agents Remember'
+source_type: article
+source_locator: 'Section: Offloading: keeping it out the context window'
+sort_order: 4
+language: en

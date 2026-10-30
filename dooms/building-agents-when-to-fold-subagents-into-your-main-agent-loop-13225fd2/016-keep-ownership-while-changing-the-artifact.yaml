@@ -1,0 +1,15 @@
+schema_version: 1
+id: building-agents-when-to-fold-subagents-into-your-main-agent-loop-13225fd2-016
+title: Keep ownership while changing the artifact
+text: |-
+  Domain teams can own skills containing their procedures, rules, and judgment calls instead of maintaining separate agents. A designated owner should keep each skill distinct, well formed, and accompanied by relevant evaluations.
+
+  The article points to skill-creator for authoring and restructuring, and skill-doctor for inspecting usage and context cost. Skill libraries need pruning and maintenance too; consolidation can otherwise replace agent sprawl with another form of clutter.
+background_image: images/background.svg
+source_url: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+source_file: null
+source_title: 'Building agents: When to fold subagents into your main agent loop'
+source_type: article
+source_locator: 'Section: Skills'
+sort_order: 16
+language: en

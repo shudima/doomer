@@ -1,0 +1,15 @@
+schema_version: 1
+id: common-questions-about-agent-evals-7b591106-006
+title: Match the evaluator to the question
+text: |-
+  Code checks are fast and consistent for deterministic properties, such as staying within a budget. LLM judges handle qualities that are harder to encode. Human review supplies expert judgment and checks the automated evaluators.
+
+  Pairwise evaluation compares two outputs directly, which helps choose between prompts or models. Most teams can start with one or two methods rather than building every kind at once.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/common-questions-about-agent-evals
+source_file: null
+source_title: The Most Common Questions About Agent Evals, Answered
+source_type: article
+source_locator: 'Section: What are the different types of agent evaluators?'
+sort_order: 6
+language: en

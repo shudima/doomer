@@ -1,0 +1,15 @@
+schema_version: 1
+id: common-questions-about-agent-evals-7b591106-004
+title: Use offline and online evals together
+text: |-
+  Offline evals run controlled examples before shipping, often with reference outputs, to compare prompts, models, or tools and catch regressions. Online evals score real production traces, usually without a reference answer.
+
+  Online monitoring finds situations the offline dataset missed. Feeding those failures back into the dataset connects release checks with actual user experience instead of treating them as separate quality programs.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/common-questions-about-agent-evals
+source_file: null
+source_title: The Most Common Questions About Agent Evals, Answered
+source_type: article
+source_locator: 'Section: What''s the difference between offline and online evals?'
+sort_order: 4
+language: en

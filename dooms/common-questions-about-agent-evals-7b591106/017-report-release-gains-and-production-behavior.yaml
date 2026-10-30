@@ -1,0 +1,15 @@
+schema_version: 1
+id: common-questions-about-agent-evals-7b591106-017
+title: Report release gains and production behavior
+text: |-
+  Offline experiments show how agent versions compare on controlled examples. Online dashboards show whether quality holds up with real traffic over time. Track evaluator scores alongside cost and latency so one improvement does not hide another regression.
+
+  A stable benchmark adds a repeatable comparison across models or releases. The article’s final direction is to deepen this loop through practical evaluation guides and training, rather than stop after the first score.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/common-questions-about-agent-evals
+source_file: null
+source_title: The Most Common Questions About Agent Evals, Answered
+source_type: article
+source_locator: 'Section: How do you report results?; Next'
+sort_order: 17
+language: en

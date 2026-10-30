@@ -1,0 +1,15 @@
+schema_version: 1
+id: how-to-build-a-model-router-in-the-harness-378de5b0-007
+title: Define success before optimizing cost
+text: |-
+  A cheaper route is useful only if quality remains acceptable. Offline datasets make comparisons repeatable, but need representative tasks and meaningful grading. Live A/B tests naturally see real requests, while exposing users to possible routing mistakes.
+
+  Open SWE tracked merged pull requests per thread and thumbs-up or thumbs-down feedback. Merges supplied the stronger measurable signal; feedback was sparse but helped reveal individual mistakes.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness
+source_file: null
+source_title: How to Build a Model Router in the Harness
+source_type: article
+source_locator: 'Section: Step 4: track task outcomes'
+sort_order: 7
+language: en

@@ -1,0 +1,15 @@
+schema_version: 1
+id: how-to-build-a-model-router-in-the-harness-378de5b0-008
+title: No measurable regression is not proof of equality
+text: |-
+  The strongest-model A/B test covered 973 threads. Routed threads produced merged pull requests 29.2% of the time versus 27.3% for control, with p = 0.49. Pull-request opening rates were also similar.
+
+  The authors report no measurable quality change on those signals. The results do not demonstrate that every task, code-quality dimension, or individual routing decision was equally good.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness
+source_file: null
+source_title: How to Build a Model Router in the Harness
+source_type: article
+source_locator: 'Section: The experiment'
+sort_order: 8
+language: en

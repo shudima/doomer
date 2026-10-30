@@ -1,0 +1,15 @@
+schema_version: 1
+id: building-agents-when-to-fold-subagents-into-your-main-agent-loop-13225fd2-002
+title: Keep subagents when the boundary earns its cost
+text: |-
+  The article retains subagents for measurable context degradation, independent parallel work with disposable contexts, or cases where one model struggles with tool selection or conflicting instructions. Verification and separate permission boundaries can also be useful.
+
+  These are functional reasons to split work. Giving every department its own agent merely because it owns a capability can reproduce the organization chart without improving the system’s behavior.
+background_image: images/background.svg
+source_url: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+source_file: null
+source_title: 'Building agents: When to fold subagents into your main agent loop'
+source_type: article
+source_locator: 'Section: Introduction'
+sort_order: 2
+language: en

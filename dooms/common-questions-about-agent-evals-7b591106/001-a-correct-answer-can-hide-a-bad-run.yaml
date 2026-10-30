@@ -1,0 +1,15 @@
+schema_version: 1
+id: common-questions-about-agent-evals-7b591106-001
+title: A correct answer can hide a bad run
+text: |-
+  Agent outputs vary, several answers can be valid, and the path matters as well as the final response. An assistant might return the right result after using an unnecessary tool or acting without permission.
+
+  Evals score the behavior you actually care about. LangChain’s guide treats them as product-specific checks, rather than one universal test that can certify every agent.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/common-questions-about-agent-evals
+source_file: null
+source_title: The Most Common Questions About Agent Evals, Answered
+source_type: article
+source_locator: 'Section: Introduction'
+sort_order: 1
+language: en

@@ -1,0 +1,15 @@
+schema_version: 1
+id: context-engineering-deep-agents-remember-eeb5997d-002
+title: Research creates context the final draft no longer needs
+text: |-
+  A weekly competitive-analysis agent might read large exports, search articles, take notes, and revise reports for five companies. By formatting time, raw exports and stale drafts still accompany model calls even when they are irrelevant.
+
+  The harness should retain a route back to that evidence while carrying only the material needed now. Keeping everything permanently visible is different from keeping everything recoverable.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/context-engineering-deep-agents-remember
+source_file: null
+source_title: 'Context Engineering: How Deep Agents Remember'
+source_type: article
+source_locator: 'Section: Applying context engineering to common use cases'
+sort_order: 2
+language: en

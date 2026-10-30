@@ -1,0 +1,15 @@
+schema_version: 1
+id: building-agents-when-to-fold-subagents-into-your-main-agent-loop-13225fd2-001
+title: Some specialist agents can become skills
+text: |-
+  Anthropic reports enterprise deployments where a single agent using skills outperformed both an all-in-one prompt and a network of subagents, often with lower cost and latency.
+
+  The article targets routers, planners, and domain specialists whose separate loops may no longer help. This is experience from particular deployments, not a universal claim that every multi-agent system should be collapsed or that subagents have become unnecessary.
+background_image: images/background.svg
+source_url: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+source_file: null
+source_title: 'Building agents: When to fold subagents into your main agent loop'
+source_type: article
+source_locator: 'Section: Introduction'
+sort_order: 1
+language: en

@@ -1,0 +1,15 @@
+schema_version: 1
+id: common-questions-about-agent-evals-7b591106-002
+title: Read traces before writing tests
+text: |-
+  A trace records a run’s inputs, outputs, model calls, and tool calls. Read a sample to see what the agent does and where it fails, then choose one important behavior to evaluate first.
+
+  The article suggests starting with ten to twenty examples drawn from real traces. Before production, dogfooding with teammates or trusted design partners can supply those examples.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/common-questions-about-agent-evals
+source_file: null
+source_title: The Most Common Questions About Agent Evals, Answered
+source_type: article
+source_locator: 'Section: Where should we start?'
+sort_order: 2
+language: en

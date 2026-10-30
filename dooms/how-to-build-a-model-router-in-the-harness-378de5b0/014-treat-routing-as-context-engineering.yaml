@@ -1,0 +1,15 @@
+schema_version: 1
+id: how-to-build-a-model-router-in-the-harness-378de5b0-014
+title: Treat routing as context engineering
+text: |-
+  The article’s implementation recipe is to understand real tasks, research model options, build domain-specific criteria in the harness, and track outcomes. Observability and evaluations supply the feedback needed to revise the policy.
+
+  Model tiers should remain replaceable as capabilities and prices change. Routing is therefore an ongoing product decision grounded in measured task success, rather than a one-time gateway rule that chooses the cheapest name.
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness
+source_file: null
+source_title: How to Build a Model Router in the Harness
+source_type: article
+source_locator: 'Section: Getting started'
+sort_order: 14
+language: en
