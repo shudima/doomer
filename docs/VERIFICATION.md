@@ -20,3 +20,11 @@ Browser verification: the email form opened the actual reader immediately, a pag
 - 9 frontend tests and the production TypeScript/Vite build pass. Uneven-height progress tests cover reading within a long doom, moving between cards, viewport resizing and top overscroll.
 - Browser checks at 393×730, 393×600 and 420×912 verified the formerly clipped Jev doom, reaching its full text and source, next-doom offsets, per-topic resume after reload, and footer placement at the viewport bottom.
 - Physical iPhone Home Screen validation remains necessary. Existing installed shortcuts may need removal and re-adding to pick up the changed status-bar metadata.
+
+
+## Finished topics in the explorer — October 30, 2026
+
+- `/api/topics` now includes separate finished-topic summaries. The existing unfinished-topic array still drives random browsing. Completion counts use only topics in the current catalog.
+- Finished topics remain searchable, visibly marked Finished, and retain the original completion state. The feed header and explorer show completed topics out of the full total.
+- All 21 backend tests and 9 frontend tests pass, with strict TypeScript and production build checks. API regressions cover idempotent completion, all topics finished, profile isolation and cross-device restoration of finished summaries/counts.
+- An isolated browser preview at 393×730 verified finishing a topic, immediate 1/14 count updates, all 14 topics remaining listed, finding the finished topic via search, and persistence after reload. Live user completion records were not changed during these tests.

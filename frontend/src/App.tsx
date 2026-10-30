@@ -327,7 +327,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
         <button className="icon-button menu-button" aria-label="Explore topics" onClick={showExplorer}><MoreHorizontal size={23} /></button>
       </div>
     </header>
-    <div className="feed-heading"><span><Sparkles size={13} /> For your mind</span><span className="collection-count">{String(library?.topics.length ?? 0).padStart(2,'0')} TOPIC{library?.topics.length === 1 ? '' : 'S'}</span></div>
+    <div className="feed-heading"><span><Sparkles size={13} /> For your mind</span><span className="collection-count" aria-label={`${library?.finished_count ?? 0} of ${library?.total_topics ?? 0} topics finished`}>{library?.finished_count ?? 0} / {library?.total_topics ?? 0} FINISHED</span></div>
     {loadError ? <section className="centered feed-state"><WifiOff size={30} /><h1>A small interruption.</h1><p>{loadError}</p><button className="primary" onClick={() => void loadFeed()}>Try again <RefreshCw size={16} /></button><button className="text-button" onClick={onChangeEmail}>Change email</button></section> :
      loading ? <section className="centered feed-state"><Orbit /><p className="muted">Finding your next good idea…</p></section> :
      !topic ? <section className="centered feed-state empty"><div className="empty-mark"><CheckCheck size={35} /></div><div className="eyebrow">A LITTLE ROOM TO THINK</div><h1>{library?.total_topics ? 'All caught up.' : 'Good ideas are on their way.'}</h1><p>{library?.total_topics ? 'You’ve finished every topic in your feed. Come back when there’s something new to get lost in.' : 'Your feed will be here when your first topic is added.'}</p><button className="text-button" onClick={() => void loadFeed()}>Check for new topics <RefreshCw size={14} /></button></section> :
@@ -355,7 +355,8 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
       <button className="text-button" onClick={() => setFinishDialog(false)} disabled={actionBusy}>Keep reading</button>
     </Modal>}
     {menu && <Modal title="Explore topics" className="explorer-sheet" onClose={() => !openingTopicId && setMenu(false)}>
-      <TopicExplorer topics={library?.topics ?? []} currentId={topic?.id} currentPosition={position}
+      <TopicExplorer topics={[...(library?.topics ?? []), ...(library?.finished_topics ?? [])]} currentId={topic?.id} currentPosition={position}
+        finishedCount={library?.finished_count ?? 0} totalCount={library?.total_topics ?? 0}
         refreshing={explorerBusy} openingId={openingTopicId} disabled={loading || explorerBusy}
         error={explorerError} email={profile?.email} onSelect={summary => void selectTopic(summary)}
         onRefresh={() => void refreshExplorer()} onChangeEmail={async () => {

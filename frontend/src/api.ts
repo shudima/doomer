@@ -6,9 +6,9 @@ export type Doom = {
   id: string; title: string; text: string; sort_order: number;
   language: string; source_locator: string; image_url: string; reaction: Reaction;
 };
-export type TopicSummary = { id: string; title: string; count: number; doom_id: string; position: number; version: number };
+export type TopicSummary = { id: string; title: string; count: number; doom_id: string; position: number; version: number; finished: boolean };
 export type Topic = TopicSummary & { dooms: Doom[] };
-export type Library = { topics: TopicSummary[]; total_topics: number; finished_count: number; user_id: string };
+export type Library = { topics: TopicSummary[]; finished_topics: TopicSummary[]; total_topics: number; finished_count: number; user_id: string };
 
 export class ApiError extends Error {
   constructor(public status: number, message: string) { super(message); }

@@ -83,3 +83,12 @@ body{position:fixed;inset:0;width:100%;overflow:hidden}
 @media(min-width:650px) and (pointer:fine){
   .app-shell,.login-shell{height:min(912px,calc(100% - 44px))}
 }
+
+
+/* Completion stays visible even while the topic list is filtered. */
+.explorer-completion{display:flex;align-items:center;gap:8px;flex-shrink:0;color:#bdcfa9;font-size:11px;padding:0 1px 16px}
+.explorer-completion>svg,.explorer-completion b{color:var(--accent)}
+.explorer-completion b{font-weight:500}
+.finished-topic{background:#d8eeae06;border-color:#d5e9c224}
+.finished-topic .topic-row-icon{color:var(--accent)}
+.topic-finished-label{display:flex;align-items:center;gap:4px;color:var(--accent)}

@@ -64,18 +64,29 @@ def test_finish_is_idempotent_and_cannot_be_resurrected(client):
     client.put('/api/dooms/alpha-001/reaction',json={'value':'like'})
     assert client.post('/api/topics/alpha/finish').status_code == 200
     assert client.post('/api/topics/alpha/finish').status_code == 200
-    assert [t['id'] for t in client.get('/api/topics').json()['topics']] == ['beta']
+    library = client.get('/api/topics').json()
+    assert [t['id'] for t in library['topics']] == ['beta']
+    assert library['topics'][0]['finished'] is False
+    assert [(t['id'], t['finished']) for t in library['finished_topics']] == [('alpha', True)]
+    assert library['finished_count'] == 1
+    assert library['total_topics'] == 2
     assert client.get('/api/topics/alpha').status_code == 410
     assert client.put('/api/topics/alpha/progress',json={'doom_id':'alpha-001','expected_version':1}).status_code == 409
     client.post('/api/topics/beta/finish')
-    assert client.get('/api/topics').json()['topics'] == []
+    library = client.get('/api/topics').json()
+    assert library['topics'] == []
+    assert {t['id'] for t in library['finished_topics']} == {'alpha', 'beta'}
+    assert library['finished_count'] == library['total_topics'] == 2
 
 def test_users_are_isolated(client):
     client.put('/api/topics/alpha/progress',json={'doom_id':'alpha-003','expected_version':0})
     client.put('/api/dooms/alpha-001/reaction',json={'value':'like'})
     client.post('/api/topics/beta/finish')
     client.app.dependency_overrides[get_identity] = lambda: Identity('different-user','different@example.org')
-    assert len(client.get('/api/topics').json()['topics']) == 2
+    library = client.get('/api/topics').json()
+    assert len(library['topics']) == 2
+    assert library['finished_topics'] == []
+    assert library['finished_count'] == 0
     detail = client.get('/api/topics/alpha').json()
     assert detail['position'] == 0
     assert detail['dooms'][0]['reaction'] is None
@@ -166,7 +177,11 @@ def test_email_profiles_restore_progress_reactions_and_completion_on_another_dev
         detail = second.get('/api/topics/alpha',headers=headers2).json()
         assert detail['position'] == 1
         assert detail['dooms'][1]['reaction'] == 'like'
-        assert [t['id'] for t in second.get('/api/topics',headers=headers2).json()['topics']] == ['alpha']
+        library = second.get('/api/topics', headers=headers2).json()
+        assert [t['id'] for t in library['topics']] == ['alpha']
+        assert [t['id'] for t in library['finished_topics']] == ['beta']
+        assert library['finished_count'] == 1
+        assert library['total_topics'] == 2
 
 def test_email_setup_rejects_invalid_and_unconfigured_addresses(settings):
     with email_client(settings) as client:

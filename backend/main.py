@@ -159,15 +159,18 @@ def create_app(settings: Settings | None = None, engine=None):
         ids = [d['id'] for d in topic.dooms]
         current = state.doom_id if state and state.doom_id in ids else ids[0]
         return {'id':topic.id, 'title':topic.title, 'count':len(ids), 'doom_id':current,
-                'position':ids.index(current), 'version':state.version if state else 0}
+                'position':ids.index(current), 'version':state.version if state else 0,
+                'finished':bool(state and state.finished_at)}
 
     @app.get('/api/topics')
     def topics(user: Identity = Depends(get_identity), db: Session = Depends(get_db)):
         states = {s.topic_id:s for s in db.scalars(select(TopicState).where(TopicState.user_id == user.id))}
-        return {'topics':[snapshot(t, states.get(t.id)) for t in app.state.catalog.topics.values()
-                          if not (states.get(t.id) and states[t.id].finished_at)],
-                'total_topics':len(app.state.catalog.topics), 'user_id':user.id,
-                'finished_count':sum(1 for t in app.state.catalog.topics if states.get(t) and states[t].finished_at)}
+        summaries = [snapshot(t, states.get(t.id)) for t in app.state.catalog.topics.values()]
+        finished = [topic for topic in summaries if topic['finished']]
+        return {'topics':[topic for topic in summaries if not topic['finished']],
+                'finished_topics':finished,
+                'total_topics':len(summaries), 'user_id':user.id,
+                'finished_count':len(finished)}
 
     @app.get('/api/topics/{topic_id}')
     def detail(topic_id: str, user: Identity = Depends(get_identity), db: Session = Depends(get_db)):
