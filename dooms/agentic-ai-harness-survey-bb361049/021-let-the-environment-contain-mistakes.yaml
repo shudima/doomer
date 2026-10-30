@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-021
+title: Let the environment contain mistakes
+text: |-
+  Code execution turns model errors and successful prompt injections into executable actions. A sandbox limits what those actions can reach.
+
+  Use isolated, fresh task environments with restricted files, default-deny network egress, resource limits and no ambient credentials. A proxy can attach secrets outside the sandbox. Provide only permission-filtered data and declared output locations. Inspect reachable hosts, credential exposure and cross-task residue; a promise in the prompt cannot substitute for these boundaries.
+background_image: images/part-03.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 32-33
+sort_order: 21
+language: en

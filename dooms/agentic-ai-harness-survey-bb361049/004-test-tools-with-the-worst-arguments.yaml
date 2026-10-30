@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-004
+title: Test tools with the worst arguments
+text: |-
+  A recruiting assistant may be told to show only permitted candidates. That instruction is fragile if its search tool can return every candidate in the company.
+
+  Put the permission filter inside the tool's database query. Then the model can choose which permitted candidates to discuss without ever receiving forbidden records. Review every tool by asking what happens with the worst possible arguments. Repeated fixed action sequences may also deserve a workflow or skill.
+background_image: images/part-01.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 14-15
+sort_order: 4
+language: en

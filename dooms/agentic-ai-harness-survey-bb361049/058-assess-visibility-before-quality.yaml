@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-058
+title: Assess visibility before quality
+text: |-
+  The survey's assessment method begins by obtaining real traces and full contexts. Without them, the first finding is that the system cannot be assessed reliably.
+
+  Next, map the harness: triggers, configuration, loop, agents, tools, skills, context, memory, data, identity, controls, verification, approvals and interface. Record which responsibilities are enforced in code and which rely on model judgement. This map establishes the boundaries that later transcript review and probes need to test.
+background_image: images/part-07.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Page 66
+sort_order: 58
+language: en

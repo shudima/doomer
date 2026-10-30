@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-044
+title: UI protocols have different jobs
+text: |-
+  A2UI describes declarative interfaces rendered with approved native widgets. AG-UI transports backend-to-frontend events, including text, tools, state and interrupts; it can carry a UI format without defining components.
+
+  MCP Apps delivers tool-provided interactive HTML in a sandboxed host frame. The survey distinguishes these integration roles. Choose the layer the experience needs while retaining evidence, accessibility and reviewable actions.
+background_image: images/part-06.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 54-55
+sort_order: 44
+language: en

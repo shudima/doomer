@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-038
+title: Verification should observe real effects
+text: |-
+  Runtime verification checks work before acceptance. It differs from offline evaluation, which measures behaviour across test cases.
+
+  Use deterministic checks for schemas, IDs, calculations, citations and tests. Read a record back after writing it, or inspect a rendered interface after changing it. The harness should run checks and retain their results, rather than accepting the agent's statement that it verified the work. A test that actually ran provides evidence a confident completion message cannot.
+background_image: images/part-05.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 49-50
+sort_order: 38
+language: en

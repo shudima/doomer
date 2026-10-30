@@ -1,0 +1,832 @@
+[
+  {
+    "text": "It just 3 weeks ago, it felt like",
+    "start": 0.0,
+    "duration": 4.0
+  },
+  {
+    "text": "nothing could go wrong. The SpaceX was",
+    "start": 2.0,
+    "duration": 4.44
+  },
+  {
+    "text": "up 7% in a day. Every tech CEO in",
+    "start": 4.0,
+    "duration": 4.2
+  },
+  {
+    "text": "America was on stage explaining why they",
+    "start": 6.44,
+    "duration": 3.44
+  },
+  {
+    "text": "needed another 100 billion dollars to",
+    "start": 8.2,
+    "duration": 3.88
+  },
+  {
+    "text": "decimate farmland and rule America. And",
+    "start": 9.88,
+    "duration": 3.96
+  },
+  {
+    "text": "Jensen Huang was telling anyone who",
+    "start": 12.08,
+    "duration": 3.84
+  },
+  {
+    "text": "listened that demand for AI chips was",
+    "start": 13.84,
+    "duration": 4.32
+  },
+  {
+    "text": "insatiable. But since then, the market",
+    "start": 15.92,
+    "duration": 4.16
+  },
+  {
+    "text": "took a dump. Meta created an entirely",
+    "start": 18.16,
+    "duration": 3.92
+  },
+  {
+    "text": "new class of non-voting stock just to",
+    "start": 20.08,
+    "duration": 4.48
+  },
+  {
+    "text": "pay for GPUs, while Microsoft offered a",
+    "start": 22.08,
+    "duration": 4.6
+  },
+  {
+    "text": "quarter of its employees money to leave",
+    "start": 24.56,
+    "duration": 4.04
+  },
+  {
+    "text": "so it can afford more of them. Elon",
+    "start": 26.68,
+    "duration": 4.2
+  },
+  {
+    "text": "predicted that 200 Neo clouds are about",
+    "start": 28.6,
+    "duration": 4.24
+  },
+  {
+    "text": "to experience guppy level death. And",
+    "start": 30.88,
+    "duration": 3.84
+  },
+  {
+    "text": "CoreWeave, a former Ethereum mining",
+    "start": 32.84,
+    "duration": 3.88
+  },
+  {
+    "text": "operation that became the poster boy of",
+    "start": 34.72,
+    "duration": 3.96
+  },
+  {
+    "text": "reckless AI spending after they pivoted",
+    "start": 36.72,
+    "duration": 4.68
+  },
+  {
+    "text": "into renting Nvidia GPUs back to Nvidia,",
+    "start": 38.68,
+    "duration": 4.36
+  },
+  {
+    "text": "is now worth a third of what it was at",
+    "start": 41.4,
+    "duration": 3.12
+  },
+  {
+    "text": "the beginning of the month. And then on",
+    "start": 43.04,
+    "duration": 3.72
+  },
+  {
+    "text": "Monday, Anthropic filed to go public,",
+    "start": 44.52,
+    "duration": 4.24
+  },
+  {
+    "text": "which showed that between January and",
+    "start": 46.76,
+    "duration": 3.56
+  },
+  {
+    "text": "when the government banned Fable back in",
+    "start": 48.76,
+    "duration": 3.28
+  },
+  {
+    "text": "June, they lost more money than the",
+    "start": 50.32,
+    "duration": 4.0
+  },
+  {
+    "text": "annual GDP of over half the countries on",
+    "start": 52.04,
+    "duration": 3.88
+  },
+  {
+    "text": "Earth. So naturally, the question on",
+    "start": 54.32,
+    "duration": 3.52
+  },
+  {
+    "text": "everyone's mind is are we finally",
+    "start": 55.92,
+    "duration": 3.8
+  },
+  {
+    "text": "cooked? In today's video, we'll break",
+    "start": 57.84,
+    "duration": 4.8
+  },
+  {
+    "text": "down 3 weeks in the history of AI, find",
+    "start": 59.72,
+    "duration": 4.64
+  },
+  {
+    "text": "out what a Neo cloud is and why Elon",
+    "start": 62.64,
+    "duration": 3.28
+  },
+  {
+    "text": "wants them dead, and we'll analyze",
+    "start": 64.36,
+    "duration": 3.08
+  },
+  {
+    "text": "Anthropic's financials in their",
+    "start": 65.92,
+    "duration": 4.0
+  },
+  {
+    "text": "trust-me-bro S-1. It is October 28th,",
+    "start": 67.44,
+    "duration": 4.52
+  },
+  {
+    "text": "2026, and you're watching The Code",
+    "start": 69.92,
+    "duration": 3.72
+  },
+  {
+    "text": "Report. But before we can talk about the",
+    "start": 71.96,
+    "duration": 3.64
+  },
+  {
+    "text": "AI bubble, you need to understand how a",
+    "start": 73.64,
+    "duration": 4.16
+  },
+  {
+    "text": "GPU actually gets paid for. And to do",
+    "start": 75.6,
+    "duration": 3.68
+  },
+  {
+    "text": "that, here's me in a bubble bath to",
+    "start": 77.8,
+    "duration": 4.04
+  },
+  {
+    "text": "explain. But first, Nvidia makes a GPU",
+    "start": 79.28,
+    "duration": 4.36
+  },
+  {
+    "text": "that they need to sell. The problem is",
+    "start": 81.84,
+    "duration": 3.72
+  },
+  {
+    "text": "the GPU is expensive, and you don't have",
+    "start": 83.64,
+    "duration": 4.08
+  },
+  {
+    "text": "enough money to buy it. So Nvidia says,",
+    "start": 85.56,
+    "duration": 3.96
+  },
+  {
+    "text": "\"Hey, we have money and we'll give it to",
+    "start": 87.72,
+    "duration": 3.48
+  },
+  {
+    "text": "you as long as you give us a portion of",
+    "start": 89.52,
+    "duration": 3.36
+  },
+  {
+    "text": "your company and use the money we give",
+    "start": 91.2,
+    "duration": 4.36
+  },
+  {
+    "text": "you to buy our GPUs.\" But Nvidia's money",
+    "start": 92.88,
+    "duration": 4.52
+  },
+  {
+    "text": "only covers a fraction of what you need.",
+    "start": 95.56,
+    "duration": 3.52
+  },
+  {
+    "text": "So you go to Wall Street and borrow the",
+    "start": 97.4,
+    "duration": 3.6
+  },
+  {
+    "text": "rest by putting up the GPU you haven't",
+    "start": 99.08,
+    "duration": 4.08
+  },
+  {
+    "text": "bought yet as collateral. Now, normally,",
+    "start": 101.0,
+    "duration": 3.52
+  },
+  {
+    "text": "a bank wouldn't lend to you with a",
+    "start": 103.16,
+    "duration": 2.88
+  },
+  {
+    "text": "depreciating pile of chips as",
+    "start": 104.52,
+    "duration": 3.84
+  },
+  {
+    "text": "collateral, but Nvidia has promised that",
+    "start": 106.04,
+    "duration": 4.44
+  },
+  {
+    "text": "if nobody rents the GPUs they give you,",
+    "start": 108.36,
+    "duration": 3.68
+  },
+  {
+    "text": "they'll rent them themselves. So",
+    "start": 110.48,
+    "duration": 3.6
+  },
+  {
+    "text": "Nvidia's money gets used to buy Nvidia",
+    "start": 112.04,
+    "duration": 4.36
+  },
+  {
+    "text": "GPUs that eventually get rented back to",
+    "start": 114.08,
+    "duration": 4.84
+  },
+  {
+    "text": "Nvidia, which makes Nvidia stock go up,",
+    "start": 116.4,
+    "duration": 3.96
+  },
+  {
+    "text": "which it uses to invest in more",
+    "start": 118.92,
+    "duration": 3.4
+  },
+  {
+    "text": "companies, which borrow more money to",
+    "start": 120.36,
+    "duration": 4.16
+  },
+  {
+    "text": "buy more Nvidia GPUs, which keeps the",
+    "start": 122.32,
+    "duration": 4.08
+  },
+  {
+    "text": "good times going. On Wall Street, they",
+    "start": 124.52,
+    "duration": 3.36
+  },
+  {
+    "text": "call this a circular financing",
+    "start": 126.4,
+    "duration": 3.4
+  },
+  {
+    "text": "arrangement, and back in college, we'd",
+    "start": 127.88,
+    "duration": 3.04
+  },
+  {
+    "text": "call it a",
+    "start": 129.8,
+    "duration": 2.84
+  },
+  {
+    "text": "The most popular company eating this",
+    "start": 130.92,
+    "duration": 4.12
+  },
+  {
+    "text": "forbidden fruit is CoreWeave, but Nvidia",
+    "start": 132.64,
+    "duration": 3.96
+  },
+  {
+    "text": "has done it with a few other companies",
+    "start": 135.04,
+    "duration": 3.2
+  },
+  {
+    "text": "as well. And to be honest, it works",
+    "start": 136.6,
+    "duration": 3.4
+  },
+  {
+    "text": "pretty well as long as the chips rent",
+    "start": 138.24,
+    "duration": 3.44
+  },
+  {
+    "text": "for more than they depreciate. The labs",
+    "start": 140.0,
+    "duration": 3.44
+  },
+  {
+    "text": "keep buying, and someone keeps lending",
+    "start": 141.68,
+    "duration": 3.88
+  },
+  {
+    "text": "you money to buy more chips. But 3 weeks",
+    "start": 143.44,
+    "duration": 4.28
+  },
+  {
+    "text": "ago, the third one stopped being true",
+    "start": 145.56,
+    "duration": 3.8
+  },
+  {
+    "text": "when it was discovered that CoreWeave,",
+    "start": 147.72,
+    "duration": 3.64
+  },
+  {
+    "text": "after it borrowed $52 billion to buy",
+    "start": 149.36,
+    "duration": 4.48
+  },
+  {
+    "text": "chips, was now paying 15% interest on",
+    "start": 151.36,
+    "duration": 4.44
+  },
+  {
+    "text": "that debt. Then on Sunday night, Elon",
+    "start": 153.84,
+    "duration": 4.119
+  },
+  {
+    "text": "chimed in saying that debt markets have",
+    "start": 155.8,
+    "duration": 4.4
+  },
+  {
+    "text": "almost entirely shut off for any company",
+    "start": 157.959,
+    "duration": 4.401
+  },
+  {
+    "text": "whose only revenue is AI data centers,",
+    "start": 160.2,
+    "duration": 4.12
+  },
+  {
+    "text": "and that he expects 200-plus of these",
+    "start": 162.36,
+    "duration": 4.04
+  },
+  {
+    "text": "neo-cloud type companies to die. But",
+    "start": 164.32,
+    "duration": 4.48
+  },
+  {
+    "text": "conveniently, SpaceX is fine because it",
+    "start": 166.4,
+    "duration": 4.36
+  },
+  {
+    "text": "also happens to sell rockets. And right",
+    "start": 168.8,
+    "duration": 3.52
+  },
+  {
+    "text": "in the middle of all this, Anthropic",
+    "start": 170.76,
+    "duration": 3.68
+  },
+  {
+    "text": "decided to ask the public for $100",
+    "start": 172.32,
+    "duration": 4.28
+  },
+  {
+    "text": "billion at a valuation that would make",
+    "start": 174.44,
+    "duration": 5.04
+  },
+  {
+    "text": "it worth more than 492 out of the 500",
+    "start": 176.6,
+    "duration": 5.359
+  },
+  {
+    "text": "companies in the S&P 500, with four out",
+    "start": 179.48,
+    "duration": 4.32
+  },
+  {
+    "text": "of those seven remaining companies being",
+    "start": 181.959,
+    "duration": 3.401
+  },
+  {
+    "text": "where they rent their compute from, and",
+    "start": 183.8,
+    "duration": 4.4
+  },
+  {
+    "text": "happen to owe $265 billion to through",
+    "start": 185.36,
+    "duration": 6.599
+  },
+  {
+    "text": "2045. The S-1 itself is 330 pages long,",
+    "start": 188.2,
+    "duration": 5.56
+  },
+  {
+    "text": "with 90 of those being risk factors to",
+    "start": 191.959,
+    "duration": 3.681
+  },
+  {
+    "text": "the company, which is the fun part. In",
+    "start": 193.76,
+    "duration": 3.56
+  },
+  {
+    "text": "it, Anthropic admits that everything",
+    "start": 195.64,
+    "duration": 3.2
+  },
+  {
+    "text": "we've already covered over the last few",
+    "start": 197.32,
+    "duration": 3.6
+  },
+  {
+    "text": "months is true, including Mythos being",
+    "start": 198.84,
+    "duration": 4.399
+  },
+  {
+    "text": "allergic to its sandbox, a Claude Haiku",
+    "start": 200.92,
+    "duration": 4.2
+  },
+  {
+    "text": "filing a fake homicide tip through the",
+    "start": 203.239,
+    "duration": 3.121
+  },
+  {
+    "text": "Philadelphia Police Department's",
+    "start": 205.12,
+    "duration": 3.399
+  },
+  {
+    "text": "website, and a Chinese state-sponsored",
+    "start": 206.36,
+    "duration": 4.32
+  },
+  {
+    "text": "group using Claude code to attack banks",
+    "start": 208.519,
+    "duration": 4.281
+  },
+  {
+    "text": "and government agencies. The filing also",
+    "start": 210.68,
+    "duration": 4.12
+  },
+  {
+    "text": "says that Claude now uses itself to",
+    "start": 212.8,
+    "duration": 3.68
+  },
+  {
+    "text": "improve itself, and that they might not",
+    "start": 214.8,
+    "duration": 2.76
+  },
+  {
+    "text": "notice their models getting",
+    "start": 216.48,
+    "duration": 3.039
+  },
+  {
+    "text": "significantly smarter until after it's",
+    "start": 217.56,
+    "duration": 3.08
+  },
+  {
+    "text": "already happened. Their guiding",
+    "start": 219.519,
+    "duration": 3.0
+  },
+  {
+    "text": "principle, according to the forward, is",
+    "start": 220.64,
+    "duration": 3.879
+  },
+  {
+    "text": "to under-promise and over-deliver, which",
+    "start": 222.519,
+    "duration": 3.641
+  },
+  {
+    "text": "is a little worrisome for a company",
+    "start": 224.519,
+    "duration": 3.401
+  },
+  {
+    "text": "whose head of alignment was quoted just",
+    "start": 226.16,
+    "duration": 3.48
+  },
+  {
+    "text": "last month saying he thinks there's a",
+    "start": 227.92,
+    "duration": 4.12
+  },
+  {
+    "text": "greater than 10% chance that AI kills",
+    "start": 229.64,
+    "duration": 4.48
+  },
+  {
+    "text": "all humans within the next decade. So,",
+    "start": 232.04,
+    "duration": 4.0
+  },
+  {
+    "text": "are we cooked? Well, as always, it",
+    "start": 234.12,
+    "duration": 3.64
+  },
+  {
+    "text": "depends. It's not looking great if your",
+    "start": 236.04,
+    "duration": 3.32
+  },
+  {
+    "text": "whole business model is borrowing money",
+    "start": 237.76,
+    "duration": 3.24
+  },
+  {
+    "text": "from one company just to give it right",
+    "start": 239.36,
+    "duration": 3.48
+  },
+  {
+    "text": "back to them. But, it's hard to call AI",
+    "start": 241.0,
+    "duration": 4.12
+  },
+  {
+    "text": "a bubble the day after OpenAI claims one",
+    "start": 242.84,
+    "duration": 4.56
+  },
+  {
+    "text": "of its models disproved a 27-year-old",
+    "start": 245.12,
+    "duration": 4.28
+  },
+  {
+    "text": "conjecture that half of complexity",
+    "start": 247.4,
+    "duration": 4.0
+  },
+  {
+    "text": "theory is built on. But, thankfully, as",
+    "start": 249.4,
+    "duration": 3.88
+  },
+  {
+    "text": "developers, things are actually looking",
+    "start": 251.4,
+    "duration": 3.8
+  },
+  {
+    "text": "pretty decent right now since every one",
+    "start": 253.28,
+    "duration": 3.519
+  },
+  {
+    "text": "of these companies are fighting to sell",
+    "start": 255.2,
+    "duration": 3.879
+  },
+  {
+    "text": "us subsidized tokens. Ikemi just dropped",
+    "start": 256.799,
+    "duration": 4.481
+  },
+  {
+    "text": "an open model within a point of Opus at",
+    "start": 259.079,
+    "duration": 3.481
+  },
+  {
+    "text": "half the price that we talked about",
+    "start": 261.28,
+    "duration": 3.88
+  },
+  {
+    "text": "yesterday. And the GPUs core we financed",
+    "start": 262.56,
+    "duration": 4.52
+  },
+  {
+    "text": "should be on eBay any week now. And if",
+    "start": 265.16,
+    "duration": 3.0
+  },
+  {
+    "text": "you'd like to be one of the people",
+    "start": 267.08,
+    "duration": 2.76
+  },
+  {
+    "text": "profiting from the exit liquidity",
+    "start": 268.16,
+    "duration": 3.4
+  },
+  {
+    "text": "instead of providing it, you can put",
+    "start": 269.84,
+    "duration": 3.64
+  },
+  {
+    "text": "those subsidized tokens to work with",
+    "start": 271.56,
+    "duration": 3.8
+  },
+  {
+    "text": "Hyperagent, the sponsor of today's",
+    "start": 273.48,
+    "duration": 3.28
+  },
+  {
+    "text": "video. If you're already paying for",
+    "start": 275.36,
+    "duration": 3.88
+  },
+  {
+    "text": "ChatGPT, you can now use that plan to",
+    "start": 276.76,
+    "duration": 4.6
+  },
+  {
+    "text": "sign into Hyperagent and hire a team of",
+    "start": 279.24,
+    "duration": 4.2
+  },
+  {
+    "text": "agents without setting up yet another AI",
+    "start": 281.36,
+    "duration": 4.24
+  },
+  {
+    "text": "subscription. Right now, I'm using it to",
+    "start": 283.44,
+    "duration": 4.44
+  },
+  {
+    "text": "work on a V4 release of a date library",
+    "start": 285.6,
+    "duration": 4.0
+  },
+  {
+    "text": "I'm contributing to. So, I set up a",
+    "start": 287.88,
+    "duration": 3.72
+  },
+  {
+    "text": "Hyper agent room, which is basically a",
+    "start": 289.6,
+    "duration": 4.16
+  },
+  {
+    "text": "Slack channel where all my agents and",
+    "start": 291.6,
+    "duration": 4.08
+  },
+  {
+    "text": "human co-maintainers can work together.",
+    "start": 293.76,
+    "duration": 3.96
+  },
+  {
+    "text": "I've got one agent triaging new issues",
+    "start": 295.68,
+    "duration": 3.88
+  },
+  {
+    "text": "as they come in, another one drafting",
+    "start": 297.72,
+    "duration": 3.72
+  },
+  {
+    "text": "pull requests for new features, and a",
+    "start": 299.56,
+    "duration": 3.68
+  },
+  {
+    "text": "third one writing the change log. They",
+    "start": 301.44,
+    "duration": 3.76
+  },
+  {
+    "text": "all work in parallel and hand things off",
+    "start": 303.24,
+    "duration": 4.08
+  },
+  {
+    "text": "to each other and only ping a human when",
+    "start": 305.2,
+    "duration": 3.8
+  },
+  {
+    "text": "something needs approval. And anyone on",
+    "start": 307.32,
+    "duration": 4.08
+  },
+  {
+    "text": "a team can jump in to ask questions or",
+    "start": 309.0,
+    "duration": 4.16
+  },
+  {
+    "text": "make changes whenever they want instead",
+    "start": 311.4,
+    "duration": 3.48
+  },
+  {
+    "text": "of routing everything through me. Sign",
+    "start": 313.16,
+    "duration": 4.0
+  },
+  {
+    "text": "in with your existing ChatGPT plan to",
+    "start": 314.88,
+    "duration": 4.08
+  },
+  {
+    "text": "try it out at the link below. This has",
+    "start": 317.16,
+    "duration": 3.12
+  },
+  {
+    "text": "been the Code Report. Thanks for",
+    "start": 318.96,
+    "duration": 2.959
+  },
+  {
+    "text": "watching, and I will see you in the next",
+    "start": 320.28,
+    "duration": 3.96
+  },
+  {
+    "text": "one.",
+    "start": 321.919,
+    "duration": 2.321
+  }
+]

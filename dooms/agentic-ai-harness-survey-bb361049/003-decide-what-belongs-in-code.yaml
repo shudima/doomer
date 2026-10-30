@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-003
+title: Decide what belongs in code
+text: |-
+  Ask four questions about each responsibility. Can the correct behaviour be fully specified? Could a mistake be costly or irreversible? Does the decision require interpreting messy language? Must the rule hold even when the model is manipulated?
+
+  Use code for exact invariants, the model for interpretation, and code or human gates around consequential execution. Record this split for every capability so safety rules do not quietly become optional prompt instructions.
+background_image: images/part-01.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 14-15
+sort_order: 3
+language: en

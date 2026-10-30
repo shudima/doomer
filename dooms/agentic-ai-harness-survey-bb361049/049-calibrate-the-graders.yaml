@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-049
+title: Calibrate the graders
+text: |-
+  Code graders suit exact state, values, schemas and action constraints. Model judges assess qualitative properties using clear criteria and evidence.
+
+  Use narrow, observable rubrics, preferably one dimension per judge, and calibrate against human labels. A different model family may reduce shared blind spots. Human review remains necessary for calibration and subjective cases. A score deserves confidence only when its grading process does.
+background_image: images/part-07.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 60-61
+sort_order: 49
+language: en

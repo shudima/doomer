@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: doomer
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health/ready
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: DOOMER_ENVIRONMENT
+        value: production
+      - key: DOOMER_AUTH_MODE
+        value: supabase
+      - key: DOOMER_DATABASE_URL
+        sync: false
+      - key: DOOMER_OWNER_EMAIL
+        sync: false
+      - key: DOOMER_SUPABASE_URL
+        sync: false
+      - key: DOOMER_SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: DOOMER_ALLOWED_HOSTS
+        sync: false
+      - key: DOOMER_SENTRY_DSN
+        sync: false
+      - key: DOOMER_FRONTEND_SENTRY_DSN
+        sync: false

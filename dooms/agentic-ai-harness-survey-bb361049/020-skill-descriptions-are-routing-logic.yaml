@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-020
+title: Skill descriptions are routing logic
+text: |-
+  A skill can be useful yet never load because its description is vague. An overly broad description can trigger it on unrelated work.
+
+  Test both sides: relevant tasks should activate the skill, and similar-looking irrelevant tasks should not. Keep instructions concise and detailed references separate. Review external skills like third-party code, because a folder of procedural guidance may also contain executable scripts. Installing expertise also adds a supply-chain dependency.
+background_image: images/part-03.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 30-31
+sort_order: 20
+language: en

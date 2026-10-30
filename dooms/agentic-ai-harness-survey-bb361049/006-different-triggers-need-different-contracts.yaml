@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-006
+title: Different triggers need different contracts
+text: |-
+  A chat message, a button press and a scheduled event should not enter an agent as indistinguishable strings. Define a versioned input shape for each trigger.
+
+  A structured command can invoke a known workflow directly. An unattended event needs narrower permissions because nobody is present to clarify. Images, audio and PDFs may need deterministic preprocessing. Requests from other agents also need provenance and the originating user's identity rather than assumed authority.
+background_image: images/part-02.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 17-18
+sort_order: 6
+language: en

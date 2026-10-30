@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-010
+title: Keep planning useful
+text: |-
+  Long tasks benefit from a visible plan that changes when observations contradict it. A checklist or brief restatement near the end of context can keep the goal in view.
+
+  Measure the overhead. The survey describes Manus moving planning out of its main agent after list maintenance consumed too much activity. A plan should guide execution without becoming most of the work.
+background_image: images/part-03.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 23-24
+sort_order: 10
+language: en

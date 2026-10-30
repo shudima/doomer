@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-059
+title: Read traces and probe
+text: |-
+  Read at least thirty real runs, including common requests, long sessions and complaints. Look for wasted steps, tool confusion, unsupported claims and silent failures.
+
+  Repeat probes for permission boundaries, injected content, crash recovery, early constraints, missing answers, known analytical results and correct refusal. Then audit datasets, judge calibration, repeated evaluations, coverage of past incidents and release gates.
+background_image: images/part-07.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Page 66
+sort_order: 59
+language: en

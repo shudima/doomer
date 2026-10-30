@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-048
+title: Evaluate outcomes and paths
+text: |-
+  An evaluation combines a task, defined environment, recorded run and graders. Capability suites explore hard tasks; regression suites protect solved behaviour.
+
+  Test components, single turns, conversations, trajectories, final world state and security. Prefer outcome grading when different valid paths can succeed. Retain trajectory checks for approvals, required policy steps, repetition and resource use: these matter regardless of the final answer.
+background_image: images/part-07.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 59-61
+sort_order: 48
+language: en

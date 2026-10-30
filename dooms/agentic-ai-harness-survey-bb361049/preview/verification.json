@@ -1,0 +1,32 @@
+{
+  "reels": 62,
+  "yaml_parser": "PyYAML",
+  "json_schema": "passed",
+  "catalog_loader": "passed",
+  "unique_ids_and_order": "passed",
+  "source_sha256": "bb361049dc447be7ac85130f4d30846a7888bb3d88af85ccc52e3570133da24c",
+  "image_count": 7,
+  "image_dimensions": [
+    1080,
+    1920
+  ],
+  "svg_parse_and_active_content_checks": "passed",
+  "word_count_range": [
+    54,
+    77
+  ],
+  "source_pages_read_and_rendered": 70,
+  "chapters_covered": 24,
+  "app_preview": {
+    "viewport": [
+      390,
+      844
+    ],
+    "fonts": "loaded",
+    "all_card_overflow_check": "passed",
+    "screenshots": [
+      "preview/first-phone.png",
+      "preview/last-phone.png"
+    ]
+  }
+}

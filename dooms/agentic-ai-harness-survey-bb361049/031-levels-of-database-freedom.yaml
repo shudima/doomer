@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-031
+title: Levels of database freedom
+text: |-
+  Structured data can be accessed through reviewed parameterised tools, governed metrics or free-form SQL. More freedom brings more control problems.
+
+  Use fixed tools for common questions and a semantic layer for flexible analytics with shared definitions. Reserve free-form SQL for expert exploration under strong limits. Writes should use business-operation tools with checks, rather than arbitrary model-generated SQL changes.
+background_image: images/part-04.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 42-43
+sort_order: 31
+language: en

@@ -1,0 +1,15 @@
+schema_version: 1
+id: did-the-ai-bubble-just-pop-8236b1f5-011
+title: 'Sponsor: agents work together'
+text: |-
+  In the sponsored closing segment, Fireship presents Hyperagent as a shared agent workspace accessible with an existing ChatGPT plan. For a date-library release, agents triage issues, draft feature pull requests, and write the changelog in parallel.
+
+  Human maintainers join the same room to ask questions, make changes, and approve work. This is the sponsor’s example, not an independent evaluation.
+background_image: images/team.svg
+source_url: https://www.youtube.com/watch?v=nEaJMdM1djM
+source_file: null
+source_title: Did the AI bubble just pop?
+source_type: video
+source_locator: 00:04:27–00:05:18
+sort_order: 11
+language: en

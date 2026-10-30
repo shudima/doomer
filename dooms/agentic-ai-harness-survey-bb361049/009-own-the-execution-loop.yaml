@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-ai-harness-survey-bb361049-009
+title: Own the execution loop
+text: |-
+  An agent repeatedly assembles context, calls the model, executes requested tools and observes results. The harness owns the control points around that cycle.
+
+  Validate tool arguments and referenced objects, apply permissions and approval policy, then execute. Run independent calls in parallel. Append compact results and errors, save state, and check budgets. A response without tool calls is a candidate final answer; verification still needs to decide whether it is ready for the user.
+background_image: images/part-03.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 23-25
+sort_order: 9
+language: en
