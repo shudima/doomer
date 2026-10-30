@@ -224,3 +224,25 @@ def test_email_profile_settings_do_not_require_auth_service_keys():
                         database_url='postgresql://user:password@localhost/db',owner_email='Reader@Example.com',_env_file=None)
     settings.check()
     assert settings.owner_email == 'reader@example.com'
+
+
+def test_reader_receives_source_link_and_locator(client):
+    doom = client.get('/api/topics/alpha').json()['dooms'][0]
+    assert doom['source_type'] == 'article'
+    assert doom['source_url'] == 'https://example.org/source'
+    assert doom['source_locator'] == 'Section: Example'
+
+def test_pdf_source_without_public_url_is_identified(settings):
+    folder = settings.content_dir / 'alpha'
+    (folder / 'source').mkdir()
+    (folder / 'source/original.pdf').write_bytes(b'%PDF-1.4 test fixture')
+    for path in folder.glob('*.yaml'):
+        row = yaml.safe_load(path.read_text())
+        row.update(source_type='pdf', source_url=None, source_file='source/original.pdf', source_locator='Pages 4-5')
+        path.write_text(yaml.safe_dump(row))
+    with TestClient(create_app(settings)) as client:
+        doom = client.get('/api/topics/alpha').json()['dooms'][0]
+        assert doom['source_type'] == 'pdf'
+        assert doom['source_url'] is None
+        assert doom['source_locator'] == 'Pages 4-5'
+        assert 'source_file' not in doom

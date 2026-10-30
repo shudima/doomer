@@ -28,3 +28,11 @@ Browser verification: the email form opened the actual reader immediately, a pag
 - Finished topics remain searchable, visibly marked Finished, and retain the original completion state. The feed header and explorer show completed topics out of the full total.
 - All 21 backend tests and 9 frontend tests pass, with strict TypeScript and production build checks. API regressions cover idempotent completion, all topics finished, profile isolation and cross-device restoration of finished summaries/counts.
 - An isolated browser preview at 393×730 verified finishing a topic, immediate 1/14 count updates, all 14 topics remaining listed, finding the finished topic via search, and persistence after reload. Live user completion records were not changed during these tests.
+
+
+## Compact reader — October 30, 2026
+
+- A single header shows the full topic title, original source link (or PDF label), current section/page/timestamp and one accessible doom counter. The API now returns each doom's source type and URL; local source paths remain private.
+- Removed duplicate in-card topic attribution, chapter number, bottom source credit and navigation footer. The next-doom arrow floats within the existing right margin. The feed uses the full remaining height with safe-area padding; long cards retain natural scrolling. Topic completion totals remain in the explorer.
+- 23 backend tests and 9 frontend tests pass, including article-link and local-PDF attribution contracts. Production TypeScript/Vite build passes.
+- Browser checks at 420×912, 393×730 and 393×600 covered the exact article/doom 17 of 19 from the user's screenshot, full-text reachability on a short viewport, correct progress restoration and next-doom counter/section updates. PDF page attribution and keyboard topic switching were also checked. No live profile progress was used for these checks.

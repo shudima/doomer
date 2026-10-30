@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { CSSProperties, FormEvent, TouchEvent } from 'react';
-import { ArrowDown, ArrowRight, BookOpen, Check, CheckCheck, ChevronDown, CircleCheck, Heart, LoaderCircle, LogOut, Mail, MoreHorizontal, RefreshCw, Shuffle, Sparkles, ThumbsDown, WifiOff, X } from 'lucide-react';
+import type { FormEvent, TouchEvent } from 'react';
+import { ArrowDown, ArrowRight, Check, CheckCheck, CircleCheck, ExternalLink, Heart, LoaderCircle, MoreHorizontal, RefreshCw, ThumbsDown, WifiOff, X } from 'lucide-react';
 import { api, ApiError, clearImages, imageFor, setProfileId } from './api';
 import type { Config, Doom, Library, Reaction, Topic, TopicSummary } from './api';
 import { isTopicSwipe, pickTopic, visibleDoomIndex } from './feed';
@@ -327,7 +327,15 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
         <button className="icon-button menu-button" aria-label="Explore topics" onClick={showExplorer}><MoreHorizontal size={23} /></button>
       </div>
     </header>
-    <div className="feed-heading"><span><Sparkles size={13} /> For your mind</span><span className="collection-count" aria-label={`${library?.finished_count ?? 0} of ${library?.total_topics ?? 0} topics finished`}>{library?.finished_count ?? 0} / {library?.total_topics ?? 0} FINISHED</span></div>
+    <section className="topic-context" aria-label="Current topic">
+      {topic && current ? <>
+        <div className="topic-context-copy">
+          <div className="topic-context-title">{topic.title}</div>
+          <SourceReference doom={current} />
+        </div>
+        <div className="doom-number" aria-label={`Doom ${position + 1} of ${topic.count}`}><b>{position + 1}</b><span>/</span>{topic.count}</div>
+      </> : <span className="topic-context-title">Your topic library</span>}
+    </section>
     {loadError ? <section className="centered feed-state"><WifiOff size={30} /><h1>A small interruption.</h1><p>{loadError}</p><button className="primary" onClick={() => void loadFeed()}>Try again <RefreshCw size={16} /></button><button className="text-button" onClick={onChangeEmail}>Change email</button></section> :
      loading ? <section className="centered feed-state"><Orbit /><p className="muted">Finding your next good idea…</p></section> :
      !topic ? <section className="centered feed-state empty"><div className="empty-mark"><CheckCheck size={35} /></div><div className="eyebrow">A LITTLE ROOM TO THINK</div><h1>{library?.total_topics ? 'All caught up.' : 'Good ideas are on their way.'}</h1><p>{library?.total_topics ? 'You’ve finished every topic in your feed. Come back when there’s something new to get lost in.' : 'Your feed will be here when your first topic is added.'}</p><button className="text-button" onClick={() => void loadFeed()}>Check for new topics <RefreshCw size={14} /></button></section> :
@@ -341,12 +349,9 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
          <div className="rail-divider" />
          <button className="rail-button finish" onClick={() => setFinishDialog(true)} disabled={actionBusy} aria-label="Finish this topic"><span><CircleCheck size={24} strokeWidth={1.6} /></span><small>Finish</small></button>
        </aside>
+       <button className="next-doom" aria-label={position === topic.count-1 ? 'Finish topic' : 'Next doom'} onClick={nextDoom} disabled={actionBusy}><ArrowDown size={18} /></button>
        <div className="read-progress" aria-hidden="true"><span style={{width:`${((position+1)/topic.count)*100}%`}} /></div>
      </section>}
-    <footer className="footer">
-      <button className="topic-switch" onClick={() => void anotherTopic()} disabled={loading || !topic || actionBusy}><Shuffle size={16} /><span>Another topic</span><span className="swipe-note">swipe either way</span><ArrowRight size={14} /></button>
-      <button className="next-doom" aria-label={topic && position === topic.count-1 ? 'Finish topic' : 'Next doom'} onClick={nextDoom} disabled={loading || !topic}><ArrowDown size={18} /></button>
-    </footer>
     {toast && <div className="toast" role="status"><Check size={15} /><span>{toast}</span></div>}
     {finishDialog && topic && <Modal title="Ready to close this chapter?" onClose={() => !actionBusy && setFinishDialog(false)}>
       <div className="sheet-symbol"><CircleCheck size={28} /></div><div className="eyebrow">FINISH TOPIC</div><h2>Ready to close<br /><em>this chapter?</em></h2>
@@ -367,6 +372,14 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
   </main>;
 }
 
+function SourceReference({ doom }: { doom: Doom }) {
+  const url = doom.source_url ? new URL(doom.source_url) : null;
+  return <div className="topic-context-source">
+    <span>Source: {url ? <a href={url.href} target="_blank" rel="noopener noreferrer">{url.hostname.replace(/^www\./, '')}<ExternalLink size={10} aria-hidden="true" /></a> : doom.source_type === 'pdf' ? 'PDF' : 'Original source'}</span>
+    <span aria-hidden="true">·</span><span className="topic-context-locator">{doom.source_locator}</span>
+  </div>;
+}
+
 function DoomCard({ doom, topic, active }: { doom:Doom; topic:Topic; active:boolean }) {
   const [background, setBackground] = useState('');
   useEffect(() => {
@@ -377,14 +390,11 @@ function DoomCard({ doom, topic, active }: { doom:Doom; topic:Topic; active:bool
   return <article className="doom-card" lang={doom.language} dir={/^(he|ar|fa|ur)(-|$)/.test(doom.language) ? 'rtl' : 'ltr'} aria-label={`Doom ${doom.sort_order} of ${topic.count}: ${doom.title}`}>
     {background && <img className="card-art" src={background} alt="" draggable={false} />}
     <div className="card-shade" />
-    <div className="card-topline"><span className="topic-label"><BookOpen size={12} /><span className="topic-label-text" title={topic.title}>{topic.title}</span></span><span className="doom-number"><b>{String(doom.sort_order).padStart(2,'0')}</b><span>/</span>{String(topic.count).padStart(2,'0')}</span></div>
     <div className="reading-content">
-      <div className="chapter-mark" aria-hidden="true"><span />{String(doom.sort_order).padStart(2,'0')}</div>
       <h1 className={doom.title.length > 42 ? 'long-title' : ''}>{doom.title}<span className="title-dot">.</span></h1>
       <div className="prose">{doom.text.split(/\n\s*\n/).map((paragraph,index) => <p key={index}>{paragraph}</p>)}</div>
       {doom.sort_order === topic.count && <p className="end-note"><CheckCheck size={13} /> Last doom in this topic. Finish whenever you’re ready.</p>}
     </div>
-    <div className="source-credit"><span className="source-icon"><BookOpen size={15} /></span><div><span>FROM THE SOURCE</span><p>{topic.title}</p><small>{doom.source_locator}</small></div></div>
   </article>;
 }
 

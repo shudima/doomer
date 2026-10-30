@@ -182,6 +182,7 @@ def create_app(settings: Settings | None = None, engine=None):
                                                                                  Reaction.doom_id.in_([d['id'] for d in topic.dooms])))}
         rows = [{'id':d['id'], 'title':d['title'], 'text':d['text'], 'sort_order':d['sort_order'],
                  'language':d['language'], 'source_locator':d['source_locator'],
+                 'source_type':d['source_type'], 'source_url':d['source_url'],
                  'image_url':f"/api/topics/{topic.id}/images/{d['sort_order']}",
                  'reaction':reactions.get(d['id'])} for d in topic.dooms]
         return {**snapshot(topic, state), 'dooms':rows}

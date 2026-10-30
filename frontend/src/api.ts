@@ -4,7 +4,8 @@ export type Config = {
 export type Reaction = 'like' | 'dislike' | null;
 export type Doom = {
   id: string; title: string; text: string; sort_order: number;
-  language: string; source_locator: string; image_url: string; reaction: Reaction;
+  language: string; source_locator: string; source_type: 'article' | 'video' | 'pdf';
+  source_url: string | null; image_url: string; reaction: Reaction;
 };
 export type TopicSummary = { id: string; title: string; count: number; doom_id: string; position: number; version: number; finished: boolean };
 export type Topic = TopicSummary & { dooms: Doom[] };

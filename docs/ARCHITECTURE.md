@@ -37,3 +37,5 @@ Progress writes use an expected version to prevent stale device state from overw
 The catalog validates YAML, order, source metadata and in-collection assets at startup. New collections become visible on restart/redeploy. Stable collection slugs and doom IDs preserve history. Production state lives outside the application container. The host allowlist includes Render's exact platform hostname and optional explicitly configured custom domains.
 
 The topic explorer keeps finished topics in the searchable library, marked Finished. They remain excluded from random browsing and cannot be reopened by progress writes. `/api/topics` retains unfinished `topics` for feed compatibility and adds `finished_topics` summaries. The feed header and explorer show finished topics out of the complete catalog total.
+
+The reader has one persistent topic/source header with the current doom counter. Original source URLs and locators are returned with doom details. Cards contain the heading and text, while the next-doom control floats in the reserved right margin; no footer limits the reading viewport. Completion totals remain available in the topic explorer.
