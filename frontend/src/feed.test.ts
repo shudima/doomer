@@ -10,10 +10,13 @@ describe('topic navigation', () => {
     expect([0, .4, .9].map(r => pickTopic(topics, undefined, () => r)?.id)).toEqual(['a', 'b', 'c']);
     expect(pickTopic([])).toBeUndefined();
   });
-  it('requires a deliberate right swipe without stealing vertical scroll or left gestures', () => {
+  it('requires a deliberate horizontal swipe in either direction without stealing vertical scroll', () => {
     expect(isTopicSwipe(100, 10, 300)).toBe(true);
     expect(isTopicSwipe(80, 100, 300)).toBe(false);
-    expect(isTopicSwipe(-100, 10, 300)).toBe(false);
+    expect(isTopicSwipe(-100, 10, 300)).toBe(true);
+    expect(isTopicSwipe(-80, 100, 300)).toBe(false);
+    expect(isTopicSwipe(-10, 0, 300)).toBe(false);
+    expect(isTopicSwipe(-100, 0, 2000)).toBe(false);
     expect(isTopicSwipe(10, 0, 300)).toBe(false);
     expect(isTopicSwipe(100, 0, 2000)).toBe(false);
   });

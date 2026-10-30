@@ -302,7 +302,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
   }
   function keyboard(event: React.KeyboardEvent) {
     if (menu || finishDialog || (event.target as HTMLElement).closest('button, input, a')) return;
-    if (event.key === 'ArrowRight') { event.preventDefault(); void anotherTopic(); }
+    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); void anotherTopic(); }
     if (event.key === 'ArrowDown' || event.key === ' ') { event.preventDefault(); nextDoom(); }
     if (event.key === 'ArrowUp' && container.current) { event.preventDefault(); container.current.scrollTo({top:Math.max(0,position-1)*container.current.clientHeight, behavior:'smooth'}); }
   }
@@ -324,7 +324,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
      loading ? <section className="centered feed-state"><Orbit /><p className="muted">Finding your next good idea…</p></section> :
      !topic ? <section className="centered feed-state empty"><div className="empty-mark"><CheckCheck size={35} /></div><div className="eyebrow">A LITTLE ROOM TO THINK</div><h1>{library?.total_topics ? 'All caught up.' : 'Good ideas are on their way.'}</h1><p>{library?.total_topics ? 'You’ve finished every topic in your feed. Come back when there’s something new to get lost in.' : 'Your feed will be here when your first topic is added.'}</p><button className="text-button" onClick={() => void loadFeed()}>Check for new topics <RefreshCw size={14} /></button></section> :
      <section className="reader" aria-label="Doom feed">
-       <div ref={container} className="doom-scroll" data-position={position} onTouchStart={touchStart} onTouchEnd={touchEnd} aria-label="Scroll down for the next doom" tabIndex={0}>
+       <div ref={container} className="doom-scroll" data-position={position} onTouchStart={touchStart} onTouchEnd={touchEnd} onTouchCancel={() => { swipeStart.current = null; }} aria-label="Scroll for dooms; swipe left or right for another topic" tabIndex={0}>
          {topic.dooms.map((doom, index) => <DoomCard key={doom.id} doom={doom} topic={topic} active={Math.abs(index-position) <= 1} />)}
        </div>
        <aside className="action-rail" aria-label="Doom actions">
@@ -336,7 +336,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
        <div className="read-progress" aria-hidden="true"><span style={{width:`${((position+1)/topic.count)*100}%`}} /></div>
      </section>}
     <footer className="footer">
-      <button className="topic-switch" onClick={() => void anotherTopic()} disabled={loading || !topic || actionBusy}><Shuffle size={16} /><span>Another topic</span><span className="swipe-note">swipe right</span><ArrowRight size={14} /></button>
+      <button className="topic-switch" onClick={() => void anotherTopic()} disabled={loading || !topic || actionBusy}><Shuffle size={16} /><span>Another topic</span><span className="swipe-note">swipe either way</span><ArrowRight size={14} /></button>
       <button className="next-doom" aria-label={topic && position === topic.count-1 ? 'Finish topic' : 'Next doom'} onClick={nextDoom} disabled={loading || !topic}><ArrowDown size={18} /></button>
     </footer>
     {toast && <div className="toast" role="status"><Check size={15} /><span>{toast}</span></div>}
@@ -368,7 +368,7 @@ function DoomCard({ doom, topic, active }: { doom:Doom; topic:Topic; active:bool
   return <article className="doom-card" lang={doom.language} dir={/^(he|ar|fa|ur)(-|$)/.test(doom.language) ? 'rtl' : 'ltr'} aria-label={`Doom ${doom.sort_order} of ${topic.count}: ${doom.title}`}>
     {background && <img className="card-art" src={background} alt="" draggable={false} />}
     <div className="card-shade" />
-    <div className="card-topline"><span className="topic-label"><BookOpen size={12} /> THE READING ROOM</span><span className="doom-number"><b>{String(doom.sort_order).padStart(2,'0')}</b><span>/</span>{String(topic.count).padStart(2,'0')}</span></div>
+    <div className="card-topline"><span className="topic-label"><BookOpen size={12} /><span className="topic-label-text" title={topic.title}>{topic.title}</span></span><span className="doom-number"><b>{String(doom.sort_order).padStart(2,'0')}</b><span>/</span>{String(topic.count).padStart(2,'0')}</span></div>
     <div className="reading-content">
       <div className="chapter-mark" aria-hidden="true"><span />{String(doom.sort_order).padStart(2,'0')}</div>
       <h1 className={doom.title.length > 42 ? 'long-title' : ''}>{doom.title}<span className="title-dot">.</span></h1>

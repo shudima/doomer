@@ -28,7 +28,7 @@ Production startup applies Alembic revision 002 to add the mapping table. App re
 
 ## Feed behavior
 
-Opening the app selects a random unfinished topic at its saved doom. New topics start at 1. Vertical scrolling advances within a topic; a deliberate right swipe or the footer button selects another eligible topic. A single remaining topic stays open. All finished topics produce the completed feed state.
+Opening the app selects a random unfinished topic at its saved doom. New topics start at 1. Vertical scrolling advances within a topic; a deliberate left or right swipe or the footer button selects another eligible topic. A single remaining topic stays open. All finished topics produce the completed feed state.
 
 Progress writes use an expected version to prevent stale device state from overwriting a newer position. Finish is idempotent and cannot be cleared by progress writes. Reactions are mutually exclusive and can be removed. Returning to the app refreshes state from the server. Save failures remain visible; no offline write queue is promised.
 

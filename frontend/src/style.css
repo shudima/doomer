@@ -52,3 +52,10 @@
 .explorer-profile>span{font-size:9px;color:#879b7d;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .explorer-profile>button{font-size:9px;color:#afc39a;display:flex;align-items:center;gap:6px;flex-shrink:0;min-height:32px}
 @media(max-height:650px){.sheet.explorer-sheet{height:92dvh;padding-top:31px}.explorer-heading p{margin-bottom:12px}.explorer-sheet .explorer-heading h2{font-size:29px;margin:10px 0 7px}.topic-row{min-height:78px;padding:10px}.explorer-profile{margin-top:8px;padding-top:6px}}
+
+/* Leave room for the actual topic title and keep the doom counter visible. */
+.card-topline{align-items:flex-start;gap:14px}
+.topic-label{flex:1;min-width:0;align-items:flex-start;font-size:10px;letter-spacing:.1px;line-height:1.45}
+.topic-label>svg{flex-shrink:0;margin-top:1px}
+.topic-label-text{min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+.doom-number{flex-shrink:0;padding-top:1px}

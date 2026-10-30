@@ -23,7 +23,7 @@ export PATH="$PWD/.tools/node/bin:$PATH"
 ## Behavior
 
 - Opening the app picks a random unfinished topic. New topics start at doom 1; returning topics resume the current saved doom.
-- Scroll down/up within the topic. Swipe right to choose another unfinished topic, excluding the current one. The footer offers an equivalent button. Keyboard: down/space for next doom, up for previous, right for another topic.
+- Scroll down/up within the topic. Swipe left or right to choose another unfinished topic, excluding the current one. The footer offers an equivalent button. Keyboard: down/space for next doom, up for previous, left/right for another topic.
 - Open the three-dot menu for a searchable topic explorer. Pick a topic directly to resume its saved doom. Finished topics stay excluded.
 - Like and dislike are mutually exclusive reactions to a doom. Tap an active reaction again to remove it. Feedback appears selected after the database confirms the write.
 - Finish applies to the whole topic. A confirmation avoids accidental permanent exclusions. After the server saves it, the topic leaves the feed. Reactions remain saved. There is intentionally no automatic finishing at the final doom.

@@ -4,5 +4,6 @@ export function pickTopic<T extends { id: string }>(topics: T[], exclude?: strin
 }
 
 export function isTopicSwipe(dx: number, dy: number, elapsed: number) {
-  return dx >= 72 && dx > Math.abs(dy) * 1.7 && elapsed < 1100;
+  const horizontal = Math.abs(dx);
+  return horizontal >= 72 && horizontal > Math.abs(dy) * 1.7 && elapsed < 1100;
 }
