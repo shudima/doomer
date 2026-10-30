@@ -1,0 +1,15 @@
+schema_version: 1
+id: controlling-reasoning-effort-1e95bee9-007
+title: Think tags mark a boundary
+text: |-
+  The strings `<think>` and `</think>` separate a reasoning trace from the final answer. They let training pipelines and interfaces identify, display, or hide the two parts.
+
+  The tags themselves do not give a model reasoning ability. Other delimiters could serve the same purpose, and Raschka argues that a model could be trained without them. The useful distinction is between learning a problem-solving behavior and labeling where that behavior appears in the generated response.
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 3. Think tokens'
+sort_order: 7
+language: en

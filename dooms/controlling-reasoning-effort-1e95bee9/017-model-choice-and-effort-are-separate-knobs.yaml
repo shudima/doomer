@@ -1,0 +1,15 @@
+schema_version: 1
+id: controlling-reasoning-effort-1e95bee9-017
+title: Model choice and effort are separate knobs
+text: |-
+  Selecting a different model changes the trained checkpoint. Increasing effort keeps the checkpoint fixed and changes inference-time work. Choosing a model in an interface does not perform new training; it selects among models already trained at different scales.
+
+  The article shows that a smaller model at higher effort can sometimes approach a larger model at lower effort. The overlap is benchmark-specific, so it invites measurement rather than a universal rule about which combination is cheaper or better.
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 5.4 A short note about inference scaling versus training scaling'
+sort_order: 17
+language: en

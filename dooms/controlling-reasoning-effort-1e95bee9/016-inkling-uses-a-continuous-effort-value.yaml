@@ -1,0 +1,15 @@
+schema_version: 1
+id: controlling-reasoning-effort-1e95bee9-016
+title: Inkling uses a continuous effort value
+text: |-
+  Inkling’s report describes specifying effort in the system message during large-scale reinforcement learning while adjusting the cost assigned to each generated token. Higher token costs encourage shorter traces; lower costs leave more room for reasoning.
+
+  Its inference control is a continuous value between zero and one, rather than only low, medium, and high. The report does not reveal the exact reward formula, penalty coefficients, or whether effort conditioning also appeared in supervised fine-tuning.
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 5.3 Inkling case study'
+sort_order: 16
+language: en

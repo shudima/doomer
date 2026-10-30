@@ -1,0 +1,15 @@
+schema_version: 1
+id: controlling-reasoning-effort-1e95bee9-009
+title: Why an off switch matters
+text: |-
+  Early dedicated reasoning models tended to produce long traces even for simple prompts. DeepSeek-R1 did not have a built-in toggle for direct, non-reasoning answers.
+
+  Hybrid models such as Qwen3 put both behaviors in one checkpoint: an extended reasoning response when useful, or a direct answer when requested. “Thinking mode” and “reasoning mode” refer to the same distinction here. The benefit is control over unnecessary work without selecting an entirely different model.
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 4. Reasoning mode on and off switches'
+sort_order: 9
+language: en

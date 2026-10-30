@@ -1,0 +1,15 @@
+schema_version: 1
+id: controlling-reasoning-effort-1e95bee9-024
+title: A fixed budget can teach the wrong habit
+text: |-
+  Training a reasoning model under a consistently tight budget can make it concise while weakening its ability to benefit from additional inference work. Shorter output is useful only if the model retains enough capability to solve the task.
+
+  Kimi K2.5’s Toggle method addresses this by alternating reinforcement-learning phases. One encourages correct solutions within a problem-specific budget. The other restores the normal maximum generation length so longer solutions remain part of learning.
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 6.3.1 Kimi’s Toggle method'
+sort_order: 24
+language: en

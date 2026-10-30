@@ -1,0 +1,15 @@
+schema_version: 1
+id: controlling-reasoning-effort-1e95bee9-008
+title: Formatting is a separate reward
+text: |-
+  A model can receive a correctness reward and a formatting reward at the same time. In the article’s DeepSeek-R1 example, the total reward combines answer accuracy with a rule encouraging reasoning inside the expected tags.
+
+  This teaches a recognizable response structure. It does not make the tags a substitute for the underlying reasoning training. A correctly formatted reasoning block can still contain mistakes, just as a well-formatted final answer can still be wrong.
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 3. Think tokens'
+sort_order: 8
+language: en
