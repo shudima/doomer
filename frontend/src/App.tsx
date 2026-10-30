@@ -5,6 +5,7 @@ import { ArrowDown, ArrowRight, BookOpen, Check, CheckCheck, ChevronDown, Circle
 import { api, ApiError, clearImages, imageFor } from './api';
 import type { Config, Doom, Library, Reaction, Topic, TopicSummary } from './api';
 import { isTopicSwipe, pickTopic } from './feed';
+import { signInErrorMessage } from './auth-errors';
 
 function Orbit({ small = false }: { small?: boolean }) {
   return <span className={`orbit ${small ? 'small' : ''}`} aria-hidden="true"><i /><i /><b /></span>;
@@ -23,7 +24,7 @@ function SignIn({ auth }: { auth: SupabaseClient }) {
       } });
       if (error) throw error;
       setSent(true);
-    } catch { setError('Could not send a sign-in link. Check your email address and try again.'); }
+    } catch (error) { setError(signInErrorMessage(error)); }
     finally { setBusy(false); }
   }
   return <main className="login-shell">
