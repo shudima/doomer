@@ -3,7 +3,7 @@
 The unit displayed by the future app is one YAML file. Scan only `*.yaml` at the root of each collection folder; sort by the integer `sort_order`. Paths in a reel are relative to its collection folder, use `/`, and must stay inside that folder. JSON Schema: [reel.schema.json](reel.schema.json).
 
 ```text
-/home/dima/projects/doomer/dooms/<source-id>/
+/workspace/doomer/dooms/<source-id>/
   001-short-title.yaml
   002-next-idea.yaml
   coverage.md

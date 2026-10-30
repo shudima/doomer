@@ -1,0 +1,18 @@
+schema_version: 1
+id: using-local-coding-agents-9b152c44-004
+title: A model that fits a capable desktop
+text: 'The tutorial centers on Qwen3.6 35B-A3B, a hybrid-attention model whose download is about 22 GB
+  and whose practical memory requirement is roughly 30–40 GB. Raschka reports that it runs comfortably
+  on an M4 Mac Mini and a DGX Spark.
+
+
+  He presents Cohere’s North Mini Code as a strong alternative in the same size class. Qwen Code can also
+  connect to other model families; choosing that harness does not lock you into Qwen.'
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 2. Coding Agent Harness Overview'
+sort_order: 4
+language: en

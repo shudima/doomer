@@ -9,9 +9,9 @@ Convert the supplied source into a browsable collection of **text reels** for th
 
 ## Location and input
 
-The canonical project root is `/home/dima/projects/doomer` in the **Ubuntu WSL distribution**. Write all source collections under `/home/dima/projects/doomer/dooms/`, independent of the shell's current directory or the location of a compatibility copy of this skill. This directory name deliberately uses **dooms**, the user's name for reels.
+The project root in this cloud environment is `/workspace/doomer`. Write all source collections under `/workspace/doomer/dooms/`. This directory name deliberately uses **dooms**, the user's name for reels.
 
-The canonical skill lives at `/home/dima/projects/doomer/.agents/skills/reel-it/`. From Windows, use Ubuntu WSL (`wsl.exe -d Ubuntu -u dima -- ...`) or the equivalent `\\wsl.localhost\Ubuntu\home\dima\projects\doomer` share. Resolve Windows attachments inside WSL through their `/mnt/<drive>/...` paths. Do not create a Windows-side `/home/dima` directory or fall back to the former `C:\Users\dima\Documents\New project\doomer\dooms` output folder. If the canonical project is inaccessible, report the access problem rather than silently saving somewhere else.
+The skill lives at `/workspace/doomer/.agents/skills/reel-it/`. For another checkout, resolve the project root from the directory containing this skill (`.agents/skills/reel-it/`) and use that checkout's `dooms/` directory. Do not require a WSL installation or recreate a machine-specific home directory. If the project root is inaccessible, report the access problem rather than silently saving somewhere else.
 
 Accept a video URL, article/blog URL, or attached PDF. If several sources are supplied, make a separate collection for each unless the user asks to combine them. If no source is supplied, ask for one.
 
@@ -56,4 +56,13 @@ Parse every reel with a real YAML parser and validate against `references/reel.s
 
 If a renderer exists, preview at least one representative reel at phone size. Otherwise inspect the background and text lengths and disclose that app rendering has not been tested. Never claim a visual preview or source access that did not happen.
 
-Return the collection folder, the reel count, a link to the first reel, and any material source-access limitation. Do not ask permission to perform the local creation already requested by "reel it."
+## Commit and push every new collection
+
+After validation and the available preview checks pass, commit and push every new doom collection as part of the reel-it workflow. The user's reel-it request authorizes this publication; do not ask for confirmation again unless the user explicitly requests a local-only run.
+
+- Include every reel YAML, its background assets, `coverage.md`, and any required local source files. Push the complete validated collection together, rather than publishing incomplete reels one at a time.
+- Inspect Git status and stage only the collections created for this request and any skill changes explicitly requested by the user. Leave unrelated edits, scratch files, caches, credentials, and local database state out of the commit.
+- Use a descriptive commit message. Push the current branch to its configured upstream. If it has no upstream, push it to `origin` under the same branch name and set the upstream. Never force-push, switch to another branch, or merge merely to publish a collection.
+- If a push fails, preserve the local work and commit, diagnose the failure, and report the exact blocker. Do not claim publication succeeded until Git confirms the push.
+
+Return the collection folder, the reel count, a link to the first reel, the pushed branch and commit, and any material source-access limitation. Do not ask permission to perform the creation, commit, or push already authorized by "reel it."

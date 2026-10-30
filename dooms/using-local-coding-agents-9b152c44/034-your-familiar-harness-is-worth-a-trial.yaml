@@ -1,0 +1,19 @@
+schema_version: 1
+id: using-local-coding-agents-9b152c44-034
+title: Your familiar harness is worth a trial
+text: 'The article’s small experiments challenge the assumption that an open-weight model must work best
+  in its native harness. If you already know Codex or Claude Code well, connecting a local model there
+  may be a sensible starting point.
+
+
+  Keep the benchmark caveat in view, then test your own tasks. Raschka shares his scripts and problem
+  pack in `rasbt/local-coding-agent-evals` so readers can reproduce and extend the experiments. The final
+  invitation is to tinker, measure, and learn.'
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 13. Conclusion; Further Resources'
+sort_order: 34
+language: en
