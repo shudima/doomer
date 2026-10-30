@@ -1,6 +1,6 @@
 interface:
   display_name: "Reel It"
   short_description: "Turn articles, videos, and PDFs into readable reels"
-  default_prompt: "Use $reel-it to turn this source into a complete collection of readable YAML reels in /home/dima/projects/doomer/dooms/."
+  default_prompt: "Use $reel-it to turn this source into a complete collection of readable YAML reels in /workspace/doomer/dooms/."
 policy:
   allow_implicit_invocation: true
