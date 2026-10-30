@@ -1,11 +1,12 @@
 from functools import lru_cache
 from pathlib import Path
+from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT = Path(__file__).resolve().parent.parent
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=ROOT / '.env', env_prefix='DOOMER_', extra='ignore')
+    model_config = SettingsConfigDict(env_file=ROOT / '.env', env_prefix='DOOMER_', extra='ignore', populate_by_name=True)
     environment: str = 'development'
     auth_mode: str = 'local'
     database_url: str = 'sqlite:///' + str(ROOT / 'data/doomer.db')
@@ -18,6 +19,12 @@ class Settings(BaseSettings):
     frontend_sentry_dsn: str = ''
     release: str = 'development'
     allowed_hosts: str = 'localhost,127.0.0.1,testserver'
+    render_external_hostname: str = Field(default='', validation_alias='RENDER_EXTERNAL_HOSTNAME')
+
+    def trusted_hosts(self) -> list[str]:
+        # Render supplies the service's exact public hostname; no wildcard is needed.
+        values = [*self.allowed_hosts.split(','), self.render_external_hostname]
+        return list(dict.fromkeys(host.strip() for host in values if host.strip()))
 
     def check(self):
         if self.auth_mode not in {'local', 'supabase'}:

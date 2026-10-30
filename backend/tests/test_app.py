@@ -125,3 +125,31 @@ def test_auth_checks_signature_audience_expiry_and_owner(monkeypatch):
         with pytest.raises(HTTPException) as caught:
             verify_token(token({**base,**changes},signing_key), settings)
         assert caught.value.status_code == status
+
+
+def test_render_platform_hostname_is_accepted(settings, monkeypatch):
+    monkeypatch.setenv('RENDER_EXTERNAL_HOSTNAME', 'doomer-b5gn.onrender.com')
+    configured = Settings(**settings.model_dump(exclude={'render_external_hostname'}))
+    with TestClient(create_app(configured)) as deployed:
+        headers = {'host':'doomer-b5gn.onrender.com'}
+        assert deployed.get('/api/config', headers=headers).status_code == 200
+        assert deployed.get('/health/live', headers=headers).status_code == 200
+        assert deployed.get('/health/ready', headers=headers).status_code == 200
+        assert deployed.get('/api/config', headers={'host':'attacker.example'}).status_code == 400
+
+
+def test_render_hostname_works_with_empty_optional_host_list(settings, monkeypatch):
+    monkeypatch.setenv('RENDER_EXTERNAL_HOSTNAME', 'doomer-b5gn.onrender.com')
+    configured = Settings(**{**settings.model_dump(exclude={'render_external_hostname'}), 'allowed_hosts':''})
+    with TestClient(create_app(configured)) as deployed:
+        assert deployed.get('/api/config', headers={'host':'doomer-b5gn.onrender.com'}).status_code == 200
+
+
+def test_custom_host_stays_allowed_without_allowing_arbitrary_hosts(settings, monkeypatch):
+    monkeypatch.setenv('RENDER_EXTERNAL_HOSTNAME', 'doomer-b5gn.onrender.com')
+    configured = Settings(**{**settings.model_dump(exclude={'render_external_hostname'}),
+                             'allowed_hosts':' testserver, read.example.com, '})
+    with TestClient(create_app(configured)) as deployed:
+        assert deployed.get('/api/config', headers={'host':'read.example.com'}).status_code == 200
+        assert deployed.get('/api/config', headers={'host':'doomer-b5gn.onrender.com'}).status_code == 200
+        assert deployed.get('/api/config', headers={'host':'anything.onrender.com'}).status_code == 400

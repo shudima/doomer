@@ -18,8 +18,6 @@ services:
         sync: false
       - key: DOOMER_SUPABASE_PUBLISHABLE_KEY
         sync: false
-      - key: DOOMER_ALLOWED_HOSTS
-        sync: false
       - key: DOOMER_SENTRY_DSN
         sync: false
       - key: DOOMER_FRONTEND_SENTRY_DSN

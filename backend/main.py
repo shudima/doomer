@@ -52,7 +52,7 @@ def create_app(settings: Settings | None = None, engine=None):
     app.state.settings = settings
     app.state.engine = engine
     app.state.session_factory = sessionmaker(engine, expire_on_commit=False)
-    app.add_middleware(TrustedHostMiddleware, allowed_hosts=[h.strip() for h in settings.allowed_hosts.split(',')])
+    app.add_middleware(TrustedHostMiddleware, allowed_hosts=settings.trusted_hosts())
     if settings.sentry_dsn:
         import sentry_sdk
         sentry_sdk.init(dsn=settings.sentry_dsn, environment=settings.environment, release=settings.release,

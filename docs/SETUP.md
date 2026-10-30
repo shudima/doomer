@@ -42,12 +42,12 @@ Enter the dashboard environment variables:
 | `DOOMER_OWNER_EMAIL` | Exactly the owner's verified Supabase email |
 | `DOOMER_SUPABASE_URL` | Project HTTPS URL, without `/auth/v1` |
 | `DOOMER_SUPABASE_PUBLISHABLE_KEY` | Publishable key; never the service-role key |
-| `DOOMER_ALLOWED_HOSTS` | Exact Render hostname, e.g. `doomer-example.onrender.com`; add your custom hostname separated by commas if used. No scheme or slash. |
+| `DOOMER_ALLOWED_HOSTS` | Optional comma-separated custom hostnames. Render's own hostname is detected automatically from `RENDER_EXTERNAL_HOSTNAME`. No scheme or slash. |
 | `DOOMER_SENTRY_DSN` | Optional backend Sentry DSN; leave empty to disable |
 | `DOOMER_FRONTEND_SENTRY_DSN` | Optional separate browser Sentry DSN; leave empty to disable |
 | `DOOMER_RELEASE` | Optional release ID/commit; default is the code's development label until set |
 
-If a hostname is assigned after the first attempt, update `DOOMER_ALLOWED_HOSTS` to the actual hostname and redeploy. Do not use `*` as a shortcut. The Render health-check Host header must match an allowed hostname.
+The default Render URL works without setting `DOOMER_ALLOWED_HOSTS`. Add that variable only for additional custom hostnames, such as `read.example.com`. Host checking still rejects unrelated domains; the app does not add an `*.onrender.com` wildcard.
 
 Startup runs `alembic upgrade head` before Uvicorn. The service reads `PORT` from Render. A failed migration or missing production configuration stops startup. Readiness checks both database access and the application table. The initial content is packaged from `dooms/` during the Docker build.
 
