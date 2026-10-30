@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import type { SupabaseClient } from '@supabase/supabase-js';
 import '@fontsource/dm-sans/latin-400.css';
 import '@fontsource/dm-sans/latin-500.css';
 import '@fontsource/dm-sans/latin-600.css';
 import '@fontsource/newsreader/latin-400.css';
 import { App } from './App';
-import { api, setTokenProvider } from './api';
+import { api, setProfileId } from './api';
+import { readProfile } from './profile';
 import type { Config } from './api';
 import './style.css';
 
@@ -22,13 +22,7 @@ class Boundary extends React.Component<{children:React.ReactNode}, {failed:boole
 
 async function boot() {
   const config = await api<Config>('/api/config');
-  let auth: SupabaseClient | null = null;
-  if (config.auth_mode === 'supabase') {
-    const { createClient } = await import('@supabase/supabase-js');
-    auth = createClient(config.supabase_url, config.supabase_publishable_key);
-    const client = auth;
-    setTokenProvider(async () => (await client.auth.getSession()).data.session?.access_token);
-  }
+  setProfileId(readProfile()?.profile_id ?? '');
   if (config.sentry_dsn) {
     const Sentry = await import('@sentry/react');
     Sentry.init({ dsn: config.sentry_dsn, release: config.release,
@@ -37,7 +31,7 @@ async function boot() {
   }
   ReactDOM.createRoot(document.getElementById('root')!).render(
     <Boundary>
-      <App config={config} auth={auth} />
+      <App config={config} />
     </Boundary>
   );
 }

@@ -20,6 +20,6 @@ COPY scripts/start.sh scripts/start.sh
 RUN groupadd --gid 10001 app && useradd --uid 10001 --gid app --no-create-home app && chmod +x scripts/start.sh && chown -R app:app /app
 USER app
 ENV PATH="/app/.venv/bin:$PATH"
-ENV DOOMER_ENVIRONMENT=production DOOMER_AUTH_MODE=supabase
+ENV DOOMER_ENVIRONMENT=production DOOMER_AUTH_MODE=email
 EXPOSE 8000
 CMD ["sh", "scripts/start.sh"]

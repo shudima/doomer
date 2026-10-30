@@ -8,7 +8,7 @@ Render supervises the application process, restarts unhealthy services and retai
 - `/health/ready`: database is reachable, state schema exists and the content catalog loaded. Use this for deployment readiness and an external uptime monitor.
 - Optional Sentry DSNs activate backend and frontend error reporting. Personal data collection is disabled by default; frontend user fields are removed. No session replay is configured. Configure an error alert and an uptime alert to your preferred destination in the provider dashboards.
 
-Do not send secrets or database credentials into logs. Render's dashboard owns production environment values; the browser receives only public auth configuration and its own bearer token.
+Do not send secrets or database credentials into logs. Render's dashboard owns production environment values. The browser receives an unverified profile identifier; it is not a password or bearer credential.
 
 ## Backups and recovery
 
@@ -30,8 +30,8 @@ Review dependency updates monthly and when a relevant security advisory appears.
 
 Alembic revisions belong in `backend/migrations/versions/`. Use additive changes when possible. Back up before a destructive migration. Rolling back an app deployment does not automatically roll back a database migration; maintain compatibility or restore a verified database copy.
 
-To investigate a failed deployment, inspect the startup/migration logs and `/health/ready`. For a sign-in failure, verify the allowed redirect URL, active JWT signing key, owner email and mail-provider logs. For a 409 progress conflict, use the app's Retry action to restore the latest saved position. For failed saves, restore connectivity and retry before closing the page.
+To investigate a failed deployment, inspect the startup/migration logs and `/health/ready`. For an email-profile setup failure, check the configured owner email, PostgreSQL connectivity and whether Alembic revision 002 ran. There is no mail provider or authentication redirect in this flow. For a 409 progress conflict, use the app's Retry action to restore the latest saved position. For failed saves, restore connectivity and retry before closing the page.
 
 ## Operational limits
 
-This first release has no offline write queue, web sockets, administrator UI or content upload endpoint. It is designed for one authenticated owner with synchronized state. Signing out removes in-memory reader content and image object URLs; signed-in sessions are maintained by Supabase. Reactions, progress and completion live in PostgreSQL after hosted setup, not browser-only storage.
+This release has no offline write queue, web sockets, administrator UI or content upload endpoint. Email profiles intentionally do not verify identity. Anyone entering the configured email can use that profile. Changing the remembered email clears local reader state and image object URLs, while saved progress, reactions and completion stay in PostgreSQL. Backend routes scope data to a profile identifier but do not provide account authentication.

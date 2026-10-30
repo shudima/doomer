@@ -1,32 +1,13 @@
 # Verification
 
-Verified locally on October 30, 2026.
+Email-only profile update checked on October 30, 2026.
 
-## Automated checks
+- 21 backend tests pass, including normalized email identity, configured-owner matching, profile isolation, progress/reaction/completion restoration on another device, and continuity with a previous verified owner's state.
+- 6 frontend tests pass, including remembering, clearing and rejecting malformed device profile data, and topic/swipe navigation.
+- Strict TypeScript checking and the production frontend build pass.
+- Email link requests, Supabase Auth SDK and JWT verification dependencies have been removed.
+- Legacy Render auth-mode values map to the explicitly requested email-only flow. No new dashboard variable is required for the existing service.
 
-- 12 backend tests pass: saved-position restoration, backward progress, process restart, stale-device conflict handling, cross-topic validation, reaction replacement/removal, idempotent completion and exclusion, per-user isolation, unknown/traversal paths, protected endpoints, production-mode safeguards, missing content assets, and signed JWT validation cases.
-- 3 frontend tests pass: topic eligibility, random selection coverage and deliberate directional swipe recognition.
-- Strict TypeScript checking and the Vite production build pass.
-- Application migrations successfully create the initial schema in an isolated SQLite database.
-- Production npm dependency audit reports no known vulnerabilities at verification time.
+Earlier checks verified mobile layouts at iPhone Air dimensions, per-topic restoration, reaction replacement and persistent Finish behavior. Physical iPhone Safari testing and provider backup restore rehearsal remain separate checks.
 
-## Browser checks
-
-- Opened the actual built React app served by FastAPI with the real survey collection.
-- Revalidated the catalog after two additional collections appeared: 3 real topics, 117 dooms. All three packages pass catalog validation.
-- Inspected at 420 x 912 (iPhone Air logical layout) and 420 x 780 (shorter browser viewport).
-- Measured all 44 rendered cards at both sizes: reader content does not overlap source information.
-- Next-doom navigation advances the card, saves the position and restores it after reload.
-- Like survives reload; dislike replaces it rather than activating both reactions.
-- Switching with only one unfinished topic keeps that topic visible with an explanatory message.
-- With two separate QA collections, switching to a new topic starts at doom 1 and returning restores doom 2. These fixtures live under ignored test data, not the real content library.
-- Finish confirmation works in a separate preview database. The completed topic remains absent after a page reload and the all-caught-up state appears.
-- Inspected the email sign-in UI with test-only configuration without sending emails. Email delivery remains a hosted setup check.
-
-## Outstanding environment checks
-
-Live Supabase email delivery, a real hosted PostgreSQL database, external cross-device sync, managed backups and Render deployment require the user's new service accounts and configuration. They have not been claimed as live.
-
-The local Docker engine was unavailable at the time of verification. The Dockerfile and hosting blueprint are provided, but a full container image build and containerized PostgreSQL test have not been completed. The local app itself builds and runs without Docker.
-
-Viewport testing used the desktop browser at mobile dimensions, not a physical iPhone running Safari. Safe-area spacing and standalone metadata are implemented; a physical-device check belongs in the hosted setup steps. No offline-write capability is claimed.
+Browser verification: the email form opened the actual reader immediately, a page reload restored the remembered profile without prompting, and Change email returned to the setup form. No sign-in emails were requested. Alembic upgraded an existing revision-001 SQLite test database to revision 002 successfully.

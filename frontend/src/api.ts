@@ -1,6 +1,5 @@
 export type Config = {
-  auth_mode: 'local' | 'supabase'; supabase_url: string;
-  supabase_publishable_key: string; sentry_dsn: string; release: string;
+  auth_mode: 'local' | 'email'; sentry_dsn: string; release: string;
 };
 export type Reaction = 'like' | 'dislike' | null;
 export type Doom = {
@@ -14,13 +13,12 @@ export type Library = { topics: TopicSummary[]; total_topics: number; finished_c
 export class ApiError extends Error {
   constructor(public status: number, message: string) { super(message); }
 }
-let getToken: () => Promise<string | undefined> = async () => undefined;
-export function setTokenProvider(fn: typeof getToken) { getToken = fn; }
+let profileId = '';
+export function setProfileId(value: string) { profileId = value; }
 export async function api<T>(url: string, init: RequestInit = {}): Promise<T> {
-  const token = await getToken();
   const response = await fetch(url, {
     ...init, headers: { ...(init.body ? { 'Content-Type': 'application/json' } : {}),
-      ...(token ? { Authorization: `Bearer ${token}` } : {}), ...init.headers },
+      ...(profileId ? { 'X-Doomer-Profile': profileId } : {}), ...init.headers },
     cache: 'no-store',
   });
   if (!response.ok) {
@@ -34,8 +32,7 @@ const images = new Map<string, Promise<string>>();
 export function imageFor(url: string): Promise<string> {
   if (!images.has(url)) {
     const promise = (async () => {
-      const token = await getToken();
-      const response = await fetch(url, { headers: token ? { Authorization: `Bearer ${token}` } : {}, cache: 'no-store' });
+      const response = await fetch(url, { headers: profileId ? { 'X-Doomer-Profile': profileId } : {}, cache: 'no-store' });
       if (!response.ok) throw new Error('Image unavailable');
       return URL.createObjectURL(await response.blob());
     })();

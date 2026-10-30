@@ -7,6 +7,11 @@ from .settings import get_settings
 class Base(DeclarativeBase):
     metadata = MetaData(schema='doomer')
 
+class EmailProfile(Base):
+    __tablename__ = 'email_profile'
+    email_hash: Mapped[str] = mapped_column(String(64), primary_key=True)
+    user_id: Mapped[str] = mapped_column(String(128), unique=True)
+
 class TopicState(Base):
     __tablename__ = 'topic_state'
     user_id: Mapped[str] = mapped_column(String(128), primary_key=True)

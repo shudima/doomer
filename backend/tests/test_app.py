@@ -3,13 +3,11 @@ from pathlib import Path
 from types import SimpleNamespace
 import json
 import shutil
-import jwt
 import pytest
 import yaml
-from cryptography.hazmat.primitives.asymmetric import ec
 from fastapi import HTTPException
 from fastapi.testclient import TestClient
-from backend.auth import Identity, get_identity, verify_token
+from backend.auth import Identity, get_identity
 from backend.catalog import Catalog
 from backend.main import create_app
 from backend.settings import ROOT, Settings
@@ -90,8 +88,7 @@ def test_unknown_and_traversal_paths_fail(client):
     assert client.get('/%2e%2e/AGENTS.md').status_code == 404
 
 def test_private_endpoints_require_auth(settings):
-    configured = settings.model_copy(update={'auth_mode':'supabase', 'owner_email':'owner@example.org',
-                         'supabase_url':'https://project.supabase.co', 'supabase_publishable_key':'publishable-test'})
+    configured = settings.model_copy(update={'auth_mode':'email', 'owner_email':'owner@example.org'})
     with TestClient(create_app(configured)) as private:
         assert private.get('/api/topics').status_code == 401
         assert private.get('/api/topics/alpha/images/1').status_code == 401
@@ -100,31 +97,15 @@ def test_private_endpoints_require_auth(settings):
         assert private.get('/health/live').status_code == 200
 
 def test_production_cannot_use_preview_auth_or_ephemeral_sqlite(settings):
-    with pytest.raises(ValueError,match='authentication'):
+    with pytest.raises(ValueError,match='email profiles'):
         create_app(settings.model_copy(update={'environment':'production'}))
     with pytest.raises(ValueError,match='PostgreSQL'):
-        create_app(settings.model_copy(update={'environment':'production','auth_mode':'supabase'}))
+        create_app(settings.model_copy(update={'environment':'production','auth_mode':'email'}))
 
 def test_catalog_rejects_missing_assets(settings):
     (settings.content_dir/'alpha/images/bg.svg').unlink()
     with pytest.raises(FileNotFoundError):
         Catalog(settings.content_dir)
-
-def test_auth_checks_signature_audience_expiry_and_owner(monkeypatch):
-    key = ec.generate_private_key(ec.SECP256R1())
-    other_key = ec.generate_private_key(ec.SECP256R1())
-    monkeypatch.setattr('backend.auth.jwks_client',lambda url:SimpleNamespace(get_signing_key_from_jwt=lambda token:SimpleNamespace(key=key.public_key())))
-    settings = Settings(auth_mode='supabase', owner_email='owner@example.org',supabase_url='https://project.supabase.co',supabase_publishable_key='test')
-    now = datetime.now(timezone.utc)
-    base = {'sub':'owner-id', 'email':'owner@example.org','role':'authenticated','iat':now,'exp':now+timedelta(hours=1),
-            'aud':'authenticated','iss':'https://project.supabase.co/auth/v1'}
-    token = lambda claims, signing_key=key:jwt.encode(claims,signing_key,algorithm='ES256',headers={'kid':'test'})
-    assert verify_token(token(base),settings).id == 'owner-id'
-    for changes, signing_key, status in [({'email':'stranger@example.org'},key,403),({'aud':'other'},key,401),
-           ({'exp':now-timedelta(minutes=1)},key,401),({},other_key,401),({'iss':'https://attacker.example'},key,401)]:
-        with pytest.raises(HTTPException) as caught:
-            verify_token(token({**base,**changes},signing_key), settings)
-        assert caught.value.status_code == status
 
 
 def test_render_platform_hostname_is_accepted(settings, monkeypatch):
@@ -153,3 +134,78 @@ def test_custom_host_stays_allowed_without_allowing_arbitrary_hosts(settings, mo
         assert deployed.get('/api/config', headers={'host':'read.example.com'}).status_code == 200
         assert deployed.get('/api/config', headers={'host':'doomer-b5gn.onrender.com'}).status_code == 200
         assert deployed.get('/api/config', headers={'host':'anything.onrender.com'}).status_code == 400
+
+def email_client(settings, owner='reader@example.com'):
+    configured = settings.model_copy(update={'auth_mode':'email','owner_email':owner})
+    return TestClient(create_app(configured))
+
+def test_email_profile_needs_no_code_or_email_delivery(settings):
+    with email_client(settings) as client:
+        first = client.post('/api/profile', json={'email':' Reader@Example.com '})
+        assert first.status_code == 200
+        profile = first.json()
+        assert profile['email'] == 'reader@example.com'
+        headers = {'X-Doomer-Profile':profile['profile_id']}
+        assert client.get('/api/topics',headers=headers).status_code == 200
+        same = client.post('/api/profile',json={'email':'reader@example.com'}).json()
+        assert same == profile
+        assert client.get('/api/config').json()['auth_mode'] == 'email'
+        assert 'supabase_publishable_key' not in client.get('/api/config').json()
+
+def test_email_profiles_restore_progress_reactions_and_completion_on_another_device(settings):
+    with email_client(settings) as first:
+        profile = first.post('/api/profile',json={'email':'reader@example.com'}).json()
+        headers = {'X-Doomer-Profile':profile['profile_id']}
+        assert first.put('/api/topics/alpha/progress',headers=headers,json={'doom_id':'alpha-002','expected_version':0}).status_code == 200
+        first.put('/api/dooms/alpha-002/reaction',headers=headers,json={'value':'like'})
+        first.post('/api/topics/beta/finish',headers=headers)
+    with email_client(settings) as second:
+        profile2 = second.post('/api/profile',json={'email':'READER@example.com'}).json()
+        assert profile2 == profile
+        headers2 = {'X-Doomer-Profile':profile2['profile_id']}
+        detail = second.get('/api/topics/alpha',headers=headers2).json()
+        assert detail['position'] == 1
+        assert detail['dooms'][1]['reaction'] == 'like'
+        assert [t['id'] for t in second.get('/api/topics',headers=headers2).json()['topics']] == ['alpha']
+
+def test_email_setup_rejects_invalid_and_unconfigured_addresses(settings):
+    with email_client(settings) as client:
+        assert client.post('/api/profile',json={'email':'wrong@example.com'}).status_code == 403
+        assert client.post('/api/profile',json={'email':'not-an-email'}).status_code == 422
+        assert client.get('/api/topics',headers={'X-Doomer-Profile':'0'*64}).status_code == 403
+
+def test_different_emails_have_separate_progress_when_owner_is_not_restricted(settings):
+    with email_client(settings,owner='') as client:
+        a = client.post('/api/profile',json={'email':'one@example.com'}).json()
+        b = client.post('/api/profile',json={'email':'two@example.com'}).json()
+        assert a['profile_id'] != b['profile_id']
+        client.post('/api/topics/alpha/finish',headers={'X-Doomer-Profile':a['profile_id']})
+        assert len(client.get('/api/topics',headers={'X-Doomer-Profile':a['profile_id']}).json()['topics']) == 1
+        assert len(client.get('/api/topics',headers={'X-Doomer-Profile':b['profile_id']}).json()['topics']) == 2
+
+def test_email_setup_retains_existing_verified_owner_history(settings):
+    from backend.db import Reaction, TopicState
+    previous_id = '8aa9898a-5436-4339-b49c-4a38e65248ff'
+    with email_client(settings) as client:
+        with client.app.state.session_factory() as session:
+            session.add(TopicState(user_id=previous_id,topic_id='alpha',doom_id='alpha-002',version=7))
+            session.add(Reaction(user_id=previous_id,doom_id='alpha-002',value='like'))
+            session.commit()
+        profile = client.post('/api/profile',json={'email':'reader@example.com'}).json()
+        headers = {'X-Doomer-Profile':profile['profile_id']}
+        detail = client.get('/api/topics/alpha',headers=headers).json()
+        assert detail['position'] == 1
+        assert detail['version'] == 7
+        assert detail['dooms'][1]['reaction'] == 'like'
+        assert client.get('/api/topics',headers=headers).json()['user_id'] == previous_id
+
+def test_old_render_mode_value_maps_to_the_requested_email_only_flow():
+    settings = Settings(auth_mode='supabase',owner_email='reader@example.com',_env_file=None)
+    assert settings.auth_mode == 'email'
+    settings.check()
+
+def test_email_profile_settings_do_not_require_auth_service_keys():
+    settings = Settings(environment='production',auth_mode='email',
+                        database_url='postgresql://user:password@localhost/db',owner_email='Reader@Example.com',_env_file=None)
+    settings.check()
+    assert settings.owner_email == 'reader@example.com'

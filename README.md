@@ -1,6 +1,6 @@
 # Doomer
 
-A private, phone-first feed of source-backed text reels. Built in `/home/dima/projects/doomer` with React, TypeScript and FastAPI.
+A phone-first feed of source-backed text reels with unverified email profiles. Built in `/home/dima/projects/doomer` with React, TypeScript and FastAPI.
 
 ## Run on this computer
 
@@ -11,7 +11,7 @@ sh scripts/dev.sh
 
 Open [http://localhost:8000](http://localhost:8000). The script installs project-local tooling if needed, installs locked dependencies, builds the UI and starts the API on loopback. Stop with Ctrl+C.
 
-The local preview stores state in `data/doomer.db` using SQLite and shows **Saved locally**. It does not send emails or sync to another device. Do not expose preview mode to the internet. The hosted configuration requires authentication and PostgreSQL; it refuses to start with preview authentication in production.
+The local preview stores state in `data/doomer.db` using SQLite and shows **Saved locally**. It does not send emails or sync to another device. Do not expose preview mode to the internet. Hosted state uses PostgreSQL and an email profile selected once on each device. This is an unverified profile label, not authentication. Local-preview bypass mode remains development-only.
 
 For UI development, run the backend command below. In a second shell export the same project-local Node path, change to `frontend/` and run `npm run dev`. Vite proxies API calls to the backend.
 
@@ -33,13 +33,13 @@ At initial verification the library contains **3 real topics and 117 dooms**: th
 
 ## Deployment and operation
 
-Follow [the setup guide](docs/SETUP.md) to configure managed hosting, private email sign-in, PostgreSQL and backups. See [architecture](docs/ARCHITECTURE.md), [maintenance](docs/OPERATIONS.md) and [verification](docs/VERIFICATION.md).
+Follow [the setup guide](docs/SETUP.md) to configure managed hosting, email profiles, PostgreSQL and backups. See [architecture](docs/ARCHITECTURE.md), [maintenance](docs/OPERATIONS.md) and [verification](docs/VERIFICATION.md).
 
 ## Project layout
 
 ```text
-frontend/       React + TypeScript; mobile reader, sign-in and touch navigation
-backend/        FastAPI; authentication, catalog, database state and health checks
+frontend/       React + TypeScript; mobile reader, email setup and touch navigation
+backend/        FastAPI; profile identity, catalog, database state and health checks
 backend/tests/  Persistence, authorization and data-integrity tests
 dooms/          Original YAML collections, backgrounds and preserved sources
 .agents/        reel-it skill and the shared content schema
@@ -60,3 +60,7 @@ npm run build
 ```
 
 Both dependency sets are locked: `uv.lock` and `frontend/package-lock.json`. The GitHub Actions workflow runs tests and builds before deployment. No application secrets belong in Git.
+
+## Email-only profiles
+
+Enter your email once and start reading immediately. No email is sent. Each device remembers the selected profile. The same email shares saved progress across devices. Anyone who enters that address can access the profile; there is no verification step. Supabase may still supply PostgreSQL, but Supabase Auth is no longer used. See docs/SETUP.md for current environment variables.

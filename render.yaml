@@ -9,14 +9,10 @@ services:
       - key: DOOMER_ENVIRONMENT
         value: production
       - key: DOOMER_AUTH_MODE
-        value: supabase
+        value: email
       - key: DOOMER_DATABASE_URL
         sync: false
       - key: DOOMER_OWNER_EMAIL
-        sync: false
-      - key: DOOMER_SUPABASE_URL
-        sync: false
-      - key: DOOMER_SUPABASE_PUBLISHABLE_KEY
         sync: false
       - key: DOOMER_SENTRY_DSN
         sync: false

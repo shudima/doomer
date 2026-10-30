@@ -13,13 +13,17 @@ from typing import Literal
 from sqlalchemy import delete, func, select, text, update
 from sqlalchemy.orm import Session, sessionmaker
 from starlette.middleware.trustedhost import TrustedHostMiddleware
-from .auth import Identity, get_identity
+from .auth import Identity, email_hash, get_identity, normalize_email
 from .catalog import Catalog
-from .db import Base, Reaction, TopicState, get_db, insert_for, make_engine
+from .db import Base, EmailProfile, Reaction, TopicState, get_db, insert_for, make_engine
 from .settings import Settings, get_settings
 
 log = logging.getLogger('doomer')
 logging.basicConfig(level=logging.INFO, format='%(message)s')
+
+class ProfileBody(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    email: str = Field(min_length=3, max_length=254)
 
 class ProgressBody(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -40,7 +44,7 @@ def create_app(settings: Settings | None = None, engine=None):
 
     @asynccontextmanager
     async def lifespan(app):
-        if settings.auth_mode == 'local':
+        if settings.environment == 'development':
             Base.metadata.create_all(engine)  # Production schema changes use Alembic, never create_all.
         app.state.catalog = Catalog(settings.content_dir)
         yield
@@ -76,7 +80,7 @@ def create_app(settings: Settings | None = None, engine=None):
         response.headers['Referrer-Policy'] = 'no-referrer'
         response.headers['X-Frame-Options'] = 'DENY'
         response.headers['Permissions-Policy'] = 'camera=(), microphone=(), geolocation=()'
-        connects = "'self' " + settings.supabase_url
+        connects = "'self'"
         if settings.frontend_sentry_dsn:
             connects += ' https://' + (urlparse(settings.frontend_sentry_dsn).hostname or '')
         response.headers['Content-Security-Policy'] = f"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self'; connect-src {connects}; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
@@ -98,15 +102,45 @@ def create_app(settings: Settings | None = None, engine=None):
             with engine.connect() as conn:
                 conn.execute(text('SELECT 1'))
                 conn.execute(select(TopicState.user_id).limit(1))
+                conn.execute(select(EmailProfile.email_hash).limit(1))
             return {'status':'ok', 'topics':len(app.state.catalog.topics)}
         except Exception:
             return JSONResponse({'status':'unavailable'}, status_code=503)
 
     @app.get('/api/config')
     def config():
-        return {'auth_mode':settings.auth_mode, 'supabase_url':settings.supabase_url,
-                'supabase_publishable_key':settings.supabase_publishable_key,
-                'sentry_dsn':settings.frontend_sentry_dsn, 'release':settings.release}
+        return {'auth_mode':settings.auth_mode, 'sentry_dsn':settings.frontend_sentry_dsn, 'release':settings.release}
+
+    @app.post('/api/profile')
+    def set_profile(body: ProfileBody, db: Session = Depends(get_db)):
+        try:
+            email = normalize_email(body.email)
+        except ValueError as error:
+            raise HTTPException(422, str(error))
+        if settings.owner_email and email != settings.owner_email:
+            raise HTTPException(403, 'Use the email configured for this Doomer.')
+        profile_id = email_hash(email)
+        profile = db.get(EmailProfile, profile_id)
+        if profile is None:
+            user_id = 'email:' + profile_id
+            # Preserve a single existing verified owner's history on first profile creation.
+            # Original progress/reaction rows are retained and never deleted or rewritten.
+            if settings.owner_email:
+                from uuid import UUID
+                ids = set(db.scalars(select(TopicState.user_id).union(select(Reaction.user_id))))
+                legacy = []
+                for candidate in ids:
+                    try:
+                        UUID(candidate)
+                        legacy.append(candidate)
+                    except (ValueError, TypeError):
+                        pass
+                if len(legacy) == 1 and db.scalar(select(EmailProfile.email_hash).where(EmailProfile.user_id == legacy[0])) is None:
+                    user_id = legacy[0]
+            stmt = insert_for(db, EmailProfile, {'email_hash':profile_id, 'user_id':user_id})
+            db.execute(stmt.on_conflict_do_nothing(index_elements=['email_hash']))
+            db.commit()
+        return {'profile_id':profile_id, 'email':email}
 
     def topic_or_404(topic_id):
         topic = app.state.catalog.topics.get(topic_id)

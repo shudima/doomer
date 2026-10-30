@@ -1,30 +1,26 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { CSSProperties, FormEvent, TouchEvent } from 'react';
-import type { Session, SupabaseClient } from '@supabase/supabase-js';
 import { ArrowDown, ArrowRight, BookOpen, Check, CheckCheck, ChevronDown, CircleCheck, Heart, LoaderCircle, LogOut, Mail, MoreHorizontal, RefreshCw, Shuffle, Sparkles, ThumbsDown, WifiOff, X } from 'lucide-react';
-import { api, ApiError, clearImages, imageFor } from './api';
+import { api, ApiError, clearImages, imageFor, setProfileId } from './api';
 import type { Config, Doom, Library, Reaction, Topic, TopicSummary } from './api';
 import { isTopicSwipe, pickTopic } from './feed';
-import { signInErrorMessage } from './auth-errors';
+import { readProfile, saveProfile } from './profile';
+import type { Profile } from './profile';
 
 function Orbit({ small = false }: { small?: boolean }) {
   return <span className={`orbit ${small ? 'small' : ''}`} aria-hidden="true"><i /><i /><b /></span>;
 }
 
-function SignIn({ auth }: { auth: SupabaseClient }) {
+function EmailSetup({ onContinue }: { onContinue: (profile: Profile) => void }) {
   const [email, setEmail] = useState('');
-  const [sent, setSent] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   async function submit(event: FormEvent) {
     event.preventDefault(); setBusy(true); setError('');
     try {
-      const { error } = await auth.auth.signInWithOtp({ email: email.trim(), options: {
-        shouldCreateUser: false, emailRedirectTo: location.origin + '/',
-      } });
-      if (error) throw error;
-      setSent(true);
-    } catch (error) { setError(signInErrorMessage(error)); }
+      const profile = await api<Profile>('/api/profile', {method:'POST', body:JSON.stringify({email})});
+      onContinue(profile);
+    } catch (error) { setError(error instanceof Error ? error.message : 'Could not open your profile. Please try again.'); }
     finally { setBusy(false); }
   }
   return <main className="login-shell">
@@ -33,35 +29,32 @@ function SignIn({ auth }: { auth: SupabaseClient }) {
     <section className="login-content">
       <div className="eyebrow"><span className="live-dot" /> A BETTER KIND OF SCROLL</div>
       <h1>A little less noise.<br /><em>A little more knowing.</em></h1>
-      <p>Big ideas, one small read at a time.<br />Your place in every topic, always kept.</p>
-      {sent ? <div className="mail-card" role="status"><Mail size={24} /><h2>Check your inbox.</h2><p>Open the sign-in link sent to <strong>{email}</strong> on this device.</p><button className="text-button" onClick={() => setSent(false)}>Use a different email <ArrowRight size={15} /></button></div> :
-        <form onSubmit={submit}>
-          <label htmlFor="email">YOUR EMAIL</label>
-          <input id="email" type="email" autoComplete="email" inputMode="email" placeholder="you@example.com" value={email} onChange={e => setEmail(e.target.value)} required />
-          <button className="primary" disabled={busy}>{busy ? <LoaderCircle className="spin" size={19} /> : <>Send me a sign-in link <ArrowRight size={18} /></>}</button>
-          {error && <p className="form-error" role="alert">{error}</p>}
-        </form>}
-      <p className="private-note">A private space. No passwords. Just you.</p>
+      <p>Set your email to keep your place.<br />Use the same email on every device.</p>
+      <form onSubmit={submit}>
+        <label htmlFor="email">YOUR EMAIL</label>
+        <input id="email" type="email" autoComplete="email" inputMode="email" placeholder="you@example.com" value={email} onChange={e => setEmail(e.target.value)} required />
+        <button className="primary" disabled={busy}>{busy ? <LoaderCircle className="spin" size={19} /> : <>Start reading <ArrowRight size={18} /></>}</button>
+        {error && <p className="form-error" role="alert">{error}</p>}
+      </form>
+      <p className="private-note">No sign-in links. No email will be sent.</p>
     </section>
   </main>;
 }
 
-export function App({ config, auth }: { config: Config; auth: SupabaseClient | null }) {
-  const [session, setSession] = useState<Session | null>(null);
-  const [ready, setReady] = useState(!auth);
-  useEffect(() => {
-    if (!auth) return;
-    auth.auth.getSession().then(({ data, error }) => { if (!error) setSession(data.session); setReady(true); });
-    const { data } = auth.auth.onAuthStateChange((_event, next) => { setSession(next); setReady(true); });
-    return () => data.subscription.unsubscribe();
-  }, [auth]);
-  if (!ready) return <main className="centered"><Orbit /><span className="muted">Opening your feed…</span></main>;
-  if (auth && !session) return <SignIn auth={auth} />;
-  return <Reader key={session?.user.id ?? 'local'} config={config} auth={auth} />;
+export function App({ config }: { config: Config }) {
+  const [profile, setProfile] = useState<Profile | null>(() => readProfile());
+  function useProfile(next: Profile) {
+    saveProfile(next); setProfileId(next.profile_id); setProfile(next);
+  }
+  function resetProfile() {
+    clearImages(); saveProfile(null); setProfileId(''); setProfile(null);
+  }
+  if (config.auth_mode !== 'local' && !profile) return <EmailSetup onContinue={useProfile} />;
+  return <Reader key={profile?.profile_id ?? 'local'} config={config} profile={profile} onChangeEmail={resetProfile} />;
 }
 
 type SaveState = 'saved' | 'saving' | 'error';
-function Reader({ config, auth }: { config: Config; auth: SupabaseClient | null }) {
+function Reader({ config, profile, onChangeEmail }: { config: Config; profile: Profile | null; onChangeEmail: () => void }) {
   const [library, setLibrary] = useState<Library | null>(null);
   const [topic, setTopic] = useState<Topic | null>(null);
   const [position, setPosition] = useState(0);
@@ -294,7 +287,7 @@ function Reader({ config, auth }: { config: Config; auth: SupabaseClient | null 
       </div>
     </header>
     <div className="feed-heading"><span><Sparkles size={13} /> For your mind</span><span className="collection-count">{String(library?.topics.length ?? 0).padStart(2,'0')} TOPIC{library?.topics.length === 1 ? '' : 'S'}</span></div>
-    {loadError ? <section className="centered feed-state"><WifiOff size={30} /><h1>A small interruption.</h1><p>{loadError}</p><button className="primary" onClick={() => void loadFeed()}>Try again <RefreshCw size={16} /></button>{auth && <button className="text-button" onClick={() => void auth.auth.signOut()}>Sign out</button>}</section> :
+    {loadError ? <section className="centered feed-state"><WifiOff size={30} /><h1>A small interruption.</h1><p>{loadError}</p><button className="primary" onClick={() => void loadFeed()}>Try again <RefreshCw size={16} /></button><button className="text-button" onClick={onChangeEmail}>Change email</button></section> :
      loading ? <section className="centered feed-state"><Orbit /><p className="muted">Finding your next good idea…</p></section> :
      !topic ? <section className="centered feed-state empty"><div className="empty-mark"><CheckCheck size={35} /></div><div className="eyebrow">A LITTLE ROOM TO THINK</div><h1>{library?.total_topics ? 'All caught up.' : 'Good ideas are on their way.'}</h1><p>{library?.total_topics ? 'You’ve finished every topic in your feed. Come back when there’s something new to get lost in.' : 'Your feed will be here when your first topic is added.'}</p><button className="text-button" onClick={() => void loadFeed()}>Check for new topics <RefreshCw size={14} /></button></section> :
      <section className="reader" aria-label="Doom feed">
@@ -324,9 +317,9 @@ function Reader({ config, auth }: { config: Config; auth: SupabaseClient | null 
       <Orbit /><div className="eyebrow">YOUR SPACE</div><h2>A better kind<br /><em>of scroll.</em></h2>
       <div className="space-stats"><div><b>{library?.topics.length ?? 0}</b><span>open topics</span></div><div><b>{library?.finished_count ?? 0}</b><span>finished</span></div></div>
       <p>Scroll down to keep reading. Swipe right for another topic. Your place in each one is kept.</p>
-      {config.auth_mode === 'local' && <p className="preview-note">Local preview · saved on this computer. Email sign-in and cross-device sync activate when hosting is configured.</p>}
+      {config.auth_mode === 'local' && <p className="preview-note">Local preview · saved on this computer. Email profiles and cross-device sync activate when hosting is configured.</p>}
       <button className="text-button" onClick={() => { setMenu(false); void loadFeed(); }}>Find something to read <Shuffle size={15} /></button>
-      {auth && <button className="text-button muted" onClick={async () => { try { await flushProgress(); clearImages(); await auth.auth.signOut(); } catch { notify('Save your place before signing out.'); } }}><LogOut size={15} /> Sign out</button>}
+      {profile && <><p className="profile-email">{profile.email}</p><button className="text-button muted" onClick={async () => { try { await flushProgress(); onChangeEmail(); } catch { notify('Save your place before changing email.'); } }}><LogOut size={15} /> Change email</button></>}
     </Modal>}
   </main>;
 }
