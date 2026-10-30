@@ -1,0 +1,15 @@
+schema_version: 1
+id: "ai-era-sdlc-survey-6223bf11-010"
+title: "Treat context as maintained infrastructure"
+text: |-
+  Context engineering means curating what a model sees: instructions, examples, relevant files and tool results. Repository rules files such as AGENTS.md hold conventions; reusable skills capture recurring workflows. MCP connects agents to tools and data. Retrieval can bring relevant material into a task when needed.
+
+  The survey recommends versioning and reviewing this context like code. More context is not automatically better: irrelevant material consumes the context window and can weaken the signal an agent needs.
+background_image: "images/foundation.svg"
+source_url: null
+source_file: "source/original.pdf"
+source_title: "The Software Development Life Cycle in the AI Era"
+source_type: "pdf"
+source_locator: "Pages 4-5: Glossary; page 7: Cross-cutting principles"
+sort_order: 10
+language: "en"

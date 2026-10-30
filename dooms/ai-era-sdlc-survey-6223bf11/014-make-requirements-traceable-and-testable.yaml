@@ -1,0 +1,15 @@
+schema_version: 1
+id: "ai-era-sdlc-survey-6223bf11-014"
+title: "Make requirements traceable and testable"
+text: |-
+  Spec-driven development puts requirements, design and tasks into a reviewed, versioned specification before implementation. The survey gives Spec Kit and Kiro as examples. Given/When/Then or EARS templates make expected behavior explicit enough to test.
+
+  Start with real user research and link requirements to evidence. Ask AI to find ambiguity, conflicting needs and missing privacy, accessibility or latency constraints. Keep the specification short and synchronized with code; a polished document without user evidence is a weak foundation.
+background_image: "images/plan.svg"
+source_url: null
+source_file: "source/original.pdf"
+source_title: "The Software Development Life Cycle in the AI Era"
+source_type: "pdf"
+source_locator: "Pages 8-9: Requirements gathering"
+sort_order: 14
+language: "en"

@@ -1,0 +1,15 @@
+schema_version: 1
+id: "ai-era-sdlc-survey-6223bf11-042"
+title: "Days 61-90: scale with feedback"
+text: |-
+  The survey's final month builds a shared skills library, defaults agents to sandboxes and introduces small-change limits and stacked pull requests. Sprint plans account for reviewers. Teams pilot an incident investigation agent and mutation-test critical modules.
+
+  An AI retrospective should update context files and working practices. Exit criteria focus on lower lead time with change failure rate flat or improved, a visible recovery-time trend and a second baseline review. Scaling earns its place through delivery and reliability evidence.
+background_image: "images/plan.svg"
+source_url: null
+source_file: "source/original.pdf"
+source_title: "The Software Development Life Cycle in the AI Era"
+source_type: "pdf"
+source_locator: "Page 24: A 90-day adoption roadmap, third phase"
+sort_order: 42
+language: "en"

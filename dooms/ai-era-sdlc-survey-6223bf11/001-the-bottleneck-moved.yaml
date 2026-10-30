@@ -1,0 +1,15 @@
+schema_version: 1
+id: "ai-era-sdlc-survey-6223bf11-001"
+title: "The bottleneck moved"
+text: |-
+  AI can make code cheap to produce while leaving valuable software expensive to deliver. This survey of the software development lifecycle argues that the constraint increasingly sits in review, testing, security and human understanding.
+
+  Its playbook starts before generation: write intent, provide useful context and build verification capacity. Teams with strong engineering systems can amplify their advantages. Teams with weak systems can amplify their problems just as quickly.
+background_image: "images/flow.svg"
+source_url: null
+source_file: "source/original.pdf"
+source_title: "The Software Development Life Cycle in the AI Era"
+source_type: "pdf"
+source_locator: "Page 3: Executive summary"
+sort_order: 1
+language: "en"

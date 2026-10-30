@@ -1,0 +1,15 @@
+schema_version: 1
+id: "ai-era-sdlc-survey-6223bf11-023"
+title: "Protect human attention in review"
+text: |-
+  The survey suggests capping pull-request size, with around 400 lines as an example, and splitting work into stacked changes. A human-written explanation of why the change exists helps reviewers evaluate its purpose. Authors should also identify AI-generated portions.
+
+  For sensitive paths such as authentication, payments and personal data, the survey recommends two human reviewers. AI reviewing AI can share blind spots. Small changes and clear rationale help counter the automation bias that turns review into rubber-stamping.
+background_image: "images/quality.svg"
+source_url: null
+source_file: "source/original.pdf"
+source_title: "The Software Development Life Cycle in the AI Era"
+source_type: "pdf"
+source_locator: "Page 16: Code review practices and pitfalls"
+sort_order: 23
+language: "en"

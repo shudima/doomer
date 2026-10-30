@@ -1,0 +1,15 @@
+schema_version: 1
+id: "ai-era-sdlc-survey-6223bf11-031"
+title: "Calibrate the model judging the model"
+text: |-
+  An LLM judge needs a rubric and comparison with human labels. The survey recommends binary pass/fail decisions with critiques, then measuring precision and recall against human assessments. Domain experts should help decide what quality means.
+
+  Track task success, safety and efficiency separately rather than compressing them into one average. Repeat non-deterministic evaluations and report variation. Judge-model changes can shift scores, and generic ratings disconnected from real failures can create confidence without improving the product.
+background_image: "images/quality.svg"
+source_url: null
+source_file: "source/original.pdf"
+source_title: "The Software Development Life Cycle in the AI Era"
+source_type: "pdf"
+source_locator: "Page 20: Evaluations, judge calibration and dimensions"
+sort_order: 31
+language: "en"

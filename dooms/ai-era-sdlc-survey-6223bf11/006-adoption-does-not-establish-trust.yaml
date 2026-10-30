@@ -1,0 +1,15 @@
+schema_version: 1
+id: "ai-era-sdlc-survey-6223bf11-006"
+title: "Adoption does not establish trust"
+text: |-
+  The survey reports that Stack Overflow's 2025 study of about 49,000 developers found 84% using or planning to use AI. Yet 46% distrusted its accuracy, up from 31%. It also reports 31% using agents and only 17% saying agents improved team collaboration.
+
+  These figures describe different aspects of adoption. High usage can coexist with low confidence and limited team benefit. The survey argues that verification practices earn trust more effectively than mandates to use a tool.
+background_image: "images/measure.svg"
+source_url: null
+source_file: "source/original.pdf"
+source_title: "The Software Development Life Cycle in the AI Era"
+source_type: "pdf"
+source_locator: "Pages 3 and 6: Stack Overflow 2025 survey"
+sort_order: 6
+language: "en"

@@ -1,0 +1,15 @@
+schema_version: 1
+id: "ai-era-sdlc-survey-6223bf11-018"
+title: "A ticket is an executable brief"
+text: |-
+  When an agent takes a ticket to a pull request, ticket quality shapes implementation quality. The survey recommends context, goal, acceptance criteria, non-goals, relevant files, a test plan and a clear definition of done.
+
+  Useful pointers beat generic prose: include a failing test, logs, an example change or a source specification. Readiness checks can catch missing scope and evidence. Keep ticket, spec and pull request linked, deduplicate automated reports and treat ticket bodies and comments as untrusted input.
+background_image: "images/plan.svg"
+source_url: null
+source_file: "source/original.pdf"
+source_title: "The Software Development Life Cycle in the AI Era"
+source_type: "pdf"
+source_locator: "Pages 12-13: Ticket creation"
+sort_order: 18
+language: "en"
