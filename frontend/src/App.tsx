@@ -6,6 +6,7 @@ import type { Config, Doom, Library, Reaction, Topic, TopicSummary } from './api
 import { isTopicSwipe, pickTopic } from './feed';
 import { readProfile, saveProfile } from './profile';
 import type { Profile } from './profile';
+import { TopicExplorer } from './TopicExplorer';
 
 function Orbit({ small = false }: { small?: boolean }) {
   return <span className={`orbit ${small ? 'small' : ''}`} aria-hidden="true"><i /><i /><b /></span>;
@@ -63,6 +64,9 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
   const [toast, setToast] = useState('');
   const [saveState, setSaveState] = useState<SaveState>('saved');
   const [menu, setMenu] = useState(false);
+  const [explorerBusy, setExplorerBusy] = useState(false);
+  const [explorerError, setExplorerError] = useState('');
+  const [openingTopicId, setOpeningTopicId] = useState<string | null>(null);
   const [finishDialog, setFinishDialog] = useState(false);
   const [actionBusy, setActionBusy] = useState(false);
   const [online, setOnline] = useState(navigator.onLine);
@@ -225,6 +229,35 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
     } catch (error) { if (!pending.current) notify(error instanceof Error ? error.message : 'Could not switch topics.'); }
   }
 
+  async function refreshExplorer() {
+    setExplorerBusy(true); setExplorerError('');
+    try {
+      await flushProgress();
+      const latest = await api<Library>('/api/topics');
+      setLibrary(latest);
+    } catch (error) {
+      setExplorerError(error instanceof Error ? error.message : 'Could not refresh topics.');
+    } finally { setExplorerBusy(false); }
+  }
+
+  function showExplorer() {
+    setMenu(true);
+    void refreshExplorer();
+  }
+
+  async function selectTopic(summary: TopicSummary) {
+    if (openingTopicId || loading || transition.current) return;
+    setOpeningTopicId(summary.id); setExplorerError('');
+    try {
+      await openTopic(summary);
+      setMenu(false);
+    } catch (error) {
+      setLoadError('');
+      setExplorerError(error instanceof Error ? error.message : 'Could not open this topic.');
+      if (error instanceof ApiError && error.status === 410) void refreshExplorer();
+    } finally { setOpeningTopicId(null); }
+  }
+
   async function reaction(value: Exclude<Reaction, null>) {
     if (!topic || actionBusy) return;
     const doom = topic.dooms[position];
@@ -283,7 +316,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
           {!online ? <WifiOff size={12} /> : saveState === 'saving' ? <LoaderCircle className="spin" size={12} /> : saveState === 'error' ? <RefreshCw size={12} /> : <span className="live-dot" />}
           <span>{saveState === 'error' ? 'Retry save' : !online ? 'Offline' : saveState === 'saving' ? 'Saving' : config.auth_mode === 'local' ? 'Saved locally' : 'Synced'}</span>
         </button>
-        <button className="icon-button menu-button" aria-label="Open your space" onClick={() => setMenu(true)}><MoreHorizontal size={23} /></button>
+        <button className="icon-button menu-button" aria-label="Explore topics" onClick={showExplorer}><MoreHorizontal size={23} /></button>
       </div>
     </header>
     <div className="feed-heading"><span><Sparkles size={13} /> For your mind</span><span className="collection-count">{String(library?.topics.length ?? 0).padStart(2,'0')} TOPIC{library?.topics.length === 1 ? '' : 'S'}</span></div>
@@ -313,13 +346,14 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
       <button className="primary" onClick={() => void finishTopic()} disabled={actionBusy}>{actionBusy ? <LoaderCircle className="spin" size={18} /> : <>Finish topic <CheckCheck size={19} /></>}</button>
       <button className="text-button" onClick={() => setFinishDialog(false)} disabled={actionBusy}>Keep reading</button>
     </Modal>}
-    {menu && <Modal title="Your space" onClose={() => setMenu(false)}>
-      <Orbit /><div className="eyebrow">YOUR SPACE</div><h2>A better kind<br /><em>of scroll.</em></h2>
-      <div className="space-stats"><div><b>{library?.topics.length ?? 0}</b><span>open topics</span></div><div><b>{library?.finished_count ?? 0}</b><span>finished</span></div></div>
-      <p>Scroll down to keep reading. Swipe right for another topic. Your place in each one is kept.</p>
-      {config.auth_mode === 'local' && <p className="preview-note">Local preview · saved on this computer. Email profiles and cross-device sync activate when hosting is configured.</p>}
-      <button className="text-button" onClick={() => { setMenu(false); void loadFeed(); }}>Find something to read <Shuffle size={15} /></button>
-      {profile && <><p className="profile-email">{profile.email}</p><button className="text-button muted" onClick={async () => { try { await flushProgress(); onChangeEmail(); } catch { notify('Save your place before changing email.'); } }}><LogOut size={15} /> Change email</button></>}
+    {menu && <Modal title="Explore topics" className="explorer-sheet" onClose={() => !openingTopicId && setMenu(false)}>
+      <TopicExplorer topics={library?.topics ?? []} currentId={topic?.id} currentPosition={position}
+        refreshing={explorerBusy} openingId={openingTopicId} disabled={loading || explorerBusy}
+        error={explorerError} email={profile?.email} onSelect={summary => void selectTopic(summary)}
+        onRefresh={() => void refreshExplorer()} onChangeEmail={async () => {
+          try { await flushProgress(); onChangeEmail(); }
+          catch { setExplorerError('Save your place before changing email.'); }
+        }} />
     </Modal>}
   </main>;
 }
@@ -345,7 +379,7 @@ function DoomCard({ doom, topic, active }: { doom:Doom; topic:Topic; active:bool
   </article>;
 }
 
-function Modal({title, onClose, children}: {title:string; onClose:()=>void; children:React.ReactNode}) {
+function Modal({title, onClose, children, className = ''}: {title:string; onClose:()=>void; children:React.ReactNode; className?:string}) {
   const box = useRef<HTMLDivElement>(null);
   const close = useRef(onClose); close.current = onClose;
   useEffect(() => {
@@ -363,5 +397,5 @@ function Modal({title, onClose, children}: {title:string; onClose:()=>void; chil
     document.addEventListener('keydown', handler);
     return () => { document.removeEventListener('keydown', handler); previous?.focus(); };
   }, []);
-  return <div className="modal-backdrop" onClick={onClose}><section ref={box} role="dialog" aria-modal="true" aria-label={title} className="sheet" tabIndex={-1} onClick={e => e.stopPropagation()}><div className="sheet-handle" /><button className="icon-button sheet-close" aria-label="Close dialog" onClick={onClose}><X size={19} /></button>{children}</section></div>;
+  return <div className="modal-backdrop" onClick={onClose}><section ref={box} role="dialog" aria-modal="true" aria-label={title} className={`sheet ${className}`} tabIndex={-1} onClick={e => e.stopPropagation()}><div className="sheet-handle" /><button className="icon-button sheet-close" aria-label="Close dialog" onClick={onClose}><X size={19} /></button>{children}</section></div>;
 }
