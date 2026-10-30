@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-engineering-beyond-vibe-coding-4871572b-004
+title: Vibe coding favors exploration
+text: |-
+  In the presenter’s framing, vibe coding means describing intent in natural language and iteratively shaping the result. The developer spends more effort on creative direction and less on manually implementing each line.
+
+  That makes it useful for quick experiments and prototypes. Its place on the spectrum reflects a change in how work is directed, with important engineering questions still waiting beyond the first working result.
+background_image: images/decision.svg
+source_url: https://www.youtube.com/watch?v=FgaBdwSvOGM&list=WL&index=25
+source_file: null
+source_title: 'Agentic Engineering vs Software Engineering: Beyond Vibe Coding'
+source_type: video
+source_locator: 00:04:07–00:04:34
+sort_order: 4
+language: en

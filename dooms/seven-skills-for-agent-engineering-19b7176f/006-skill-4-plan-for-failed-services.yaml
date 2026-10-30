@@ -1,0 +1,15 @@
+schema_version: 1
+id: seven-skills-for-agent-engineering-19b7176f-006
+title: 'Skill 4: plan for failed services'
+text: |-
+  Agents call APIs, and APIs can fail or time out. An agent can wait indefinitely or repeat the same unsuccessful request unless the system defines another path.
+
+  The presenter recommends familiar reliability tools: retries with backoff, timeouts, fallback options and circuit breakers. Backend engineers already know much of this playbook. The model’s intelligence does not remove the failure modes of the services it depends on.
+background_image: images/flow.svg
+source_url: https://www.youtube.com/watch?v=mtiOK2QG9Q0&list=WL&index=24
+source_file: null
+source_title: The 7 Skills You Need to Build AI Agents
+source_type: video
+source_locator: 00:06:53–00:08:21
+sort_order: 6
+language: en

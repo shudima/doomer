@@ -1,0 +1,15 @@
+schema_version: 1
+id: building-reliable-agent-skills-e874358e-001
+title: A skill teaches a particular procedure
+text: |-
+  An agent already knows many general facts. A skill supplies a particular way to perform a particular job: procedural knowledge the model would not otherwise have about your work.
+
+  The format can be simple, with a SKILL.md file inside a folder. The value comes from what that folder teaches, rather than from repeating familiar advice the model could have produced without it.
+background_image: images/layers.svg
+source_url: https://www.youtube.com/watch?v=qYNs80FKIVc&list=WL&index=23
+source_file: null
+source_title: 5 Best Practices for Building AI Agent Skills
+source_type: video
+source_locator: 00:00:00–00:00:47
+sort_order: 1
+language: en

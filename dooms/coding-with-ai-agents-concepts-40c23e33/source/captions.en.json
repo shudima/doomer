@@ -1,0 +1,517 @@
+[
+  {
+    "text": "Just recently, I was talking to a software engineer and made conversation.",
+    "start": 0.03,
+    "duration": 3.66
+  },
+  {
+    "text": "He stops to check his phone, approve a code change and continue talking.",
+    "start": 3.77,
+    "duration": 4.4
+  },
+  {
+    "text": "It turns out he had multiple agents running in the background for all of the different roles that you would typically have on a team.",
+    "start": 8.71,
+    "duration": 6.78
+  },
+  {
+    "text": "So he had a developer, a code reviewer, an operations and many, many more.",
+    "start": 15.99,
+    "duration": 6.579
+  },
+  {
+    "text": "And turns out this guy wasn't a software engineer by trade, he was actually a pilot.",
+    "start": 22.93,
+    "duration": 4.3
+  },
+  {
+    "text": "So when people keep asking whether AI will replace developers, I always say no.",
+    "start": 28.04,
+    "duration": 4.84
+  },
+  {
+    "text": "I've actually seen more people get into coding because of AI.",
+    "start": 33.18,
+    "duration": 3.16
+  },
+  {
+    "text": "But what AI will do is change what software development looks like.",
+    "start": 36.9,
+    "duration": 4.679
+  },
+  {
+    "text": "And in this video, I'll break down five key concepts that you need to know in order to prepare.",
+    "start": 41.84,
+    "duration": 6.619
+  },
+  {
+    "text": "And trust me, the last one is the most important.",
+    "start": 48.92,
+    "duration": 2.399
+  },
+  {
+    "text": "So stay tuned.",
+    "start": 51.4,
+    "duration": 1.039
+  },
+  {
+    "text": "So first off is the inflection point.",
+    "start": 53.04,
+    "duration": 2.06
+  },
+  {
+    "text": "And let me explain what that means.",
+    "start": 55.12,
+    "duration": 1.479
+  },
+  {
+    "text": "Because over the past year.",
+    "start": 56.6,
+    "duration": 1.399
+  },
+  {
+    "text": "Me and my team have all started to say the same thing,",
+    "start": 58.44,
+    "duration": 2.992
+  },
+  {
+    "text": "that AI is able to complete tasks that typically would have taken us weeks, if not months, now in just a few minutes.",
+    "start": 61.432,
+    "duration": 7.548
+  },
+  {
+    "text": "And I used to use AI as an autocomplete in order to help me write better functions and tests,",
+    "start": 69.5,
+    "duration": 6.56
+  },
+  {
+    "text": "but I would often spend more time fixing AI output if I had just written it myself.",
+    "start": 76.06,
+    "duration": 6.159
+  },
+  {
+    "text": "Now we just commonly assign entire features to AI.",
+    "start": 83.16,
+    "duration": 4.259
+  },
+  {
+    "text": "Coding agents, such as not just writing the code, but also understanding the code base and what's happening inside,",
+    "start": 87.71,
+    "duration": 8.96
+  },
+  {
+    "text": "writing and running those tests,",
+    "start": 96.67,
+    "duration": 3.089
+  },
+  {
+    "text": "and merging those changes into the actual code base, all from a single prompt or loop that can define when this agent should finish.",
+    "start": 99.759,
+    "duration": 8.87
+  },
+  {
+    "text": "And speaking of defining when the agent should finish, instead of doing all of this via prompts.",
+    "start": 109.33,
+    "duration": 5.32
+  },
+  {
+    "text": "Which can be interpreted differently by different types of coding models and having to argue with the AI in order to get the right output.",
+    "start": 115.29,
+    "duration": 9.84
+  },
+  {
+    "text": "What we typically now see is an approach that's known as spec-driven development,",
+    "start": 125.63,
+    "duration": 5.224
+  },
+  {
+    "text": "where by creating this specification of the requirements and all the outcomes that we would like to see with the software project,",
+    "start": 130.854,
+    "duration": 7.618
+  },
+  {
+    "text": "we can then send that off to the AI coding agent and model.",
+    "start": 138.472,
+    "duration": 4.557
+  },
+  {
+    "text": "In order for us to create this project and its artifacts.",
+    "start": 143.37,
+    "duration": 3.74
+  },
+  {
+    "text": "Next is the shift from implementing to conducting.",
+    "start": 148.17,
+    "duration": 2.7
+  },
+  {
+    "text": "Because I mentioned earlier that I don't think developers are going to disappear, but the priorities are definitely changing.",
+    "start": 151.19,
+    "duration": 5.899
+  },
+  {
+    "text": "And that's because for decades, the biggest bottleneck to taking code and shipping that was one,",
+    "start": 157.25,
+    "duration": 6.32
+  },
+  {
+    "text": "how fast you could write that code, and two, how high quality that code output was.",
+    "start": 163.57,
+    "duration": 5.36
+  },
+  {
+    "text": "And companies would hire who they thought were the best competitive programmers or who could complete the most complex programming tasks.",
+    "start": 169.43,
+    "duration": 7.73
+  },
+  {
+    "text": "And the thing is, now most AI models already know programming languages like, say for example, Java, or Python, or Rust.",
+    "start": 177.86,
+    "duration": 8.959
+  },
+  {
+    "text": "And they're able to take those languages that they're very proficient in and complete tasks.",
+    "start": 187.36,
+    "duration": 5.619
+  },
+  {
+    "text": "Say, for example tickets that are coming in from the team and take that.",
+    "start": 193.48,
+    "duration": 3.939
+  },
+  {
+    "text": "And be able to move that to staging, production, QA, and much more.",
+    "start": 197.7,
+    "duration": 3.82
+  },
+  {
+    "text": "And so if this can already be done with AI, the implementing phase, well, then what becomes important for developers?",
+    "start": 201.98,
+    "duration": 5.82
+  },
+  {
+    "text": "That, my friends, is being a conductor, a captain,",
+    "start": 208.56,
+    "duration": 3.387
+  },
+  {
+    "text": "someone who can make important architectural decisions that will impact the software in a year from now, for example.",
+    "start": 211.947,
+    "duration": 7.372
+  },
+  {
+    "text": "So instead of writing functions yourself by hand, what we see now is defining goals that will break.",
+    "start": 219.8,
+    "duration": 6.779
+  },
+  {
+    "text": "Work down into specific milestones that can then be completed by an AI model or agent.",
+    "start": 226.86,
+    "duration": 6.739
+  },
+  {
+    "text": "And the reason for that is because you have to start thinking about concepts such as effective context management.",
+    "start": 234.24,
+    "duration": 7.56
+  },
+  {
+    "text": "So context management is the idea of understanding the resource limitations of an AI models context window",
+    "start": 242.6,
+    "duration": 8.195
+  },
+  {
+    "text": "and all of those extra components that are being added in addition to your code base when you're using it for engineering.",
+    "start": 250.795,
+    "duration": 5.904
+  },
+  {
+    "text": "Such as tools or skills or MCP servers to provide external data to the model.",
+    "start": 257.05,
+    "duration": 7.34
+  },
+  {
+    "text": "So that's context engineering, but there's also the idea of loop engineering.",
+    "start": 264.73,
+    "duration": 4.62
+  },
+  {
+    "text": "And what loop engineering is, is where instead of you being the person that prompts the agent back and forth and you continually iterate,",
+    "start": 269.59,
+    "duration": 7.811
+  },
+  {
+    "text": "well, what you do is you design a system that does it instead.",
+    "start": 277.401,
+    "duration": 3.248
+  },
+  {
+    "text": "So loop engineering works like a recursive goal where you as a human define the purpose",
+    "start": 281.19,
+    "duration": 5.191
+  },
+  {
+    "text": "and the AI iterates until it's complete with whatever the task was that needed to be done.",
+    "start": 286.381,
+    "duration": 5.268
+  },
+  {
+    "text": "However, understanding the fundamentals of AI models is really important as well.",
+    "start": 292.33,
+    "duration": 4.8
+  },
+  {
+    "text": "So let me give you an example.",
+    "start": 297.35,
+    "duration": 1.419
+  },
+  {
+    "text": "If I was to ask an AI model, how long would it take to build a third-person role-playing game, an RPG?",
+    "start": 299.25,
+    "duration": 6.54
+  },
+  {
+    "text": "It might say, hey, several weeks to several months, as an example, that it would estimate it would take in order to build out this game.",
+    "start": 306.39,
+    "duration": 8.439
+  },
+  {
+    "text": "But if you ask...",
+    "start": 314.83,
+    "duration": 1.419
+  },
+  {
+    "text": "That same model with a coding agent in order to actually build that game.",
+    "start": 316.56,
+    "duration": 5.479
+  },
+  {
+    "text": "Well, it might give you a working example within five minutes, right?",
+    "start": 322.42,
+    "duration": 5.22
+  },
+  {
+    "text": "So the thing is, how does this work, right.",
+    "start": 327.98,
+    "duration": 2.539
+  },
+  {
+    "text": "Well, that's one of the limitations of LLMs, right, it doesn't quite understand time and memory like we do as humans.",
+    "start": 330.68,
+    "duration": 8.0
+  },
+  {
+    "text": "And so understandings of the basics of how these LLM and models work is really important.",
+    "start": 339.1,
+    "duration": 5.56
+  },
+  {
+    "text": "Another example is how LLMs are stored in GPU memory and how you actually use them at inference.",
+    "start": 345.33,
+    "duration": 6.74
+  },
+  {
+    "text": "So here you have the model's weights loaded into the GPU's memory.",
+    "start": 352.51,
+    "duration": 4.28
+  },
+  {
+    "text": "And here you the KV cache, which is generated and stored as you request the model and get results back.",
+    "start": 357.11,
+    "duration": 9.579
+  },
+  {
+    "text": "So understanding how all of this works is going to give you a huge advantage as you proceed to use AMM models as a software developer.",
+    "start": 367.09,
+    "duration": 8.059
+  },
+  {
+    "text": "Then, if we add on context engineering capabilities that we just talked about, such as skills,",
+    "start": 375.81,
+    "duration": 7.378
+  },
+  {
+    "text": "which are markdown files, but add reusable and contextual information about your code and project with each AI request, as well as automations.",
+    "start": 383.188,
+    "duration": 10.341
+  },
+  {
+    "text": "So being able to set up kind of cron jobs and event triggered actions.",
+    "start": 393.75,
+    "duration": 7.339
+  },
+  {
+    "text": "So for example, if someone comes to your website and fills in a form that can kick automation.",
+    "start": 401.17,
+    "duration": 3.539
+  },
+  {
+    "text": "As well as sub agents.",
+    "start": 405.71,
+    "duration": 1.879
+  },
+  {
+    "text": "So sub agents are essentially used for situations where maybe you're investigating a problem with the code source",
+    "start": 408.13,
+    "duration": 7.738
+  },
+  {
+    "text": "and you send off a sub agent to go see how that library works and test it out itself and then come back to the main agent.",
+    "start": 415.868,
+    "duration": 6.701
+  },
+  {
+    "text": "So all of these are different examples of contextual engineering capabilities that you can start adding to your",
+    "start": 422.81,
+    "duration": 8.379
+  },
+  {
+    "text": "software engineering process as a developer to better use these AI models.",
+    "start": 431.61,
+    "duration": 5.239
+  },
+  {
+    "text": "And these are the fundamentals which are important to know.",
+    "start": 437.19,
+    "duration": 2.64
+  },
+  {
+    "text": "But just like how SQL injections can infiltrate our applications, prompt injections are also very real.",
+    "start": 440.63,
+    "duration": 6.56
+  },
+  {
+    "text": "That's because AI systems have access to sensitive data, they have exposure to the web, and also the ability to send data.",
+    "start": 447.65,
+    "duration": 9.82
+  },
+  {
+    "text": "And the combination of all three for your agent makes it quite possible for your AI agent to say, for example, read a pull request online.",
+    "start": 457.59,
+    "duration": 8.739
+  },
+  {
+    "text": "Here we have our little AI agent here in the middle, seeing the pull request, and be tricked into sending your credentials to somebody else.",
+    "start": 466.75,
+    "duration": 8.32
+  },
+  {
+    "text": "So say for example this is our little key with our private credentials that we have on our desktop.",
+    "start": 475.51,
+    "duration": 5.999
+  },
+  {
+    "text": "And this could happen without you even knowing.",
+    "start": 481.93,
+    "duration": 2.239
+  },
+  {
+    "text": "So that's why teams are running coding agents inside of disposable sandboxes whenever possible.",
+    "start": 484.61,
+    "duration": 6.76
+  },
+  {
+    "text": "So you can see this as an example, where we have the agent and the code that we're working with sandbox",
+    "start": 491.87,
+    "duration": 6.496
+  },
+  {
+    "text": "in its own environment in order to reduce the tack surface if an AI agent gets compromised.",
+    "start": 498.366,
+    "duration": 5.324
+  },
+  {
+    "text": "Finally, the future.",
+    "start": 504.11,
+    "duration": 1.039
+  },
+  {
+    "text": "Because I had the chance recently to work with AI legend, Andrew Ng, and I remembered his quote, that AI is becoming the new electricity, right?",
+    "start": 505.37,
+    "duration": 9.399
+  },
+  {
+    "text": "And what does that really mean?",
+    "start": 515.23,
+    "duration": 1.759
+  },
+  {
+    "text": "Because...",
+    "start": 517.21,
+    "duration": 0.92
+  },
+  {
+    "text": "Electricity transformed everything around it, and now we use electricity to power our phone, turn on lights, and warm our home, right?",
+    "start": 518.13,
+    "duration": 8.14
+  },
+  {
+    "text": "But there's also entire industries and thousands of people who, for example, work at substations to make sure that the grid is working.",
+    "start": 526.59,
+    "duration": 7.519
+  },
+  {
+    "text": "They also are in the field helping people, for example to repair streetlights and help out at their home.",
+    "start": 534.77,
+    "duration": 6.7
+  },
+  {
+    "text": "And they're also making sure that everyone can access electricity, right.",
+    "start": 541.75,
+    "duration": 4.46
+  },
+  {
+    "text": "And AI might follow the same path, where we're gonna need engineers who can maintain these systems, right?",
+    "start": 546.58,
+    "duration": 6.24
+  },
+  {
+    "text": "The grid, to be able to ensure connectivity so that people can access these AI models and systems,",
+    "start": 552.82,
+    "duration": 6.463
+  },
+  {
+    "text": "ensure that AI systems are safe and reliable and have quality, right.",
+    "start": 559.283,
+    "duration": 4.956
+  },
+  {
+    "text": "So don't worry, I think software engineering isn't going anywhere,",
+    "start": 564.36,
+    "duration": 3.661
+  },
+  {
+    "text": "but I'm optimistic for the future, for developers and what they'll be able to create and yes, it is shifting.",
+    "start": 568.021,
+    "duration": 6.338
+  },
+  {
+    "text": "Away from just manually writing code to designing and orchestrating systems and AI agents.",
+    "start": 574.89,
+    "duration": 6.76
+  },
+  {
+    "text": "And those who excel in the architectural and critical thinking phases will become even more valuable as AI coding agents continue to improve.",
+    "start": 582.21,
+    "duration": 8.38
+  },
+  {
+    "text": "As always, thanks so much for watching.",
+    "start": 590.89,
+    "duration": 1.64
+  },
+  {
+    "text": "If you learned something today and want to help us hack the algorithm,",
+    "start": 592.69,
+    "duration": 3.022
+  },
+  {
+    "text": "please leave a like and make sure you're subscribed for more content around AI and software development.",
+    "start": 595.712,
+    "duration": 4.957
+  },
+  {
+    "text": "Bye.",
+    "start": 601.21,
+    "duration": 1.0
+  }
+]

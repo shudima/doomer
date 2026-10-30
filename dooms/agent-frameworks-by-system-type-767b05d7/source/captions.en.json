@@ -1,0 +1,767 @@
+[
+  {
+    "text": "Hi, let me guess.",
+    "start": 0.36,
+    "duration": 1.88
+  },
+  {
+    "text": "The world around you is abuzz with agentic \nAI systems and their massive potential.",
+    "start": 2.24,
+    "duration": 4.8
+  },
+  {
+    "text": "So you decide to go off and \nbuild an agentic system.",
+    "start": 7.04,
+    "duration": 2.88
+  },
+  {
+    "text": "You look for the best \navailable framework out there.",
+    "start": 10.48,
+    "duration": 2.72
+  },
+  {
+    "text": "And now, all of a sudden, \nyou have 17 GitHub tabs open,  ",
+    "start": 13.2,
+    "duration": 3.88
+  },
+  {
+    "text": "five medium blocks bookmarked, and you \nare still clueless on how to proceed.",
+    "start": 17.08,
+    "duration": 4.52
+  },
+  {
+    "text": "Yes, we've all been there.",
+    "start": 22.24,
+    "duration": 1.64
+  },
+  {
+    "text": "LangChain, LangGraph, Crew AI, AutoGen, Semantic Kernel.",
+    "start": 24.4,
+    "duration": 4.64
+  },
+  {
+    "text": "There are so many powerful frameworks \nout there, but which one would you pick?",
+    "start": 29.04,
+    "duration": 4.64
+  },
+  {
+    "text": "And in order to answer that question,  ",
+    "start": 34.6,
+    "duration": 1.76
+  },
+  {
+    "text": "you first need to understand which type \nof agentic AI system you want to build.",
+    "start": 36.36,
+    "duration": 4.4
+  },
+  {
+    "text": "In this video, we are going to cover five types \nof most common agent AI projects or systems.",
+    "start": 41.52,
+    "duration": 6.12
+  },
+  {
+    "text": "We are going discuss an example for \neach of those and also list frameworks  ",
+    "start": 47.64,
+    "duration": 4.36
+  },
+  {
+    "text": "which are best suited for those types \nof agentic AI systems and projects.",
+    "start": 52.0,
+    "duration": 3.88
+  },
+  {
+    "text": "First, let's get some basics out of the way.",
+    "start": 57.12,
+    "duration": 2.36
+  },
+  {
+    "text": "What exactly is an agentic AI framework?",
+    "start": 59.48,
+    "duration": 2.12
+  },
+  {
+    "text": "An agentic framework is a toolkit \nfor building agentic AI systems.",
+    "start": 62.12,
+    "duration": 4.52
+  },
+  {
+    "text": "Let's understand with an example.",
+    "start": 66.64,
+    "duration": 1.48
+  },
+  {
+    "text": "Let's say you have an agent \nto analyze some sales data.",
+    "start": 68.64,
+    "duration": 3.12
+  },
+  {
+    "text": "This agent goes to a database \nand extracts the relevant data.",
+    "start": 72.4,
+    "duration": 3.16
+  },
+  {
+    "text": "It analyzes the data, maybe \nruns some calculations,  ",
+    "start": 76.12,
+    "duration": 3.16
+  },
+  {
+    "text": "and then generates a report and crafts a response \nthat can be sent to the concerned person.",
+    "start": 79.28,
+    "duration": 4.72
+  },
+  {
+    "text": "Now, there's a lot going on here, and \nthere's lot of coordination that's needed.",
+    "start": 84.6,
+    "duration": 3.84
+  },
+  {
+    "text": "And it gets even more complex when \nyou have multiple agents working.",
+    "start": 88.44,
+    "duration": 3.36
+  },
+  {
+    "text": "And that's exactly why you \nneed an agentic AI framework.",
+    "start": 91.8,
+    "duration": 3.36
+  },
+  {
+    "text": "The framework is like a building block.",
+    "start": 95.16,
+    "duration": 2.12
+  },
+  {
+    "text": "Unlike a chatbot application where you \njust ask a question and get an answer,  ",
+    "start": 97.28,
+    "duration": 4.04
+  },
+  {
+    "text": "the agentic system actually does a lot \nof planning, acting, and iterating.",
+    "start": 101.32,
+    "duration": 9.12
+  },
+  {
+    "text": "It is because of this complexity involved \nthat we need an agentic AI framework.",
+    "start": 113.24,
+    "duration": 4.6
+  },
+  {
+    "text": "These are like building blocks that help \nus deploy and manage agentic AI systems.",
+    "start": 117.84,
+    "duration": 6.08
+  },
+  {
+    "text": "Now these have some predefined functions that help us",
+    "start": 124.84,
+    "duration": 2.68
+  },
+  {
+    "text": "build agentic AI systems with more ease and \nagility, such as we have predefined architectures.",
+    "start": 128.8,
+    "duration": 6.96
+  },
+  {
+    "text": "We might have integration and monitoring tools.",
+    "start": 139.0,
+    "duration": 5.72
+  },
+  {
+    "text": "We might also have some task \nmanagement capabilities.",
+    "start": 150.4,
+    "duration": 3.52
+  },
+  {
+    "text": "And communication protocols.",
+    "start": 157.28,
+    "duration": 2.28
+  },
+  {
+    "text": "Together, these features and functionalities \ngive agentic AI frameworks the capability  ",
+    "start": 162.76,
+    "duration": 4.84
+  },
+  {
+    "text": "to allow us to build these systems with ease.",
+    "start": 167.6,
+    "duration": 3.16
+  },
+  {
+    "text": "Like we discussed before, there are multiple \nagentic frameworks available out there,  ",
+    "start": 170.76,
+    "duration": 4.28
+  },
+  {
+    "text": "but they're not all competing \nto do the same type of tasks.",
+    "start": 175.04,
+    "duration": 3.08
+  },
+  {
+    "text": "In fact, they're optimized for \ndifferent types of agentic AI systems.",
+    "start": 178.12,
+    "duration": 3.56
+  },
+  {
+    "text": "Most agentic AI systems and projects we are working \non today fall into one of the five categories.",
+    "start": 182.24,
+    "duration": 4.6
+  },
+  {
+    "text": "First, we have linear workflows.",
+    "start": 187.48,
+    "duration": 2.16
+  },
+  {
+    "text": "We have autonomous AI agents or \nautonomous multi-agent systems.",
+    "start": 189.64,
+    "duration": 4.04
+  },
+  {
+    "text": "We have role-based AI systems, \nproduction orchestration systems,  ",
+    "start": 194.28,
+    "duration": 4.04
+  },
+  {
+    "text": "and then we have rapid prototyping.",
+    "start": 198.32,
+    "duration": 2.16
+  },
+  {
+    "text": "Let's dive in and understand \neach of these in more detail.",
+    "start": 201.04,
+    "duration": 2.96
+  },
+  {
+    "text": "Let's start with the simplest \none, linear workflows.",
+    "start": 204.8,
+    "duration": 3.08
+  },
+  {
+    "text": "Now, this type of an agentic AI system is where \nthings progress in a step-by-step fashion.",
+    "start": 210.0,
+    "duration": 4.92
+  },
+  {
+    "text": "It is more predictable what's gonna happen next.",
+    "start": 215.84,
+    "duration": 2.64
+  },
+  {
+    "text": "And the steps follow a certain sequence.",
+    "start": 221.32,
+    "duration": 3.56
+  },
+  {
+    "text": "For example, consider a customer-facing \napplication, let's say a customer support agent.",
+    "start": 227.92,
+    "duration": 5.72
+  },
+  {
+    "text": "The role of this agent is when a user asks a \nquestion, the agent is going to take the question  ",
+    "start": 233.64,
+    "duration": 4.84
+  },
+  {
+    "text": "and search the knowledge \nbase for relevant responses.",
+    "start": 238.48,
+    "duration": 3.08
+  },
+  {
+    "text": "It's then going to craft a response \nand send it back to the user  ",
+    "start": 241.56,
+    "duration": 3.4
+  },
+  {
+    "text": "and maybe take an additional action \nsuch as creating a support ticket.",
+    "start": 244.96,
+    "duration": 4.4
+  },
+  {
+    "text": "Now, if you observe, these steps are progressing \nin a certain fashion, in a certainly sequence,  ",
+    "start": 249.36,
+    "duration": 5.12
+  },
+  {
+    "text": "and these systems are more useful when \nyou need the flows to be more reliable.",
+    "start": 254.48,
+    "duration": 4.88
+  },
+  {
+    "text": "There isn't a need for multiple agents \nto collaborate to make this happen.",
+    "start": 262.24,
+    "duration": 3.84
+  },
+  {
+    "text": "And that gives you more \ncontrol on how things progress.",
+    "start": 266.08,
+    "duration": 3.68
+  },
+  {
+    "text": "A good example of frameworks that are suitable \nfor this kind of a setup include LangChain.",
+    "start": 273.08,
+    "duration": 5.2
+  },
+  {
+    "text": "And  LlamaIndex.",
+    "start": 282.32,
+    "duration": 2.0
+  },
+  {
+    "text": "LangChain is more suited for setups where multiple \nsteps need to be happening in a certain sequence.",
+    "start": 287.96,
+    "duration": 6.28
+  },
+  {
+    "text": "LlamaIndex is highly suitable for  ",
+    "start": 294.76,
+    "duration": 2.96
+  },
+  {
+    "text": "heavy applications that are heavy \non the data retrieval and indexing.",
+    "start": 297.72,
+    "duration": 5.56
+  },
+  {
+    "text": "For more complex setups, you could also \nuse LangGraph, which is also by LangChain.",
+    "start": 303.28,
+    "duration": 7.32
+  },
+  {
+    "text": "Next, we have the autonomous agentic AI systems.",
+    "start": 312.28,
+    "duration": 3.52
+  },
+  {
+    "text": "In these systems, you typically give AI a goal.",
+    "start": 317.24,
+    "duration": 2.92
+  },
+  {
+    "text": "And have it figure out how to accomplish it.",
+    "start": 323.88,
+    "duration": 2.44
+  },
+  {
+    "text": "So in this system, it's very common to see \nmultiple agents collaborating together.",
+    "start": 326.32,
+    "duration": 7.24
+  },
+  {
+    "text": "These agents talk to each other \nto accomplish the common goal.",
+    "start": 336.8,
+    "duration": 3.6
+  },
+  {
+    "text": "A good example of this could \nbe an AI coding assistant.",
+    "start": 340.4,
+    "duration": 3.56
+  },
+  {
+    "text": "You could have a planner agent \nthat plans the solution for you.",
+    "start": 343.96,
+    "duration": 3.72
+  },
+  {
+    "text": "You could a coder agent that \nactually writes the code for you,",
+    "start": 347.68,
+    "duration": 3.32
+  },
+  {
+    "text": "and a reviewer agent, that is reviewing the code,  ",
+    "start": 351.0,
+    "duration": 2.48
+  },
+  {
+    "text": "making recommendations, and \nalso helping with the debugging.",
+    "start": 353.48,
+    "duration": 3.28
+  },
+  {
+    "text": "These agents are constantly talking to each other \nin order to give the best code possible to you.",
+    "start": 356.76,
+    "duration": 5.28
+  },
+  {
+    "text": "So, in this kind of setup, the \nproblem is usually open ended.",
+    "start": 362.64,
+    "duration": 4.56
+  },
+  {
+    "text": "And that's the kind of problems this \nkind of setup is most helpful for.",
+    "start": 367.2,
+    "duration": 4.2
+  },
+  {
+    "text": "So, frameworks that work best for this \nkind of a scenario include AutoGen.",
+    "start": 374.64,
+    "duration": 5.28
+  },
+  {
+    "text": "You could also use experimental \nsetups like Baby AGI.",
+    "start": 383.52,
+    "duration": 3.72
+  },
+  {
+    "text": "And CrewAI could also  ",
+    "start": 389.96,
+    "duration": 2.6
+  },
+  {
+    "text": "be helpful for designing these kind of \nsystems where problems are open-ended",
+    "start": 392.56,
+    "duration": 5.44
+  },
+  {
+    "text": "and multiple agents are collaborating \ntogether to achieve a shared goal.",
+    "start": 398.0,
+    "duration": 3.68
+  },
+  {
+    "text": "Next, we have the role-based agentic AI systems.",
+    "start": 403.08,
+    "duration": 2.88
+  },
+  {
+    "text": "These are kind of similar to \nthe autonomous agentic systems  ",
+    "start": 407.36,
+    "duration": 3.24
+  },
+  {
+    "text": "where there are multiple agents collaborating.",
+    "start": 410.6,
+    "duration": 3.08
+  },
+  {
+    "text": "So it is also a multi-agent setup.",
+    "start": 413.68,
+    "duration": 4.2
+  },
+  {
+    "text": "But what makes it different is that each \nagent within the setup has a defined role.",
+    "start": 421.44,
+    "duration": 6.12
+  },
+  {
+    "text": "They are still communicating with \neach other to accomplish that goal,",
+    "start": 430.76,
+    "duration": 3.72
+  },
+  {
+    "text": "but they are operating within the confines or \nthe constraints posed by their role descriptions.",
+    "start": 434.48,
+    "duration": 5.04
+  },
+  {
+    "text": "They are working together, \nbut with clear boundaries.",
+    "start": 440.16,
+    "duration": 2.56
+  },
+  {
+    "text": "A good example of this could \nbe a content generation agent.",
+    "start": 443.24,
+    "duration": 3.76
+  },
+  {
+    "text": "Here, you could have a researcher \nagent that goes on the web and fetches  ",
+    "start": 447.0,
+    "duration": 4.32
+  },
+  {
+    "text": "all the material that's needed \nto write a piece of content.",
+    "start": 451.32,
+    "duration": 3.2
+  },
+  {
+    "text": "There could be writer agent \nthat looks at all the content  ",
+    "start": 454.52,
+    "duration": 2.64
+  },
+  {
+    "text": "that has been fetched and writes up an article.",
+    "start": 457.16,
+    "duration": 2.76
+  },
+  {
+    "text": "That goes out on a social \nmedia website, let's say.",
+    "start": 459.92,
+    "duration": 2.44
+  },
+  {
+    "text": "And then there could be an editor \nagent that's looking at the article  ",
+    "start": 462.96,
+    "duration": 3.12
+  },
+  {
+    "text": "that has been written and make some edits to it.",
+    "start": 466.08,
+    "duration": 3.64
+  },
+  {
+    "text": "Now, they have very clearly \ndefined roles and they don't  ",
+    "start": 469.72,
+    "duration": 3.08
+  },
+  {
+    "text": "go into other agents roles when they do this.",
+    "start": 472.8,
+    "duration": 2.52
+  },
+  {
+    "text": "They have discussions, but \nthey're strictly confined  ",
+    "start": 475.32,
+    "duration": 2.72
+  },
+  {
+    "text": "to the description that has given \nto them for their particular roles.",
+    "start": 478.04,
+    "duration": 2.96
+  },
+  {
+    "text": "A good framework that is \napplicable here is CrewAI.",
+    "start": 481.72,
+    "duration": 4.68
+  },
+  {
+    "text": "But you could also use AutoGen \nwith some structures around it  ",
+    "start": 489.08,
+    "duration": 4.28
+  },
+  {
+    "text": "for this kind of an agentic AI systems.",
+    "start": 494.0,
+    "duration": 2.64
+  },
+  {
+    "text": "There are also some niche frameworks that \nare applicable to very specific tasks.",
+    "start": 496.64,
+    "duration": 4.0
+  },
+  {
+    "text": "Like, for example, for software development \nkind of tasks, you have ChatDev.",
+    "start": 500.64,
+    "duration": 4.84
+  },
+  {
+    "text": "So these are the kind of frameworks that you \nwould use for role-based agentic AI systems.",
+    "start": 508.96,
+    "duration": 5.44
+  },
+  {
+    "text": "Next up, we have the production \norchestration systems.",
+    "start": 514.4,
+    "duration": 3.6
+  },
+  {
+    "text": "Like the name suggests, this is when AI \nmoves out of the experimentation phase  ",
+    "start": 518.6,
+    "duration": 4.68
+  },
+  {
+    "text": "and gets real or moves into a real-world system.",
+    "start": 523.28,
+    "duration": 5.32
+  },
+  {
+    "text": "These kind of systems require \ndeep integration with APIs,",
+    "start": 529.64,
+    "duration": 5.52
+  },
+  {
+    "text": "databases,",
+    "start": 537.72,
+    "duration": 0.92
+  },
+  {
+    "text": "and business workflows.",
+    "start": 541.0,
+    "duration": 1.8
+  },
+  {
+    "text": "Consider the example of an AI operations agent.",
+    "start": 548.72,
+    "duration": 3.04
+  },
+  {
+    "text": "This agent detects alerts, searches \nthe documentation for the alerts,",
+    "start": 552.28,
+    "duration": 4.8
+  },
+  {
+    "text": "and then runs some automation scripts  ",
+    "start": 557.08,
+    "duration": 1.96
+  },
+  {
+    "text": "and sends summaries in a real world \nscenario within an organization.",
+    "start": 559.04,
+    "duration": 3.92
+  },
+  {
+    "text": "Good examples of frameworks that are \nsuitable for this kind of an AI system,",
+    "start": 562.96,
+    "duration": 4.12
+  },
+  {
+    "text": "include agent framework,  ",
+    "start": 567.08,
+    "duration": 2.44
+  },
+  {
+    "text": "which essentially is a combination \nof semantic kernel and autogen.",
+    "start": 573.48,
+    "duration": 3.72
+  },
+  {
+    "text": "Another good example here is LangGraph.",
+    "start": 577.84,
+    "duration": 3.2
+  },
+  {
+    "text": "Which works for well-structured, \nmultilayered applications.",
+    "start": 585.44,
+    "duration": 4.28
+  },
+  {
+    "text": "Ancient framework is suitable both for \norchestration as well as for running  ",
+    "start": 590.52,
+    "duration": 4.72
+  },
+  {
+    "text": "autonomous workflows.",
+    "start": 595.24,
+    "duration": 1.72
+  },
+  {
+    "text": "Last but not least, you \nhave the rapid prototyping.",
+    "start": 597.72,
+    "duration": 3.64
+  },
+  {
+    "text": "So you always don't need a perfect architecture.",
+    "start": 602.92,
+    "duration": 2.56
+  },
+  {
+    "text": "You just need to check if \nyour idea would work or not.",
+    "start": 605.48,
+    "duration": 3.6
+  },
+  {
+    "text": "These types of systems are best when \nyou need to quickly validate ideas.",
+    "start": 609.72,
+    "duration": 5.84
+  },
+  {
+    "text": "It helps you build quick prototypes.",
+    "start": 616.96,
+    "duration": 2.28
+  },
+  {
+    "text": "To see if you can bring your ideas to reality.",
+    "start": 621.32,
+    "duration": 3.6
+  },
+  {
+    "text": "These kind of systems are where you ideally have \na user interface where you can drag components",
+    "start": 625.88,
+    "duration": 5.96
+  },
+  {
+    "text": "and bring them onto a canvas to \nbuild quick workflows and test ideas.",
+    "start": 631.84,
+    "duration": 4.28
+  },
+  {
+    "text": "Examples of tools or frameworks that \nare useful here include LangFlow.",
+    "start": 636.8,
+    "duration": 5.12
+  },
+  {
+    "text": "And Flowise.",
+    "start": 645.08,
+    "duration": 1.4
+  },
+  {
+    "text": "These tools offer you a good graphical  ",
+    "start": 649.88,
+    "duration": 1.96
+  },
+  {
+    "text": "user interface where you can \nbring components onto a canvas",
+    "start": 651.84,
+    "duration": 3.56
+  },
+  {
+    "text": "and connect models and workflows \nand quickly test out your ideas  ",
+    "start": 655.4,
+    "duration": 3.64
+  },
+  {
+    "text": "that you can later on take into production.",
+    "start": 659.04,
+    "duration": 2.4
+  },
+  {
+    "text": "These are very quick for rapid \nprototyping and hence the name.",
+    "start": 661.44,
+    "duration": 3.6
+  },
+  {
+    "text": "So when choosing a framework, do \nnot ask which framework is the best.",
+    "start": 665.68,
+    "duration": 3.92
+  },
+  {
+    "text": "Instead ask what kind of \nsystem am I trying to build?",
+    "start": 669.6,
+    "duration": 3.36
+  },
+  {
+    "text": "If it's predictable, use a workflow approach.",
+    "start": 672.96,
+    "duration": 2.4
+  },
+  {
+    "text": "If it is exploratory, use the autonomous agents.",
+    "start": 675.36,
+    "duration": 2.96
+  },
+  {
+    "text": "If it needs teamwork, use role-based systems.",
+    "start": 678.32,
+    "duration": 2.48
+  },
+  {
+    "text": "If it's going into production, use the \nproduction orchestration frameworks.",
+    "start": 680.8,
+    "duration": 3.68
+  },
+  {
+    "text": "And if you are testing ideas, \nuse the rapid prototyping tools.",
+    "start": 684.48,
+    "duration": 3.36
+  },
+  {
+    "text": "Because the right framework depends \non whether you're building a pipeline,  ",
+    "start": 688.36,
+    "duration": 3.4
+  },
+  {
+    "text": "a team of agents, or a production AI system.",
+    "start": 691.76,
+    "duration": 2.52
+  },
+  {
+    "text": "Which agentic AI framework is your typical go-to?",
+    "start": 694.8,
+    "duration": 2.84
+  },
+  {
+    "text": "Feel free to comment below and \ndon't forget to like and subscribe.",
+    "start": 697.64,
+    "duration": 3.48
+  },
+  {
+    "text": "Thank you.",
+    "start": 701.12,
+    "duration": 0.5
+  }
+]

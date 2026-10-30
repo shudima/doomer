@@ -1,0 +1,552 @@
+[
+  {
+    "text": "For years, computer science programs have prepared students for a clear next step, a career in software engineering,",
+    "start": 0.23,
+    "duration": 8.619
+  },
+  {
+    "text": "and that pipeline used to work.",
+    "start": 9.79,
+    "duration": 1.68
+  },
+  {
+    "text": "I've experienced it firsthand, but with AI assisted coding and agentic coding,",
+    "start": 11.55,
+    "duration": 5.316
+  },
+  {
+    "text": "reshaping how software gets built, that path is becoming far less conventional.",
+    "start": 16.866,
+    "duration": 5.344
+  },
+  {
+    "text": "We're seeing something new, something called agentic engineering.",
+    "start": 22.79,
+    "duration": 6.199
+  },
+  {
+    "text": "In this video, we'll break down the difference between software engineering and agentic engineering",
+    "start": 31.1,
+    "duration": 5.146
+  },
+  {
+    "text": "and how this shift is changing the role of developers.",
+    "start": 36.246,
+    "duration": 3.454
+  },
+  {
+    "text": "For decades, software engineering meant writing explicit instructions for computers.",
+    "start": 40.62,
+    "duration": 4.919
+  },
+  {
+    "text": "Now we're entering a world where engineers increasingly define goals and AI agents figure out the execution.",
+    "start": 46.04,
+    "duration": 7.3
+  },
+  {
+    "text": "But let's be clear, this does not replace software engineering.",
+    "start": 53.86,
+    "duration": 3.179
+  },
+  {
+    "text": "It just changes where engineering effort goes.",
+    "start": 57.36,
+    "duration": 2.68
+  },
+  {
+    "text": "Traditional software engineering is fundamentally deterministic.",
+    "start": 60.7,
+    "duration": 3.959
+  },
+  {
+    "text": "You give explicit instructions and control flow.",
+    "start": 65.16,
+    "duration": 3.159
+  },
+  {
+    "text": "The same input, if it happens twice, you expect the same output twice.",
+    "start": 69.0,
+    "duration": 4.14
+  },
+  {
+    "text": "And this meant manually defining edge cases, permissions, retries, validation, and execution paths.",
+    "start": 73.56,
+    "duration": 7.739
+  },
+  {
+    "text": "Every step is predefined.",
+    "start": 81.94,
+    "duration": 1.76
+  },
+  {
+    "text": "But, large language models introduced something fundamentally different.",
+    "start": 83.7,
+    "duration": 4.24
+  },
+  {
+    "text": "Instead of only executing rigid logic, these systems can interpret goals.",
+    "start": 88.41,
+    "duration": 5.219
+  },
+  {
+    "text": "And once you combine this with memory, tool use, planning and feedback loops, you get something that's closer to an AI agent.",
+    "start": 94.15,
+    "duration": 12.399
+  },
+  {
+    "text": "So from a high level perspective in traditional software engineering, developers write behavior.",
+    "start": 108.13,
+    "duration": 7.96
+  },
+  {
+    "text": "Whereas in agentic engineering, developers shape behavior.",
+    "start": 117.68,
+    "duration": 6.86
+  },
+  {
+    "text": "In short, agentic engineering allows us to shift away from deterministic",
+    "start": 127.22,
+    "duration": 4.782
+  },
+  {
+    "text": "logic toward the nuanced territory of probabilistic judgment.",
+    "start": 132.002,
+    "duration": 5.198
+  },
+  {
+    "text": "This becomes even more obvious if we break down the term.",
+    "start": 137.84,
+    "duration": 3.2
+  },
+  {
+    "text": "So agentic refers to an organization of agents that write the code",
+    "start": 141.313,
+    "duration": 5.607
+  },
+  {
+    "text": "and the human developer that oversees and validates the output,",
+    "start": 146.92,
+    "duration": 4.822
+  },
+  {
+    "text": "as the agent or multi-agent system iterates through the subtasks we maintain a human in the loop.",
+    "start": 151.742,
+    "duration": 7.107
+  },
+  {
+    "text": "Engineering, on the other hand,",
+    "start": 159.65,
+    "duration": 1.902
+  },
+  {
+    "text": "describes a level of expertise required to use agentic workflows for a meaningful code production",
+    "start": 161.552,
+    "duration": 6.569
+  },
+  {
+    "text": "that doesn't jeopardize the code quality.",
+    "start": 168.121,
+    "duration": 2.489
+  },
+  {
+    "text": "The surge of terms like agentic coding, vibe coding,",
+    "start": 171.43,
+    "duration": 3.987
+  },
+  {
+    "text": "and agentic engineering reflects a broader shift in how developers interact with AI.",
+    "start": 175.417,
+    "duration": 5.212
+  },
+  {
+    "text": "However, it's easy to confuse the several terms for AI assisted coding, especially as new terms are coined each year.",
+    "start": 181.17,
+    "duration": 7.719
+  },
+  {
+    "text": "So to help distinguish some of the most frequently used terms,",
+    "start": 189.33,
+    "duration": 3.391
+  },
+  {
+    "text": "I actually like to think of this as somewhat of a spectrum and not from best to worst,",
+    "start": 192.721,
+    "duration": 8.19
+  },
+  {
+    "text": "but from how much agency the human retains versus how much the agency is delegated to the system.",
+    "start": 200.911,
+    "duration": 6.498
+  },
+  {
+    "text": "So, on one end you have traditional software engineering,",
+    "start": 207.41,
+    "duration": 5.857
+  },
+  {
+    "text": "where developers explicitly define nearly every workflow, rule and implementation detail.",
+    "start": 213.267,
+    "duration": 6.953
+  },
+  {
+    "text": "AI may assist, but the human remains fully in control of the architecture and decision-making process.",
+    "start": 221.22,
+    "duration": 6.94
+  },
+  {
+    "text": "Moving along the spectrum, you get AI-assisted coding.",
+    "start": 228.16,
+    "duration": 7.46
+  },
+  {
+    "text": "And this is where tools help...",
+    "start": 237.14,
+    "duration": 2.02
+  },
+  {
+    "text": "Auto-complete, refactor, or generate code snippets while the developer still drives the overall implementation.",
+    "start": 239.42,
+    "duration": 8.04
+  },
+  {
+    "text": "Then comes vibe coding.",
+    "start": 247.46,
+    "duration": 3.299
+  },
+  {
+    "text": "This is where developers increasingly define or describe intent in natural language",
+    "start": 253.36,
+    "duration": 6.637
+  },
+  {
+    "text": "and iteratively shape the outcomes rather than manually writing every line themselves.",
+    "start": 259.997,
+    "duration": 6.183
+  },
+  {
+    "text": "The focus shifts from precise implementation to creative direction and rapid experimentation.",
+    "start": 266.9,
+    "duration": 7.479
+  },
+  {
+    "text": "Further, still, is agentic coding.",
+    "start": 274.38,
+    "duration": 4.139
+  },
+  {
+    "text": "And so this one is where systems can autonomously plan tasks,",
+    "start": 281.81,
+    "duration": 5.612
+  },
+  {
+    "text": "use tools, write and execute code, debug failures, and iterate toward a goal with limited supervision.",
+    "start": 287.422,
+    "duration": 8.287
+  },
+  {
+    "text": "And finally, we have agentic engineering, which expands beyond code generation entirely.",
+    "start": 296.45,
+    "duration": 10.48
+  },
+  {
+    "text": "Here, engineers are not just building software,",
+    "start": 307.71,
+    "duration": 2.901
+  },
+  {
+    "text": "but describing environments and designing them in which autonomous systems can reason,",
+    "start": 310.611,
+    "duration": 6.464
+  },
+  {
+    "text": "coordinate, evaluate outcomes, and adapt dynamically under constraints.",
+    "start": 317.075,
+    "duration": 6.225
+  },
+  {
+    "text": "The important thing is that these are not rigid categories.",
+    "start": 324.16,
+    "duration": 3.38
+  },
+  {
+    "text": "They represent a gradual shift in abstraction from directly programming behavior to increasingly orchestrating intelligence.",
+    "start": 327.94,
+    "duration": 9.679
+  },
+  {
+    "text": "These terms actually bleed into one another.",
+    "start": 338.14,
+    "duration": 2.66
+  },
+  {
+    "text": "Teams often start with vibe coding to prototype ideas quickly",
+    "start": 341.23,
+    "duration": 4.685
+  },
+  {
+    "text": "and then evolve toward agentic coding and ultimately agentic engineering as the stakes and complexity increase.",
+    "start": 345.915,
+    "duration": 8.234
+  },
+  {
+    "text": "Instead of treating AI as just a coding assistant,",
+    "start": 355.71,
+    "duration": 3.161
+  },
+  {
+    "text": "agentic engineering treats AI systems as collaborators, capable of handling multi-step workflows under human supervision.",
+    "start": 358.871,
+    "duration": 8.518
+  },
+  {
+    "text": "The engineer increasingly becomes someone who orchestrates the system",
+    "start": 368.04,
+    "duration": 6.476
+  },
+  {
+    "text": "rather than manually executing every task themselves.",
+    "start": 374.516,
+    "duration": 5.144
+  },
+  {
+    "text": "And importantly, this is not about removing humans from the loop.",
+    "start": 380.54,
+    "duration": 3.859
+  },
+  {
+    "text": "In fact, one of the biggest misconceptions around agentic systems",
+    "start": 384.88,
+    "duration": 4.456
+  },
+  {
+    "text": "is the idea that they eliminate the need for engineering expertise.",
+    "start": 389.336,
+    "duration": 3.943
+  },
+  {
+    "text": "In reality, the opposite may be true.",
+    "start": 393.28,
+    "duration": 2.979
+  },
+  {
+    "text": "As these systems become more autonomous, the value of human oversight actually increases.",
+    "start": 396.86,
+    "duration": 7.919
+  },
+  {
+    "text": "Because now engineers are responsible not only for writing code,",
+    "start": 405.78,
+    "duration": 4.534
+  },
+  {
+    "text": "but also for ensuring reliability across probabilistic workflows.",
+    "start": 410.314,
+    "duration": 4.666
+  },
+  {
+    "text": "Perhaps this means fostering a culture that encourages experimentation while maintaining accountability.",
+    "start": 415.98,
+    "duration": 6.639
+  },
+  {
+    "text": "Meaning, agentic systems should accelerate development, not replace software engineering expertise.",
+    "start": 423.75,
+    "duration": 6.04
+  },
+  {
+    "text": "The developer community understandably has some mixed reactions to this shift.",
+    "start": 430.59,
+    "duration": 4.739
+  },
+  {
+    "text": "Some folks are embracing this as an opportunity to pursue more thought-provoking and fulfilling work,",
+    "start": 435.95,
+    "duration": 6.977
+  },
+  {
+    "text": "but others are skeptical.",
+    "start": 442.927,
+    "duration": 1.843
+  },
+  {
+    "text": "And honestly, that skepticism makes sense.",
+    "start": 445.37,
+    "duration": 2.68
+  },
+  {
+    "text": "Traditional software systems fail in relatively predictable ways.",
+    "start": 448.29,
+    "duration": 4.639
+  },
+  {
+    "text": "You think about it, if there's a bug, you can often trace it directly to a faulty condition, state transition, or implementation detail.",
+    "start": 453.58,
+    "duration": 8.699
+  },
+  {
+    "text": "Agentic systems are different.",
+    "start": 463.0,
+    "duration": 1.94
+  },
+  {
+    "text": "Because these systems operate probabilistically,",
+    "start": 465.16,
+    "duration": 3.29
+  },
+  {
+    "text": "they can appear correct while still making flawed decisions underneath the surface.",
+    "start": 468.45,
+    "duration": 5.809
+  },
+  {
+    "text": "They can hallucinate.",
+    "start": 474.56,
+    "duration": 2.219
+  },
+  {
+    "text": "They can misunderstand intent, misuse tools.",
+    "start": 477.24,
+    "duration": 4.539
+  },
+  {
+    "text": "Or generate technically valid, but architecturally poor solutions.",
+    "start": 482.42,
+    "duration": 5.099
+  },
+  {
+    "text": "That's why the central challenges in agentic engineering are to orchestrate and verify.",
+    "start": 488.4,
+    "duration": 7.6
+  },
+  {
+    "text": "The engineering bottleneck starts moving away from writing every line manually and towards supervising,",
+    "start": 497.7,
+    "duration": 6.891
+  },
+  {
+    "text": "constraining, and evaluating increasingly autonomous systems.",
+    "start": 504.591,
+    "duration": 4.389
+  },
+  {
+    "text": "This also explains why vibe coding becomes problematic at scale.",
+    "start": 509.82,
+    "duration": 4.94
+  },
+  {
+    "text": "Vibe coding works extremely well for rapid experimentation and prototyping.",
+    "start": 515.28,
+    "duration": 5.16
+  },
+  {
+    "text": "But without strong engineering discipline, these workflows can also create technical debt very quickly.",
+    "start": 521.1,
+    "duration": 6.919
+  },
+  {
+    "text": "AI-generated code that lacks structure, testing, or architectural consistency can become difficult to maintain over time.",
+    "start": 528.68,
+    "duration": 8.399
+  },
+  {
+    "text": "And this is where I think the phrase agentic engineering becomes useful",
+    "start": 537.85,
+    "duration": 4.625
+  },
+  {
+    "text": "because it emphasizes there's still engineering happening.",
+    "start": 542.475,
+    "duration": 3.255
+  },
+  {
+    "text": "This isn't about replacing software engineering as a whole, but rather expanding it into a new abstraction layer.",
+    "start": 546.29,
+    "duration": 7.139
+  },
+  {
+    "text": "Agentic engineering changes what engineers spend most of their time engineering.",
+    "start": 554.21,
+    "duration": 4.46
+  },
+  {
+    "text": "And you may be wondering, what's next on the spectrum we looked at earlier?",
+    "start": 559.15,
+    "duration": 4.24
+  },
+  {
+    "text": "As the landscape of AI assisted software development continues to evolve,",
+    "start": 563.99,
+    "duration": 5.406
+  },
+  {
+    "text": "its terminology will likely also continue to shift.",
+    "start": 569.396,
+    "duration": 3.643
+  },
+  {
+    "text": "While agentic engineering provides a more mature and accurate framing",
+    "start": 573.6,
+    "duration": 4.209
+  },
+  {
+    "text": "for how developers collaborate with autonomous systems today,",
+    "start": 577.809,
+    "duration": 4.008
+  },
+  {
+    "text": "the practices behind it will continue to advance as AI agents become more capable.",
+    "start": 581.817,
+    "duration": 6.043
+  },
+  {
+    "text": "At the same time, the role of developers will evolve from simply writing code to designing it.",
+    "start": 588.64,
+    "duration": 7.459
+  },
+  {
+    "text": "To shaping the behavior of these AI systems and also supervising them.",
+    "start": 596.97,
+    "duration": 7.14
+  },
+  {
+    "text": "If you're feeling unsure about where to begin, start small.",
+    "start": 605.89,
+    "duration": 3.519
+  },
+  {
+    "text": "Start by using these tools in your current workflow.",
+    "start": 609.75,
+    "duration": 2.659
+  },
+  {
+    "text": "Pay attention to where they help and where they break.",
+    "start": 612.97,
+    "duration": 3.02
+  },
+  {
+    "text": "Then build from there.",
+    "start": 616.47,
+    "duration": 1.14
+  },
+  {
+    "text": "But let's not forget to resist substituting automation for understanding and quality.",
+    "start": 618.05,
+    "duration": 6.759
+  },
+  {
+    "text": "If you enjoyed this video, make sure to like and subscribe,",
+    "start": 625.64,
+    "duration": 2.772
+  },
+  {
+    "text": "and let me know in the comments below what AI topic you want to see next.",
+    "start": 628.412,
+    "duration": 4.008
+  },
+  {
+    "text": "Thanks for watching!",
+    "start": 632.8,
+    "duration": 1.0
+  }
+]

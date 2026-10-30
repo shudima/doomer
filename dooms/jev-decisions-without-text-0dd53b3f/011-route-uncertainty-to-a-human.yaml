@@ -1,0 +1,15 @@
+schema_version: 1
+id: jev-decisions-without-text-0dd53b3f-011
+title: Route uncertainty to a human
+text: |-
+  The support example uses two illustrative thresholds. Above 0.9, send the email to the refund queue. Below 0.1, treat it as something other than a refund request. Between those values, ask a person to check.
+
+  The model supplies a probability; ordinary code determines the path. These numbers illustrate a design, rather than prescribing universal thresholds for every refund system.
+background_image: images/flow.svg
+source_url: https://www.youtube.com/watch?v=YGgNBcIgI4s&list=WL&index=9&t=13s
+source_file: null
+source_title: What Is Jev? The AI Model That Doesn't Generate Text
+source_type: video
+source_locator: 00:10:36–00:12:04
+sort_order: 11
+language: en

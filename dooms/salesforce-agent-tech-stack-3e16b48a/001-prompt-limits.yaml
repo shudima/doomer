@@ -1,0 +1,13 @@
+schema_version: 1
+id: salesforce-agent-tech-stack-3e16b48a-001
+title: Prompt limits
+text: |
+  Salesforce reports dropped rules beyond eight instructions. Its redesign moves enforceable responsibilities outside the prompt.
+background_image: images/network.svg
+source_url: https://blog.bytebytego.com/p/a-deep-dive-into-salesforces-agent
+source_file: null
+source_title: A Deep Dive into Salesforce’s Agent Tech Stack
+source_type: article
+source_locator: 'Section: The naive design: one large prompt'
+sort_order: 1
+language: en

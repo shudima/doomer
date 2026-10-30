@@ -1,0 +1,697 @@
+[
+  {
+    "text": "Will it rain tomorrow? It is decidedly so.",
+    "start": 1.04,
+    "duration": 5.09
+  },
+  {
+    "text": "Oh, really? How can you be so sure? Reply hazy. Try again.",
+    "start": 6.13,
+    "duration": 6.205
+  },
+  {
+    "text": "Okay, I'm trying again. How do you know it's going to rain? You seem pretty confident about that.",
+    "start": 12.335,
+    "duration": 6.558
+  },
+  {
+    "text": "Um. Better not tell you now. Okay.",
+    "start": 18.893,
+    "duration": 2.787
+  },
+  {
+    "text": "That's not helping.",
+    "start": 21.72,
+    "duration": 1.42
+  },
+  {
+    "text": "This is clearly not going to give me the answers I need.",
+    "start": 23.14,
+    "duration": 2.665
+  },
+  {
+    "text": "You may have heard about a new approach to AI that's called Jev,",
+    "start": 25.805,
+    "duration": 4.658
+  },
+  {
+    "text": "and my friend Martin did a really great explainer video here on the channel. So go check that out if you're not familiar with this.",
+    "start": 31.311,
+    "duration": 7.416
+  },
+  {
+    "text": "It's a fascinating new technology, and it's designed to do something very different",
+    "start": 38.727,
+    "duration": 4.673
+  },
+  {
+    "text": "from what an LLM or large language model that we've all become familiar with.",
+    "start": 43.4,
+    "duration": 4.903
+  },
+  {
+    "text": "The big difference is an LLM generates words. Lots of them. Jev makes decisions,",
+    "start": 48.303,
+    "duration": 7.438
+  },
+  {
+    "text": "quick decisions, and that's potentially a big deal for automation,",
+    "start": 55.741,
+    "duration": 4.823
+  },
+  {
+    "text": "but I have a problem and it's a very cybersecurity guy kind of problem.",
+    "start": 60.564,
+    "duration": 4.457
+  },
+  {
+    "text": "And yes, it's with trust.",
+    "start": 65.021,
+    "duration": 3.77
+  },
+  {
+    "text": "Yeah. I mean, who other than cybersecurity people would come up and spend so much time developing a concept we call zero trust.",
+    "start": 68.791,
+    "duration": 8.228
+  },
+  {
+    "text": "Yeah. My tribe is often accused of having trust issues, but that's a whole other story for another video.",
+    "start": 77.06,
+    "duration": 5.412
+  },
+  {
+    "text": "In other words, how do we know that the particular Jev instance that we're talking to isn't just some sophisticated fortune telling ball",
+    "start": 82.472,
+    "duration": 9.357
+  },
+  {
+    "text": "with probabilities attached to it?",
+    "start": 91.829,
+    "duration": 2.712
+  },
+  {
+    "text": "It's essentially a black box and we can't see into it.",
+    "start": 94.541,
+    "duration": 4.462
+  },
+  {
+    "text": "We can't determine how it came up with its answers. So we don't know if they're wrong. And if they were, how would we know?",
+    "start": 99.003,
+    "duration": 6.642
+  },
+  {
+    "text": "Let's explore that question.",
+    "start": 105.645,
+    "duration": 1.763
+  },
+  {
+    "text": "Let's start with LLMs. So LLMs give us something to inspect.",
+    "start": 107.408,
+    "duration": 4.638
+  },
+  {
+    "text": "We've got input that goes in. So a prompt.",
+    "start": 112.046,
+    "duration": 3.526
+  },
+  {
+    "text": "Then we've got text that comes out. And with an LLM you get a well worded response.",
+    "start": 115.572,
+    "duration": 6.105
+  },
+  {
+    "text": "Now that response may be wrong. It may be completely bogus.",
+    "start": 121.677,
+    "duration": 3.983
+  },
+  {
+    "text": "It may be even confidently wrong, and we call those hallucinations,",
+    "start": 125.66,
+    "duration": 4.08
+  },
+  {
+    "text": "but at least there's something there that you can inspect.",
+    "start": 129.74,
+    "duration": 3.426
+  },
+  {
+    "text": "So you can ask the question, why did you come up with this?",
+    "start": 133.166,
+    "duration": 4.722
+  },
+  {
+    "text": "You can challenge it. You can even have another LLM that goes in and inspects the results and looks over the model.",
+    "start": 138.649,
+    "duration": 8.366
+  },
+  {
+    "text": "So you could look at all of those kinds of things.",
+    "start": 147.015,
+    "duration": 3.112
+  },
+  {
+    "text": "You could look at the tools that the LLM used. You could look at the data that was used to train the model.",
+    "start": 150.127,
+    "duration": 7.721
+  },
+  {
+    "text": "So all of those things are available to you, including a chain of evidence around that decision.",
+    "start": 157.889,
+    "duration": 6.3
+  },
+  {
+    "text": "So it's not perfect. Far from it, but there's something to observe.",
+    "start": 164.189,
+    "duration": 4.262
+  },
+  {
+    "text": "Now let's take a look at Jev here. We've got input going in. And then we get a decision that comes out.",
+    "start": 168.451,
+    "duration": 7.477
+  },
+  {
+    "text": "Yes 97% okay. That's incredibly useful for software",
+    "start": 176.009,
+    "duration": 4.862
+  },
+  {
+    "text": "because it's not going to have to go through and interpret all of the stuff that came out.",
+    "start": 180.871,
+    "duration": 5.282
+  },
+  {
+    "text": "It gets a structured decision and gives you a probability of confidence.",
+    "start": 186.153,
+    "duration": 5.567
+  },
+  {
+    "text": "That's one of the things that makes Jev really interesting, this business here about the confidence.",
+    "start": 191.72,
+    "duration": 6.735
+  },
+  {
+    "text": "The probability tells me something about the model's confidence,",
+    "start": 198.455,
+    "duration": 4.945
+  },
+  {
+    "text": "but it doesn't necessarily tell me the reason for the decision.",
+    "start": 203.4,
+    "duration": 4.026
+  },
+  {
+    "text": "And those are two very different things.",
+    "start": 207.426,
+    "duration": 1.873
+  },
+  {
+    "text": "Confidence isn't necessarily evidence and it certainly isn't proof. Here's a simple example.",
+    "start": 209.299,
+    "duration": 7.578
+  },
+  {
+    "text": "Let's say we start with a security alert. So something comes in and tells us we're under attack.",
+    "start": 216.877,
+    "duration": 6.097
+  },
+  {
+    "text": "And Jev tells us that what you should do is contain that particular host as a response, and it gives us a 97% confidence.",
+    "start": 222.974,
+    "duration": 9.774
+  },
+  {
+    "text": "Okay. That's impressive. Saved us a lot of time. Told us what the problem is and even what we need to do,",
+    "start": 232.83,
+    "duration": 6.149
+  },
+  {
+    "text": "but suppose I'm the security guy responsible for that decision.",
+    "start": 238.979,
+    "duration": 3.77
+  },
+  {
+    "text": "I want to know why did you tell me that? Where did you come up with that? Was it because the process matched some",
+    "start": 242.749,
+    "duration": 8.141
+  },
+  {
+    "text": "known malware? Was it that the IP address was known to be malicious?",
+    "start": 250.89,
+    "duration": 5.228
+  },
+  {
+    "text": "Was there some unusual behavior that we observed? Was the machine especially sensitive,",
+    "start": 256.118,
+    "duration": 5.969
+  },
+  {
+    "text": "and therefore we're going to build more protections around it as a result?",
+    "start": 262.087,
+    "duration": 4.948
+  },
+  {
+    "text": "Or was there some sort of authorization problem that the model recognized and didn't understand?",
+    "start": 267.035,
+    "duration": 6.441
+  },
+  {
+    "text": "Or did somebody manipulate the information that went into the model or even the model itself?",
+    "start": 273.558,
+    "duration": 7.051
+  },
+  {
+    "text": "Because from a security perspective, the input and the model are part of the attack surface.",
+    "start": 280.609,
+    "duration": 6.338
+  },
+  {
+    "text": "Let's imagine we have an attacker who has figured out the information that Jev is going to be looking at,",
+    "start": 286.947,
+    "duration": 7.0
+  },
+  {
+    "text": "and they do something to manipulate that information that's going into the model.",
+    "start": 293.947,
+    "duration": 5.344
+  },
+  {
+    "text": "Maybe they alter a log, maybe they manipulate some metadata, maybe they poison a data source that was used to train the model.",
+    "start": 299.291,
+    "duration": 8.987
+  },
+  {
+    "text": "Or maybe they exploit some weakness in the workflow feeding the model.",
+    "start": 308.32,
+    "duration": 3.806
+  },
+  {
+    "text": "Somewhere along the way, the model could make a perfectly consistent decision based on corrupted information.",
+    "start": 312.126,
+    "duration": 7.672
+  },
+  {
+    "text": "Then what do we have? Well, you know the old saying,",
+    "start": 319.799,
+    "duration": 3.344
+  },
+  {
+    "text": "garbage in, in this case, confident garbage out.",
+    "start": 323.143,
+    "duration": 4.794
+  },
+  {
+    "text": "And here's the scary part. The model still will say 97% confidence.",
+    "start": 327.937,
+    "duration": 5.779
+  },
+  {
+    "text": "That doesn't mean that the decision is trustworthy.",
+    "start": 333.716,
+    "duration": 3.668
+  },
+  {
+    "text": "It means the model is confident that given what it saw, that's what the answer should be.",
+    "start": 337.384,
+    "duration": 6.058
+  },
+  {
+    "text": "But it could be confidently wrong, or the model could just be wrong for an entirely innocent reason, in the same way that LLMs hallucinate.",
+    "start": 343.442,
+    "duration": 7.46
+  },
+  {
+    "text": "But how would you know in any of these cases?",
+    "start": 350.902,
+    "duration": 3.061
+  },
+  {
+    "text": "And this brings me to an important concept in cybersecurity. It's this idea of observability.",
+    "start": 353.963,
+    "duration": 6.397
+  },
+  {
+    "text": "When something goes wrong in a traditional system.",
+    "start": 361.405,
+    "duration": 2.764
+  },
+  {
+    "text": "I want to be able to reconstruct what happened. I want to know what came in. I want to know what changed.",
+    "start": 364.169,
+    "duration": 7.694
+  },
+  {
+    "text": "I want to see what rules fired in the system. I want to know what data was consulted to make the decision.",
+    "start": 371.863,
+    "duration": 8.311
+  },
+  {
+    "text": "What decision was actually made and who caused it or what caused it, and ultimately, why.",
+    "start": 380.174,
+    "duration": 7.0
+  },
+  {
+    "text": "So what I need ultimately from all of this is I need an audit trail.",
+    "start": 387.174,
+    "duration": 7.588
+  },
+  {
+    "text": "I need something that I can investigate and verify that the operation is as we intended.",
+    "start": 394.762,
+    "duration": 7.342
+  },
+  {
+    "text": "That's how we investigate. That's how we detect attacks. That's how we establish accountability.",
+    "start": 402.104,
+    "duration": 5.602
+  },
+  {
+    "text": "If I'm going to take evasive actions that might shut down a system,",
+    "start": 407.706,
+    "duration": 4.98
+  },
+  {
+    "text": "I need to be sure the advice I'm getting is correct and not just confident.",
+    "start": 412.686,
+    "duration": 5.919
+  },
+  {
+    "text": "So where's the visibility we Jev?",
+    "start": 418.605,
+    "duration": 1.979
+  },
+  {
+    "text": "It's going to give us structured outputs and answers, and it even gives us probabilities to tell us how confident it is,",
+    "start": 420.584,
+    "duration": 6.842
+  },
+  {
+    "text": "and Jev, specifically designed to be embedded inside structured workflows. That's all good.",
+    "start": 427.426,
+    "duration": 5.982
+  },
+  {
+    "text": "Easy to plug this in to a workflow. In fact, TypeSafe. The company behind Jev says something that I really like.",
+    "start": 433.408,
+    "duration": 7.0
+  },
+  {
+    "text": "They say instead of asking one big question,",
+    "start": 440.408,
+    "duration": 5.299
+  },
+  {
+    "text": "it's actually better to break it up into a number of smaller questions.",
+    "start": 445.707,
+    "duration": 5.496
+  },
+  {
+    "text": "That way, you end up with a better designed set of of observed abilities.",
+    "start": 451.203,
+    "duration": 5.435
+  },
+  {
+    "text": "It built into the system. So here's an example of what I mean.",
+    "start": 456.679,
+    "duration": 3.398
+  },
+  {
+    "text": "Let's take our alert comes in scenario again.",
+    "start": 460.077,
+    "duration": 2.972
+  },
+  {
+    "text": "And maybe the first thing we ask is not just what do we do, but we say was this particular activity authorized or not?",
+    "start": 463.049,
+    "duration": 7.662
+  },
+  {
+    "text": "And if it wasn't then maybe we say, what kind of evidence do you have to support that?",
+    "start": 470.711,
+    "duration": 5.649
+  },
+  {
+    "text": "And then do we have a risk calculation to go along with this and then adding all of those things up,",
+    "start": 476.36,
+    "duration": 7.826
+  },
+  {
+    "text": "maybe we're able to render a decision.",
+    "start": 484.186,
+    "duration": 2.779
+  },
+  {
+    "text": "And that's a lot better engineering, because now you can observe the individual decisions that went into making the final decision,",
+    "start": 486.965,
+    "duration": 8.268
+  },
+  {
+    "text": "instead of just treating the whole thing as one big black box that you can't see into.",
+    "start": 495.233,
+    "duration": 6.072
+  },
+  {
+    "text": "So what we want to do is do improvement through refinement.",
+    "start": 501.305,
+    "duration": 5.548
+  },
+  {
+    "text": "and each one of these is a stepwise refinement of the previous.",
+    "start": 506.853,
+    "duration": 3.52
+  },
+  {
+    "text": "But there's still a fundamental question as a security guy, this is how I'm wired. It's verify then trust.",
+    "start": 510.373,
+    "duration": 7.0
+  },
+  {
+    "text": "It's not trust then verify. So here's the problem.",
+    "start": 517.373,
+    "duration": 6.834
+  },
+  {
+    "text": "If Jev tells me contain this machine 97% okay, we've got a number,",
+    "start": 524.207,
+    "duration": 5.708
+  },
+  {
+    "text": "but what am I exactly verifying?",
+    "start": 529.915,
+    "duration": 2.468
+  },
+  {
+    "text": "I can't verify that Jev have produced the output.",
+    "start": 532.383,
+    "duration": 2.273
+  },
+  {
+    "text": "I mean, I know it came from Jev, but I don't know where it came from.",
+    "start": 534.656,
+    "duration": 4.125
+  },
+  {
+    "text": "I can verify that the output conforms to the expected type.",
+    "start": 538.781,
+    "duration": 3.906
+  },
+  {
+    "text": "I can record the probabilities, I can log the inputs. I can audit the surrounding workflows, all of that kind of stuff,",
+    "start": 542.687,
+    "duration": 8.041
+  },
+  {
+    "text": "but can I really independently verify the intelligence that produced that decision?",
+    "start": 550.728,
+    "duration": 5.045
+  },
+  {
+    "text": "That's a lot harder to do because I don't have a proof. I have a prediction, and guess what?",
+    "start": 555.773,
+    "duration": 6.774
+  },
+  {
+    "text": "Attackers love things that we can't see. Think about traditional security controls.",
+    "start": 562.547,
+    "duration": 5.717
+  },
+  {
+    "text": "If an attacker compromises it, I get evidence. I get logs, events, changes, anomalies, indicators of compromise,",
+    "start": 568.264,
+    "duration": 8.048
+  },
+  {
+    "text": "all of those kinds of things that I can look at later and decide what actually happened.",
+    "start": 576.312,
+    "duration": 5.604
+  },
+  {
+    "text": "But imagine a compromised AI decision system that simply starts with subtly different decisions.",
+    "start": 581.916,
+    "duration": 6.648
+  },
+  {
+    "text": "Not everything is compromised, just 1% more likely to approve the bad thing than it used to be, or for a particular type of target.",
+    "start": 588.564,
+    "duration": 9.917
+  },
+  {
+    "text": "Maybe it starts getting a little more inaccurate. So the thing is accurate. It's good, it's doing things,",
+    "start": 598.481,
+    "duration": 7.49
+  },
+  {
+    "text": "and then all of a sudden it's not. I've built up confidence from these, so I don't even question the result in this case.",
+    "start": 605.971,
+    "duration": 8.429
+  },
+  {
+    "text": "That's potentially a lot harder to detect, because every individual answer may look perfectly reasonable by itself,",
+    "start": 614.4,
+    "duration": 6.807
+  },
+  {
+    "text": "and our belief in the system has become self-assessed with that confidence.",
+    "start": 621.207,
+    "duration": 5.812
+  },
+  {
+    "text": "We believe it because we've seen it again and again, and our confidence will increase over time,",
+    "start": 627.019,
+    "duration": 5.994
+  },
+  {
+    "text": "and we will become less critical in our analysis of those results.",
+    "start": 633.013,
+    "duration": 4.253
+  },
+  {
+    "text": "So what's the answer? I'm not saying don't use Jev.",
+    "start": 638.03,
+    "duration": 3.57
+  },
+  {
+    "text": "Quite the opposite. I think this kind of capability can be extremely useful to us,",
+    "start": 642.113,
+    "duration": 4.766
+  },
+  {
+    "text": "but I would treat the AI itself as an untrusted component and then put security controls around it.",
+    "start": 646.879,
+    "duration": 7.919
+  },
+  {
+    "text": "We need things like input validation. I need to know what's going into it.",
+    "start": 654.798,
+    "duration": 5.284
+  },
+  {
+    "text": "I need to make sure that I have independent signals that are all coming in and not relying on a single source.",
+    "start": 660.082,
+    "duration": 6.471
+  },
+  {
+    "text": "I need to audit the logs. I need to look for drift in the model's behavior.",
+    "start": 666.553,
+    "duration": 6.422
+  },
+  {
+    "text": "Look for anomalies and have humans involved in the escalation process",
+    "start": 672.975,
+    "duration": 5.865
+  },
+  {
+    "text": "with independent verification for some of the high risk decisions.",
+    "start": 678.84,
+    "duration": 3.963
+  },
+  {
+    "text": "So we keep the human in the loop, and critically, don't let Jev be the only thing that knows what happened.",
+    "start": 682.803,
+    "duration": 6.093
+  },
+  {
+    "text": "As an AI moves from just generating text to taking actions.",
+    "start": 688.896,
+    "duration": 4.85
+  },
+  {
+    "text": "This question becomes even more important if an LLM writes a bad paragraph.",
+    "start": 693.746,
+    "duration": 4.565
+  },
+  {
+    "text": "Well, that's one thing. If an AI decides to block this account,",
+    "start": 698.311,
+    "duration": 4.725
+  },
+  {
+    "text": "or pay the invoice, or shut down the server or approve this particular transaction,",
+    "start": 703.036,
+    "duration": 6.811
+  },
+  {
+    "text": "now we're talking about an entirely different securit problem, because the question isn't just can AI make the right decision?",
+    "start": 709.847,
+    "duration": 6.959
+  },
+  {
+    "text": "It's can I know when it makes the wrong decision? And even more importantly, can I tell whether somebody caused it",
+    "start": 716.806,
+    "duration": 7.323
+  },
+  {
+    "text": "to make the wrong decision?",
+    "start": 724.129,
+    "duration": 1.851
+  },
+  {
+    "text": "Observability is a big concern with Jev now, not that it's necessarily less accurate than an LLM,",
+    "start": 725.98,
+    "duration": 6.533
+  },
+  {
+    "text": "or that there's any particular problem with probabilistic decisions.",
+    "start": 732.513,
+    "duration": 4.015
+  },
+  {
+    "text": "They're not inherently bad. Actually, I think the structured approach is pretty compelling.",
+    "start": 736.559,
+    "duration": 4.809
+  },
+  {
+    "text": "The concern is this, the more we allow AI to make decisions for us,",
+    "start": 741.368,
+    "duration": 4.814
+  },
+  {
+    "text": "the more important it becomes to",
+    "start": 746.182,
+    "duration": 2.136
+  },
+  {
+    "text": "observe, to audit and to verify those decisions.",
+    "start": 748.32,
+    "duration": 3.458
+  },
+  {
+    "text": "Because confidence isn't proof and a probability is not the same thing as an explanation.",
+    "start": 751.778,
+    "duration": 7.0
+  },
+  {
+    "text": "And just because the decision looks legitimate at first glance doesn't necessarily mean it can be trusted.",
+    "start": 758.778,
+    "duration": 8.075
+  },
+  {
+    "text": "Don't just ask what did AI decide? Ask how do I know what it decided?",
+    "start": 766.853,
+    "duration": 6.427
+  },
+  {
+    "text": "Verify. Then trust. So that way we aren't just left with magical AI decisions.",
+    "start": 773.4,
+    "duration": 7.679
+  }
+]

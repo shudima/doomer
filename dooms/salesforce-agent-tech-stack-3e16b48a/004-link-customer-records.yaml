@@ -1,0 +1,13 @@
+schema_version: 1
+id: salesforce-agent-tech-stack-3e16b48a-004
+title: Link customer records
+text: |
+  Data 360 connects sources, harmonizes schemas, and matches identities using configurable rules. Unified profiles preserve underlying records.
+background_image: images/network.svg
+source_url: https://blog.bytebytego.com/p/a-deep-dive-into-salesforces-agent
+source_file: null
+source_title: A Deep Dive into Salesforce’s Agent Tech Stack
+source_type: article
+source_locator: 'Section: 2. Unified profiles with Data 360'
+sort_order: 4
+language: en

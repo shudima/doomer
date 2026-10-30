@@ -1,0 +1,15 @@
+schema_version: 1
+id: seven-skills-for-agent-engineering-19b7176f-001
+title: A prompt is only the recipe
+text: |-
+  The presenter jokes about a prompt-engineer vacancy asking for distributed systems, API design, operations, security and product expertise. The title sounds too small for the work.
+
+  An agent takes actions, queries systems and makes decisions. Building one resembles being a chef: the recipe matters, but so do the ingredients, timing, workflow and recovery when something goes wrong. The job requires engineering the surrounding system.
+background_image: images/network.svg
+source_url: https://www.youtube.com/watch?v=mtiOK2QG9Q0&list=WL&index=24
+source_file: null
+source_title: The 7 Skills You Need to Build AI Agents
+source_type: video
+source_locator: 00:00:00–00:02:39
+sort_order: 1
+language: en

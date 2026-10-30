@@ -1,0 +1,1007 @@
+[
+  {
+    "text": "Jev is a new type of model that makes us",
+    "start": 0.0,
+    "duration": 3.6
+  },
+  {
+    "text": "question how we should really think",
+    "start": 2.2,
+    "duration": 3.52
+  },
+  {
+    "text": "about optimizing LLMs. When we follow",
+    "start": 3.6,
+    "duration": 4.24
+  },
+  {
+    "text": "the orthodox path in AI from ChatGPT",
+    "start": 5.72,
+    "duration": 4.36
+  },
+  {
+    "text": "that was released in 2022, models have",
+    "start": 7.84,
+    "duration": 4.8
+  },
+  {
+    "text": "been optimized to assist humans in chat",
+    "start": 10.08,
+    "duration": 4.36
+  },
+  {
+    "text": "applications. Of course, as coding",
+    "start": 12.64,
+    "duration": 3.84
+  },
+  {
+    "text": "agents like Claude Code and Codex became",
+    "start": 14.44,
+    "duration": 4.56
+  },
+  {
+    "text": "mainstream around 2025, we also",
+    "start": 16.48,
+    "duration": 4.92
+  },
+  {
+    "text": "optimized the models for this as well.",
+    "start": 19.0,
+    "duration": 4.2
+  },
+  {
+    "text": "But, when we look at the AI stack, how",
+    "start": 21.4,
+    "duration": 3.96
+  },
+  {
+    "text": "AI actually gets end up being used in",
+    "start": 23.2,
+    "duration": 4.24
+  },
+  {
+    "text": "the application layer often puts a",
+    "start": 25.36,
+    "duration": 4.12
+  },
+  {
+    "text": "downward pressure on the layers below.",
+    "start": 27.44,
+    "duration": 4.2
+  },
+  {
+    "text": "And as a consequence, they tend to morph",
+    "start": 29.48,
+    "duration": 4.28
+  },
+  {
+    "text": "themselves to optimize for the best",
+    "start": 31.64,
+    "duration": 4.08
+  },
+  {
+    "text": "outcome in the application layer. And",
+    "start": 33.76,
+    "duration": 4.24
+  },
+  {
+    "text": "models continue to optimize to be more",
+    "start": 35.72,
+    "duration": 5.08
+  },
+  {
+    "text": "helpful to humans and also optimize to",
+    "start": 38.0,
+    "duration": 5.12
+  },
+  {
+    "text": "be more helpful in coding agents. But,",
+    "start": 40.8,
+    "duration": 4.64
+  },
+  {
+    "text": "one area that always felt short in use",
+    "start": 43.12,
+    "duration": 4.84
+  },
+  {
+    "text": "cases was workflow automation. Even a",
+    "start": 45.44,
+    "duration": 4.84
+  },
+  {
+    "text": "highly intelligent model like Astra and",
+    "start": 47.96,
+    "duration": 4.4
+  },
+  {
+    "text": "Fable couldn't really cross a threshold",
+    "start": 50.28,
+    "duration": 4.6
+  },
+  {
+    "text": "here without a huge cost on the way. And",
+    "start": 52.36,
+    "duration": 4.88
+  },
+  {
+    "text": "TypeSafe AI that made Jev is making an",
+    "start": 54.88,
+    "duration": 4.52
+  },
+  {
+    "text": "assertion here that the reason why this",
+    "start": 57.24,
+    "duration": 4.48
+  },
+  {
+    "text": "threshold is notoriously difficult to",
+    "start": 59.4,
+    "duration": 5.0
+  },
+  {
+    "text": "cross even for highly intelligent models",
+    "start": 61.72,
+    "duration": 4.52
+  },
+  {
+    "text": "is because the state-of-the-art models",
+    "start": 64.4,
+    "duration": 3.92
+  },
+  {
+    "text": "are optimized for different things. The",
+    "start": 66.24,
+    "duration": 3.72
+  },
+  {
+    "text": "way that they articulate this is a",
+    "start": 68.32,
+    "duration": 3.8
+  },
+  {
+    "text": "schism in the orthodox line where the",
+    "start": 69.96,
+    "duration": 4.04
+  },
+  {
+    "text": "optimizing the model for human",
+    "start": 72.12,
+    "duration": 4.08
+  },
+  {
+    "text": "preference and further optimizing them",
+    "start": 74.0,
+    "duration": 4.36
+  },
+  {
+    "text": "for verifiable reward doesn't really",
+    "start": 76.2,
+    "duration": 4.16
+  },
+  {
+    "text": "carry over when decisions need to be",
+    "start": 78.36,
+    "duration": 3.92
+  },
+  {
+    "text": "quick given the uncertainty. Now, what",
+    "start": 80.36,
+    "duration": 3.68
+  },
+  {
+    "text": "we're talking about here isn't that one",
+    "start": 82.28,
+    "duration": 4.2
+  },
+  {
+    "text": "path is ultimately superior than the",
+    "start": 84.04,
+    "duration": 4.6
+  },
+  {
+    "text": "other, but Jev is sort of this",
+    "start": 86.48,
+    "duration": 4.64
+  },
+  {
+    "text": "antithesis to our current trajectory in",
+    "start": 88.64,
+    "duration": 4.52
+  },
+  {
+    "text": "AI and arguing that we really have been",
+    "start": 91.12,
+    "duration": 4.6
+  },
+  {
+    "text": "neglecting the use cases that stand to",
+    "start": 93.16,
+    "duration": 4.76
+  },
+  {
+    "text": "make a huge difference in automation.",
+    "start": 95.72,
+    "duration": 4.28
+  },
+  {
+    "text": "And TypeSafe AI is arguing that trying",
+    "start": 97.92,
+    "duration": 4.32
+  },
+  {
+    "text": "to force a model that's optimized for",
+    "start": 100.0,
+    "duration": 5.28
+  },
+  {
+    "text": "human interaction and agentic use cases",
+    "start": 102.24,
+    "duration": 5.56
+  },
+  {
+    "text": "into automation is fundamentally wrong",
+    "start": 105.28,
+    "duration": 4.12
+  },
+  {
+    "text": "way to go about it. When we look at all",
+    "start": 107.8,
+    "duration": 3.12
+  },
+  {
+    "text": "the different projects that people are",
+    "start": 109.4,
+    "duration": 4.04
+  },
+  {
+    "text": "showing off on social media using Jev, a",
+    "start": 110.92,
+    "duration": 4.24
+  },
+  {
+    "text": "lot of them are actually more showing",
+    "start": 113.44,
+    "duration": 4.36
+  },
+  {
+    "text": "off the speed of execution rather than",
+    "start": 115.16,
+    "duration": 4.36
+  },
+  {
+    "text": "the depth of understanding. Sorting",
+    "start": 117.8,
+    "duration": 4.36
+  },
+  {
+    "text": "emails, improving rag, playing games,",
+    "start": 119.52,
+    "duration": 5.08
+  },
+  {
+    "text": "model routing are all tasks that current",
+    "start": 122.16,
+    "duration": 4.88
+  },
+  {
+    "text": "LLMs can do, but certainly not at the",
+    "start": 124.6,
+    "duration": 4.76
+  },
+  {
+    "text": "speed of Jev that according to them are",
+    "start": 127.04,
+    "duration": 4.919
+  },
+  {
+    "text": "40 to 200 times faster where end-to-end",
+    "start": 129.36,
+    "duration": 5.599
+  },
+  {
+    "text": "response time is 70 to 500 milliseconds.",
+    "start": 131.959,
+    "duration": 5.081
+  },
+  {
+    "text": "Functionally, current LLMs can do",
+    "start": 134.959,
+    "duration": 4.281
+  },
+  {
+    "text": "everything that Jev offers, including",
+    "start": 137.04,
+    "duration": 3.68
+  },
+  {
+    "text": "mimicking the response so that it",
+    "start": 139.24,
+    "duration": 3.64
+  },
+  {
+    "text": "returns a result just like Jev would,",
+    "start": 140.72,
+    "duration": 5.16
+  },
+  {
+    "text": "but matching the latency of 70 to 500",
+    "start": 142.88,
+    "duration": 5.0
+  },
+  {
+    "text": "milliseconds is not something that auto",
+    "start": 145.88,
+    "duration": 4.2
+  },
+  {
+    "text": "regressive models can easily do,",
+    "start": 147.88,
+    "duration": 4.32
+  },
+  {
+    "text": "especially since tokens are generated",
+    "start": 150.08,
+    "duration": 4.44
+  },
+  {
+    "text": "one after another until completion. But",
+    "start": 152.2,
+    "duration": 4.16
+  },
+  {
+    "text": "Jev is inherently designed to do",
+    "start": 154.52,
+    "duration": 3.56
+  },
+  {
+    "text": "parallel sampling and typed",
+    "start": 156.36,
+    "duration": 3.4
+  },
+  {
+    "text": "probabilistic decisions, which is",
+    "start": 158.08,
+    "duration": 3.64
+  },
+  {
+    "text": "something that LLMs don't do in the",
+    "start": 159.76,
+    "duration": 3.76
+  },
+  {
+    "text": "architecture. So, it's less about what",
+    "start": 161.72,
+    "duration": 4.6
+  },
+  {
+    "text": "Jev is functionally capable of, but what",
+    "start": 163.52,
+    "duration": 4.68
+  },
+  {
+    "text": "we're optimizing the model so that we",
+    "start": 166.32,
+    "duration": 4.4
+  },
+  {
+    "text": "can cover more ground in the application",
+    "start": 168.2,
+    "duration": 5.12
+  },
+  {
+    "text": "layer so that automation, game playing,",
+    "start": 170.72,
+    "duration": 4.76
+  },
+  {
+    "text": "mass sortings, these types of tasks are",
+    "start": 173.32,
+    "duration": 3.96
+  },
+  {
+    "text": "practically possible. Now, let's take a",
+    "start": 175.48,
+    "duration": 3.84
+  },
+  {
+    "text": "closer look at the model Jev and see how",
+    "start": 177.28,
+    "duration": 3.72
+  },
+  {
+    "text": "it actually works. But before we do",
+    "start": 179.32,
+    "duration": 3.32
+  },
+  {
+    "text": "that, we have to talk about coding",
+    "start": 181.0,
+    "duration": 3.8
+  },
+  {
+    "text": "agents, which can be complicated to use.",
+    "start": 182.64,
+    "duration": 4.28
+  },
+  {
+    "text": "And that's why Juni CLI on AI coding",
+    "start": 184.8,
+    "duration": 4.0
+  },
+  {
+    "text": "agents from JetBrains could be perfect",
+    "start": 186.92,
+    "duration": 3.72
+  },
+  {
+    "text": "for you. Juni is what scored near the",
+    "start": 188.8,
+    "duration": 3.96
+  },
+  {
+    "text": "top right here on SWE we eventually",
+    "start": 190.64,
+    "duration": 4.76
+  },
+  {
+    "text": "leaderboard, as you can see, at 61.8%",
+    "start": 192.76,
+    "duration": 4.64
+  },
+  {
+    "text": "resolved. So, I can bring this very",
+    "start": 195.4,
+    "duration": 4.08
+  },
+  {
+    "text": "coding agent directly into my terminal",
+    "start": 197.4,
+    "duration": 4.24
+  },
+  {
+    "text": "right here and ask Juni to work on",
+    "start": 199.48,
+    "duration": 4.4
+  },
+  {
+    "text": "complex coding tasks. For example, here",
+    "start": 201.64,
+    "duration": 4.24
+  },
+  {
+    "text": "I'm asking Juni to keep my website up to",
+    "start": 203.88,
+    "duration": 3.359
+  },
+  {
+    "text": "date. And since there's a lot of",
+    "start": 205.88,
+    "duration": 3.32
+  },
+  {
+    "text": "information to update, I can hit shift",
+    "start": 207.239,
+    "duration": 4.201
+  },
+  {
+    "text": "tab and put Juni into plan mode first.",
+    "start": 209.2,
+    "duration": 4.24
+  },
+  {
+    "text": "Instead of immediately changing code,",
+    "start": 211.44,
+    "duration": 4.0
+  },
+  {
+    "text": "Juni will then break the task down into",
+    "start": 213.44,
+    "duration": 3.84
+  },
+  {
+    "text": "these multiple requirements, as you can",
+    "start": 215.44,
+    "duration": 4.2
+  },
+  {
+    "text": "see, the design, the implementation",
+    "start": 217.28,
+    "duration": 4.04
+  },
+  {
+    "text": "stages, and the tests that it wants to",
+    "start": 219.64,
+    "duration": 3.84
+  },
+  {
+    "text": "run. And now this plan is actually saved",
+    "start": 221.32,
+    "duration": 4.96
+  },
+  {
+    "text": "inside the folder .juni/plans.",
+    "start": 223.48,
+    "duration": 4.759
+  },
+  {
+    "text": "So, now I can review it before actually",
+    "start": 226.28,
+    "duration": 3.52
+  },
+  {
+    "text": "proceeding with Juni to start",
+    "start": 228.239,
+    "duration": 3.601
+  },
+  {
+    "text": "implementing the code. I can also bring",
+    "start": 229.8,
+    "duration": 4.28
+  },
+  {
+    "text": "my own API key and choose which model I",
+    "start": 231.84,
+    "duration": 4.28
+  },
+  {
+    "text": "want to use per task, which means I have",
+    "start": 234.08,
+    "duration": 4.2
+  },
+  {
+    "text": "more control over the usage limits and",
+    "start": 236.12,
+    "duration": 3.56
+  },
+  {
+    "text": "pick and choose the models I want for",
+    "start": 238.28,
+    "duration": 3.48
+  },
+  {
+    "text": "the job. For a limited time, Gemini 3.8",
+    "start": 239.68,
+    "duration": 4.6
+  },
+  {
+    "text": "Flash runs at 75% off base price in",
+    "start": 241.76,
+    "duration": 4.24
+  },
+  {
+    "text": "Juni, while your daily driver can still",
+    "start": 244.28,
+    "duration": 4.32
+  },
+  {
+    "text": "be Gemini 3.7 as a default. You can open",
+    "start": 246.0,
+    "duration": 5.0
+  },
+  {
+    "text": "the IDE plugin or Juni CLI, run a real",
+    "start": 248.6,
+    "duration": 4.32
+  },
+  {
+    "text": "task, and see how much you might save.",
+    "start": 251.0,
+    "duration": 3.64
+  },
+  {
+    "text": "Link in the description below. Unlike",
+    "start": 252.92,
+    "duration": 3.76
+  },
+  {
+    "text": "traditional LLMs, where we give them an",
+    "start": 254.64,
+    "duration": 4.48
+  },
+  {
+    "text": "instruction and the model responds in",
+    "start": 256.68,
+    "duration": 4.559
+  },
+  {
+    "text": "text, Jev is different because it",
+    "start": 259.12,
+    "duration": 4.88
+  },
+  {
+    "text": "basically forces you away from raw text",
+    "start": 261.239,
+    "duration": 4.401
+  },
+  {
+    "text": "as input but putting them in a",
+    "start": 264.0,
+    "duration": 3.64
+  },
+  {
+    "text": "structured format that looks something",
+    "start": 265.64,
+    "duration": 4.36
+  },
+  {
+    "text": "like this. And Jev responds back in a",
+    "start": 267.64,
+    "duration": 4.48
+  },
+  {
+    "text": "similar structured format but with a",
+    "start": 270.0,
+    "duration": 4.24
+  },
+  {
+    "text": "probability distribution. Okay, what do",
+    "start": 272.12,
+    "duration": 3.6
+  },
+  {
+    "text": "I do with this? And that's where a lot",
+    "start": 274.24,
+    "duration": 3.44
+  },
+  {
+    "text": "of people who are used to interacting",
+    "start": 275.72,
+    "duration": 4.44
+  },
+  {
+    "text": "with AI through traditional LLMs sort of",
+    "start": 277.68,
+    "duration": 4.36
+  },
+  {
+    "text": "get stuck because our rules of",
+    "start": 280.16,
+    "duration": 3.84
+  },
+  {
+    "text": "engagement is totally different now with",
+    "start": 282.04,
+    "duration": 4.2
+  },
+  {
+    "text": "Jev. The basic primitive types of Jev",
+    "start": 284.0,
+    "duration": 4.76
+  },
+  {
+    "text": "are choice, score, and null. And you can",
+    "start": 286.24,
+    "duration": 4.84
+  },
+  {
+    "text": "ask Jev a categorical question,",
+    "start": 288.76,
+    "duration": 4.64
+  },
+  {
+    "text": "score-based on order choices, or a",
+    "start": 291.08,
+    "duration": 4.8
+  },
+  {
+    "text": "probability of yes or no question. And",
+    "start": 293.4,
+    "duration": 4.519
+  },
+  {
+    "text": "these are sort of these building blocks",
+    "start": 295.88,
+    "duration": 4.24
+  },
+  {
+    "text": "that software can now use to build on",
+    "start": 297.919,
+    "duration": 3.801
+  },
+  {
+    "text": "top. It almost feels like we're back to",
+    "start": 300.12,
+    "duration": 3.76
+  },
+  {
+    "text": "logic gates and registers, and now we",
+    "start": 301.72,
+    "duration": 4.44
+  },
+  {
+    "text": "have to build many abstractions on top",
+    "start": 303.88,
+    "duration": 4.12
+  },
+  {
+    "text": "to build more complicated application as",
+    "start": 306.16,
+    "duration": 3.84
+  },
+  {
+    "text": "an abstraction. For example, I can take",
+    "start": 308.0,
+    "duration": 3.919
+  },
+  {
+    "text": "this long list of plants to sort",
+    "start": 310.0,
+    "duration": 3.12
+  },
+  {
+    "text": "through, and running them through",
+    "start": 311.919,
+    "duration": 3.081
+  },
+  {
+    "text": "auto-regressive models like Claude Opus",
+    "start": 313.12,
+    "duration": 3.96
+  },
+  {
+    "text": "5 would inherently be different than",
+    "start": 315.0,
+    "duration": 4.16
+  },
+  {
+    "text": "asking Jev to do the same task, which is",
+    "start": 317.08,
+    "duration": 3.92
+  },
+  {
+    "text": "done in a matter of a second or two. And",
+    "start": 319.16,
+    "duration": 3.4
+  },
+  {
+    "text": "of course, you can also follow different",
+    "start": 321.0,
+    "duration": 3.16
+  },
+  {
+    "text": "design patterns given different",
+    "start": 322.56,
+    "duration": 3.72
+  },
+  {
+    "text": "permutations of these building blocks.",
+    "start": 324.16,
+    "duration": 4.0
+  },
+  {
+    "text": "So, when we look at the Pareto frontier,",
+    "start": 326.28,
+    "duration": 4.76
+  },
+  {
+    "text": "Jev is competing closer to Flash or Nato",
+    "start": 328.16,
+    "duration": 5.64
+  },
+  {
+    "text": "models like GPT 5.6 Luna, DeepSeek v4",
+    "start": 331.04,
+    "duration": 5.32
+  },
+  {
+    "text": "Flash, or Sonnet 5, but only on use",
+    "start": 333.8,
+    "duration": 5.0
+  },
+  {
+    "text": "cases like workflow-specific tasks. So,",
+    "start": 336.36,
+    "duration": 4.52
+  },
+  {
+    "text": "what I hope to see going forward is more",
+    "start": 338.8,
+    "duration": 4.16
+  },
+  {
+    "text": "coverage in this Pareto that not only",
+    "start": 340.88,
+    "duration": 3.92
+  },
+  {
+    "text": "allows us to use models that are",
+    "start": 342.96,
+    "duration": 4.52
+  },
+  {
+    "text": "optimized to assist humans in solving",
+    "start": 344.8,
+    "duration": 5.0
+  },
+  {
+    "text": "complex and creative tasks, and also",
+    "start": 347.48,
+    "duration": 4.68
+  },
+  {
+    "text": "daily driver models that helps us assist",
+    "start": 349.8,
+    "duration": 4.48
+  },
+  {
+    "text": "in mundane tasks. But now with models",
+    "start": 352.16,
+    "duration": 4.6
+  },
+  {
+    "text": "like Jeff, an explosion of use cases in",
+    "start": 354.28,
+    "duration": 4.84
+  },
+  {
+    "text": "this section as well, as more models",
+    "start": 356.76,
+    "duration": 4.68
+  },
+  {
+    "text": "continue to pop up and help us make",
+    "start": 359.12,
+    "duration": 4.48
+  },
+  {
+    "text": "actual automation possible from",
+    "start": 361.44,
+    "duration": 4.08
+  },
+  {
+    "text": "companies that built on top of these",
+    "start": 363.6,
+    "duration": 4.12
+  },
+  {
+    "text": "primitives to create something useful",
+    "start": 365.52,
+    "duration": 4.48
+  },
+  {
+    "text": "and valuable. And as long as demand and",
+    "start": 367.72,
+    "duration": 4.16
+  },
+  {
+    "text": "use cases continue to exist, we'll",
+    "start": 370.0,
+    "duration": 3.84
+  },
+  {
+    "text": "likely see more models in this section",
+    "start": 371.88,
+    "duration": 4.28
+  },
+  {
+    "text": "here. While Type-A hasn't really",
+    "start": 373.84,
+    "duration": 4.4
+  },
+  {
+    "text": "disclosed their details around how RLCD",
+    "start": 376.16,
+    "duration": 4.04
+  },
+  {
+    "text": "method actually works, we've had many",
+    "start": 378.24,
+    "duration": 4.04
+  },
+  {
+    "text": "similar ideas in the past around the",
+    "start": 380.2,
+    "duration": 4.2
+  },
+  {
+    "text": "same idea. In fact, someone on Reddit",
+    "start": 382.28,
+    "duration": 4.16
+  },
+  {
+    "text": "had already made a very similar model",
+    "start": 384.4,
+    "duration": 5.0
+  },
+  {
+    "text": "using bidirectional BERT. And this 421",
+    "start": 386.44,
+    "duration": 4.68
+  },
+  {
+    "text": "million parameter model that's open",
+    "start": 389.4,
+    "duration": 3.76
+  },
+  {
+    "text": "source can easily run on consumer",
+    "start": 391.12,
+    "duration": 4.32
+  },
+  {
+    "text": "hardware. So, how I process this entire",
+    "start": 393.16,
+    "duration": 4.24
+  },
+  {
+    "text": "news around Jeff is really more about",
+    "start": 395.44,
+    "duration": 5.12
+  },
+  {
+    "text": "our use cases growing horizontally than",
+    "start": 397.4,
+    "duration": 5.76
+  },
+  {
+    "text": "about the novelty of Jeff itself. Since",
+    "start": 400.56,
+    "duration": 4.8
+  },
+  {
+    "text": "narrow models that are specialized like",
+    "start": 403.16,
+    "duration": 4.28
+  },
+  {
+    "text": "this is something that we've had before",
+    "start": 405.36,
+    "duration": 4.24
+  },
+  {
+    "text": "generative AI completely took over the",
+    "start": 407.44,
+    "duration": 3.68
+  },
+  {
+    "text": "public narrative. And I do think that",
+    "start": 409.6,
+    "duration": 3.96
+  },
+  {
+    "text": "this is a net positive for the ecosystem",
+    "start": 411.12,
+    "duration": 5.24
+  },
+  {
+    "text": "to now appreciate a more wider landscape",
+    "start": 413.56,
+    "duration": 5.359
+  },
+  {
+    "text": "of models that doesn't necessarily brute",
+    "start": 416.36,
+    "duration": 4.96
+  },
+  {
+    "text": "force a general purpose foundation model",
+    "start": 418.919,
+    "duration": 5.161
+  },
+  {
+    "text": "for all tasks. And as we hit constraints",
+    "start": 421.32,
+    "duration": 4.48
+  },
+  {
+    "text": "that are made by the architecture and",
+    "start": 424.08,
+    "duration": 3.4
+  },
+  {
+    "text": "the training objectives, we can now",
+    "start": 425.8,
+    "duration": 3.88
+  },
+  {
+    "text": "start building models that are optimized",
+    "start": 427.48,
+    "duration": 5.84
+  },
+  {
+    "text": "for the right constraints instead.",
+    "start": 429.68,
+    "duration": 3.64
+  }
+]

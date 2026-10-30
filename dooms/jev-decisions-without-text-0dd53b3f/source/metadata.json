@@ -1,0 +1,62 @@
+{
+  "id": "YGgNBcIgI4s",
+  "title": "What Is Jev? The AI Model That Doesn't Generate Text",
+  "uploader": "IBM Technology",
+  "channel": "IBM Technology",
+  "duration": 903,
+  "upload_date": "20261001",
+  "description": "Learn more about New Frontier AI Models here → https://ibm.biz/~rGiO8LVz1\n\nWhat if an AI model didn't need to generate text? Martin Keen explains Jev, a System 1 AI model that makes fast decisions using calibrated probabilities. Learn how Jev can complement LLMs for routing, classification, and AI guardrails.\n\n 00:00 – Meet Jev and System 1 AI \n 01:29 – Compare Jev with LLMs and Reasoning Models \n 02:09 – See What Jev Is Built to Decide \n 04:04 – Understand How Jev Returns Probabilities \n 06:52 – Learn How AI Models Calibrate Confidence \n 09:18 – Train Jev with Calibrated Decisions \n 10:36 – Turn Jev Probabilities Into Software Decisions \n 12:24 – Use Jev for AI Guardrails \n 12:56 – Combine Jev with LLM Workflows \n 14:03 – Explore Where System 1 AI Could Go Next\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM → https://ibm.biz/~pW19rmUKV\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#aimodel #llm #ai #aidecisionmaking \n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n🔵 IBM Technology: https://www.youtube.com/@IBMTechnology\n🔵 IBM: https://www.youtube.com/@IBM \n🔵 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Meet Jev and System 1 AI",
+      "end_time": 89
+    },
+    {
+      "start_time": 89,
+      "title": "Compare Jev with LLMs and Reasoning Models",
+      "end_time": 129
+    },
+    {
+      "start_time": 129,
+      "title": "See What Jev Is Built to Decide",
+      "end_time": 244
+    },
+    {
+      "start_time": 244,
+      "title": "Understand How Jev Returns Probabilities",
+      "end_time": 412
+    },
+    {
+      "start_time": 412,
+      "title": "Learn How AI Models Calibrate Confidence",
+      "end_time": 558
+    },
+    {
+      "start_time": 558,
+      "title": "Train Jev with Calibrated Decisions",
+      "end_time": 636
+    },
+    {
+      "start_time": 636,
+      "title": "Turn Jev Probabilities Into Software Decisions",
+      "end_time": 744
+    },
+    {
+      "start_time": 744,
+      "title": "Use Jev for AI Guardrails",
+      "end_time": 776
+    },
+    {
+      "start_time": 776,
+      "title": "Combine Jev with LLM Workflows",
+      "end_time": 843
+    },
+    {
+      "start_time": 843,
+      "title": "Explore Where System 1 AI Could Go Next",
+      "end_time": 903
+    }
+  ],
+  "language": "en"
+}

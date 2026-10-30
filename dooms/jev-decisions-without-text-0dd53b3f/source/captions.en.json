@@ -1,0 +1,1227 @@
+[
+  {
+    "text": "All right, I want to talk about Jev.",
+    "start": 0.333,
+    "duration": 3.671
+  },
+  {
+    "text": "Jev's a new AI model from a startup\ncalled TypeSafe.",
+    "start": 4.237,
+    "duration": 3.737
+  },
+  {
+    "text": "And it's a bit unusual",
+    "start": 8.208,
+    "duration": 1.268
+  },
+  {
+    "text": "because it's an AI model that doesn't actually write any text.",
+    "start": 9.476,
+    "duration": 4.504
+  },
+  {
+    "text": "It actually answers questions by picking from a list",
+    "start": 14.014,
+    "duration": 3.737
+  },
+  {
+    "text": "and then giving a probability for each one of those answers.",
+    "start": 17.751,
+    "duration": 3.37
+  },
+  {
+    "text": "Now type safe causes a new type of AI model.",
+    "start": 21.221,
+    "duration": 2.936
+  },
+  {
+    "text": "It's a system one model,",
+    "start": 24.157,
+    "duration": 3.303
+  },
+  {
+    "text": "which is a name borrowed from Daniel Kahneman",
+    "start": 27.761,
+    "duration": 3.603
+  },
+  {
+    "text": "in his book, one of my Favorites, Thinking Fast and Slow.",
+    "start": 31.364,
+    "duration": 3.537
+  },
+  {
+    "text": "Kahneman describes two modes of thinking, human thinking, that is,",
+    "start": 35.135,
+    "duration": 4.804
+  },
+  {
+    "text": "and the first of those modes is called",
+    "start": 40.34,
+    "duration": 3.003
+  },
+  {
+    "text": "system one thinking.",
+    "start": 44.244,
+    "duration": 2.569
+  },
+  {
+    "text": "And system one thinking is fast and automatic.",
+    "start": 46.813,
+    "duration": 3.103
+  },
+  {
+    "text": "So what's two times two?",
+    "start": 50.016,
+    "duration": 3.737
+  },
+  {
+    "text": "You instantly know the answer is four without having",
+    "start": 53.853,
+    "duration": 4.238
+  },
+  {
+    "text": "to really work it out in your head.",
+    "start": 58.124,
+    "duration": 1.936
+  },
+  {
+    "text": "That system one thinking.",
+    "start": 60.06,
+    "duration": 1.44
+  },
+  {
+    "text": "The other type of thinking",
+    "start": 61.5,
+    "duration": 2.83
+  },
+  {
+    "text": "is classified as system two thinking.",
+    "start": 64.431,
+    "duration": 3.003
+  },
+  {
+    "text": "And that's slow and deliberate.",
+    "start": 67.534,
+    "duration": 3.069
+  },
+  {
+    "text": "So if I ask you what's 17 times 24?",
+    "start": 70.77,
+    "duration": 5.105
+  },
+  {
+    "text": "Well, you're probably going",
+    "start": 76.276,
+    "duration": 0.967
+  },
+  {
+    "text": "to need to work through that one step by step to figure it out.",
+    "start": 77.243,
+    "duration": 3.637
+  },
+  {
+    "text": "Or just look at the answer on your teleprompter, which is 408.",
+    "start": 81.714,
+    "duration": 5.373
+  },
+  {
+    "text": "There we go.",
+    "start": 87.32,
+    "duration": 0.834
+  },
+  {
+    "text": "Got it.",
+    "start": 88.154,
+    "duration": 0.935
+  },
+  {
+    "text": "Now, most of the AI models we use are built to write stuff,",
+    "start": 89.089,
+    "duration": 5.005
+  },
+  {
+    "text": "and a chatbot produces its answers one token",
+    "start": 94.26,
+    "duration": 4.872
+  },
+  {
+    "text": "at a time in a forward pass.",
+    "start": 99.332,
+    "duration": 3.37
+  },
+  {
+    "text": "Now a reasoning model goes a bit further than that,",
+    "start": 103.803,
+    "duration": 2.67
+  },
+  {
+    "text": "and it actually writes out its chain of thought as we're going through this.",
+    "start": 106.473,
+    "duration": 3.937
+  },
+  {
+    "text": "So you can actually kind of see what it was thinking,",
+    "start": 110.577,
+    "duration": 3.27
+  },
+  {
+    "text": "which is basically as close to a system two model as AI gets.",
+    "start": 114.314,
+    "duration": 4.771
+  },
+  {
+    "text": "But, but, a lot of decisions inside software",
+    "start": 119.319,
+    "duration": 3.303
+  },
+  {
+    "text": "are not really system to they're just kind of quick judgment calls.",
+    "start": 123.156,
+    "duration": 3.103
+  },
+  {
+    "text": "So let me give you an example of that.",
+    "start": 126.292,
+    "duration": 2.803
+  },
+  {
+    "text": "Let's say that we have got a email",
+    "start": 129.095,
+    "duration": 3.737
+  },
+  {
+    "text": "from customer support.",
+    "start": 133.366,
+    "duration": 3.036
+  },
+  {
+    "text": "And that email says that I was charged twice this month.",
+    "start": 136.503,
+    "duration": 4.504
+  },
+  {
+    "text": "Please fix it.",
+    "start": 141.141,
+    "duration": 1.668
+  },
+  {
+    "text": "Alright.",
+    "start": 142.809,
+    "duration": 0.367
+  },
+  {
+    "text": "So how do we respond to this email?",
+    "start": 143.176,
+    "duration": 2.269
+  },
+  {
+    "text": "Well, the software that's handling this email probably has to",
+    "start": 145.445,
+    "duration": 4.938
+  },
+  {
+    "text": "look at three types of question.",
+    "start": 150.95,
+    "duration": 3.737
+  },
+  {
+    "text": "One of the questions is is this",
+    "start": 155.288,
+    "duration": 2.669
+  },
+  {
+    "text": "a refund request yes or no?",
+    "start": 159.259,
+    "duration": 3.036
+  },
+  {
+    "text": "Another question might be which team",
+    "start": 163.329,
+    "duration": 3.003
+  },
+  {
+    "text": "needs to process this email, maybe the billing team.",
+    "start": 166.633,
+    "duration": 3.336
+  },
+  {
+    "text": "Or maybe it's the technical support team, or maybe it's the sales team.",
+    "start": 170.17,
+    "duration": 3.003
+  },
+  {
+    "text": "And then also how urgent is this request?",
+    "start": 173.439,
+    "duration": 3.27
+  },
+  {
+    "text": "How quickly do we need to respond?",
+    "start": 176.743,
+    "duration": 3.136
+  },
+  {
+    "text": "Now a person just skimming an email like that,",
+    "start": 180.647,
+    "duration": 3.436
+  },
+  {
+    "text": "they would instantly know that refund.",
+    "start": 184.217,
+    "duration": 3.136
+  },
+  {
+    "text": "Yeah, it's yes, this is a refund request.",
+    "start": 188.154,
+    "duration": 2.336
+  },
+  {
+    "text": "That's kind of a system. One bit of work.",
+    "start": 190.49,
+    "duration": 2.703
+  },
+  {
+    "text": "And it's that kind of work that Jev is built for.",
+    "start": 193.193,
+    "duration": 3.737
+  },
+  {
+    "text": "So a common way to automate a support email problem like this today,",
+    "start": 197.53,
+    "duration": 4.171
+  },
+  {
+    "text": "using an LLM would be to send this email",
+    "start": 201.734,
+    "duration": 3.704
+  },
+  {
+    "text": "to the limb and ask for the answers back.",
+    "start": 205.471,
+    "duration": 3.971
+  },
+  {
+    "text": "The answers to these things in a structured formats.",
+    "start": 209.742,
+    "duration": 2.369
+  },
+  {
+    "text": "Maybe we would go through this large language model outputs and tokens.",
+    "start": 212.111,
+    "duration": 5.005
+  },
+  {
+    "text": "And these tokens would represent a format maybe in JSON.",
+    "start": 217.116,
+    "duration": 5.239
+  },
+  {
+    "text": "Now that mostly works, but it doesn't come back",
+    "start": 222.422,
+    "duration": 2.669
+  },
+  {
+    "text": "with a reliable sense of how sure the model is.",
+    "start": 225.091,
+    "duration": 3.303
+  },
+  {
+    "text": "How confident is a large language model",
+    "start": 228.661,
+    "duration": 2.736
+  },
+  {
+    "text": "that it got the answer to these questions right?",
+    "start": 231.397,
+    "duration": 3.003
+  },
+  {
+    "text": "Well, we could ask the model, but whatever it responds",
+    "start": 234.767,
+    "duration": 2.636
+  },
+  {
+    "text": "with wouldn't necessarily actually match the real probabilities.",
+    "start": 237.403,
+    "duration": 3.27
+  },
+  {
+    "text": "The model used to come up with its answer.",
+    "start": 240.673,
+    "duration": 3.003
+  },
+  {
+    "text": "But Jev well, give does come up with probabilities.",
+    "start": 243.876,
+    "duration": 3.871
+  },
+  {
+    "text": "So if we send these questions to Jev, we're going to get",
+    "start": 247.78,
+    "duration": 3.103
+  },
+  {
+    "text": "a very different looking response.",
+    "start": 251.017,
+    "duration": 3.003
+  },
+  {
+    "text": "So it takes in two things.",
+    "start": 254.354,
+    "duration": 2.969
+  },
+  {
+    "text": "It takes in what's called state",
+    "start": 257.323,
+    "duration": 4.171
+  },
+  {
+    "text": "which is the data the decision is about.",
+    "start": 261.728,
+    "duration": 3.67
+  },
+  {
+    "text": "So that might include our support email.",
+    "start": 265.632,
+    "duration": 2.702
+  },
+  {
+    "text": "That might include some recent customer charges as well.",
+    "start": 268.334,
+    "duration": 3.07
+  },
+  {
+    "text": "All of that is input into the Jev model.",
+    "start": 271.571,
+    "duration": 3.003
+  },
+  {
+    "text": "And it also takes in each of these questions",
+    "start": 274.841,
+    "duration": 4.805
+  },
+  {
+    "text": "as well into the model as input.",
+    "start": 280.113,
+    "duration": 3.003
+  },
+  {
+    "text": "And are three questions are actually three different types of questions.",
+    "start": 283.616,
+    "duration": 4.705
+  },
+  {
+    "text": "So refund that is a a yes or no question.",
+    "start": 288.321,
+    "duration": 5.672
+  },
+  {
+    "text": "Which type save calls a null a team.",
+    "start": 293.993,
+    "duration": 3.137
+  },
+  {
+    "text": "This team question that really comes down to a choice as to which team is this.",
+    "start": 297.43,
+    "duration": 5.072
+  },
+  {
+    "text": "So picking one option from a list.",
+    "start": 302.502,
+    "duration": 2.936
+  },
+  {
+    "text": "And then that really comes down to a score",
+    "start": 305.438,
+    "duration": 4.538
+  },
+  {
+    "text": "on a scale from low to critical.",
+    "start": 310.81,
+    "duration": 2.636
+  },
+  {
+    "text": "Now all three of these questions go in in a single request.",
+    "start": 313.446,
+    "duration": 5.105
+  },
+  {
+    "text": "And whereas an would write it Json answer out one token at a time,",
+    "start": 318.851,
+    "duration": 5.406
+  },
+  {
+    "text": "Jev doesn't generate any text.",
+    "start": 324.757,
+    "duration": 2.703
+  },
+  {
+    "text": "So all three answers, they all come back at once.",
+    "start": 327.46,
+    "duration": 3.904
+  },
+  {
+    "text": "And that's a big part of why this is so much faster and cheaper",
+    "start": 331.597,
+    "duration": 4.138
+  },
+  {
+    "text": "than an LLM on these types of questions.",
+    "start": 335.902,
+    "duration": 2.969
+  },
+  {
+    "text": "Now we provide questions as input.",
+    "start": 339.472,
+    "duration": 2.069
+  },
+  {
+    "text": "What is coming back?",
+    "start": 341.541,
+    "duration": 0.934
+  },
+  {
+    "text": "I said Jev doesn't give you text.",
+    "start": 342.475,
+    "duration": 2.402
+  },
+  {
+    "text": "What it gives you coming back are probabilities as the output.",
+    "start": 344.877,
+    "duration": 5.573
+  },
+  {
+    "text": "So for refund it's going to be a single number.",
+    "start": 351.017,
+    "duration": 4.604
+  },
+  {
+    "text": "Let's say it's going to come back with 0.9,",
+    "start": 355.621,
+    "duration": 3.971
+  },
+  {
+    "text": "meaning there is a 90% chance that yes, this is a refund request.",
+    "start": 359.659,
+    "duration": 5.2
+  },
+  {
+    "text": "For the team, it's a probability for each one of the options that were part of this choice.",
+    "start": 364.859,
+    "duration": 6.278
+  },
+  {
+    "text": "So for example, the billing choice which is one of the three.",
+    "start": 371.27,
+    "duration": 4.538
+  },
+  {
+    "text": "May come back with a probability score of 0.85.",
+    "start": 375.808,
+    "duration": 4.305
+  },
+  {
+    "text": "And by the way, the answer to choice can only be the options that we give it.",
+    "start": 380.713,
+    "duration": 4.571
+  },
+  {
+    "text": "So if a team is always going to be billing or technical or sales",
+    "start": 385.852,
+    "duration": 3.303
+  },
+  {
+    "text": "and then urgency, well that's going to come back.",
+    "start": 389.622,
+    "duration": 2.569
+  },
+  {
+    "text": "If we kind of put this on a scale pretty high to critical here.",
+    "start": 392.191,
+    "duration": 5.539
+  },
+  {
+    "text": "So this is quite important.",
+    "start": 397.797,
+    "duration": 2.035
+  },
+  {
+    "text": "Now the model can still pick the wrong options",
+    "start": 399.832,
+    "duration": 4.338
+  },
+  {
+    "text": "or score any of these questions incorrectly of course,",
+    "start": 404.437,
+    "duration": 3.337
+  },
+  {
+    "text": "but the probability tells us how likely that is.",
+    "start": 407.94,
+    "duration": 3.504
+  },
+  {
+    "text": "So how do you train a model",
+    "start": 411.878,
+    "duration": 3.036
+  },
+  {
+    "text": "to give accurate probabilities like this?",
+    "start": 415.114,
+    "duration": 3.037
+  },
+  {
+    "text": "Well, let me go back to training traditional LLMs for a moment.",
+    "start": 418.751,
+    "duration": 4.138
+  },
+  {
+    "text": "Most language models they start with a stage known as pre-training.",
+    "start": 423.122,
+    "duration": 5.472
+  },
+  {
+    "text": "So you pre-train a model first.",
+    "start": 428.594,
+    "duration": 3.404
+  },
+  {
+    "text": "That means the model reads",
+    "start": 432.298,
+    "duration": 1.502
+  },
+  {
+    "text": "a huge amount of text and it learns to predict the next token.",
+    "start": 433.8,
+    "duration": 3.436
+  },
+  {
+    "text": "Now that creates a model that knows a lot of stuff,",
+    "start": 437.57,
+    "duration": 3.403
+  },
+  {
+    "text": "but it isn't much used to talk to yet.",
+    "start": 441.207,
+    "duration": 2.769
+  },
+  {
+    "text": "So if we want to use this as a chatbot, then we need to go to",
+    "start": 443.976,
+    "duration": 3.003
+  },
+  {
+    "text": "a second stage,",
+    "start": 447.914,
+    "duration": 1.868
+  },
+  {
+    "text": "which is called post-training.",
+    "start": 449.782,
+    "duration": 2.97
+  },
+  {
+    "text": "Now, a lot of post-training",
+    "start": 453.319,
+    "duration": 2.436
+  },
+  {
+    "text": "uses a technique called",
+    "start": 455.755,
+    "duration": 3.003
+  },
+  {
+    "text": "reinforcement learning.",
+    "start": 458.791,
+    "duration": 2.97
+  },
+  {
+    "text": "The model produces an answer.",
+    "start": 461.761,
+    "duration": 2.736
+  },
+  {
+    "text": "Something scores that answer, and the model kind of gets nudged",
+    "start": 464.497,
+    "duration": 3.704
+  },
+  {
+    "text": "towards the answers that score well.",
+    "start": 468.201,
+    "duration": 2.002
+  },
+  {
+    "text": "So the question is what's doing the scoring?",
+    "start": 470.203,
+    "duration": 3.27
+  },
+  {
+    "text": "Well, one way to do that is with a technique called RLHF",
+    "start": 473.739,
+    "duration": 6.974
+  },
+  {
+    "text": "reinforcement learning from human feedback.",
+    "start": 481.38,
+    "duration": 2.937
+  },
+  {
+    "text": "So people are doing the scoring.",
+    "start": 484.317,
+    "duration": 2.035
+  },
+  {
+    "text": "Their human raters",
+    "start": 486.352,
+    "duration": 1.468
+  },
+  {
+    "text": "look at two responses from the model and they pick the one they like best.",
+    "start": 487.82,
+    "duration": 3.504
+  },
+  {
+    "text": "And those choices train a reward model.",
+    "start": 491.557,
+    "duration": 2.803
+  },
+  {
+    "text": "And then that chatbot is going to be trained to give answers",
+    "start": 494.36,
+    "duration": 3.003
+  },
+  {
+    "text": "that the reward model scores highly.",
+    "start": 497.363,
+    "duration": 3.003
+  },
+  {
+    "text": "People tend to like answers that sound confident.",
+    "start": 501.033,
+    "duration": 3.003
+  },
+  {
+    "text": "So an unfortunate side effect of RLHF is that a model can learn",
+    "start": 504.103,
+    "duration": 3.771
+  },
+  {
+    "text": "to sound like really sure of itself, even when it's wrong.",
+    "start": 507.874,
+    "duration": 3.003
+  },
+  {
+    "text": "But that's just one form of reinforcement learning.",
+    "start": 511.277,
+    "duration": 3.003
+  },
+  {
+    "text": "Another form is RLVR.",
+    "start": 514.48,
+    "duration": 4.271
+  },
+  {
+    "text": "That's reinforcement learning with verifiable rewards.",
+    "start": 518.751,
+    "duration": 4.671
+  },
+  {
+    "text": "And the scoring here is automatic.",
+    "start": 523.556,
+    "duration": 4.137
+  },
+  {
+    "text": "Did the model get the right answer to the math problem.",
+    "start": 527.894,
+    "duration": 3.403
+  },
+  {
+    "text": "Does the code it wrote pass its unit tests those sort of things.",
+    "start": 531.831,
+    "duration": 4.004
+  },
+  {
+    "text": "And that's a big reason",
+    "start": 535.968,
+    "duration": 1.635
+  },
+  {
+    "text": "that reasoning models today have got so good at math and coding.",
+    "start": 537.603,
+    "duration": 3.837
+  },
+  {
+    "text": "But the reward here only checks whether the final answer was right.",
+    "start": 541.607,
+    "duration": 4.605
+  },
+  {
+    "text": "It doesn't reward the model for knowing how sure it should be.",
+    "start": 546.212,
+    "duration": 3.704
+  },
+  {
+    "text": "And those models spend a while working through their chain of thought",
+    "start": 550.182,
+    "duration": 3.104
+  },
+  {
+    "text": "before they come up with an answer,",
+    "start": 553.452,
+    "duration": 1.469
+  },
+  {
+    "text": "and that can make them a little bit slow and expensive to run.",
+    "start": 554.921,
+    "duration": 3.136
+  },
+  {
+    "text": "Now Jev is trained with a different form of reinforcement learning.",
+    "start": 558.391,
+    "duration": 4.938
+  },
+  {
+    "text": "It's called RLCD,",
+    "start": 563.563,
+    "duration": 3.47
+  },
+  {
+    "text": "reinforcement learning for calibrated decisions.",
+    "start": 567.5,
+    "duration": 3.97
+  },
+  {
+    "text": "Now type safe haven't published",
+    "start": 571.804,
+    "duration": 1.568
+  },
+  {
+    "text": "much about Jev's architecture, so I stick to what they have said.",
+    "start": 573.372,
+    "duration": 3.404
+  },
+  {
+    "text": "Well, we know that Jev gives a probability for each option,",
+    "start": 577.143,
+    "duration": 4.738
+  },
+  {
+    "text": "and it's rewarded when those probabilities turn out to be right.",
+    "start": 582.048,
+    "duration": 4.237
+  },
+  {
+    "text": "So that's what the C is all about. ",
+    "start": 586.319,
+    "duration": 3.003
+  },
+  {
+    "text": "It's saying that the model is calibrated.",
+    "start": 589.355,
+    "duration": 4.137
+  },
+  {
+    "text": "And a model that's calibrated",
+    "start": 593.859,
+    "duration": 2.803
+  },
+  {
+    "text": "kind of basically looks like this.",
+    "start": 596.662,
+    "duration": 2.87
+  },
+  {
+    "text": "So along the bottom axis here if we map probability",
+    "start": 599.532,
+    "duration": 5.105
+  },
+  {
+    "text": "and then along the side axis here",
+    "start": 605.171,
+    "duration": 2.569
+  },
+  {
+    "text": "we can map whether the model is correct.",
+    "start": 607.74,
+    "duration": 4.071
+  },
+  {
+    "text": "So a well calibrated model",
+    "start": 612.011,
+    "duration": 3.003
+  },
+  {
+    "text": "is going to have kind of a diagonal line much like this.",
+    "start": 615.247,
+    "duration": 4.672
+  },
+  {
+    "text": "So when we say that there is a",
+    "start": 620.286,
+    "duration": 2.336
+  },
+  {
+    "text": "80% probability",
+    "start": 623.756,
+    "duration": 3.503
+  },
+  {
+    "text": "that 80% probability is going to be correct",
+    "start": 627.994,
+    "duration": 3.236
+  },
+  {
+    "text": "about 80% of the time, that's calibration.",
+    "start": 631.297,
+    "duration": 4.738
+  },
+  {
+    "text": "So back to the the refund question.",
+    "start": 636.502,
+    "duration": 3.904
+  },
+  {
+    "text": "That was the first of the three questions we posed to Jev about that support email.",
+    "start": 640.406,
+    "duration": 4.605
+  },
+  {
+    "text": "So if we have probabilities",
+    "start": 645.578,
+    "duration": 3.003
+  },
+  {
+    "text": "we can use them to inform code",
+    "start": 648.614,
+    "duration": 3.737
+  },
+  {
+    "text": "using a threshold like this.",
+    "start": 652.718,
+    "duration": 4.772
+  },
+  {
+    "text": "So we've got a probability threshold here.",
+    "start": 657.49,
+    "duration": 2.702
+  },
+  {
+    "text": "One is certainty zero is definitely not kind of thing.",
+    "start": 660.192,
+    "duration": 4.905
+  },
+  {
+    "text": "So if a probability score is above",
+    "start": 665.131,
+    "duration": 2.969
+  },
+  {
+    "text": "let's say point nine.",
+    "start": 668.1,
+    "duration": 3.17
+  },
+  {
+    "text": "So maybe our score comes back here somewhere.",
+    "start": 671.27,
+    "duration": 3.003
+  },
+  {
+    "text": "That means we can treat this support email",
+    "start": 674.54,
+    "duration": 3.237
+  },
+  {
+    "text": "as a legit refund request.",
+    "start": 677.91,
+    "duration": 3.17
+  },
+  {
+    "text": "And we can send that straight",
+    "start": 681.313,
+    "duration": 2.937
+  },
+  {
+    "text": "to the refund queue for processing.",
+    "start": 684.25,
+    "duration": 4.271
+  },
+  {
+    "text": "If, however, the score comes back anywhere kind of around",
+    "start": 689.355,
+    "duration": 4.204
+  },
+  {
+    "text": "between here and let's say point one,",
+    "start": 693.559,
+    "duration": 4.071
+  },
+  {
+    "text": "well, there's some uncertainty here.",
+    "start": 698.597,
+    "duration": 2.57
+  },
+  {
+    "text": "So the code that received a number like this would know",
+    "start": 701.167,
+    "duration": 4.07
+  },
+  {
+    "text": "to actually get a human involved.",
+    "start": 705.471,
+    "duration": 2.903
+  },
+  {
+    "text": "So now we need to bring in a person to actually check that",
+    "start": 708.374,
+    "duration": 3.337
+  },
+  {
+    "text": "because we're not sure.",
+    "start": 711.711,
+    "duration": 1.568
+  },
+  {
+    "text": "And if a score comes in below 0.1.",
+    "start": 713.279,
+    "duration": 4.337
+  },
+  {
+    "text": "Well I think we can say that's not a refund request.",
+    "start": 717.883,
+    "duration": 4.071
+  },
+  {
+    "text": "So keep calm and carry on.",
+    "start": 722.021,
+    "duration": 2.536
+  },
+  {
+    "text": "We don't need to do anything with that one because the numbers are calibrated.",
+    "start": 724.557,
+    "duration": 5.372
+  },
+  {
+    "text": "The threshold also tells us roughly",
+    "start": 729.995,
+    "duration": 3.037
+  },
+  {
+    "text": "how often the automatic path will be wrong.",
+    "start": 733.032,
+    "duration": 3.57
+  },
+  {
+    "text": "So the more a mistake is going to cost, the higher",
+    "start": 736.702,
+    "duration": 3.837
+  },
+  {
+    "text": "we would set the threshold.",
+    "start": 740.606,
+    "duration": 2.97
+  },
+  {
+    "text": "Now this works for more than support emails.",
+    "start": 743.576,
+    "duration": 2.469
+  },
+  {
+    "text": "Of course, Jev can act as a guardrail that can be used around",
+    "start": 746.045,
+    "duration": 5.906
+  },
+  {
+    "text": "all sorts of things, like around a chatbot that's checking messages,",
+    "start": 751.951,
+    "duration": 5.105
+  },
+  {
+    "text": "going in and out for things like, well, jailbreak attempts.",
+    "start": 757.056,
+    "duration": 4.538
+  },
+  {
+    "text": "But there are limits.",
+    "start": 761.861,
+    "duration": 0.901
+  },
+  {
+    "text": "Jev only takes text in as of today.",
+    "start": 762.762,
+    "duration": 2.969
+  },
+  {
+    "text": "It's not very good at math",
+    "start": 765.731,
+    "duration": 1.402
+  },
+  {
+    "text": "or even counting, so you're going to want to leave that stuff to something else.",
+    "start": 767.133,
+    "duration": 3.67
+  },
+  {
+    "text": "And like any AI model, it can be tricked by instructions",
+    "start": 771.237,
+    "duration": 3.537
+  },
+  {
+    "text": "hidden in the data is reading.",
+    "start": 774.774,
+    "duration": 1.701
+  },
+  {
+    "text": "So is it time to throw away large language models",
+    "start": 776.475,
+    "duration": 3.604
+  },
+  {
+    "text": "and replace them completely with system one models?",
+    "start": 780.079,
+    "duration": 3.303
+  },
+  {
+    "text": "No, hardly.",
+    "start": 783.883,
+    "duration": 1.234
+  },
+  {
+    "text": "But the two can work together.",
+    "start": 785.117,
+    "duration": 2.936
+  },
+  {
+    "text": "So if you think about a workflow, maybe we have",
+    "start": 788.053,
+    "duration": 3.237
+  },
+  {
+    "text": "Jev in the workflow that can make quick calls like sorting",
+    "start": 791.857,
+    "duration": 4.305
+  },
+  {
+    "text": "that customer support email to see whether it's a refund or not.",
+    "start": 796.162,
+    "duration": 3.436
+  },
+  {
+    "text": "And then in the workflow, we could go to a large language",
+    "start": 799.932,
+    "duration": 5.138
+  },
+  {
+    "text": "model to do the slower work, like replying to the customer.",
+    "start": 805.07,
+    "duration": 4.672
+  },
+  {
+    "text": "And then we could go back to use give to classify",
+    "start": 810.042,
+    "duration": 5.472
+  },
+  {
+    "text": "any response that came back from the customer, which is pretty much",
+    "start": 815.581,
+    "duration": 4.071
+  },
+  {
+    "text": "how Daniel Kahneman said, we work to most of what we do runs on those fast",
+    "start": 819.652,
+    "duration": 5.305
+  },
+  {
+    "text": "automatic system one processes.",
+    "start": 825.157,
+    "duration": 3.771
+  },
+  {
+    "text": "So that's these two stages here,",
+    "start": 828.928,
+    "duration": 3.103
+  },
+  {
+    "text": "and then the slow and careful system two, which is the large language model",
+    "start": 832.298,
+    "duration": 5.539
+  },
+  {
+    "text": "in this case that only kicks in when something needs real thought.",
+    "start": 837.837,
+    "duration": 4.337
+  },
+  {
+    "text": "Oh well, I wanted to to share a thing about the name of Jev as well.",
+    "start": 842.842,
+    "duration": 6.139
+  },
+  {
+    "text": "Jev is named after William Stanley Jevons,",
+    "start": 849.415,
+    "duration": 3.637
+  },
+  {
+    "text": "who was an economist who pointed out in 1865",
+    "start": 853.219,
+    "duration": 3.403
+  },
+  {
+    "text": "that as steam engines got more efficient,",
+    "start": 857.022,
+    "duration": 2.703
+  },
+  {
+    "text": "Britain actually used more coal.",
+    "start": 859.725,
+    "duration": 2.836
+  },
+  {
+    "text": "That's known as Jevon's paradox.",
+    "start": 862.561,
+    "duration": 1.769
+  },
+  {
+    "text": "So perhaps the same thing will happen with system one models.",
+    "start": 864.33,
+    "duration": 3.837
+  },
+  {
+    "text": "When a judgment call is super fast and super cheap.",
+    "start": 868.167,
+    "duration": 3.603
+  },
+  {
+    "text": "Like with Jev, well, it can go into places where an LLM would be",
+    "start": 871.804,
+    "duration": 3.737
+  },
+  {
+    "text": "too slow or too expensive today, like in every",
+    "start": 875.541,
+    "duration": 3.537
+  },
+  {
+    "text": "row of a database or an every line of a log file.",
+    "start": 879.078,
+    "duration": 3.103
+  },
+  {
+    "text": "Who knows?",
+    "start": 882.314,
+    "duration": 1.468
+  },
+  {
+    "text": "All right, that's Jev.",
+    "start": 883.782,
+    "duration": 2.036
+  },
+  {
+    "text": "Where would a system one model fit into the software that you work on?",
+    "start": 885.818,
+    "duration": 3.637
+  },
+  {
+    "text": "Let me know in the comments.",
+    "start": 889.889,
+    "duration": 1.301
+  }
+]

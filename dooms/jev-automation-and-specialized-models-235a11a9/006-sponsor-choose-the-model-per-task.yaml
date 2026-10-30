@@ -1,0 +1,15 @@
+schema_version: 1
+id: jev-automation-and-specialized-models-235a11a9-006
+title: 'Sponsor: choose the model per task'
+text: |-
+  The Junie advertisement also describes bringing an API key and selecting models for individual tasks. Caleb presents those controls as ways to manage usage and choose a model suited to the job.
+
+  The segment advertises a limited-time 75% discount for a named model. That is a promotional claim from the video’s publication period, not a verified price or an assurance that the offer remains available.
+background_image: images/decision.svg
+source_url: https://www.youtube.com/watch?v=vj7hysh0mOI&list=WL&index=13
+source_file: null
+source_title: Jev explained in 7min..
+source_type: video
+source_locator: 00:03:50–00:04:14
+sort_order: 6
+language: en

@@ -1,0 +1,15 @@
+schema_version: 1
+id: jev-decisions-without-text-0dd53b3f-012
+title: An expensive mistake needs more certainty
+text: |-
+  If a model is calibrated, a threshold gives an approximate sense of how often its automatic decisions will be wrong. That lets the application connect uncertainty to the cost of a mistake.
+
+  The presenter’s rule is simple: raise the threshold when an error would be more costly. The goal is to choose where automation is acceptable and where a person should intervene.
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=YGgNBcIgI4s&list=WL&index=9&t=13s
+source_file: null
+source_title: What Is Jev? The AI Model That Doesn't Generate Text
+source_type: video
+source_locator: 00:12:04–00:12:24
+sort_order: 12
+language: en

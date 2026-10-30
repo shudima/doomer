@@ -1,0 +1,15 @@
+schema_version: 1
+id: context-engineering-failure-modes-88666974-003
+title: Capacity is not attention
+text: |-
+  A model does not retrieve a fact from context the way a database fetches a row. The presenter describes tokens as competing for a finite attention budget.
+
+  That is why fitting more information into a window does not guarantee better use of it. The engineering problem includes deciding which information deserves to remain present, rather than only calculating how much will fit.
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=BwXremQ-i6I&list=WL&index=4
+source_file: null
+source_title: 'Context Engineering for AI Agents: 4 Failure Modes to Avoid'
+source_type: video
+source_locator: 00:03:58–00:04:34
+sort_order: 3
+language: en

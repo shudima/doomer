@@ -1,0 +1,15 @@
+schema_version: 1
+id: jev-trust-observability-bef2a4f9-008
+title: Valid output still needs verification
+text: |-
+  You can check that a decision has the expected type. You can record its probability, log the inputs, and audit the workflow around it. Those are useful checks, but they do not independently prove the intelligence behind the prediction.
+
+  The presenter’s security stance is to verify before trusting. Receiving a valid, well-formed answer is a different achievement from establishing that its conclusion is justified.
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=_yO_Q7qo0HQ&list=WL&index=3
+source_file: null
+source_title: 'The Problem with Jev: Can You Trust AI Decisions?'
+source_type: video
+source_locator: 00:08:26–00:09:22
+sort_order: 8
+language: en

@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-engineering-beyond-vibe-coding-4871572b-011
+title: Start small and watch the failures
+text: |-
+  The names for AI-assisted development will keep changing as the tools improve. The presenter’s practical suggestion is to try them within an existing workflow and notice where they help and where they break.
+
+  Build outward from that experience. The closing caution is to keep understanding and quality in the process: automating more work does not remove the need to understand what the resulting system does.
+background_image: images/flow.svg
+source_url: https://www.youtube.com/watch?v=FgaBdwSvOGM&list=WL&index=25
+source_file: null
+source_title: 'Agentic Engineering vs Software Engineering: Beyond Vibe Coding'
+source_type: video
+source_locator: 00:09:25–00:10:25
+sort_order: 11
+language: en

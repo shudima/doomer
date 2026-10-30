@@ -1,0 +1,62 @@
+{
+  "id": "hTAWHgQI4xg",
+  "title": "5 Concepts to Know for Coding with AI Agents",
+  "uploader": "IBM Technology",
+  "channel": "IBM Technology",
+  "duration": 602,
+  "upload_date": "20261012",
+  "description": "Learn more about AI Agents here → https://ibm.biz/~qNwedZihN\n\nAI coding is changing how software gets built. Cedric Clyburn breaks down five essential concepts for working effectively with AI agents, including spec-driven development, context engineering, loop engineering, and AI security. Learn how developers can move from implementation to orchestration as AI becomes part of every software workflow.\n\n00:00 - Will AI Replace Developers? A Real-World Look at the Future\n00:53 - The AI Coding Inflection Point: From Autocomplete to Autonomous Features\n01:49 - Spec-Driven Development: How AI Agents Build from Requirements\n02:28 - Why Developers Are Shifting from Coding to Conducting\n03:54 - Context Engineering & Loop Engineering Explained\n04:52 - What Every Developer Should Know About How LLMs Work\n06:15 - Skills, Automations & Sub-Agents: Building Smarter AI Workflows\n07:20 - Prompt Injection Risks and Securing AI Coding Agents\n08:25 - Andrew Ng’s “AI Is the New Electricity” Prediction\n09:24 - The Future of Software Engineering in an AI-Driven World\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM → https://ibm.biz/~UiJBNbzQ8\n\n#aiagents #aicoding #aidevelopment #softwareengineering \n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n🔵 IBM Technology: https://www.youtube.com/@IBMTechnology\n🔵 IBM: https://www.youtube.com/@IBM \n🔵 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Will AI Replace Developers? A Real-World Look at the Future",
+      "end_time": 53
+    },
+    {
+      "start_time": 53,
+      "title": "The AI Coding Inflection Point: From Autocomplete to Autonomous Features",
+      "end_time": 109
+    },
+    {
+      "start_time": 109,
+      "title": "Spec-Driven Development: How AI Agents Build from Requirements",
+      "end_time": 148
+    },
+    {
+      "start_time": 148,
+      "title": "Why Developers Are Shifting from Coding to Conducting",
+      "end_time": 234
+    },
+    {
+      "start_time": 234,
+      "title": "Context Engineering & Loop Engineering Explained",
+      "end_time": 292
+    },
+    {
+      "start_time": 292,
+      "title": "What Every Developer Should Know About How LLMs Work",
+      "end_time": 375
+    },
+    {
+      "start_time": 375,
+      "title": "Skills, Automations & Sub-Agents: Building Smarter AI Workflows",
+      "end_time": 440
+    },
+    {
+      "start_time": 440,
+      "title": "Prompt Injection Risks and Securing AI Coding Agents",
+      "end_time": 505
+    },
+    {
+      "start_time": 505,
+      "title": "Andrew Ng’s “AI Is the New Electricity” Prediction",
+      "end_time": 564
+    },
+    {
+      "start_time": 564,
+      "title": "The Future of Software Engineering in an AI-Driven World",
+      "end_time": 602
+    }
+  ],
+  "language": "en"
+}

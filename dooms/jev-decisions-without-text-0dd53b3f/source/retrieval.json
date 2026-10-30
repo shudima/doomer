@@ -1,0 +1,26 @@
+{
+  "order": 1,
+  "id": "YGgNBcIgI4s",
+  "source_url": "https://www.youtube.com/watch?v=YGgNBcIgI4s&list=WL&index=9&t=13s",
+  "title": "What Is Jev? The AI Model That Doesn't Generate Text",
+  "uploader": "IBM Technology",
+  "duration": 903,
+  "language": "en",
+  "tracks": [
+    {
+      "code": "en",
+      "language": "English",
+      "generated": false
+    },
+    {
+      "code": "en",
+      "language": "English (auto-generated)",
+      "generated": true
+    }
+  ],
+  "transcript_language": "en",
+  "auto_generated": false,
+  "cue_count": 245,
+  "last_end": 891.19,
+  "words": 2104
+}

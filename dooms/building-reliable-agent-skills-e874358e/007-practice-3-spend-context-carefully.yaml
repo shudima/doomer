@@ -1,0 +1,15 @@
+schema_version: 1
+id: building-reliable-agent-skills-e874358e-007
+title: 'Practice 3: spend context carefully'
+text: |-
+  When an agent selects a skill, its body joins the rest of the active context. Every line competes for attention, so detailed instructions also carry a cost.
+
+  The presenters suggest keeping the main body under about 500 lines, with roughly 5,000 tokens offered as another rough size guide. Focus that space on what the agent would not know by itself, rather than explaining general concepts it already understands.
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=qYNs80FKIVc&list=WL&index=23
+source_file: null
+source_title: 5 Best Practices for Building AI Agent Skills
+source_type: video
+source_locator: 00:05:34–00:07:29
+sort_order: 7
+language: en

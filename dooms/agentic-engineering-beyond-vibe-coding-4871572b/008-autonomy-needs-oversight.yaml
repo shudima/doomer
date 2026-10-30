@@ -1,0 +1,15 @@
+schema_version: 1
+id: agentic-engineering-beyond-vibe-coding-4871572b-008
+title: Autonomy needs oversight
+text: |-
+  The presenter argues that greater autonomy can increase the value of human oversight. Someone still needs to ensure reliability across probabilistic workflows.
+
+  Engineering expertise keeps experimentation accountable and checks whether the result is fit for purpose. Agents may accelerate development, while the team operating them remains responsible for quality.
+background_image: images/shield.svg
+source_url: https://www.youtube.com/watch?v=FgaBdwSvOGM&list=WL&index=25
+source_file: null
+source_title: 'Agentic Engineering vs Software Engineering: Beyond Vibe Coding'
+source_type: video
+source_locator: 00:06:20–00:07:10
+sort_order: 8
+language: en

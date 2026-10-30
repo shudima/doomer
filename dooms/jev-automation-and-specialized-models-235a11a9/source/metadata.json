@@ -1,0 +1,52 @@
+{
+  "id": "vj7hysh0mOI",
+  "title": "Jev explained in 7min..",
+  "uploader": "Caleb Writes Code",
+  "channel": "Caleb Writes Code",
+  "duration": 431,
+  "upload_date": "20260919",
+  "description": "Try Junie: https://jb.gg/CalebCode\n\nJev, a model from TypeSafe AI is a new paradigm with strong opinion around how RLHF and RLVR has completely taken over the public discourse and now it's going back to its roots to question whether new use cases can emerge from what they call RLCD.\n\nCan a model that thinks in probability distribution, at least in its output, create that much hype to actually generate great value?\n\n#ad #jev #ai\n\nFollow me:\nX: https://x.com/calebfoundry\nLinkedIn: https://www.linkedin.com/in/calebeom/\nTikTok: https://www.tiktok.com/@calebwritescode\nSubstack: https://calebwritescode.substack.com/\n\nChapters\n00:00 Intro\n00:05 Background\n00:54 TypeSafe\n01:48 Speed\n03:04 Sponsor: Junie\n04:14 LLM vs Jev\n04:44 Jev\n06:34 Conclusion",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 5
+    },
+    {
+      "start_time": 5,
+      "title": "Background",
+      "end_time": 54
+    },
+    {
+      "start_time": 54,
+      "title": "TypeSafe",
+      "end_time": 108
+    },
+    {
+      "start_time": 108,
+      "title": "Speed",
+      "end_time": 184
+    },
+    {
+      "start_time": 184,
+      "title": "Sponsor: Junie",
+      "end_time": 254
+    },
+    {
+      "start_time": 254,
+      "title": "LLM vs Jev",
+      "end_time": 284
+    },
+    {
+      "start_time": 284,
+      "title": "Jev",
+      "end_time": 394
+    },
+    {
+      "start_time": 394,
+      "title": "Conclusion",
+      "end_time": 431
+    }
+  ],
+  "language": "en-US"
+}

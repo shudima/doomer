@@ -1,0 +1,13 @@
+schema_version: 1
+id: uber-mcp-gateway-31398518-002
+title: Two planes
+text: |
+  Uber separates catalog configuration in the Registry from live request handling in the Proxy Gateway.
+background_image: images/network.svg
+source_url: https://blog.bytebytego.com/p/how-uber-built-a-gateway-for-ai-agents
+source_file: null
+source_title: How Uber Built A Gateway For AI Agents To Access Tools
+source_type: article
+source_locator: 'Section: How the Uber MCP Gateway is Designed'
+sort_order: 2
+language: en

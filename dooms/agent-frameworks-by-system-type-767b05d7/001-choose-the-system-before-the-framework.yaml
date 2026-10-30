@@ -1,0 +1,15 @@
+schema_version: 1
+id: agent-frameworks-by-system-type-767b05d7-001
+title: Choose the system before the framework
+text: |-
+  Seventeen tabs of agent frameworks can leave you no closer to a decision. The video proposes starting with the kind of system you want to build.
+
+  A predictable pipeline, an exploratory group of agents and a production operations system place different demands on their toolkit. Understanding those demands makes the comparison among frameworks meaningful, instead of searching for a single winner across every project.
+background_image: images/decision.svg
+source_url: https://www.youtube.com/watch?v=ZVPlLaehjLk&list=WL&index=21
+source_file: null
+source_title: 'Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production'
+source_type: video
+source_locator: 00:00:00–00:00:57
+sort_order: 1
+language: en

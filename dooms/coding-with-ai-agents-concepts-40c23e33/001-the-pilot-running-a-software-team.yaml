@@ -1,0 +1,15 @@
+schema_version: 1
+id: coding-with-ai-agents-concepts-40c23e33-001
+title: The pilot running a software team
+text: |-
+  The presenter describes meeting a pilot who paused a conversation to approve a code change. In the background, agents were handling roles such as development, review and operations.
+
+  The anecdote explains the presenter’s optimism: AI can bring more people into building software. The expected change is in what development looks like, with humans directing work that once required doing every implementation step themselves.
+background_image: images/network.svg
+source_url: https://www.youtube.com/watch?v=hTAWHgQI4xg&list=WL&index=5
+source_file: null
+source_title: 5 Concepts to Know for Coding with AI Agents
+source_type: video
+source_locator: 00:00:00–00:00:53
+sort_order: 1
+language: en

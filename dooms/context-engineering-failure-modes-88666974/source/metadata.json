@@ -1,0 +1,62 @@
+{
+  "id": "BwXremQ-i6I",
+  "title": "Context Engineering for AI Agents: 4 Failure Modes to Avoid",
+  "uploader": "IBM Technology",
+  "channel": "IBM Technology",
+  "duration": 620,
+  "upload_date": "20261015",
+  "description": "Learn more about Context Engineering here → https://ibm.biz/~5YM1VAeG0\n\nMore context should make AI agents better. It often does the opposite. Martin Keen explains context rot, the four major context failure modes, and how context engineering improves long-running AI agents. Learn why better agents often require less context, not more.\n\n00:00 - Bigger Context Windows, Better AI Agents? Not So Fast\n00:45 - Context Rot: Why AI Models Become Less Reliable Over Time\n01:05 - What Is Context Engineering and Why Does It Matter?\n01:50 - Inside an AI Agent’s Context Window: What’s Taking Up Space?\n04:35  - Context Poisoning: When Bad Information Becomes ‘Truth’\n05:20  - Context Distraction: How Long Histories Derail Agent Performance\n06:03  - Context Confusion: Why Too Many Tools Hurt AI Accuracy\n06:55  - Context Clash: When Conflicting Information Breaks Reasoning\n07:32  - 4 Context Engineering Fixes: Validate, Compact, Curate & Prune\n09:50  - The Key Lesson: Why AI Agents Often Perform Better with Less Context\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM → https://ibm.biz/~D9ApFMnpA\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#aiagents #contextengineering #aiworkflows #ai \n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n🔵 IBM Technology: https://www.youtube.com/@IBMTechnology\n🔵 IBM: https://www.youtube.com/@IBM \n🔵 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Bigger Context Windows, Better AI Agents? Not So Fast",
+      "end_time": 45
+    },
+    {
+      "start_time": 45,
+      "title": "Context Rot: Why AI Models Become Less Reliable Over Time",
+      "end_time": 65
+    },
+    {
+      "start_time": 65,
+      "title": "What Is Context Engineering and Why Does It Matter?",
+      "end_time": 110
+    },
+    {
+      "start_time": 110,
+      "title": "Inside an AI Agent’s Context Window: What’s Taking Up Space?",
+      "end_time": 275
+    },
+    {
+      "start_time": 275,
+      "title": "Context Poisoning: When Bad Information Becomes ‘Truth’",
+      "end_time": 320
+    },
+    {
+      "start_time": 320,
+      "title": "Context Distraction: How Long Histories Derail Agent Performance",
+      "end_time": 363
+    },
+    {
+      "start_time": 363,
+      "title": "Context Confusion: Why Too Many Tools Hurt AI Accuracy",
+      "end_time": 415
+    },
+    {
+      "start_time": 415,
+      "title": "Context Clash: When Conflicting Information Breaks Reasoning",
+      "end_time": 452
+    },
+    {
+      "start_time": 452,
+      "title": "4 Context Engineering Fixes: Validate, Compact, Curate & Prune",
+      "end_time": 590
+    },
+    {
+      "start_time": 590,
+      "title": "The Key Lesson: Why AI Agents Often Perform Better with Less Context",
+      "end_time": 620
+    }
+  ],
+  "language": "en"
+}

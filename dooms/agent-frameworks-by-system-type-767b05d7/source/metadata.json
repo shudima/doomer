@@ -1,0 +1,47 @@
+{
+  "id": "ZVPlLaehjLk",
+  "title": "Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production",
+  "uploader": "IBM Technology",
+  "channel": "IBM Technology",
+  "duration": 713,
+  "upload_date": "20260709",
+  "description": "Learn more about AI Agent Frameworks here → https://ibm.biz/~M1qnwGHnE\n\nToo many agentic AI frameworks and no clear starting point. 🤯 Meenakshi Kodati breaks down agentic AI frameworks like LangChain, AutoGen, and CrewAI across workflows, multi-agent systems, and production use cases. Learn how to choose the right framework based on your system design and real-world needs.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM → https://ibm.biz/~YOhBiYsX4\n\n#agenticai #aiagents #langchain #aiframeworks",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to AI agents",
+      "end_time": 57
+    },
+    {
+      "start_time": 57,
+      "title": "Understanding AI frameworks",
+      "end_time": 187
+    },
+    {
+      "start_time": 187,
+      "title": "Linear workflow systems",
+      "end_time": 273
+    },
+    {
+      "start_time": 273,
+      "title": "Autonomous AI systems",
+      "end_time": 403
+    },
+    {
+      "start_time": 403,
+      "title": "Role-based AI systems",
+      "end_time": 514
+    },
+    {
+      "start_time": 514,
+      "title": "Production orchestration",
+      "end_time": 597
+    },
+    {
+      "start_time": 597,
+      "title": "Rapid prototyping and summary",
+      "end_time": 713
+    }
+  ],
+  "language": "en"
+}

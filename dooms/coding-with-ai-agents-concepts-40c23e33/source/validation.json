@@ -1,0 +1,31 @@
+{
+  "schema": "canonical reel.schema.json",
+  "yaml_parser": "PyYAML",
+  "reel_count": 13,
+  "word_counts": [
+    63,
+    64,
+    61,
+    63,
+    62,
+    61,
+    70,
+    62,
+    62,
+    67,
+    67,
+    62,
+    49
+  ],
+  "portrait_assets": "1080x1920 SVG; XML parsed",
+  "phone_preview": {
+    "viewport": [
+      390,
+      844
+    ],
+    "representative": "first reel visually inspected",
+    "all_cards_layout": "passed after revisions"
+  },
+  "source_access": "full English caption track; video visuals not inspected",
+  "access_date": "2026-10-30"
+}

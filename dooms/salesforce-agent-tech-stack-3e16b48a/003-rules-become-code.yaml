@@ -1,0 +1,13 @@
+schema_version: 1
+id: salesforce-agent-tech-stack-3e16b48a-003
+title: Rules become code
+text: |
+  Agent Script compiles into an Agent Graph executed by Atlas. Before/after blocks surround reasoning; predictable checks run as code.
+background_image: images/network.svg
+source_url: https://blog.bytebytego.com/p/a-deep-dive-into-salesforces-agent
+source_file: null
+source_title: A Deep Dive into Salesforce’s Agent Tech Stack
+source_type: article
+source_locator: 'Section: 1. Deterministic instructions with Agent Script'
+sort_order: 3
+language: en

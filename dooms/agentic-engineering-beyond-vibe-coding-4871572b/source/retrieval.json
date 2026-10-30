@@ -1,0 +1,26 @@
+{
+  "order": 7,
+  "id": "FgaBdwSvOGM",
+  "source_url": "https://www.youtube.com/watch?v=FgaBdwSvOGM&list=WL&index=25",
+  "title": "Agentic Engineering vs Software Engineering: Beyond Vibe Coding",
+  "uploader": "IBM Technology",
+  "duration": 645,
+  "language": "en",
+  "tracks": [
+    {
+      "code": "en",
+      "language": "English",
+      "generated": false
+    },
+    {
+      "code": "en",
+      "language": "English (auto-generated)",
+      "generated": true
+    }
+  ],
+  "transcript_language": "en",
+  "auto_generated": false,
+  "cue_count": 110,
+  "last_end": 633.8,
+  "words": 1183
+}

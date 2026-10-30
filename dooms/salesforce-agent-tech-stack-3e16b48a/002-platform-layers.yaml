@@ -1,0 +1,13 @@
+schema_version: 1
+id: salesforce-agent-tech-stack-3e16b48a-002
+title: Platform layers
+text: |
+  Data 360 unifies records; Customer 360 supplies actions; Agentforce runs agents; surfaces include Slack and Claude.
+background_image: images/network.svg
+source_url: https://blog.bytebytego.com/p/a-deep-dive-into-salesforces-agent
+source_file: null
+source_title: A Deep Dive into Salesforce’s Agent Tech Stack
+source_type: article
+source_locator: 'Section: How Agentforce is built'
+sort_order: 2
+language: en

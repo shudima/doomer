@@ -1,0 +1,15 @@
+schema_version: 1
+id: jev-automation-and-specialized-models-235a11a9-002
+title: A different optimization target
+text: |-
+  Caleb presents TypeSafe’s argument that human-preference training and verifiable rewards do not automatically solve rapid decision-making under uncertainty. Jev targets that neglected part of automation.
+
+  The claim is about different objectives and use cases, rather than one training path winning everywhere. A model optimized for chat or extended agent work may carry costs that become impractical when an application needs large numbers of quick judgments.
+background_image: images/decision.svg
+source_url: https://www.youtube.com/watch?v=vj7hysh0mOI&list=WL&index=13
+source_file: null
+source_title: Jev explained in 7min..
+source_type: video
+source_locator: 00:00:54–00:01:48
+sort_order: 2
+language: en

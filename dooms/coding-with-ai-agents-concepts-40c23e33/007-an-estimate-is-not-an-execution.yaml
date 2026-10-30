@@ -1,0 +1,15 @@
+schema_version: 1
+id: coding-with-ai-agents-concepts-40c23e33-007
+title: An estimate is not an execution
+text: |-
+  Ask a model how long a third-person role-playing game takes to build, and it might estimate weeks or months. Ask a coding agent to build one, and the presenter says it may produce a working example in five minutes.
+
+  The contrast illustrates limits in how models discuss time and tasks. A quick working example and a complete game are different scopes; developers still need to understand what was actually delivered.
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=hTAWHgQI4xg&list=WL&index=5
+source_file: null
+source_title: 5 Concepts to Know for Coding with AI Agents
+source_type: video
+source_locator: 00:04:52–00:05:45
+sort_order: 7
+language: en

@@ -1,0 +1,13 @@
+schema_version: 1
+id: uber-mcp-gateway-31398518-006
+title: Check the caller
+text: |
+  Uber applies caller-based server or tool permissions and response redaction. External integrations exchange internal identity for third-party credentials.
+background_image: images/network.svg
+source_url: https://blog.bytebytego.com/p/how-uber-built-a-gateway-for-ai-agents
+source_file: null
+source_title: How Uber Built A Gateway For AI Agents To Access Tools
+source_type: article
+source_locator: 'Section: How the Gateway Takes Care of Access'
+sort_order: 6
+language: en

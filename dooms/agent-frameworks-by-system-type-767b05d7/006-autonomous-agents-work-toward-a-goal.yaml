@@ -1,0 +1,15 @@
+schema_version: 1
+id: agent-frameworks-by-system-type-767b05d7-006
+title: Autonomous agents work toward a goal
+text: |-
+  An autonomous setup starts with a goal and lets the agents work out how to accomplish it. The example is a coding assistant with planning, coding and review work.
+
+  Agents communicate, propose changes and help debug the result. The presenter places this approach with open-ended problems, where the useful next step may emerge from the work instead of following a fully predetermined sequence.
+background_image: images/network.svg
+source_url: https://www.youtube.com/watch?v=ZVPlLaehjLk&list=WL&index=21
+source_file: null
+source_title: 'Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production'
+source_type: video
+source_locator: 00:05:12–00:06:14
+sort_order: 6
+language: en

@@ -1,0 +1,15 @@
+schema_version: 1
+id: jev-automation-and-specialized-models-235a11a9-003
+title: Latency changes what is practical
+text: |-
+  Email sorting, retrieval improvement, games and model routing are tasks ordinary LLMs can perform. Caleb says the interesting difference is how quickly a specialized model can perform them.
+
+  He relays Jev’s claimed 40–200-times speed advantage and 70–500-millisecond end-to-end responses. These are reported figures, not measurements reproduced in the video. The argument is that speed can make familiar capabilities practical at a different scale.
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=vj7hysh0mOI&list=WL&index=13
+source_file: null
+source_title: Jev explained in 7min..
+source_type: video
+source_locator: 00:01:48–00:02:35
+sort_order: 3
+language: en

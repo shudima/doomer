@@ -1,0 +1,26 @@
+{
+  "order": 6,
+  "id": "ZVPlLaehjLk",
+  "source_url": "https://www.youtube.com/watch?v=ZVPlLaehjLk&list=WL&index=21",
+  "title": "Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production",
+  "uploader": "IBM Technology",
+  "duration": 713,
+  "language": "en",
+  "tracks": [
+    {
+      "code": "en",
+      "language": "English",
+      "generated": false
+    },
+    {
+      "code": "en",
+      "language": "English (auto-generated)",
+      "generated": true
+    }
+  ],
+  "transcript_language": "en",
+  "auto_generated": false,
+  "cue_count": 153,
+  "last_end": 701.62,
+  "words": 1571
+}

@@ -1,0 +1,32 @@
+{
+  "id": "mtiOK2QG9Q0",
+  "title": "The 7 Skills You Need to Build AI Agents",
+  "uploader": "IBM Technology",
+  "channel": "IBM Technology",
+  "duration": 876,
+  "upload_date": "20260414",
+  "description": "As AI agents become more capable, the skills needed for AI jobs are shifting. Bri Kopecki breaks down the 7 skills you need to move from prompt engineering to full agent engineering, including system design, retrieval, reliability, and security. Learn how to build AI agents that actually work in production 🚀.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM → https://ibm.biz/Bdpm3C\n\n#aiagents #aiengineering #aiskills",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 160
+    },
+    {
+      "start_time": 160,
+      "title": "System Design",
+      "end_time": 239
+    },
+    {
+      "start_time": 239,
+      "title": "Tool Contract Design",
+      "end_time": 413
+    },
+    {
+      "start_time": 413,
+      "title": "Reliability Engineering",
+      "end_time": 876
+    }
+  ],
+  "language": "en"
+}

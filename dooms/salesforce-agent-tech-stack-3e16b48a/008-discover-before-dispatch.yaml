@@ -1,0 +1,13 @@
+schema_version: 1
+id: salesforce-agent-tech-stack-3e16b48a-008
+title: Discover before dispatch
+text: |
+  AIforce’s Headless Toolkit combines APIs, skills, and MCP. Four tools support discovery, contract inspection, and authorized dispatch.
+background_image: images/network.svg
+source_url: https://blog.bytebytego.com/p/a-deep-dive-into-salesforces-agent
+source_file: null
+source_title: A Deep Dive into Salesforce’s Agent Tech Stack
+source_type: article
+source_locator: 'Section: Where the agent runs'
+sort_order: 8
+language: en

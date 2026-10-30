@@ -1,0 +1,62 @@
+{
+  "id": "_yO_Q7qo0HQ",
+  "title": "The Problem with Jev: Can You Trust AI Decisions?",
+  "uploader": "IBM Technology",
+  "channel": "IBM Technology",
+  "duration": 793,
+  "upload_date": "20261020",
+  "description": "Learn more about New Frontier AI Models here → https://ibm.biz/~QV9RAqelj\n\nA confident AI decision isn't necessarily a trustworthy one. Jeff Crume examines Jev through a cybersecurity lens, from attack surfaces and poisoned inputs to observability and verification. Learn why AI decisions need evidence, auditability, and human oversight.\n\n 00:00 – Question Whether AI Confidence Can Be Trusted\n 00:26 – Understand the Problem with Jev\n 01:47 – Compare Jev Decisions with LLM Outputs\n 02:48 – Separate AI Confidence from Evidence\n 03:37 – See How Jev Changes the AI Attack Surface\n 05:54 – Build Observability Around AI Decisions\n 07:00 – Break AI Decisions Into Verifiable Steps\n 08:30 – Understand Why AI Predictions Are Hard to Verify\n 10:38 – Secure Jev with Independent Controls\n 11:29 – Verify AI Decisions Before You Trust Them\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM → https://ibm.biz/~hldgvLLwI\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#aisecurity #cybersecurity #aiobservability #aitrust \n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n🔵 IBM Technology: https://www.youtube.com/@IBMTechnology\n🔵 IBM: https://www.youtube.com/@IBM \n🔵 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Question Whether AI Confidence Can Be Trusted",
+      "end_time": 26
+    },
+    {
+      "start_time": 26,
+      "title": "Understand the Problem with Jev",
+      "end_time": 107
+    },
+    {
+      "start_time": 107,
+      "title": "Compare Jev Decisions with LLM Outputs",
+      "end_time": 168
+    },
+    {
+      "start_time": 168,
+      "title": "Separate AI Confidence from Evidence",
+      "end_time": 217
+    },
+    {
+      "start_time": 217,
+      "title": "See How Jev Changes the AI Attack Surface",
+      "end_time": 354
+    },
+    {
+      "start_time": 354,
+      "title": "Build Observability Around AI Decisions",
+      "end_time": 420
+    },
+    {
+      "start_time": 420,
+      "title": "Break AI Decisions Into Verifiable Steps",
+      "end_time": 510
+    },
+    {
+      "start_time": 510,
+      "title": "Understand Why AI Predictions Are Hard to Verify",
+      "end_time": 638
+    },
+    {
+      "start_time": 638,
+      "title": "Secure Jev with Independent Controls",
+      "end_time": 689
+    },
+    {
+      "start_time": 689,
+      "title": "Verify AI Decisions Before You Trust Them",
+      "end_time": 793
+    }
+  ],
+  "language": "en"
+}

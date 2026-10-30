@@ -1,0 +1,13 @@
+schema_version: 1
+id: salesforce-agent-tech-stack-3e16b48a-007
+title: Separate agent permissions
+text: |
+  Agent Identity checks separate agent and user tokens against permissions and data policies. Any denial blocks execution.
+background_image: images/network.svg
+source_url: https://blog.bytebytego.com/p/a-deep-dive-into-salesforces-agent
+source_file: null
+source_title: A Deep Dive into Salesforce’s Agent Tech Stack
+source_type: article
+source_locator: 'Section: 4. Permission management with Agent Identity'
+sort_order: 7
+language: en

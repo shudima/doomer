@@ -1,0 +1,532 @@
+[
+  {
+    "text": "Context windows have grown from, well, a few thousand tokens to, well a lot bigger, like a million or more.",
+    "start": 0.3,
+    "duration": 11.1
+  },
+  {
+    "text": "And that's room for more stuff, more instructions, tool results, docs, you name it.",
+    "start": 11.66,
+    "duration": 5.239
+  },
+  {
+    "text": "So, if we think about AI agents,",
+    "start": 16.9,
+    "duration": 4.238
+  },
+  {
+    "text": "and we give them access to this big old context window, well, they should probably be get, getting better at long running tasks, shouldn't they?",
+    "start": 21.138,
+    "duration": 12.141
+  },
+  {
+    "text": "I mean, the more context, the better job they can do.",
+    "start": 33.6,
+    "duration": 2.4
+  },
+  {
+    "text": "Well, a recent study looked at 18 frontier models and it turned out that they all got less reliable as the context window got bigger.",
+    "start": 36.88,
+    "duration": 8.84
+  },
+  {
+    "text": "Researchers have taken to giving this thing a name, and that is context rot.",
+    "start": 46.22,
+    "duration": 6.239
+  },
+  {
+    "text": "The more tokens in the window, the less reliably the model uses any of them.",
+    "start": 52.46,
+    "duration": 6.13
+  },
+  {
+    "text": "And this is the problem that context engineering is there to solve.",
+    "start": 58.87,
+    "duration": 5.679
+  },
+  {
+    "text": "Context engineering is deciding what actually goes into this context window at each step of an agent's run.",
+    "start": 65.11,
+    "duration": 6.36
+  },
+  {
+    "text": "Now there are many ways an agent context can go wrong and I'm going to cover four of them,",
+    "start": 72.09,
+    "duration": 7.444
+  },
+  {
+    "text": "the four failure modes that you can encounter when working with these big context windows.",
+    "start": 79.534,
+    "duration": 7.356
+  },
+  {
+    "text": "And because I feel nice, I will also suggest how to fix each one.",
+    "start": 87.87,
+    "duration": 3.719
+  },
+  {
+    "text": "And the funny thing about those fixes is they involve deliberately throwing away information.",
+    "start": 91.71,
+    "duration": 6.279
+  },
+  {
+    "text": "So how does an agent get better by holding less context?",
+    "start": 98.31,
+    "duration": 5.2
+  },
+  {
+    "text": "Well, to answer that, we should first take a look at what's actually filling up these giant context windows.",
+    "start": 104.07,
+    "duration": 5.6
+  },
+  {
+    "text": "So let's say an AI agent was given the job to migrate an aging code base over to a new database driver.",
+    "start": 110.11,
+    "duration": 8.08
+  },
+  {
+    "text": "So I'm talking about here, we are building a migration AI agent.",
+    "start": 118.35,
+    "duration": 5.859
+  },
+  {
+    "text": "Now, at the beginning of the context window, the first thing most likely in here, is the system prompt.",
+    "start": 124.87,
+    "duration": 8.68
+  },
+  {
+    "text": "That's the standing instructions for how the agent operates in general.",
+    "start": 133.63,
+    "duration": 4.239
+  },
+  {
+    "text": "Now the agent task itself, that will also be stored in here as well, just as a prompt on its own.",
+    "start": 138.68,
+    "duration": 7.76
+  },
+  {
+    "text": "And it might not be very big, it might only be a couple of lines.",
+    "start": 146.9,
+    "duration": 2.659
+  },
+  {
+    "text": "Then, many agent harnesses also pull in a bunch of project instructions.",
+    "start": 150.36,
+    "duration": 5.259
+  },
+  {
+    "text": "Now these are things like an agents.md file explaining how this particular project is built.",
+    "start": 156.82,
+    "duration": 5.659
+  },
+  {
+    "text": "Then after that, we might have some tool definitions, a description of every tool the agent can call.",
+    "start": 162.48,
+    "duration": 8.45
+  },
+  {
+    "text": "And from here on in, the context window turns into a bit of a running log.",
+    "start": 171.83,
+    "duration": 4.919
+  },
+  {
+    "text": "So we're going to have a message history here.",
+    "start": 177.29,
+    "duration": 3.96
+  },
+  {
+    "text": "This is every step the, the agent has taken.",
+    "start": 181.27,
+    "duration": 3.3
+  },
+  {
+    "text": "And, after let's say an hour of running, well, this could get pretty big.",
+    "start": 185.05,
+    "duration": 4.98
+  },
+  {
+    "text": "That's going to be a lot of steps.",
+    "start": 190.03,
+    "duration": 1.379
+  },
+  {
+    "text": "And then the biggest band is probably the tool results that we store here.",
+    "start": 191.67,
+    "duration": 5.38
+  },
+  {
+    "text": "Which is things like file contents and test output and error logs and schema dumps.",
+    "start": 197.4,
+    "duration": 4.96
+  },
+  {
+    "text": "So, the job description, the prompt, is a few lines near the front and pretty much everything else is the stuff that the agent kind of piles up along the way.",
+    "start": 202.58,
+    "duration": 10.119
+  },
+  {
+    "text": "Oh, and buried in this as well, there happens to be a note.",
+    "start": 213.36,
+    "duration": 6.179
+  },
+  {
+    "text": "This is a note the agent wrote itself, it says that the new driver retries failed connections automatically, so the old retry code can be deleted.",
+    "start": 220.2,
+    "duration": 9.029
+  },
+  {
+    "text": "So the note just basically says, \"Hey, don't bother with writing any retry codes.\" Why do I mention that?",
+    "start": 229.71,
+    "duration": 6.94
+  },
+  {
+    "text": "We'll come back to that.",
+    "start": 237.51,
+    "duration": 1.059
+  },
+  {
+    "text": "Anyway, why is a full context window a problem?",
+    "start": 238.97,
+    "duration": 3.819
+  },
+  {
+    "text": "Well, a model doesn't look things up in its context the way a database looks up a row.",
+    "start": 243.31,
+    "duration": 6.04
+  },
+  {
+    "text": "Every token in the window is competing for a finite amount of attention.",
+    "start": 249.97,
+    "duration": 5.78
+  },
+  {
+    "text": "Essentially, an attention budget, and to me, this is kind of the crux of it.",
+    "start": 256.149,
+    "duration": 5.641
+  },
+  {
+    "text": "The window might hold a million tokens, but the attention spread across those tokens is finite.",
+    "start": 262.21,
+    "duration": 8.5
+  },
+  {
+    "text": "Now, what about those failure modes?",
+    "start": 271.81,
+    "duration": 2.42
+  },
+  {
+    "text": "Let's start with the first one.",
+    "start": 274.51,
+    "duration": 1.22
+  },
+  {
+    "text": "Number one, that is context poisoning.",
+    "start": 275.73,
+    "duration": 4.4
+  },
+  {
+    "text": "So I cryptically mentioned the agent wrote itself a note about the new driver retrying failed connections automatically.",
+    "start": 280.49,
+    "duration": 6.56
+  },
+  {
+    "text": "Well it turns out that that note, is completely wrong.",
+    "start": 287.49,
+    "duration": 2.559
+  },
+  {
+    "text": "The agent shouldn't have done this.",
+    "start": 290.95,
+    "duration": 1.719
+  },
+  {
+    "text": "It basically skimmed the driver's documentation, it misread it and then it's written down a false conclusion and that's all poisoning is.",
+    "start": 292.81,
+    "duration": 7.1
+  },
+  {
+    "text": "A mistake gets into this context window somewhere and then gets treated as fact because to the AI model, its own notes, they look like the ground truth.",
+    "start": 300.27,
+    "duration": 11.37
+  },
+  {
+    "text": "So, file after file our agent has been deleting perfectly good retry code.",
+    "start": 312.2,
+    "duration": 4.78
+  },
+  {
+    "text": "Next, number two.",
+    "start": 317.76,
+    "duration": 2.16
+  },
+  {
+    "text": "That is context distraction.",
+    "start": 320.23,
+    "duration": 2.999
+  },
+  {
+    "text": "This is where the sheer size of the history starts steering the agent.",
+    "start": 323.95,
+    "duration": 5.059
+  },
+  {
+    "text": "Now, a language model at its heart is just a pattern continuation machine.",
+    "start": 329.39,
+    "duration": 4.319
+  },
+  {
+    "text": "And when the context holds at, say, an hour of an agent's own past actions,",
+    "start": 334.25,
+    "duration": 4.813
+  },
+  {
+    "text": "that history becomes pretty much the strongest pattern around, stronger than the reasoning it picked up in training.",
+    "start": 339.063,
+    "duration": 7.386
+  },
+  {
+    "text": "So...",
+    "start": 346.55,
+    "duration": 0.77
+  },
+  {
+    "text": "instead of asking what the job needs next, the model might drift into doing more of what is already done in this message history.",
+    "start": 347.32,
+    "duration": 7.079
+  },
+  {
+    "text": "Agents in this state can get stuck just kind of going over old ground.",
+    "start": 355.08,
+    "duration": 4.34
+  },
+  {
+    "text": "What about number three?",
+    "start": 360.62,
+    "duration": 2.659
+  },
+  {
+    "text": "And that is context confusion.",
+    "start": 363.62,
+    "duration": 2.239
+  },
+  {
+    "text": "And this one comes from the tools.",
+    "start": 365.94,
+    "duration": 2.639
+  },
+  {
+    "text": "Our agent here is wired into quite a lot of stuff.",
+    "start": 369.54,
+    "duration": 2.739
+  },
+  {
+    "text": "There's probably some amount of version control here.",
+    "start": 372.36,
+    "duration": 3.68
+  },
+  {
+    "text": "It might be access to a database console, maybe it also is logging tickets into a ticketing system.",
+    "start": 376.55,
+    "duration": 9.459
+  },
+  {
+    "text": "And each of these tool definitions is in the window, whether it actually gets used or not.",
+    "start": 386.75,
+    "duration": 5.7
+  },
+  {
+    "text": "And having more of them makes choosing the right tool a bit harder.",
+    "start": 393.17,
+    "duration": 4.319
+  },
+  {
+    "text": "And in one benchmark, a model failed a task when it was offered 46 tools, but it then passed the very same task, when it was only offered 19 tools.",
+    "start": 397.63,
+    "duration": 9.849
+  },
+  {
+    "text": "That is tall sprawl at work.",
+    "start": 407.92,
+    "duration": 3.718
+  },
+  {
+    "text": "Okay, number four.",
+    "start": 412.34,
+    "duration": 2.286
+  },
+  {
+    "text": "That is context clash, which is when the window contains information that disagrees with itself.",
+    "start": 415.36,
+    "duration": 6.84
+  },
+  {
+    "text": "So take that note with the bad information.",
+    "start": 422.3,
+    "duration": 2.38
+  },
+  {
+    "text": "At some point, our agent is gonna see that no retries are happening, and it's gonna figure out that that note was wrong.",
+    "start": 425.32,
+    "duration": 5.759
+  },
+  {
+    "text": "And it will probably make a note of that into its message history as well.",
+    "start": 431.98,
+    "duration": 3.079
+  },
+  {
+    "text": "But the problem then, is we now have both versions sitting in the window that are presenting conflicting information.",
+    "start": 435.2,
+    "duration": 6.879
+  },
+  {
+    "text": "So these are four different ways a context window can go bad.",
+    "start": 442.98,
+    "duration": 4.719
+  },
+  {
+    "text": "All right.\nSo what about some potential fixes?",
+    "start": 448.64,
+    "duration": 3.299
+  },
+  {
+    "text": "Well, for poisoning, one of the fixes is to ...validate.",
+    "start": 452.3,
+    "duration": 7.143
+  },
+  {
+    "text": "Before a conclusion gets written down into this context window, check it against something real.",
+    "start": 460.58,
+    "duration": 5.24
+  },
+  {
+    "text": "So one quick connection test and our agent would never have written this new retry code note.",
+    "start": 466.02,
+    "duration": 6.319
+  },
+  {
+    "text": "What about...",
+    "start": 473.62,
+    "duration": 0.77
+  },
+  {
+    "text": "distraction?",
+    "start": 474.39,
+    "duration": 1.0
+  },
+  {
+    "text": "Well, the fix there is really to compact.",
+    "start": 475.55,
+    "duration": 4.88
+  },
+  {
+    "text": "When the history gets really, really long, the agent can summarize it,",
+    "start": 480.95,
+    "duration": 5.338
+  },
+  {
+    "text": "which is to say it throws the full log away and starts again from the summary, a shortened version of what was in this message history in the window.",
+    "start": 486.288,
+    "duration": 8.481
+  },
+  {
+    "text": "Now, compaction is lossy.",
+    "start": 495.13,
+    "duration": 1.879
+  },
+  {
+    "text": "A summary of the summary can start to drift like a photocopy of a photocopy.",
+    "start": 497.23,
+    "duration": 4.239
+  },
+  {
+    "text": "Consider moving as much out of the context window as possible and put them into permanent files instead.",
+    "start": 502.89,
+    "duration": 8.799
+  },
+  {
+    "text": "Detailed information can be retained in those files, and then it can be pulled into the context window only when it's actually needed.",
+    "start": 512.37,
+    "duration": 8.34
+  },
+  {
+    "text": "All right, what about context confusion?",
+    "start": 521.99,
+    "duration": 1.859
+  },
+  {
+    "text": "Well, that is a curation problem.",
+    "start": 524.169,
+    "duration": 1.66
+  },
+  {
+    "text": "So the fix is to ...\ncurate.",
+    "start": 526.21,
+    "duration": 2.808
+  },
+  {
+    "text": "The agent doesn't need 46 tools for database migration,",
+    "start": 529.88,
+    "duration": 5.397
+  },
+  {
+    "text": "so just give it the handful that the job calls for and then it can always go and fetch others if it actually needs them.",
+    "start": 535.277,
+    "duration": 6.942
+  },
+  {
+    "text": "Then finally context clash, well the fix there can be to prune.",
+    "start": 542.92,
+    "duration": 6.339
+  },
+  {
+    "text": "So when information gets superseded, just delete the old version, rather than leaving both in the window.",
+    "start": 549.97,
+    "duration": 6.479
+  },
+  {
+    "text": "We could have deleted this guy entirely.",
+    "start": 556.51,
+    "duration": 2.52
+  },
+  {
+    "text": "Or go further and start a fresh window, just restating the current corrected state of the job, and leave the poison stuff behind.",
+    "start": 559.55,
+    "duration": 8.499
+  },
+  {
+    "text": "So if a false conclusion gets saved, that's poisoning.",
+    "start": 568.67,
+    "duration": 3.259
+  },
+  {
+    "text": "So you can validate if the history has taken over, that's distraction, so compact, if the agent has more tools than the task needs, that's confusion, so curate.",
+    "start": 572.43,
+    "duration": 10.869
+  },
+  {
+    "text": "And if the context disagrees with itself, that is a clash, and the fix is prune.",
+    "start": 583.64,
+    "duration": 6.32
+  },
+  {
+    "text": "And all four fixes work by throwing something away.",
+    "start": 590.54,
+    "duration": 4.08
+  },
+  {
+    "text": "An agent can get better at long tasks, by holding less.",
+    "start": 594.9,
+    "duration": 4.399
+  },
+  {
+    "text": "Now I'd love to know how you keep an agent's context lean, do you have your own context-engineering fixes?",
+    "start": 599.86,
+    "duration": 6.532
+  },
+  {
+    "text": "Let me know in the comments!",
+    "start": 607.29,
+    "duration": 1.0
+  }
+]

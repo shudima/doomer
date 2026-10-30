@@ -1,0 +1,15 @@
+schema_version: 1
+id: context-engineering-failure-modes-88666974-007
+title: A correction can leave a clash
+text: |-
+  Eventually the migration agent notices that connections are not being retried. It writes a new note correcting its earlier assumption.
+
+  Now the window contains both claims: the driver retries automatically, and it does not. Context clash is this coexistence of conflicting information. Adding the right answer is not always enough when the obsolete answer remains available to shape the next decision.
+background_image: images/layers.svg
+source_url: https://www.youtube.com/watch?v=BwXremQ-i6I&list=WL&index=4
+source_file: null
+source_title: 'Context Engineering for AI Agents: 4 Failure Modes to Avoid'
+source_type: video
+source_locator: 00:06:52–00:07:28
+sort_order: 7
+language: en

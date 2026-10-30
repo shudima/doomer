@@ -1,0 +1,15 @@
+schema_version: 1
+id: jev-trust-observability-bef2a4f9-010
+title: Wrap the model in controls
+text: |-
+  The presenter supports using decision models while treating the AI as an untrusted component. Validate its inputs, gather independent signals, audit logs, and watch for behavioral drift and anomalies.
+
+  These controls give the organization ways to challenge the model’s view of events. Confidence becomes one signal within a security system, rather than the only reason the system believes its own decision.
+background_image: images/shield.svg
+source_url: https://www.youtube.com/watch?v=_yO_Q7qo0HQ&list=WL&index=3
+source_file: null
+source_title: 'The Problem with Jev: Can You Trust AI Decisions?'
+source_type: video
+source_locator: 00:10:38–00:11:12
+sort_order: 10
+language: en
