@@ -11,3 +11,12 @@ Email-only profile update checked on October 30, 2026.
 Earlier checks verified mobile layouts at iPhone Air dimensions, per-topic restoration, reaction replacement and persistent Finish behavior. Physical iPhone Safari testing and provider backup restore rehearsal remain separate checks.
 
 Browser verification: the email form opened the actual reader immediately, a page reload restored the remembered profile without prompting, and Change email returned to the setup form. No sign-in emails were requested. Alembic upgraded an existing revision-001 SQLite test database to revision 002 successfully.
+
+
+## iPhone Home Screen layout — October 30, 2026
+
+- Cards grow to contain all prose and source credits; longer dooms scroll inside the existing feed. Saved positions and next/previous controls use actual card bounds rather than assuming every card equals the viewport height.
+- The app fills the usable web view, uses an opaque iOS status bar, and applies bottom safe-area padding once. Automatic text inflation is disabled while retaining readable type and normal user zoom.
+- 9 frontend tests and the production TypeScript/Vite build pass. Uneven-height progress tests cover reading within a long doom, moving between cards, viewport resizing and top overscroll.
+- Browser checks at 393×730, 393×600 and 420×912 verified the formerly clipped Jev doom, reaching its full text and source, next-doom offsets, per-topic resume after reload, and footer placement at the viewport bottom.
+- Physical iPhone Home Screen validation remains necessary. Existing installed shortcuts may need removal and re-adding to pick up the changed status-bar metadata.

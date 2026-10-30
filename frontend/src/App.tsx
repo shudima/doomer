@@ -3,7 +3,7 @@ import type { CSSProperties, FormEvent, TouchEvent } from 'react';
 import { ArrowDown, ArrowRight, BookOpen, Check, CheckCheck, ChevronDown, CircleCheck, Heart, LoaderCircle, LogOut, Mail, MoreHorizontal, RefreshCw, Shuffle, Sparkles, ThumbsDown, WifiOff, X } from 'lucide-react';
 import { api, ApiError, clearImages, imageFor, setProfileId } from './api';
 import type { Config, Doom, Library, Reaction, Topic, TopicSummary } from './api';
-import { isTopicSwipe, pickTopic } from './feed';
+import { isTopicSwipe, pickTopic, visibleDoomIndex } from './feed';
 import { readProfile, saveProfile } from './profile';
 import type { Profile } from './profile';
 import { TopicExplorer } from './TopicExplorer';
@@ -52,6 +52,10 @@ export function App({ config }: { config: Config }) {
   }
   if (config.auth_mode !== 'local' && !profile) return <EmailSetup onContinue={useProfile} />;
   return <Reader key={profile?.profile_id ?? 'local'} config={config} profile={profile} onChangeEmail={resetProfile} />;
+}
+
+function doomTop(scroller: HTMLDivElement, index: number) {
+  return (scroller.children.item(index) as HTMLElement | null)?.offsetTop ?? 0;
 }
 
 type SaveState = 'saved' | 'saving' | 'error';
@@ -176,10 +180,10 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
   useEffect(() => {
     if (!topic || !container.current || loading) return;
     const scroller = container.current;
-    scroller.scrollTop = topic.position * scroller.clientHeight;
+    scroller.scrollTop = doomTop(scroller, topic.position);
     const resize = new ResizeObserver(() => {
       const index = Number(scroller.dataset.position ?? topic.position);
-      scroller.scrollTop = index * scroller.clientHeight;
+      scroller.scrollTop = doomTop(scroller, index);
     });
     resize.observe(scroller);
     return () => resize.disconnect();
@@ -191,7 +195,11 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
     if (!scroller || !topic || loading) return;
     let timeout: ReturnType<typeof setTimeout>;
     function settled() {
-      const index = Math.max(0, Math.min(topic!.dooms.length-1, Math.round(scroller!.scrollTop / scroller!.clientHeight)));
+      const cards = Array.from(scroller!.children, child => {
+        const card = child as HTMLElement;
+        return {top:card.offsetTop, height:card.offsetHeight};
+      });
+      const index = visibleDoomIndex(cards, scroller!.scrollTop, scroller!.clientHeight);
       scroller!.dataset.position = String(index);
       setPosition(previous => {
         if (previous !== index && currentTopic.current?.id === topic!.id) {
@@ -286,7 +294,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
   function nextDoom() {
     if (!container.current || !topic) return;
     if (position === topic.dooms.length-1) { setFinishDialog(true); return; }
-    container.current.scrollTo({ top:(position+1)*container.current.clientHeight, behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    container.current.scrollTo({ top:doomTop(container.current, position + 1), behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   }
   function touchStart(event: TouchEvent) {
     const target = event.target as HTMLElement;
@@ -304,7 +312,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
     if (menu || finishDialog || (event.target as HTMLElement).closest('button, input, a')) return;
     if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); void anotherTopic(); }
     if (event.key === 'ArrowDown' || event.key === ' ') { event.preventDefault(); nextDoom(); }
-    if (event.key === 'ArrowUp' && container.current) { event.preventDefault(); container.current.scrollTo({top:Math.max(0,position-1)*container.current.clientHeight, behavior:'smooth'}); }
+    if (event.key === 'ArrowUp' && container.current) { event.preventDefault(); container.current.scrollTo({top:doomTop(container.current, Math.max(0, position - 1)), behavior:'smooth'}); }
   }
 
   const current = topic?.dooms[position];
