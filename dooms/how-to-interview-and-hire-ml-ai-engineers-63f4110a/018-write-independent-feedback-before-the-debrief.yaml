@@ -1,0 +1,15 @@
+schema_version: 1
+id: how-to-interview-and-hire-ml-ai-engineers-63f4110a-018
+title: Write independent feedback before the debrief
+text: |-
+  Yan recommends recording evidence and an initial recommendation independently after each interview. This reduces the chance that an early opinion in the group replaces the interviewer's own observations.
+
+  The debrief can then compare written evidence, examine contradictions and revise judgments. It should end in a decision owned by the hiring manager, with strong concerns investigated rather than hidden beneath an apparent consensus.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/how-to-interview/
+source_file: null
+source_title: How to Interview and Hire ML/AI Engineers
+source_type: article
+source_locator: 'Section: Running the interview loop and debrief — feedback'
+sort_order: 18
+language: en

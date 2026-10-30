@@ -1,0 +1,15 @@
+schema_version: 1
+id: design-patterns-in-machine-learning-code-and-systems-40f8e1de-008
+title: Iteration separates traversal from storage
+text: |-
+  A collection's internal representation need not determine how a consumer visits its elements. The iterator pattern exposes traversal separately from the container.
+
+  Yan uses PyTorch data loading to illustrate adjustable batching, shuffling, workers and collation. A custom collation function can assemble examples into the form the training step expects, without requiring that training step to manage the underlying traversal mechanics.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/design-patterns/
+source_file: null
+source_title: Design Patterns in Machine Learning Code and Systems
+source_type: article
+source_locator: 'Section: Design patterns in libraries and code — iterator'
+sort_order: 8
+language: en

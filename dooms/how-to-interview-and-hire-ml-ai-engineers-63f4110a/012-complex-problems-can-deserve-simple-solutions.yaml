@@ -1,0 +1,15 @@
+schema_version: 1
+id: how-to-interview-and-hire-ml-ai-engineers-63f4110a-012
+title: Complex problems can deserve simple solutions
+text: |-
+  Yan distinguishes the complexity of a problem from the complexity of the proposed solution. Interdependent systems and competing constraints may require deep judgment without requiring an elaborate architecture.
+
+  The interview should reveal what made the problem difficult and how effectively the candidate simplified it. Otherwise, technical intricacy can be mistaken for impact instead of examined as a possible cost.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/how-to-interview/
+source_file: null
+source_title: How to Interview and Hire ML/AI Engineers
+source_type: article
+source_locator: 'Section: What non-technical abilities to look out for — complexity'
+sort_order: 12
+language: en

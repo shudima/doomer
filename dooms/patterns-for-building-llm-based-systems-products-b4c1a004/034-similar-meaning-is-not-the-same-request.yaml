@@ -1,0 +1,15 @@
+schema_version: 1
+id: patterns-for-building-llm-based-systems-products-b4c1a004-034
+title: Similar meaning is not the same request
+text: |-
+  A semantic cache may treat summaries of two different films in the same series as similar enough to reuse. That can deliver a fluent but incorrect answer about the wrong item.
+
+  Yan compares this with serving stale prices during checkout. Cache design must preserve the distinctions and freshness the user depends on; vector similarity alone is not a sufficient correctness condition.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Caching — semantic-cache risks'
+sort_order: 34
+language: en

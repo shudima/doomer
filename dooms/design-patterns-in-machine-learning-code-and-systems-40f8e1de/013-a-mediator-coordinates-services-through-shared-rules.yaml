@@ -1,0 +1,15 @@
+schema_version: 1
+id: design-patterns-in-machine-learning-code-and-systems-40f8e1de-013
+title: A mediator coordinates services through shared rules
+text: |-
+  A mediator prevents every service from needing direct knowledge of every other service's interface. Components communicate through a coordinating middle layer with agreed requirements.
+
+  Yan notes that machine-learning services may need to integrate with an existing mediator's request schemas, latency budget or rate limits. A useful model is still part of a larger system whose coordination rules it must respect.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/design-patterns/
+source_file: null
+source_title: Design Patterns in Machine Learning Code and Systems
+source_type: article
+source_locator: 'Section: Design patterns in systems — mediator'
+sort_order: 13
+language: en

@@ -1,0 +1,15 @@
+schema_version: 1
+id: design-patterns-in-machine-learning-code-and-systems-40f8e1de-001
+title: A pattern communicates intent
+text: |-
+  Design patterns give developers a shared vocabulary for the problems a component solves and how it should be used. Eugene Yan illustrates this through machine-learning libraries and larger systems.
+
+  The purpose is practical understanding, not decorating every design with terminology. Recognizing a factory, strategy or mediator can make an unfamiliar interface easier to interpret and a new implementation easier to explain.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/design-patterns/
+source_file: null
+source_title: Design Patterns in Machine Learning Code and Systems
+source_type: article
+source_locator: 'Section: Introduction'
+sort_order: 1
+language: en

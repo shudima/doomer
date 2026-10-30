@@ -1,0 +1,15 @@
+schema_version: 1
+id: product-evals-in-three-simple-steps-e1d32e24-007
+title: Give each evaluator one criterion
+text: |-
+  A single prompt judging faithfulness, relevance, brevity and tone is difficult to calibrate. When its verdict changes, the team may not know which criterion caused the change.
+
+  Yan recommends separate evaluators with simple combination rules. This makes weaknesses visible and allows different release policies: one dimension may block shipping, while another represents a quality target the team improves over time.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/product-evals/
+source_file: null
+source_title: Product Evals in Three Simple Steps
+source_type: article
+source_locator: 'Section: Then, align our LLM-evaluator'
+sort_order: 7
+language: en

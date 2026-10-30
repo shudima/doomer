@@ -1,0 +1,15 @@
+schema_version: 1
+id: patterns-for-building-llm-based-systems-products-b4c1a004-009
+title: Keep room for direct human inspection
+text: |-
+  A numerical metric may miss the qualities that matter in a real example. Yan includes practitioner experience of watching answers to a small set of meaningful prompts change during model development.
+
+  Human inspection complements repeatable measurements. It can expose failures the existing metrics do not represent and suggest the next examples or criteria to add to the evaluation set.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Evals — human evaluation'
+sort_order: 9
+language: en

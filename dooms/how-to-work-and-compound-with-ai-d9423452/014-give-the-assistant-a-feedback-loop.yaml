@@ -1,0 +1,15 @@
+schema_version: 1
+id: how-to-work-and-compound-with-ai-d9423452-014
+title: Give the assistant a feedback loop
+text: |-
+  An assistant needs a practical way to inspect whether its work succeeded. For code, that may mean running it and reading errors. For an evaluation pipeline, it means inspecting metrics and transcripts. For a dashboard, it includes checking the rendered result.
+
+  Yan's principle is to expose the evidence required for correction, so the assistant can iterate rather than simply declare completion.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/working-with-ai/
+source_file: null
+source_title: How to Work and Compound with AI
+source_type: article
+source_locator: 'Section: Verification for autonomy'
+sort_order: 14
+language: en

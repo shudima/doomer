@@ -1,0 +1,15 @@
+schema_version: 1
+id: product-evals-in-three-simple-steps-e1d32e24-003
+title: Avoid precision that people cannot calibrate
+text: |-
+  A five-point scale looks more detailed, but neighboring scores can mean different things to different annotators. If people cannot consistently distinguish them, an automated judge will struggle to reproduce the distinction too.
+
+  Yan favors simpler decision boundaries. In his experience, stakeholders often end up requesting a pass rate anyway, making an elaborate scoring scale unnecessary work at the start.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/product-evals/
+source_file: null
+source_title: Product Evals in Three Simple Steps
+source_type: article
+source_locator: 'Section: First, label some data'
+sort_order: 3
+language: en

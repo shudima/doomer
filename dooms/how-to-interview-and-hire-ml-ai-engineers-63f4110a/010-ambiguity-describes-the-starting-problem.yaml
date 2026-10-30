@@ -1,0 +1,15 @@
+schema_version: 1
+id: how-to-interview-and-hire-ml-ai-engineers-63f4110a-010
+title: Ambiguity describes the starting problem
+text: |-
+  Yan's AICE framework begins with ambiguity: how much of the problem, success criteria and possible solution were already defined when the candidate arrived?
+
+  Ask whether the person established direction or mainly implemented a clear plan, and how much guidance they received. This distinguishes solving an unfamiliar, cross-functional problem from performing well within a narrower and more settled assignment.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/how-to-interview/
+source_file: null
+source_title: How to Interview and Hire ML/AI Engineers
+source_type: article
+source_locator: 'Section: What non-technical abilities to look out for — ambiguity'
+sort_order: 10
+language: en

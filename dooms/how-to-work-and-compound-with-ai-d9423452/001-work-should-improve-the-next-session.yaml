@@ -1,0 +1,15 @@
+schema_version: 1
+id: how-to-work-and-compound-with-ai-d9423452-001
+title: Work should improve the next session
+text: |-
+  Eugene Yan wants AI-assisted work to accumulate value. Finished code, analyses and decisions become useful context for later work. Corrections should also improve the instructions that guide future sessions.
+
+  His underlying principles resemble onboarding a colleague: supply context, explain preferences, make checking easy, delegate meaningful work and feed the lessons back into the system.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/working-with-ai/
+source_file: null
+source_title: How to Work and Compound with AI
+source_type: article
+source_locator: 'Section: Introduction'
+sort_order: 1
+language: en

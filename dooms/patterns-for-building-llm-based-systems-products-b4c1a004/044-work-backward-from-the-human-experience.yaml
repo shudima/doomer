@@ -1,0 +1,15 @@
+schema_version: 1
+id: patterns-for-building-llm-based-systems-products-b4c1a004-044
+title: Work backward from the human experience
+text: |-
+  Yan contrasts Google's development-oriented patterns with Apple's emphasis on familiar interface principles. Both ask builders to consider where automation helps and how people will understand its role.
+
+  Apple's examples distinguish essential from complementary ML, proactive from reactive assistance and changing from static behavior. These distinctions help determine the appropriate controls and expectations rather than assuming every AI feature deserves the same interface.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Defensive UX — Google and Apple guidelines'
+sort_order: 44
+language: en

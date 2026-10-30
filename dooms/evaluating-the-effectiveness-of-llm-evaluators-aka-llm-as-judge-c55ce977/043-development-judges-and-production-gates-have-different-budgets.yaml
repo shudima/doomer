@@ -1,0 +1,15 @@
+schema_version: 1
+id: evaluating-the-effectiveness-of-llm-evaluators-aka-llm-as-judge-c55ce977-043
+title: Development judges and production gates have different budgets
+text: |-
+  A development harness evaluating a few hundred examples can often tolerate the cost of a prompted language-model judge. A high-throughput production guardrail may need the latency and economics of a specialized classifier or reward model.
+
+  Yan recommends choosing deliberately between these settings. Collecting internal labels and measuring real performance provide a path from a useful experimental evaluator toward an operationally appropriate system.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-evaluators/
+source_file: null
+source_title: Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)
+source_type: article
+source_locator: 'Section: Conclusion — deployment'
+sort_order: 43
+language: en

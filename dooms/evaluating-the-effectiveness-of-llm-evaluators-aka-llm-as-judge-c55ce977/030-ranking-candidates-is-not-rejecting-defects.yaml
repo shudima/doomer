@@ -1,0 +1,15 @@
+schema_version: 1
+id: evaluating-the-effectiveness-of-llm-evaluators-aka-llm-as-judge-c55ce977-030
+title: Ranking candidates is not rejecting defects
+text: |-
+  Cappy is a relatively small scorer trained to assess instruction-response pairs. In the reviewed experiments, it can improve a generator by selecting among candidate outputs and can perform some classification tasks directly.
+
+  Yan keeps the claim narrow. Evidence that a model ranks candidates effectively does not establish that it can reliably detect and exclude unacceptable outputs when used as an absolute quality gate.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-evaluators/
+source_file: null
+source_title: Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)
+source_type: article
+source_locator: 'Section: Finetuning LLM-evaluator models — Cappy'
+sort_order: 30
+language: en

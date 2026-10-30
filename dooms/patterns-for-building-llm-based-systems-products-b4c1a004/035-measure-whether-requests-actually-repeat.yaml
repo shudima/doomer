@@ -1,0 +1,15 @@
+schema_version: 1
+id: patterns-for-building-llm-based-systems-products-b4c1a004-035
+title: Measure whether requests actually repeat
+text: |-
+  A cache helps when many requests can reuse a relatively small set of results. If requests are effectively uniform and constantly different, maintaining cached material may cost more than it saves.
+
+  Yan recommends inspecting request patterns and cache hit rates. The decision should follow the workload rather than the attractiveness of avoiding an expensive model call in a diagram.
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Caching — cache hit rate'
+sort_order: 35
+language: en
