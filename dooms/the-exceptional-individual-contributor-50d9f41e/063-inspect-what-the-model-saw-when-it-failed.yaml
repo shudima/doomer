@@ -1,0 +1,15 @@
+schema_version: 1
+id: the-exceptional-individual-contributor-50d9f41e-063
+title: Inspect what the model saw when it failed
+text: |-
+  In a composite example, a research agent repeats searches and loses user constraints after accumulating large raw results. The team changes search outputs, adds running notes, compacts older history and isolates detailed investigations.
+
+  The story illustrates diagnosing the contents of context before changing model reasoning prompts. Its reported improvement is part of the fictional example, not independent evidence about a real deployed system.
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 38–39: Illustrative research-agent example'
+sort_order: 63
+language: en

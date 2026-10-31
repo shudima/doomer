@@ -1,0 +1,15 @@
+schema_version: 1
+id: the-exceptional-individual-contributor-50d9f41e-032
+title: Lower adoption cost and demonstrate local value
+text: |-
+  In a composite example, teams resist a common tracing format because deadlines make migration seem expensive. The principal builds an adapter for one team's existing logs and uses the resulting traces to find a silent failure.
+
+  That concrete benefit changes the conversation. The remaining proposal is discussed in terms of each stakeholder's needs, such as debugging time or an audit, instead of relying only on architectural consistency.
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 24–25: Illustrative tracing example'
+sort_order: 32
+language: en

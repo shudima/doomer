@@ -1,0 +1,15 @@
+schema_version: 1
+id: the-exceptional-individual-contributor-50d9f41e-050
+title: Capability, regression and saturation need different responses
+text: |-
+  A capability evaluation tests behavior the system does not yet perform reliably. A regression evaluation protects behavior that already works. Their expected starting pass rates are therefore different.
+
+  The glossary also describes saturation: a suite that almost everything passes no longer separates stronger from weaker candidates. Keep protecting established behavior while adding meaningful challenges instead of mistaking a saturated suite for complete product quality.
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 7–8, 34–35: Evaluation distinctions'
+sort_order: 50
+language: en

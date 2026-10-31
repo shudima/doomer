@@ -1,0 +1,15 @@
+schema_version: 1
+id: the-exceptional-individual-contributor-50d9f41e-003
+title: Archetypes describe work, not permanent identities
+text: |-
+  The survey presents Will Larson's four archetypes: Tech Lead, Architect, Solver and Right Hand. They describe coordinating teams, directing a technical domain, resolving a hard problem or extending a senior leader's reach.
+
+  One person can combine these modes or change between them. Choosing an archetype permanently can become a trap if the organization now needs a different kind of contribution.
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 4, 10–11: Staff-plus archetypes'
+sort_order: 3
+language: en

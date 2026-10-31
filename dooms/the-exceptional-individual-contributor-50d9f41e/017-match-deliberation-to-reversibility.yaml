@@ -1,0 +1,15 @@
+schema_version: 1
+id: the-exceptional-individual-contributor-50d9f41e-017
+title: Match deliberation to reversibility
+text: |-
+  Some choices can be reversed cheaply, while others create commitments that are expensive to undo. The survey recommends fast, local decisions for the former and more careful analysis for the latter.
+
+  Neither endless review nor impulsive speed fits every situation. Recognizing the type of decision early helps a principal prevent both stalled experimentation and poorly understood commitments with long-lived consequences.
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 6, 18–19: One-way and two-way doors'
+sort_order: 17
+language: en

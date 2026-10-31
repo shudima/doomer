@@ -1,0 +1,15 @@
+schema_version: 1
+id: the-exceptional-individual-contributor-50d9f41e-012
+title: Learn why the previous initiative stopped
+text: |-
+  In the survey's composite onboarding example, a principal learns that centralized prompt management previously frustrated product teams and that security has important approval responsibilities around customer data.
+
+  That history changes the next proposal. A shared evaluation platform is framed around each team's existing metrics and involves security early. The example shows organizational investigation reducing preventable resistance, rather than treating resistance as a purely technical disagreement.
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 14–15: Illustrative mapping example'
+sort_order: 12
+language: en

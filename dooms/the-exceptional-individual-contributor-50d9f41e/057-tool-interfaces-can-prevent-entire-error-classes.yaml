@@ -1,0 +1,15 @@
+schema_version: 1
+id: the-exceptional-individual-contributor-50d9f41e-057
+title: Tool interfaces can prevent entire error classes
+text: |-
+  An agent-computer interface is the set of tools, parameters and explanations a model uses to act. The survey recommends clear names, unambiguous inputs and formats that are difficult to misuse.
+
+  It cites an example where requiring absolute file paths eliminated a class of errors. The broader principle is to redesign confusing interfaces instead of repeatedly asking a model to compensate for avoidable ambiguity.
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 8, 36: Agent-computer interfaces'
+sort_order: 57
+language: en

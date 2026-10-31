@@ -1,0 +1,15 @@
+schema_version: 1
+id: the-exceptional-individual-contributor-50d9f41e-018
+title: Keep proposals and decision records distinct
+text: |-
+  A design proposal explains the problem, goals, non-goals, alternatives and risks before a choice. An architecture decision record captures the significant choice that was made, its context and consequences.
+
+  The survey recommends both at an appropriate size. A durable decision log helps future engineers understand why a system looks the way it does instead of repeatedly reopening debates whose original reasoning has disappeared.
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 6, 18–19: Design documents, RFCs and ADRs'
+sort_order: 18
+language: en
