@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: agentic-ai-harness-survey-bb361049-017
+title: Make tool results usable
+background_image: images/part-03.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 28-29
+sort_order: 20
+language: en
+---
+
+Return relevant information with readable names and stable IDs. Paginate large results, label truncation and offer concise or detailed responses when useful.
+
+Strict schemas and server-side validation constrain calls. Errors should explain how to recover, such as the required date format. Review transcripts for ambiguous descriptions, overlapping tools and oversized results: interface defects can waste many steps.

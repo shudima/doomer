@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: how-to-build-a-model-router-in-the-harness-378de5b0-011
+title: Always using the fast model did not hold up
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness
+source_file: null
+source_title: How to Build a Model Router in the Harness
+source_type: article
+source_locator: 'Section: The experiment'
+sort_order: 13
+language: en
+---
+
+The team also compared routing with a fast-only baseline, but stopped within a day because engineers reported poor output that disrupted work.
+
+The early stop means this second experiment did not produce statistically meaningful results. It is a practical warning against replacing every call with the cheapest option, not a quantified estimate of how much routing improved quality over the fast model.

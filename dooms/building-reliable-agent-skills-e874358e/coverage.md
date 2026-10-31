@@ -67,3 +67,43 @@ Original purpose-made SVG backgrounds use relevant decision, workflow, document-
 Each YAML was parsed with PyYAML and validated against the canonical reel schema. Checks cover unique IDs, filename/order agreement, contiguous integer order, consistent source metadata, local nonempty image paths, XML parsing and portrait dimensions. All source locators overlap retrieved caption cues. Each reel contains 40–90 words. Editorial review checked the map for coverage, repetition, unsupported additions, uncertainty and tone.
 
 Phone-size renderer preview: the existing Doomer app successfully loaded this collection at 390×844 using an isolated temporary database, with no changes to the user’s reading state. The first reel, its background, typography and source credit were visually inspected. DOM layout checks across every card found no content/source overlap, clipped source-credit blocks or overlap with the top label after final readability revisions. Several headings and four texts across the batch were tightened while preserving their ideas. App rendering was tested; video visuals were not inspected. Existing Doomer instances cache the catalog at startup and need a restart to discover new collections.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 15 existing dooms retained their identities; 2 labeled illustrative examples added; 17 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The original transcript/caption access and visual-inspection limits above still apply. No new video frames were recovered or passed off as inspected source images.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `building-reliable-agent-skills-e874358e-001` | 1 | A skill teaches a particular procedure |
+| `building-reliable-agent-skills-e874358e-002` | 2 | A folder can carry real power |
+| `building-reliable-agent-skills-e874358e-003` | 3 | Practice 1: make the trigger recognizable |
+| `building-reliable-agent-skills-e874358e-004` | 4 | Describe the job and the occasion |
+| `building-reliable-agent-skills-e874358e-016` | 5 | Make a skill easy to recognize |
+| `building-reliable-agent-skills-e874358e-005` | 6 | Practice 2: build from real expertise |
+| `building-reliable-agent-skills-e874358e-006` | 7 | Save the corrections as gotchas |
+| `building-reliable-agent-skills-e874358e-007` | 8 | Practice 3: spend context carefully |
+| `building-reliable-agent-skills-e874358e-008` | 9 | Reveal references when needed |
+| `building-reliable-agent-skills-e874358e-009` | 10 | Practice 4: code the fragile steps |
+| `building-reliable-agent-skills-e874358e-010` | 11 | Say whether to run or read |
+| `building-reliable-agent-skills-e874358e-011` | 12 | Make the report totals reconcile |
+| `building-reliable-agent-skills-e874358e-017` | 13 | Let a script reconcile the totals |
+| `building-reliable-agent-skills-e874358e-012` | 14 | Tests are not the whole answer |
+| `building-reliable-agent-skills-e874358e-013` | 15 | Practice 5: vet the executable skill |
+| `building-reliable-agent-skills-e874358e-014` | 16 | Treat a skill like a dependency |
+| `building-reliable-agent-skills-e874358e-015` | 17 | Five practices make a useful skill |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `building-reliable-agent-skills-e874358e-004` | `building-reliable-agent-skills-e874358e-016` | Make a skill easy to recognize |
+| `building-reliable-agent-skills-e874358e-011` | `building-reliable-agent-skills-e874358e-017` | Let a script reconcile the totals |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

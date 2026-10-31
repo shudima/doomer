@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: how-to-interview-and-hire-ml-ai-engineers-63f4110a-013
+title: Execution includes learning from failure
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/how-to-interview/
+source_file: null
+source_title: How to Interview and Hire ML/AI Engineers
+source_type: article
+source_locator: 'Section: What non-technical abilities to look out for — execution'
+sort_order: 14
+language: en
+---
+
+Execution is not limited to successful launches or positive experiment results. Yan also asks how quickly a candidate learned from unsuccessful work and adapted under limited time or resources.
+
+Different organizations may weight ambiguity, influence, complexity and execution differently. Define what the role needs, and distinguish gaps the team can realistically coach from qualities it considers essential at hiring.

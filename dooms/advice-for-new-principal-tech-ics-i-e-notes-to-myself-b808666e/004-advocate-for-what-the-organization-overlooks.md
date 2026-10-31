@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: advice-for-new-principal-tech-ics-i-e-notes-to-myself-b808666e-004
+title: Advocate for what the organization overlooks
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/principal/
+source_file: null
+source_title: Advice for New Principal Tech ICs (i.e., Notes to Myself)
+source_type: article
+source_locator: 'Section: Advice 6–7'
+sort_order: 4
+language: en
+---
+
+A principal may need to make a longer-term problem matter to people focused on immediate delivery. That work often fails, and Yan's mentors regard some rejected proposals as a normal part of the role.
+
+Focus especially on important work that would not happen without you: the intersection of your unusual strengths, commitments and perspective on where the organization needs to go.

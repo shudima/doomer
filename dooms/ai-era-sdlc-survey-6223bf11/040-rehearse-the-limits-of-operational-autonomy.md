@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: ai-era-sdlc-survey-6223bf11-036
+title: Rehearse the limits of operational autonomy
+background_image: images/ops.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Software Development Life Cycle in the AI Era
+source_type: pdf
+source_locator: 'Page 22: On-call practices and pitfalls'
+sort_order: 40
+language: en
+---
+
+The survey describes bounded remediation through typed tools and approval gates, and recommends human approval for write-side runbook actions. An agent investigating production should not silently gain broad power to change it.
+
+Use agents to propose alert deduplication and service-level alerting, then measure detection, acknowledgment, recovery, investigation time and pages per shift. Include the agent in incident game days. Test what happens when its diagnosis is wrong, so the operating process can absorb mistakes as well as useful assistance.

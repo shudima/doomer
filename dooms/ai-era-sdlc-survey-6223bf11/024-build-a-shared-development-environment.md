@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: ai-era-sdlc-survey-6223bf11-021
+title: Build a shared development environment
+background_image: images/foundation.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Software Development Life Cycle in the AI Era
+source_type: pdf
+source_locator: 'Pages 14-15: Context engineering, pitfalls and maturity signals'
+sort_order: 24
+language: en
+---
+
+The survey describes layered rules from global to repository to package, curated examples, approved connectors and reusable skills. Hooks can run checks after agent edits. Shared conventions make useful behavior repeatable across a team.
+
+Keep the setup concise and maintained. Huge rules files can dilute context; broad credentials expand risk. Verify and pin dependencies rather than trusting invented package names, and watch duplication, churn and reduced refactoring. Shared context works best alongside a sandbox and telemetry about actual outcomes.

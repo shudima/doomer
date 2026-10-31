@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-004
+title: Technical depth keeps broad judgment credible
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 10–11: Role definition and alternatives'
+sort_order: 4
+language: en
+---
+
+Moving beyond senior does not require abandoning hands-on engineering. The survey warns against both remaining only an exceptional individual builder and becoming a coordinator detached from technical reality.
+
+Agree on your **scope** and current role with your manager, revisit that agreement and keep some meaningful technical work. Broad accountability becomes useful when grounded in an accurate understanding of the systems and constraints involved.

@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: patterns-for-building-llm-based-systems-products-b4c1a004-008
+title: Control order, length and self-preference
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Evals — judge biases'
+sort_order: 8
+language: en
+---
+
+Language-model judges may favor an answer's position, verbosity or resemblance to their own outputs. Yan suggests swapping response order, comparing similarly sized outputs and avoiding unexamined reliance on self-evaluation.
+
+These checks help distinguish substantive gains from presentation effects. A comparison that changes winners when the order changes has not produced a dependable preference merely because the judge sounds confident.

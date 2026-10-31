@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: controlling-reasoning-effort-1e95bee9-035
+title: Automatic effort is the next practical goal
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 7. Conclusion'
+sort_order: 37
+language: en
+---
+
+Raschka expects effort to remain an explicit model input, often delivered through a prompt, while hoping that selection becomes more automatic. A harness or router could choose a mode using the task, tool state, remaining time, and token budget.
+
+A user override would still matter: sometimes low **latency** or cost is the priority, and sometimes maximum performance is worth extra work. His conclusion is a direction for future systems, not a claim that automatic effort routing is already solved.

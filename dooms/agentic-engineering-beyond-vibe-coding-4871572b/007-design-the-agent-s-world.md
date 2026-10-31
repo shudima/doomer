@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: agentic-engineering-beyond-vibe-coding-4871572b-006
+title: Design the agent’s world
+background_image: images/layers.svg
+source_url: https://www.youtube.com/watch?v=FgaBdwSvOGM&list=WL&index=25
+source_file: null
+source_title: 'Agentic Engineering vs Software Engineering: Beyond Vibe Coding'
+source_type: video
+source_locator: 00:04:56–00:05:24
+sort_order: 7
+language: en
+---
+
+Agentic engineering extends beyond generating code. Engineers design environments in which autonomous systems can reason, coordinate, evaluate results and adapt within constraints.
+
+The surrounding environment becomes part of the product being engineered. A capable model is one component; the engineer also determines how it works with tools and other participants, how outcomes are assessed, and what limits govern its behavior.

@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: using-local-coding-agents-9b152c44-013
+title: Audit the tool that can act
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 6. Agent Code Base Audit'
+sort_order: 13
+language: en
+---
+
+A model server generates responses; a coding harness can also read private data, change files, and execute commands. Raschka recommends reviewing an unfamiliar open-source harness before using it and testing it away from a primary environment.
+
+His audit focuses on installation hooks, shell execution, file boundaries, inherited secrets, integrations, network traffic, updates, terminal handling, and data residency. The useful question is which concrete code paths and defaults create risk, rather than who owns the project.

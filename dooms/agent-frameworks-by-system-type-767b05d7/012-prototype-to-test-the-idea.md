@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: agent-frameworks-by-system-type-767b05d7-010
+title: Prototype to test the idea
+background_image: images/flow.svg
+source_url: https://www.youtube.com/watch?v=ZVPlLaehjLk&list=WL&index=21
+source_file: null
+source_title: 'Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production'
+source_type: video
+source_locator: 00:09:57–00:11:05
+sort_order: 12
+language: en
+---
+
+Sometimes the immediate question is whether an idea works. A visual canvas can help connect models and workflow components quickly enough to test that question.
+
+The presenter names LangFlow and Flowise as examples of rapid-prototyping tools. Their purpose in this category is to shorten the path to a working experiment, which can inform what a later production system needs.

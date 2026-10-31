@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: patterns-for-building-llm-based-systems-products-b4c1a004-007
+title: Build evaluations around your actual task
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Evals — How to apply evals?'
+sort_order: 7
+language: en
+---
+
+Generic knowledge benchmarks do not necessarily describe a product's usefulness. Yan recommends collecting the prompts, context and expected behavior that represent the work users actually need.
+
+Choose interpretable metrics when possible. Classification-like tasks can use **precision** and recall; reference-based tasks may support similarity metrics. Open-ended generation may need a calibrated judge or human assessment rather than one convenient off-the-shelf score.

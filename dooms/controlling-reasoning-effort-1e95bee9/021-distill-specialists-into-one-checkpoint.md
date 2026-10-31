@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: controlling-reasoning-effort-1e95bee9-020
+title: Distill specialists into one checkpoint
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 6.1 DeepSeek V4 trains separate effort specialists'
+sort_order: 21
+language: en
+---
+
+The article describes DeepSeek V4 developing mode-specific specialists through supervised fine-tuning and RLVR using GRPO, with different context and length settings. On-policy distillation then combines specialist behaviors into a final model supporting multiple modes.
+
+The public report also describes more than ten domain teachers, but does not fully connect that pool to the three effort specialists. Raschka explicitly leaves the exact teacher assignment unresolved rather than claiming the whole recipe can be reconstructed.

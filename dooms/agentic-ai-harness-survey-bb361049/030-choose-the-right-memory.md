@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: agentic-ai-harness-survey-bb361049-027
+title: Choose the right memory
+background_image: images/part-04.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 38-39
+sort_order: 30
+language: en
+---
+
+Facts suit structured profiles, events suit searchable records, and procedures suit skills. Automatic extraction and tiered stores help when memory grows, but add errors, stale facts and complexity.
+
+The survey cautions that vendor memory benchmark scores are not directly comparable and replications can differ sharply. Test realistic **recall**, updates and isolation on your own data before selecting a service.

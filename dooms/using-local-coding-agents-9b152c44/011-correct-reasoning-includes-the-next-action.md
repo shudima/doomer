@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: using-local-coding-agents-9b152c44-011
+title: Correct reasoning includes the next action
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 5. Simple Benchmark Performance Assessment'
+sort_order: 11
+language: en
+---
+
+The article’s five-question reasoning test checks debugging, security review, and tool-call decisions. Models return a proposed tool call; they do not execute the code in this test.
+
+Qwen3.6 passed three of five tasks, North Mini Code one, and Gemma 4 E2B none. Qwen handled conceptual debugging and security review but still stumbled over which file or action to choose first. That is a meaningful limitation for an agent expected to work autonomously.

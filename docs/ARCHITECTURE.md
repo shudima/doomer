@@ -5,7 +5,7 @@
 - React + TypeScript + Vite provide the mobile reading interface.
 - FastAPI serves the built UI, profile setup, feed APIs and background assets on one origin.
 - SQLAlchemy stores state in managed PostgreSQL in production and SQLite for local preview.
-- Content remains in versioned YAML collections under `dooms/`.
+- Content remains in versioned Markdown/frontmatter collections under `dooms/`.
 - Render runs the Docker image. JSON logs, health checks and optional Sentry cover basic operation.
 
 ## Email is a profile label
@@ -24,7 +24,7 @@ The Supabase Auth client, JWT verification, sign-in links and mail-delivery requ
 
 On first owner-profile setup, a single existing legacy UUID identity can be linked to that profile. Existing topic and reaction rows are retained; the change does not rewrite or delete them. Fresh profiles use deterministic email-based state IDs. Re-entering an email is idempotent, including differences in case or surrounding whitespace.
 
-Production startup applies Alembic revision 002 to add the mapping table. App requests remain scoped to the selected profile. Invalid or absent profile IDs are rejected and prompt the user to set their email. Static source PDFs/YAML are not exposed as website directories.
+Production startup applies Alembic revision 002 to add the mapping table. App requests remain scoped to the selected profile. Invalid or absent profile IDs are rejected and prompt the user to set their email. Static source PDFs/content sources are not exposed as website directories.
 
 ## Feed behavior
 
@@ -34,7 +34,7 @@ Progress writes use an expected version to prevent stale device state from overw
 
 ## Content and operation
 
-The catalog validates YAML, order, source metadata and in-collection assets at startup. New collections become visible on restart/redeploy. Stable collection slugs and doom IDs preserve history. Production state lives outside the application container. The host allowlist includes Render's exact platform hostname and optional explicitly configured custom domains.
+The catalog validates YAML or Markdown/frontmatter, order, source metadata and in-collection assets at startup. New collections become visible on restart/redeploy. Stable collection slugs and doom IDs preserve history. Production state lives outside the application container. The host allowlist includes Render's exact platform hostname and optional explicitly configured custom domains.
 
 The topic explorer keeps finished topics in the searchable library, marked Finished. They remain excluded from random browsing and cannot be reopened by progress writes. `/api/topics` retains unfinished `topics` for feed compatibility and adds `finished_topics` summaries. The feed header and explorer show finished topics out of the complete catalog total.
 

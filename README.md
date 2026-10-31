@@ -1,6 +1,6 @@
 # Doomer
 
-A phone-first feed of source-backed text reels with unverified email profiles. Built in `/home/dima/projects/doomer` with React, TypeScript and FastAPI.
+A phone-first feed of source-backed Markdown reels with unverified email profiles. Built in `/home/dima/projects/doomer` with React, TypeScript and FastAPI.
 
 ## Run on this computer
 
@@ -23,14 +23,18 @@ export PATH="$PWD/.tools/node/bin:$PATH"
 ## Behavior
 
 - Opening the app picks a random unfinished topic. New topics start at doom 1; returning topics resume the current saved doom.
-- Scroll down/up within the topic. Swipe left or right to choose another unfinished topic, excluding the current one. The footer offers an equivalent button. Keyboard: down/space for next doom, up for previous, left/right for another topic.
-- Open the three-dot menu for a searchable topic explorer. Pick a topic directly to resume its saved doom. Finished topics stay excluded.
+- Scroll down/up within the topic. Swipe left or right to choose another unfinished topic, excluding the current one. Keyboard: down/space for next doom, up for previous, left/right for another topic.
+- Open the three-dot menu for a searchable topic explorer. Pick a topic directly to resume its saved doom. Finished topics remain listed and marked Finished, with a completion count; they stay excluded from the random feed.
 - Like and dislike are mutually exclusive reactions to a doom. Tap an active reaction again to remove it. Feedback appears selected after the database confirms the write.
 - Finish applies to the whole topic. A confirmation avoids accidental permanent exclusions. After the server saves it, the topic leaves the feed. Reactions remain saved. There is intentionally no automatic finishing at the final doom.
 - If only one topic remains, switching keeps it open and explains why. If all topics are finished, the feed shows a completed state and can check for new content.
 - Progress saves after scrolling settles, including backward navigation. A sync indicator shows pending or failed writes. Switching topics and finishing wait for pending progress; retry recovers failed saves. Stale updates from another device produce a conflict rather than silently overwriting newer progress.
 
-At initial verification the library contains **3 real topics and 117 dooms**: the AI-era SDLC survey (44), the agentic AI harness survey (62), and the AI-bubble collection (11). The app loads the actual collections under `dooms/`; topic choices are not hard-coded.
+The library was migrated on 2026-10-31 to **746 Markdown dooms across 31 topics**, including 73 added illustrative examples and 46 locally packaged source figures. All 673 original doom IDs and collection IDs remain stable. Saved progress, reactions and finished status therefore carry across the revision. The catalog discovers collections under `dooms/`; choices and totals are not hard-coded.
+
+The reader supports emphasis, lists, code, GFM tables, inline local figures and lazily rendered Mermaid diagrams. Tap a figure to enlarge it, then use Zoom in and scroll to inspect labels. Long cards grow in the main feed without clipping. Image dimensions reserve layout space before download. Local figures and downloadable diagram source use the same profile-scoped API as the reader.
+
+New content uses Markdown with YAML frontmatter. Follow [the reel format](.agents/skills/reel-it/references/format.md) and [the authoring skill](.agents/skills/reel-it/SKILL.md). Keep an existing doom’s ID when revising it; `sort_order` controls position independently. Legacy version-1 YAML remains supported for compatibility.
 
 ## Deployment and operation
 
@@ -42,7 +46,7 @@ Follow [the setup guide](docs/SETUP.md) to configure managed hosting, email prof
 frontend/       React + TypeScript; mobile reader, email setup and touch navigation
 backend/        FastAPI; profile identity, catalog, database state and health checks
 backend/tests/  Persistence, authorization and data-integrity tests
-dooms/          Original YAML collections, backgrounds and preserved sources
+dooms/          Markdown collections, local figures, backgrounds and preserved sources
 .agents/        reel-it skill and the shared content schema
 docs/           Setup, architecture, operations and verification
 scripts/        Local setup and deployment entrypoint

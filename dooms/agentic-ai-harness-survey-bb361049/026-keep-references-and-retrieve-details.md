@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: agentic-ai-harness-survey-bb361049-023
+title: Keep references and retrieve details
+background_image: images/part-04.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Pages 35-36
+sort_order: 26
+language: en
+---
+
+An agent rarely needs every document or raw tool result at once. Give it lightweight references and tools to fetch details when the task requires them.
+
+Large intermediate results can live in files or a scratch store, with short references in context. This is **reversible** compression: the agent can read the original again. Compact tool outputs, clear stale material and isolate exploratory work when justified. These measures reduce pressure before a lossy summary becomes necessary.

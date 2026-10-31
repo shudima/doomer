@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: seven-skills-for-agent-engineering-19b7176f-005
+title: Chunks, embeddings and reranking matter
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=mtiOK2QG9Q0&list=WL&index=24
+source_file: null
+source_title: The 7 Skills You Need to Build AI Agents
+source_type: video
+source_locator: 00:06:01–00:06:53
+sort_order: 6
+language: en
+---
+
+**Retrieval** involves choices at several levels. Large chunks can dilute important details; tiny chunks can lose the context that makes a detail meaningful. Embeddings need to place related concepts near one another.
+
+A reranking pass can then promote results that actually match the request. The video presents retrieval as a deep discipline whose basics an agent builder should understand, even without mastering every technique immediately.

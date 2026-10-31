@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: context-engineering-failure-modes-88666974-012
+title: Prune the version that is wrong
+background_image: images/flow.svg
+source_url: https://www.youtube.com/watch?v=BwXremQ-i6I&list=WL&index=4
+source_file: null
+source_title: 'Context Engineering for AI Agents: 4 Failure Modes to Avoid'
+source_type: video
+source_locator: 00:09:02–00:10:08
+sort_order: 14
+language: en
+---
+
+When information is superseded, remove the old version instead of leaving contradictory notes side by side. For a badly contaminated history, the presenter suggests starting a fresh window with the corrected state.
+
+The four fixes form a pattern: validate bad conclusions, compact distracting history, curate excessive tools and prune conflicting information. An agent can become better at a long task by actively holding less.

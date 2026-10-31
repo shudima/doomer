@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: agentic-ai-harness-survey-bb361049-046
+title: Reduce cost by changing the work
+background_image: images/part-06.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Page 57
+sort_order: 50
+language: en
+---
+
+Agent cost and **latency** multiply across steps. Start by reducing unnecessary context, using cacheable prefixes, returning compact tool results and retrieving details only when needed.
+
+Better task-oriented tools and deterministic paths can reduce call counts. Run independent calls in parallel, and use batch or background execution when interaction speed is less important. Track quality, cost and latency together for each task type; a cheaper run that quietly fails the task is not a useful optimisation.

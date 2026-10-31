@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: revamping-skills-in-deep-agents-d89ca29f-005
+title: Resolve tool groups using runtime permissions
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/revamping-skills-in-deep-agents
+source_file: null
+source_title: Revamping Skills in Deep Agents
+source_type: article
+source_locator: 'Section: Binding tools to skills'
+sort_order: 6
+language: en
+---
+
+A skill can name a label rather than enumerate tools. A resolver supplied to SkillsMiddleware converts that label into the appropriate group, such as tools from one MCP server.
+
+Because the resolver receives the runtime, it can return only tools permitted for the current user. The article’s example restricts forecast updates to managers, keeping runtime authorization relevant even when several users share the same skill library.

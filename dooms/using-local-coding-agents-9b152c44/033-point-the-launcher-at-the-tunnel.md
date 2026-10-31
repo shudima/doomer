@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: using-local-coding-agents-9b152c44-031
+title: Point the launcher at the tunnel
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 11. Mac <-> DGX'
+sort_order: 33
+language: en
+---
+
+After the SSH tunnel is working, Qwen Code and Codex can use the same endpoint configuration described for a local server. The model is remote, but the Mac-side address remains local.
+
+For Claude Code, the article explicitly sets the launcher’s endpoint: `OLLAMA_HOST=http://127.0.0.1:11434 ollama launch claude --model qwen3.6:35b`. Stop the tunnel with Ctrl-C when finished; closing it removes the forwarded connection.

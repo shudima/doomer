@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-055
+title: Choose a pattern for the shape of the work
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Page 36: Common agentic patterns'
+sort_order: 60
+language: en
+---
+
+The survey describes several patterns: chaining handles sequential steps, routing selects a suitable handler and parallelization combines independent work or repeated attempts. Orchestrator-workers dynamically divides work, while evaluator-optimizer repeats generation and critique.
+
+These are options for particular problems, not a maturity ladder every team must climb. Evaluate the benefit of additional coordination against the debugging, **latency** and reliability costs it introduces.

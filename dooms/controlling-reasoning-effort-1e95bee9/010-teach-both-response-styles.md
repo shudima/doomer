@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: controlling-reasoning-effort-1e95bee9-010
+title: Teach both response styles
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 4. Reasoning mode on and off switches'
+sort_order: 10
+language: en
+---
+
+Qwen3’s Thinking Mode Fusion stage uses supervised fine-tuning on a mixture of thinking and non-thinking examples. Thinking examples contain a reasoning trace; non-thinking examples begin with an empty reasoning block followed by the answer.
+
+This stage follows long-chain-of-thought training and reasoning RL. Later general RL reinforces mode and format following. The switch works because training exposed the model to both behaviors, not because a tokenizer invented a new capability at inference time.

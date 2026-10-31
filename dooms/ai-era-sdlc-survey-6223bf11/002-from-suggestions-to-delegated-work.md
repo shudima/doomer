@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: ai-era-sdlc-survey-6223bf11-002
+title: From suggestions to delegated work
+background_image: images/flow.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Software Development Life Cycle in the AI Era
+source_type: pdf
+source_locator: 'Pages 4-5: Glossary; page 14: Development'
+sort_order: 2
+language: en
+---
+
+An AI coding agent can read files, plan a change, edit several modules and run tests toward a goal. A background agent does that asynchronously in a sandbox, often returning a draft pull request.
+
+The survey distinguishes adding assistance to an existing process from redesigning the lifecycle around agents. In the latter, engineers spend more time defining tasks, coordinating work and reviewing results. Delegation still leaves people accountable for the software they ship.

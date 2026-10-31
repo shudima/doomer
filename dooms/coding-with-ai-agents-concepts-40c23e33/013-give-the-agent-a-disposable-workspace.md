@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: coding-with-ai-agents-concepts-40c23e33-012
+title: Give the agent a disposable workspace
+background_image: images/shield.svg
+source_url: https://www.youtube.com/watch?v=hTAWHgQI4xg&list=WL&index=5
+source_file: null
+source_title: 5 Concepts to Know for Coding with AI Agents
+source_type: video
+source_locator: 00:08:04–00:08:24
+sort_order: 13
+language: en
+---
+
+The presenter says teams use disposable sandboxes for coding agents where possible. The agent and the code it works on operate inside a separate environment.
+
+The purpose is to reduce the attack surface and limit what a compromised agent can reach. Sandboxing addresses the consequences of a failure; the video does not present it as proof that **prompt injection** has become impossible.

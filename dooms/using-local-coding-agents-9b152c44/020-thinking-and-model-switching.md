@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: using-local-coding-agents-9b152c44-019
+title: Thinking and model switching
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 7. Qwen-Code Setup'
+sort_order: 20
+language: en
+---
+
+The Qwen Code setup flow lets you enable thinking mode. Raschka recommends it for stronger problem solving, accepting the extra token use. Review the final configuration, then use `/model` to switch among configured models.
+
+After downloading another model with `ollama pull`, add a corresponding model entry in the settings file. For a source-built installation, updating means pulling the repository, refreshing dependencies, rebuilding, and checking the CLI version again.

@@ -1,0 +1,5 @@
+flowchart TD
+  A[Request for Film 2] --> B[Find similar cached request]
+  B --> C{Same film and valid inputs?}
+  C -->|Yes| D[Check freshness and reuse]
+  C -->|No| E[Generate a new answer]

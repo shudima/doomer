@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: coding-with-ai-agents-concepts-40c23e33-013
+title: The AI grid needs engineers
+background_image: images/network.svg
+source_url: https://www.youtube.com/watch?v=hTAWHgQI4xg&list=WL&index=5
+source_file: null
+source_title: 5 Concepts to Know for Coding with AI Agents
+source_type: video
+source_locator: 00:08:24–00:09:50
+sort_order: 15
+language: en
+---
+
+Andrew Ng’s electricity analogy extends beyond everyday use: people still build and maintain the grid. The presenter anticipates similar work supporting AI access, safety and reliability.
+
+The outlook is optimistic about developers who design and orchestrate systems. Architectural judgment and critical thinking remain valuable as agents handle more implementation.

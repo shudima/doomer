@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: how-to-work-and-compound-with-ai-d9423452-011
+title: Correct the output inside the session
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/working-with-ai/
+source_file: null
+source_title: How to Work and Compound with AI
+source_type: article
+source_locator: 'Section: Taste as configuration'
+sort_order: 12
+language: en
+---
+
+Yan prefers giving feedback in the conversation before updating the skill file. This preserves the attempted output, the desired alternative and the reason for the change together.
+
+Those before-and-after examples make later revisions better informed than an unexplained file edit. Repeated use gradually reveals which instructions generalize and which merely describe the original task too narrowly.

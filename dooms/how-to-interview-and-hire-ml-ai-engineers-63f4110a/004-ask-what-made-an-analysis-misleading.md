@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: how-to-interview-and-hire-ml-ai-engineers-63f4110a-004
+title: Ask what made an analysis misleading
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/how-to-interview/
+source_file: null
+source_title: How to Interview and Hire ML/AI Engineers
+source_type: article
+source_locator: 'Section: What technical skills to consider — analysis and skepticism'
+sort_order: 4
+language: en
+---
+
+A join can duplicate rows, an aggregate can hide important subgroups and a visualization can encourage the wrong conclusion. Yan recommends probing how candidates noticed and corrected such problems.
+
+Questions about misleading statistics, surprising model curves or unsuccessful analyses reveal useful technical judgment. They can also show whether the candidate discusses mistakes candidly and investigates evidence that conflicts with expectations.

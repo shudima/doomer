@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: controlling-reasoning-effort-1e95bee9-031
+title: Qwen’s hard budget was not explicitly trained
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 6.5 Qwen3 uses mode fusion and inference-time truncation'
+sort_order: 33
+language: en
+---
+
+Beyond its learned on-off switch, Qwen3 supports stopping the reasoning span at a chosen budget and inserting an instruction to continue with the final answer.
+
+According to the report summarized here, this ability to answer from partial reasoning was not trained explicitly; it emerged after Thinking Mode Fusion. That differs from Nemotron’s deliberate training on randomly truncated traces. Similar-looking inference controls can therefore rest on different preparation.

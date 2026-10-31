@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: common-questions-about-agent-evals-7b591106-014
+title: Verify the path and the final state
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/common-questions-about-agent-evals
+source_file: null
+source_title: The Most Common Questions About Agent Evals, Answered
+source_type: article
+source_locator: 'Section: How do you evaluate an agent beyond its final output?'
+sort_order: 16
+language: en
+---
+
+An agent’s final reply is only one artifact. Inspect its sequence of messages and tools, then verify the environment it changed. A coding agent’s claim that a bug is fixed is weaker evidence than running the repository’s tests.
+
+Independent runs need clean environments so one attempt does not contaminate another. The article describes Harbor and LangSmith Sandboxes supporting that separation and logging traces beside outcomes.

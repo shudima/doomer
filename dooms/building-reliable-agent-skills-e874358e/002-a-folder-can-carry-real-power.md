@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: building-reliable-agent-skills-e874358e-002
+title: A folder can carry real power
+background_image: images/shield.svg
+source_url: https://www.youtube.com/watch?v=qYNs80FKIVc&list=WL&index=23
+source_file: null
+source_title: 5 Best Practices for Building AI Agent Skills
+source_type: video
+source_locator: 00:00:47–00:01:27
+sort_order: 2
+language: en
+---
+
+A skill gives a probabilistic model instructions for a multi-step task, and it may also contain executable code. Installing one can therefore mean running someone else’s software on your machine.
+
+The presenters introduce the open agent-skills standard alongside that responsibility. A simple, portable format makes skills useful, while the actions and code inside each particular skill still need to be understood.

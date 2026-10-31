@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: building-agents-when-to-fold-subagents-into-your-main-agent-loop-13225fd2-009
+title: Build the comparison before the migration
+background_image: images/background.svg
+source_url: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+source_file: null
+source_title: 'Building agents: When to fold subagents into your main agent loop'
+source_type: article
+source_locator: 'Section: Task-completion evals'
+sort_order: 10
+language: en
+---
+
+Start with a shared end-to-end evaluation set owned centrally, plus smaller checks shipped with each team’s skills. The article says even ten golden examples can establish a starting point.
+
+Initially, score answer quality and routing; after consolidation, check skill activation and tool choice. Work toward task completion rather than only local subtask scores. Timestamped important events can help replay workflows that are otherwise difficult to simulate.

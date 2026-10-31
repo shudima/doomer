@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: patterns-for-building-llm-based-systems-products-b4c1a004-006
+title: A language model can judge, but not without bias
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Evals — G-Eval, Vicuna and QLoRA'
+sort_order: 6
+language: en
+---
+
+The article reviews early approaches that ask strong models to score or compare generated answers. Reported studies show useful alignment with human judgments in particular settings, offering a cheaper path to repeated evaluation.
+
+These are research results, not a universal reliability guarantee. Yan treats model judges as another measurement approach to validate, alongside conventional metrics and direct human inspection.

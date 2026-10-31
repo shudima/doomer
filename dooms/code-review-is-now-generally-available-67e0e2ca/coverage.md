@@ -33,3 +33,28 @@ Article text, captions, and text code blocks were read. Embedded image pixels, a
 YAML schema, unique IDs, contiguous file/order matching, consistent source metadata, contained nonempty images, portrait dimensions and SVG XML are checked. The sequence is compared with the substantive source section map for omissions, redundant ideas, and overstated claims. The first reel was rendered in the running app at a 390×844 phone viewport and visually inspected. Title, paragraphs, controls, and source link fit; the Code Review opening was shortened after the initial preview to preserve the source area. All reels contain 40–90 words.
 
 The credit offer is preserved with both the January 15, 2027 claim deadline and thirty-day post-claim expiry, eligibility limits, and unspecified additional terms. No assurance of individual eligibility is made.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 4 existing dooms retained their identities; 1 labeled illustrative examples added; 5 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `code-review-is-now-generally-available-67e0e2ca-001` | 1 | Code Review moves beyond research preview |
+| `code-review-is-now-generally-available-67e0e2ca-002` | 2 | Faster reviews with more focused findings |
+| `code-review-is-now-generally-available-67e0e2ca-003` | 3 | Choose review depth, then enable repositories |
+| `code-review-is-now-generally-available-67e0e2ca-005` | 4 | Compare review settings on known defects |
+| `code-review-is-now-generally-available-67e0e2ca-004` | 5 | Read the credit offer with its expiry terms |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `code-review-is-now-generally-available-67e0e2ca-003` | `code-review-is-now-generally-available-67e0e2ca-005` | Compare review settings on known defects |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: product-evals-in-three-simple-steps-e1d32e24-010
+title: Human judgment is a baseline, not perfection
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/product-evals/
+source_file: null
+source_title: Product Evals in Three Simple Steps
+source_type: article
+source_locator: 'Section: Then, align our LLM-evaluator'
+sort_order: 12
+language: en
+---
+
+Human annotators can disagree or miss defects through fatigue. Yan cautions against demanding an arbitrary accuracy target without measuring the reliability of the human baseline.
+
+The major benefit of an aligned judge is repeatable judgment at scale. It can support many experiments without requiring people to manually evaluate every new output, while its own limitations remain measurable.

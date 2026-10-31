@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: coding-with-ai-agents-concepts-40c23e33-005
+title: Context is a limited resource
+background_image: images/layers.svg
+source_url: https://www.youtube.com/watch?v=hTAWHgQI4xg&list=WL&index=5
+source_file: null
+source_title: 5 Concepts to Know for Coding with AI Agents
+source_type: video
+source_locator: 00:03:54–00:04:24
+sort_order: 6
+language: en
+---
+
+A coding agent’s context contains more than the repository. Tools, skills and connections to external data also occupy space and influence its decisions.
+
+Context management means understanding those limits and deciding what information belongs in the current task. The presenter treats this as an engineering capability: the agent needs relevant material it can use, not simply everything the surrounding system can supply.

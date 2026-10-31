@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: patterns-for-building-llm-based-systems-products-b4c1a004-018
+title: Combine lexical and semantic retrieval
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Retrieval-Augmented Generation — How to apply RAG'
+sort_order: 19
+language: en
+---
+
+Semantic search can miss exact names, acronyms and identifiers. Keyword **retrieval** handles those well but may struggle with synonyms or conceptually related phrasing.
+
+Yan describes combining both approaches, then using metadata such as dates or categories to refine and rank results. This turns retrieval into a task-specific system instead of assuming one embedding similarity score is sufficient for every request.

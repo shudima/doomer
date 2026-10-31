@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-015
+title: Build strategy from real decisions
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 16–17: Bottom-up strategy'
+sort_order: 17
+language: en
+---
+
+The survey describes Larson's bottom-up approach: write design proposals for actual choices, identify their common direction and generalize that direction into strategy. Several strategies can then inform a broader vision.
+
+This grounds the work in constraints teams have already encountered. Strategy becomes a reusable explanation of choices, rather than a senior person's abstract prescription that implementation teams struggle to connect with reality.

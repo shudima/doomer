@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: using-local-coding-agents-9b152c44-002
+title: Why keep a coding stack local?
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 1. Intro'
+sort_order: 2
+language: en
+---
+
+Local models offer privacy, offline use, and predictable running costs once you own suitable hardware. Electricity and the machine still cost money, but there is no per-request model bill.
+
+They also let you keep a particular model version instead of accepting a service upgrade that might change an established workflow. Raschka still primarily uses Codex and Claude Code; his local setup is a practical alternative and an enjoyable experiment, rather than a claim that hosted tools are obsolete.

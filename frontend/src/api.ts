@@ -2,8 +2,10 @@ export type Config = {
   auth_mode: 'local' | 'email'; sentry_dsn: string; release: string;
 };
 export type Reaction = 'like' | 'dislike' | null;
+export type ContentAsset = { url: string; width: number | null; height: number | null };
 export type Doom = {
   id: string; title: string; text: string; sort_order: number;
+  format: 'markdown' | 'text'; schema_version: number; assets: Record<string, ContentAsset>;
   language: string; source_locator: string; source_type: 'article' | 'video' | 'pdf';
   source_url: string | null; image_url: string; reaction: Reaction;
 };

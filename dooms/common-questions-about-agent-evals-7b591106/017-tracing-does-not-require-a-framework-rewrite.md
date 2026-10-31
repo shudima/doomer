@@ -1,0 +1,18 @@
+---
+schema_version: 2
+id: common-questions-about-agent-evals-7b591106-015
+title: Tracing does not require a framework rewrite
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/common-questions-about-agent-evals
+source_file: null
+source_title: The Most Common Questions About Agent Evals, Answered
+source_type: article
+source_locator: 'Section: Can you trace and evaluate an agent in LangSmith if it''s not built using LangChain, LangGraph,
+  or Deep Agents?'
+sort_order: 17
+language: en
+---
+
+LangSmith can receive traces from other agent frameworks or custom code. Integrations, provider-client wrappers, and the traceable decorator offer different entry points.
+
+Once the traces arrive, the evaluation workflow stays the same: turn runs into examples, evaluate agent versions offline, and attach reference-free checks to production traffic. Instrumenting an existing system can therefore precede any decision to change its underlying framework.

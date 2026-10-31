@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: advice-for-new-principal-tech-ics-i-e-notes-to-myself-b808666e-008
+title: Make room for other voices
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/principal/
+source_file: null
+source_title: Advice for New Principal Tech ICs (i.e., Notes to Myself)
+source_type: article
+source_locator: 'Section: Advice 12'
+sort_order: 9
+language: en
+---
+
+A senior person's immediate opinion can dominate a room before others have developed or expressed their own thinking. Yan suggests using questions to create space instead.
+
+Invite quieter participants into topics where they have relevant expertise, and include people whose perspective is missing. The goal is to improve the discussion's information and ownership, not simply maximize the principal's visible contribution.

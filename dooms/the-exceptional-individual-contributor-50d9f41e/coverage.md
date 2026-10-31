@@ -149,3 +149,118 @@ No substantive source-access or extraction gaps were found. Line-wrap hyphenatio
 All YAML files were parsed and validated against the project schema. Unique IDs, filename/order agreement, contiguous order, source metadata, 40–90-word text bounds, source pages and local asset references were checked. The SVG parses as a 9:16 portrait image. The preserved PDF's SHA-256 matches the original attachment. Full application catalog validation passed. Phone-size app preview results are recorded after visual verification.
 
 Phone preview: first, second and last dooms were opened in the local Doomer reader at 393×730. Source page references and counters updated correctly, SVG backgrounds loaded at 1080×1920, and all 82 card text bounds remained inside their cards. The first and last dooms were visually inspected. This was a browser viewport check, not a physical iPhone test.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 82 existing dooms retained their identities; 6 labeled illustrative examples added; 88 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The preserved PDF has text and vector tables rather than embedded raster illustrations. Relevant comparisons are represented as editable Markdown or clearly added diagrams; the original remains unchanged.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `the-exceptional-individual-contributor-50d9f41e-001` | 1 | Exceptional work extends beyond personal output |
+| `the-exceptional-individual-contributor-50d9f41e-002` | 2 | Scope grows while your time does not |
+| `the-exceptional-individual-contributor-50d9f41e-003` | 3 | Archetypes describe work, not permanent identities |
+| `the-exceptional-individual-contributor-50d9f41e-004` | 4 | Technical depth keeps broad judgment credible |
+| `the-exceptional-individual-contributor-50d9f41e-005` | 5 | Fix the shared missing capability |
+| `the-exceptional-individual-contributor-50d9f41e-006` | 6 | Busy work can conceal the wrong portfolio |
+| `the-exceptional-individual-contributor-50d9f41e-007` | 7 | Important neglected work deserves attention |
+| `the-exceptional-individual-contributor-50d9f41e-008` | 8 | A quality decline can matter more than a library |
+| `the-exceptional-individual-contributor-50d9f41e-009` | 9 | Make the portfolio explicit and review it |
+| `the-exceptional-individual-contributor-50d9f41e-083` | 10 | Choose a quarterly portfolio deliberately |
+| `the-exceptional-individual-contributor-50d9f41e-010` | 11 | Map dependencies and the real decision terrain |
+| `the-exceptional-individual-contributor-50d9f41e-011` | 12 | Give the organization a destination map |
+| `the-exceptional-individual-contributor-50d9f41e-012` | 13 | Learn why the previous initiative stopped |
+| `the-exceptional-individual-contributor-50d9f41e-013` | 14 | A strategy needs a diagnosis and trade-offs |
+| `the-exceptional-individual-contributor-50d9f41e-084` | 15 | Turn a goal into a strategy |
+| `the-exceptional-individual-contributor-50d9f41e-014` | 16 | Vision and strategy answer different questions |
+| `the-exceptional-individual-contributor-50d9f41e-015` | 17 | Build strategy from real decisions |
+| `the-exceptional-individual-contributor-50d9f41e-016` | 18 | An adopted policy needs an operating mechanism |
+| `the-exceptional-individual-contributor-50d9f41e-017` | 19 | Match deliberation to reversibility |
+| `the-exceptional-individual-contributor-50d9f41e-085` | 20 | Ask how you would change course |
+| `the-exceptional-individual-contributor-50d9f41e-018` | 21 | Keep proposals and decision records distinct |
+| `the-exceptional-individual-contributor-50d9f41e-019` | 22 | Name the decider and support the outcome |
+| `the-exceptional-individual-contributor-50d9f41e-020` | 23 | Two choices can require different processes |
+| `the-exceptional-individual-contributor-50d9f41e-021` | 24 | One owner must understand the whole outcome |
+| `the-exceptional-individual-contributor-50d9f41e-022` | 25 | Leadership trust needs predictable information |
+| `the-exceptional-individual-contributor-50d9f41e-023` | 26 | Find the frightening parts before the final stretch |
+| `the-exceptional-individual-contributor-50d9f41e-024` | 27 | Shipping can be phased without hiding a delay |
+| `the-exceptional-individual-contributor-50d9f41e-025` | 28 | Reliability includes the quality users experience |
+| `the-exceptional-individual-contributor-50d9f41e-026` | 29 | Organize incidents and investigate the conditions |
+| `the-exceptional-individual-contributor-50d9f41e-027` | 30 | Missing knowledge can look like confident reasoning |
+| `the-exceptional-individual-contributor-50d9f41e-028` | 31 | Look across incidents and finish the follow-up |
+| `the-exceptional-individual-contributor-50d9f41e-029` | 32 | Credibility makes influence possible |
+| `the-exceptional-individual-contributor-50d9f41e-030` | 33 | Hear objections before the formal meeting |
+| `the-exceptional-individual-contributor-50d9f41e-031` | 34 | Partnership and escalation need clear boundaries |
+| `the-exceptional-individual-contributor-50d9f41e-032` | 35 | Lower adoption cost and demonstrate local value |
+| `the-exceptional-individual-contributor-50d9f41e-033` | 36 | Start with what the reader needs to know |
+| `the-exceptional-individual-contributor-50d9f41e-034` | 37 | An update should make the decision clear |
+| `the-exceptional-individual-contributor-50d9f41e-086` | 38 | Lead an update with the decision |
+| `the-exceptional-individual-contributor-50d9f41e-035` | 39 | Test whether the audience understood the draft |
+| `the-exceptional-individual-contributor-50d9f41e-036` | 40 | Essential coordination can become invisible |
+| `the-exceptional-individual-contributor-50d9f41e-037` | 41 | Mentoring teaches; sponsorship opens a door |
+| `the-exceptional-individual-contributor-50d9f41e-038` | 42 | Turn hidden responsibility into recognized ownership |
+| `the-exceptional-individual-contributor-50d9f41e-039` | 43 | Give away opportunities without abandoning support |
+| `the-exceptional-individual-contributor-50d9f41e-040` | 44 | Stay technical without becoming the critical path |
+| `the-exceptional-individual-contributor-50d9f41e-041` | 45 | Reviews and traces keep judgment calibrated |
+| `the-exceptional-individual-contributor-50d9f41e-042` | 46 | Prototype the uncertainty, then hand off delivery |
+| `the-exceptional-individual-contributor-50d9f41e-043` | 47 | Spend novelty where it creates real advantage |
+| `the-exceptional-individual-contributor-50d9f41e-044` | 48 | Debt and hidden dependencies change the price |
+| `the-exceptional-individual-contributor-50d9f41e-045` | 49 | Separate measured evidence from confidence |
+| `the-exceptional-individual-contributor-50d9f41e-046` | 50 | Flexibility is valuable only when the task needs it |
+| `the-exceptional-individual-contributor-50d9f41e-047` | 51 | Read failures before inventing evaluation categories |
+| `the-exceptional-individual-contributor-50d9f41e-048` | 52 | Match the grader to the requirement |
+| `the-exceptional-individual-contributor-50d9f41e-049` | 53 | Distinguish the test from the attempt |
+| `the-exceptional-individual-contributor-50d9f41e-050` | 54 | Capability, regression and saturation need different responses |
+| `the-exceptional-individual-contributor-50d9f41e-051` | 55 | One successful attempt is not consistent success |
+| `the-exceptional-individual-contributor-50d9f41e-087` | 56 | Report the attempts you actually ran |
+| `the-exceptional-individual-contributor-50d9f41e-052` | 57 | Small real suites can guide development early |
+| `the-exceptional-individual-contributor-50d9f41e-053` | 58 | Prioritize the defect, not the easiest metric |
+| `the-exceptional-individual-contributor-50d9f41e-054` | 59 | Start with the least autonomy that works |
+| `the-exceptional-individual-contributor-50d9f41e-055` | 60 | Choose a pattern for the shape of the work |
+| `the-exceptional-individual-contributor-50d9f41e-056` | 61 | The model and its harness form the system |
+| `the-exceptional-individual-contributor-50d9f41e-057` | 62 | Tool interfaces can prevent entire error classes |
+| `the-exceptional-individual-contributor-50d9f41e-058` | 63 | Put autonomy inside the genuinely open-ended step |
+| `the-exceptional-individual-contributor-50d9f41e-059` | 64 | Keep side effects safe and revisit the design |
+| `the-exceptional-individual-contributor-50d9f41e-060` | 65 | More context is not automatically more useful context |
+| `the-exceptional-individual-contributor-50d9f41e-061` | 66 | Retrieve detail when the task needs it |
+| `the-exceptional-individual-contributor-50d9f41e-062` | 67 | Preserve state without preserving every token |
+| `the-exceptional-individual-contributor-50d9f41e-063` | 68 | Inspect what the model saw when it failed |
+| `the-exceptional-individual-contributor-50d9f41e-064` | 69 | Production visibility needs intermediate actions |
+| `the-exceptional-individual-contributor-50d9f41e-065` | 70 | Give cost and latency explicit budgets |
+| `the-exceptional-individual-contributor-50d9f41e-066` | 71 | Constrain actions according to their consequences |
+| `the-exceptional-individual-contributor-50d9f41e-067` | 72 | Treat model changes as deployments |
+| `the-exceptional-individual-contributor-50d9f41e-068` | 73 | Cheap code does not make understanding cheap |
+| `the-exceptional-individual-contributor-50d9f41e-069` | 74 | Give the agent context and inspect small increments |
+| `the-exceptional-individual-contributor-50d9f41e-070` | 75 | Tests and review catch different problems |
+| `the-exceptional-individual-contributor-50d9f41e-071` | 76 | Ask for specific feedback before the annual review |
+| `the-exceptional-individual-contributor-50d9f41e-072` | 77 | Record impact and protect finite capacity |
+| `the-exceptional-individual-contributor-50d9f41e-088` | 78 | Protect capacity while showing impact |
+| `the-exceptional-individual-contributor-50d9f41e-073` | 79 | Pair trusted sources with local experiments |
+| `the-exceptional-individual-contributor-50d9f41e-074` | 80 | Build a cadence you can actually sustain |
+| `the-exceptional-individual-contributor-50d9f41e-075` | 81 | Months one and two: understand the terrain |
+| `the-exceptional-individual-contributor-50d9f41e-076` | 82 | Months two to four: demonstrate evaluation value |
+| `the-exceptional-individual-contributor-50d9f41e-077` | 83 | Months four to six: land one bounded strategy |
+| `the-exceptional-individual-contributor-50d9f41e-078` | 84 | Months six to nine: finish a cross-team outcome |
+| `the-exceptional-individual-contributor-50d9f41e-079` | 85 | Months nine to twelve: multiply and reassess |
+| `the-exceptional-individual-contributor-50d9f41e-080` | 86 | Keep technical practice running through the year |
+| `the-exceptional-individual-contributor-50d9f41e-081` | 87 | The sequence matters more than the calendar |
+| `the-exceptional-individual-contributor-50d9f41e-082` | 88 | Build an organization that improves without you |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `the-exceptional-individual-contributor-50d9f41e-009` | `the-exceptional-individual-contributor-50d9f41e-083` | Choose a quarterly portfolio deliberately |
+| `the-exceptional-individual-contributor-50d9f41e-013` | `the-exceptional-individual-contributor-50d9f41e-084` | Turn a goal into a strategy |
+| `the-exceptional-individual-contributor-50d9f41e-017` | `the-exceptional-individual-contributor-50d9f41e-085` | Ask how you would change course |
+| `the-exceptional-individual-contributor-50d9f41e-034` | `the-exceptional-individual-contributor-50d9f41e-086` | Lead an update with the decision |
+| `the-exceptional-individual-contributor-50d9f41e-051` | `the-exceptional-individual-contributor-50d9f41e-087` | Report the attempts you actually ran |
+| `the-exceptional-individual-contributor-50d9f41e-072` | `the-exceptional-individual-contributor-50d9f41e-088` | Protect capacity while showing impact |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

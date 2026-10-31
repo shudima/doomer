@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: using-local-coding-agents-9b152c44-029
+title: Keep the harness near your files
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 11. Mac <-> DGX'
+sort_order: 31
+language: en
+---
+
+The model server and coding harness do not have to run on the same computer. Raschka describes keeping the harness on a Mac while serving the model from a DGX Spark.
+
+An SSH tunnel makes the remote server appear at the familiar local Ollama endpoint. The harness can work with the Mac’s project files while the other machine supplies the inference compute. This is a split-machine setup under your control, rather than same-machine inference.

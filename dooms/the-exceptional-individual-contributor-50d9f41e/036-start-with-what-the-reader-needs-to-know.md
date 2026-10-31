@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-033
+title: Start with what the reader needs to know
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 5, 26–27: Writing and BLUF'
+sort_order: 36
+language: en
+---
+
+The survey recommends putting the conclusion, recommendation or request first. This writing convention helps a reader understand the purpose before entering the supporting detail.
+
+The rest should match the audience. Executives need choices and consequences; implementers need enough detail and edge cases to act. Short paragraphs, informative headings and comparisons make the argument easier to inspect instead of merely making the document look comprehensive.

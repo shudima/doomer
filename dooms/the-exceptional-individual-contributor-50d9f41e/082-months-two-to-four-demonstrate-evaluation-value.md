@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-076
+title: 'Months two to four: demonstrate evaluation value'
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Page 46: Twelve-month plan — evaluation'
+sort_order: 82
+language: en
+---
+
+The next stage selects an important system where better evaluation can change outcomes. Work with the team on error analysis, targeted checks, calibrated judges and incorporating those checks into the change process.
+
+The survey treats this as an early, concrete demonstration of value. Start recording impact and communicating predictably while building credibility through an improvement people can actually use.

@@ -65,3 +65,98 @@ Seven original SVG backgrounds were created for this collection, one palette per
 All root YAML files were parsed with PyYAML and validated against the project's reel JSON Schema. Validation checks unique IDs, filenames and contiguous order, consistent source metadata, existing in-collection nonempty images and PDF, matching source bytes, and parseable portrait SVGs. Word counts are checked against the 40-90 word target. The project's actual Catalog loader is also exercised. Editorial review compares the complete sequence to the source map for omissions, duplicates, unsupported claims and lost caveats.
 
 Phone-size app rendering verified using the existing compiled Doomer frontend in an isolated local preview with this collection and no persistent reading-state writes. At a 390 x 844 viewport, after web fonts finished loading, all 62 cards passed DOM checks for content/source overlap and source-footer clipping. The first and last cards were visually inspected with loaded 1080 x 1920 backgrounds; screenshots are saved in `preview/first-phone.png` and `preview/last-phone.png`. Final text lengths are 54-77 words. This checks the current phone viewport and renderer; it does not claim verification on every device or a hosted deployment.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 62 existing dooms retained their identities; 5 labeled illustrative examples added; 67 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The preserved PDF has text and vector tables rather than embedded raster illustrations. Relevant comparisons are represented as editable Markdown or clearly added diagrams; the original remains unchanged.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `agentic-ai-harness-survey-bb361049-001` | 1 | The harness makes the agent |
+| `agentic-ai-harness-survey-bb361049-002` | 2 | Choose the smallest useful autonomy |
+| `agentic-ai-harness-survey-bb361049-003` | 3 | Decide what belongs in code |
+| `agentic-ai-harness-survey-bb361049-063` | 4 | Let the model interpret; let code enforce |
+| `agentic-ai-harness-survey-bb361049-004` | 5 | Test tools with the worst arguments |
+| `agentic-ai-harness-survey-bb361049-005` | 6 | Input needs a trusted envelope |
+| `agentic-ai-harness-survey-bb361049-006` | 7 | Different triggers need different contracts |
+| `agentic-ai-harness-survey-bb361049-007` | 8 | Version the whole agent definition |
+| `agentic-ai-harness-survey-bb361049-008` | 9 | Explain the judgement |
+| `agentic-ai-harness-survey-bb361049-009` | 10 | Own the execution loop |
+| `agentic-ai-harness-survey-bb361049-064` | 11 | Follow one checked tool call |
+| `agentic-ai-harness-survey-bb361049-010` | 12 | Keep planning useful |
+| `agentic-ai-harness-survey-bb361049-011` | 13 | Stop honestly when a budget ends |
+| `agentic-ai-harness-survey-bb361049-012` | 14 | Resume without repeating side effects |
+| `agentic-ai-harness-survey-bb361049-065` | 15 | Retry without sending twice |
+| `agentic-ai-harness-survey-bb361049-013` | 16 | Continuity outside the chat |
+| `agentic-ai-harness-survey-bb361049-014` | 17 | What multiple agents buy |
+| `agentic-ai-harness-survey-bb361049-015` | 18 | Keep dependent decisions together |
+| `agentic-ai-harness-survey-bb361049-016` | 19 | Design tools around tasks |
+| `agentic-ai-harness-survey-bb361049-017` | 20 | Make tool results usable |
+| `agentic-ai-harness-survey-bb361049-018` | 21 | Scale the tool catalogue |
+| `agentic-ai-harness-survey-bb361049-019` | 22 | Load expertise in stages |
+| `agentic-ai-harness-survey-bb361049-020` | 23 | Skill descriptions are routing logic |
+| `agentic-ai-harness-survey-bb361049-021` | 24 | Let the environment contain mistakes |
+| `agentic-ai-harness-survey-bb361049-022` | 25 | Context size is a quality budget |
+| `agentic-ai-harness-survey-bb361049-023` | 26 | Keep references and retrieve details |
+| `agentic-ai-harness-survey-bb361049-024` | 27 | Compact without losing the task |
+| `agentic-ai-harness-survey-bb361049-025` | 28 | Task state deserves its own structure |
+| `agentic-ai-harness-survey-bb361049-026` | 29 | Make persistent memory visible |
+| `agentic-ai-harness-survey-bb361049-027` | 30 | Choose the right memory |
+| `agentic-ai-harness-survey-bb361049-028` | 31 | Search beyond similarity |
+| `agentic-ai-harness-survey-bb361049-029` | 32 | Match search to the material |
+| `agentic-ai-harness-survey-bb361049-030` | 33 | Ground and filter retrieval |
+| `agentic-ai-harness-survey-bb361049-031` | 34 | Levels of database freedom |
+| `agentic-ai-harness-survey-bb361049-032` | 35 | Define the numbers |
+| `agentic-ai-harness-survey-bb361049-066` | 36 | Define the metric before querying it |
+| `agentic-ai-harness-survey-bb361049-033` | 37 | The agent acts for a specific user |
+| `agentic-ai-harness-survey-bb361049-034` | 38 | Keep credentials out of context |
+| `agentic-ai-harness-survey-bb361049-035` | 39 | Contain prompt injection |
+| `agentic-ai-harness-survey-bb361049-036` | 40 | Separate reading from privilege |
+| `agentic-ai-harness-survey-bb361049-037` | 41 | Guardrails work in layers |
+| `agentic-ai-harness-survey-bb361049-038` | 42 | Verification should observe real effects |
+| `agentic-ai-harness-survey-bb361049-039` | 43 | Keep verification independent |
+| `agentic-ai-harness-survey-bb361049-040` | 44 | Human control follows risk |
+| `agentic-ai-harness-survey-bb361049-041` | 45 | Make approval worth reading |
+| `agentic-ai-harness-survey-bb361049-042` | 46 | Show progress and evidence |
+| `agentic-ai-harness-survey-bb361049-043` | 47 | Bound generated interfaces |
+| `agentic-ai-harness-survey-bb361049-044` | 48 | UI protocols have different jobs |
+| `agentic-ai-harness-survey-bb361049-045` | 49 | Traces make failures explainable |
+| `agentic-ai-harness-survey-bb361049-046` | 50 | Reduce cost by changing the work |
+| `agentic-ai-harness-survey-bb361049-047` | 51 | Route models with evidence |
+| `agentic-ai-harness-survey-bb361049-048` | 52 | Evaluate outcomes and paths |
+| `agentic-ai-harness-survey-bb361049-049` | 53 | Calibrate the graders |
+| `agentic-ai-harness-survey-bb361049-050` | 54 | Test whole conversations |
+| `agentic-ai-harness-survey-bb361049-051` | 55 | Reliability means repeated success |
+| `agentic-ai-harness-survey-bb361049-067` | 56 | Separate capability from reliability |
+| `agentic-ai-harness-survey-bb361049-052` | 57 | Use real failures as cases |
+| `agentic-ai-harness-survey-bb361049-053` | 58 | Audit evaluation numbers |
+| `agentic-ai-harness-survey-bb361049-054` | 59 | Replay the harness |
+| `agentic-ai-harness-survey-bb361049-055` | 60 | Protect solved behaviour |
+| `agentic-ai-harness-survey-bb361049-056` | 61 | Release the whole behaviour together |
+| `agentic-ai-harness-survey-bb361049-057` | 62 | Roll out in stages and learn |
+| `agentic-ai-harness-survey-bb361049-058` | 63 | Assess visibility before quality |
+| `agentic-ai-harness-survey-bb361049-059` | 64 | Read traces and probe |
+| `agentic-ai-harness-survey-bb361049-060` | 65 | Maturity needs measurement |
+| `agentic-ai-harness-survey-bb361049-061` | 66 | Separate findings by kind |
+| `agentic-ai-harness-survey-bb361049-062` | 67 | Let evidence set trust |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `agentic-ai-harness-survey-bb361049-003` | `agentic-ai-harness-survey-bb361049-063` | Let the model interpret; let code enforce |
+| `agentic-ai-harness-survey-bb361049-009` | `agentic-ai-harness-survey-bb361049-064` | Follow one checked tool call |
+| `agentic-ai-harness-survey-bb361049-012` | `agentic-ai-harness-survey-bb361049-065` | Retry without sending twice |
+| `agentic-ai-harness-survey-bb361049-032` | `agentic-ai-harness-survey-bb361049-066` | Define the metric before querying it |
+| `agentic-ai-harness-survey-bb361049-051` | `agentic-ai-harness-survey-bb361049-067` | Separate capability from reliability |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.
+
+Added diagram: Checked execution loop. Authored for the labeled illustrative example, not reproduced from the source. Editable Mermaid and a portable SVG are included. The SVG is a linear overview; the live Mermaid also shows decision branches.

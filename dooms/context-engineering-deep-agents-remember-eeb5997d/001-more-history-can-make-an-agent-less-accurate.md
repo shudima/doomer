@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: context-engineering-deep-agents-remember-eeb5997d-001
+title: More history can make an agent less accurate
+background_image: images/background.svg
+source_url: https://www.langchain.com/blog/context-engineering-deep-agents-remember
+source_file: null
+source_title: 'Context Engineering: How Deep Agents Remember'
+source_type: article
+source_locator: 'Section: Understanding context engineering techniques'
+sort_order: 1
+language: en
+---
+
+Long-running agents accumulate instructions, files, tool output, and intermediate work. As that material crowds the model’s active window, accuracy and reasoning can deteriorate—a problem the article calls context rot.
+
+Context engineering has two jobs: prevent unnecessary information from entering, and manage information already present. **Retrieval** alone addresses only part of the problem because useful work itself keeps adding history.

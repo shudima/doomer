@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: evaluating-the-effectiveness-of-llm-evaluators-aka-llm-as-judge-c55ce977-009
+title: More capable critics still need a task-specific test
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-evaluators/
+source_file: null
+source_title: Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)
+source_type: article
+source_locator: 'Section: Use cases for LM-evaluators — Constitutional AI results'
+sort_order: 9
+language: en
+---
+
+In the Constitutional AI experiments Yan discusses, larger evaluators became better at identifying and classifying harmful behavior. Reasoning prompts also improved judgments on the tested comparisons.
+
+These are findings from particular datasets and model generations. They support measuring whether additional model capability helps the chosen evaluation task, rather than assuming a parameter count guarantees dependable judgment across all safety questions.

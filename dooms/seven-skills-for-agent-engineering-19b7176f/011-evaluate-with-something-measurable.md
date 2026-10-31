@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: seven-skills-for-agent-engineering-19b7176f-010
+title: Evaluate with something measurable
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=mtiOK2QG9Q0&list=WL&index=24
+source_file: null
+source_title: The 7 Skills You Need to Build AI Agents
+source_type: video
+source_locator: 00:10:44–00:11:05
+sort_order: 11
+language: en
+---
+
+Evaluation pipelines need cases with known good answers and metrics that describe useful behavior. The presenter names success rate, **latency** and cost per task, alongside regression tests before release.
+
+A feeling that the agent seems better is too vague to decide whether it is ready. Measured performance gives the team a way to compare changes and see whether an apparent improvement created another problem.

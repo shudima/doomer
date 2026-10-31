@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: jev-decisions-without-text-0dd53b3f-016
+title: Cheap judgment changes where it fits
+background_image: images/network.svg
+source_url: https://www.youtube.com/watch?v=YGgNBcIgI4s&list=WL&index=9&t=13s
+source_file: null
+source_title: What Is Jev? The AI Model That Doesn't Generate Text
+source_type: video
+source_locator: 00:14:29–00:14:51
+sort_order: 18
+language: en
+---
+
+A judgment call that is fast and inexpensive could fit into places where an LLM would be too slow or costly. The presenter imagines applying it to every row in a database or every line of a log.
+
+That is the closing possibility: specialized decision models may expand the places software uses AI, while generative models continue handling tasks that need their strengths.

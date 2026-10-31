@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: coding-with-ai-agents-concepts-40c23e33-006
+title: Engineer the iteration loop
+background_image: images/flow.svg
+source_url: https://www.youtube.com/watch?v=hTAWHgQI4xg&list=WL&index=5
+source_file: null
+source_title: 5 Concepts to Know for Coding with AI Agents
+source_type: video
+source_locator: 00:04:24–00:04:52
+sort_order: 7
+language: en
+---
+
+A human can repeatedly prompt an agent, inspect its answer and ask it to try again. Loop engineering puts that iteration into a designed system.
+
+The human defines the purpose, while the agent keeps working toward completion. The video presents this as a change in where effort goes: design the process that drives progress instead of personally supplying every next prompt.

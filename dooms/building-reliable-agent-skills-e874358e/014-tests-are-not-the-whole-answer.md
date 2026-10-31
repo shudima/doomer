@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: building-reliable-agent-skills-e874358e-012
+title: Tests are not the whole answer
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=qYNs80FKIVc&list=WL&index=23
+source_file: null
+source_title: 5 Best Practices for Building AI Agent Skills
+source_type: video
+source_locator: 00:10:21–00:10:59
+sort_order: 14
+language: en
+---
+
+The presenters argue that tests only catch the cases someone thought to check. When a fragile step can be encoded directly, removing repeated improvisation can improve consistency.
+
+The lesson is to move known logic into deterministic code and keep the agent responsible for invoking it appropriately. That does not establish that every script is correct; it changes which part of the workflow needs to be engineered and checked.

@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: context-engineering-failure-modes-88666974-009
+title: Compact, with care
+background_image: images/layers.svg
+source_url: https://www.youtube.com/watch?v=BwXremQ-i6I&list=WL&index=4
+source_file: null
+source_title: 'Context Engineering for AI Agents: 4 Failure Modes to Avoid'
+source_type: video
+source_locator: 00:07:53–00:08:22
+sort_order: 11
+language: en
+---
+
+A long history can be replaced with a summary so the agent starts from a shorter account of the work. The presenter calls this compaction, a response to distraction.
+
+There is a cost: summaries lose information, and repeated summarization can drift like repeated photocopies. Compaction reduces the burden of old activity, but the resulting summary still needs to preserve the facts the task depends on.

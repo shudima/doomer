@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: seven-skills-for-agent-engineering-19b7176f-011
+title: 'Skill 7: design for the human'
+background_image: images/network.svg
+source_url: https://www.youtube.com/watch?v=mtiOK2QG9Q0&list=WL&index=24
+source_file: null
+source_title: The 7 Skills You Need to Build AI Agents
+source_type: video
+source_locator: 00:11:05–00:12:22
+sort_order: 12
+language: en
+---
+
+People need to understand what an agent can do, where it is uncertain and what happens when it fails. The experience also needs sensible points for clarification and escalation to a person.
+
+The presenter calls this product thinking for unpredictable systems. An agent may succeed one day and struggle the next, so trust depends partly on setting expectations and handling that variability gracefully.

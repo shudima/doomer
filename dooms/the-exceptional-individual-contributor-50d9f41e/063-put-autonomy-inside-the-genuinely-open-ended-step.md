@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-058
+title: Put autonomy inside the genuinely open-ended step
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 36–37: Illustrative invoice workflow'
+sort_order: 63
+language: en
+---
+
+In the survey's composite invoice example, extraction, purchase-order lookup and comparison fit a fixed workflow, with ambiguous cases routed to a person. A fully autonomous agent would add little to those predictable steps.
+
+Later, investigating unusual invoices requires searching systems in an unpredictable order. A small agent handles that specific subproblem while the larger process retains its more testable structure.

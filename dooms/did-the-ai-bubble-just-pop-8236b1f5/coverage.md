@@ -44,3 +44,39 @@ Five original purpose-made SVG backgrounds: market downturn, GPU chip, circular 
 All 11 YAML files were parsed with PyYAML and checked against the canonical reel JSON Schema. IDs, filenames, contiguous order, consistent source metadata and existing nonempty local SVG paths were checked. SVGs were parsed as XML and their portrait dimensions verified. Each reel contains 40–90 words. Editorial review compared every substantive source section with the mapping above, preserving attribution, financial conditions and the qualified conclusion.
 
 Phone-size app preview: the collection loaded successfully in the existing Doomer renderer using an isolated temporary reading database. The first reel and its background were visually inspected at a 390×844 viewport. DOM layout checks across all 11 rendered cards found no text/source overlap or clipped source-credit blocks. The final sponsor title and prose were shortened after the initial fit check. The temporary preview was stopped afterward. Existing app instances load their catalog at startup and need a restart to discover the new collection.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 11 existing dooms retained their identities; 2 labeled illustrative examples added; 13 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The original transcript/caption access and visual-inspection limits above still apply. No new video frames were recovered or passed off as inspected source images.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `did-the-ai-bubble-just-pop-8236b1f5-001` | 1 | Three weeks changed the mood |
+| `did-the-ai-bubble-just-pop-8236b1f5-002` | 2 | The GPU landlord gets hit |
+| `did-the-ai-bubble-just-pop-8236b1f5-003` | 3 | Follow the GPU money |
+| `did-the-ai-bubble-just-pop-8236b1f5-004` | 4 | The loop needs fresh credit |
+| `did-the-ai-bubble-just-pop-8236b1f5-005` | 5 | Musk predicts a neocloud wipeout |
+| `did-the-ai-bubble-just-pop-8236b1f5-006` | 6 | An IPO with a compute bill |
+| `did-the-ai-bubble-just-pop-8236b1f5-007` | 7 | The risk section gets concrete |
+| `did-the-ai-bubble-just-pop-8236b1f5-008` | 8 | Smarter before anyone notices |
+| `did-the-ai-bubble-just-pop-8236b1f5-009` | 9 | A financing crisis can coexist with progress |
+| `did-the-ai-bubble-just-pop-8236b1f5-012` | 10 | Track financing and capability separately |
+| `did-the-ai-bubble-just-pop-8236b1f5-010` | 11 | Developers get the discounted tokens |
+| `did-the-ai-bubble-just-pop-8236b1f5-013` | 12 | Read a cheap token price carefully |
+| `did-the-ai-bubble-just-pop-8236b1f5-011` | 13 | Sponsor: agents work together |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `did-the-ai-bubble-just-pop-8236b1f5-009` | `did-the-ai-bubble-just-pop-8236b1f5-012` | Track financing and capability separately |
+| `did-the-ai-bubble-just-pop-8236b1f5-010` | `did-the-ai-bubble-just-pop-8236b1f5-013` | Read a cheap token price carefully |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

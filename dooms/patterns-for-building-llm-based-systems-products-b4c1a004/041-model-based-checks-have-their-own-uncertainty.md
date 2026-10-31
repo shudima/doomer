@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: patterns-for-building-llm-based-systems-products-b4c1a004-039
+title: Model-based checks have their own uncertainty
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Guardrails — NeMo and self-consistency'
+sort_order: 41
+language: en
+---
+
+Some guardrail approaches ask another model whether a response follows retrieved evidence, contains harmful content or disagrees with alternative completions. These methods address requirements that are harder to capture with simple rules.
+
+Yan describes the intuition behind them, including self-consistency checks. They remain model judgments, so their usefulness depends on their ability to detect the actual failures the product needs to prevent.

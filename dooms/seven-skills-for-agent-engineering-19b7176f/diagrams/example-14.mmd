@@ -1,0 +1,8 @@
+flowchart TD
+  A[Read request] --> B[Retrieve policy]
+  B --> C[Propose action]
+  C --> D{Approval required?}
+  D -->|Yes| E{User approves?}
+  D -->|No| F[Execute and verify]
+  E -->|Yes| F
+  E -->|No| G[Stop or revise]

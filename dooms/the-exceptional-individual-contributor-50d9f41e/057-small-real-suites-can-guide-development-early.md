@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-052
+title: Small real suites can guide development early
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 34–35: Eval-driven development'
+sort_order: 57
+language: en
+---
+
+Writing evaluations before adding a capability forces a team to state what success means. The survey recommends starting with roughly 20–50 meaningful cases from real failures rather than waiting for an enormous benchmark.
+
+Run the relevant suite when prompts, models or tools change. Combine these offline checks with production sampling and periodic human review; none alone completely represents the changing behavior users encounter.

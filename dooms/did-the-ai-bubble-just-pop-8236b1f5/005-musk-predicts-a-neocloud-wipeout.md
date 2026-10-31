@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: did-the-ai-bubble-just-pop-8236b1f5-005
+title: Musk predicts a neocloud wipeout
+background_image: images/market.svg
+source_url: https://www.youtube.com/watch?v=nEaJMdM1djM
+source_file: null
+source_title: Did the AI bubble just pop?
+source_type: video
+source_locator: 00:02:35–00:02:51
+sort_order: 5
+language: en
+---
+
+Fireship recounts Elon Musk saying debt markets had almost shut to businesses whose only revenue comes from AI data centers. Musk predicted more than 200 neocloud companies would fail. That is his forecast, not a confirmed casualty count.
+
+The report also needles his convenient exception: SpaceX should be fine because it sells rockets too. The warning comes from someone with his own computing interests.

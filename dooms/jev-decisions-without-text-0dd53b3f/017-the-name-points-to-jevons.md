@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: jev-decisions-without-text-0dd53b3f-015
+title: The name points to Jevons
+background_image: images/network.svg
+source_url: https://www.youtube.com/watch?v=YGgNBcIgI4s&list=WL&index=9&t=13s
+source_file: null
+source_title: What Is Jev? The AI Model That Doesn't Generate Text
+source_type: video
+source_locator: 00:14:03–00:14:29
+sort_order: 17
+language: en
+---
+
+Jev takes its name from economist William Stanley Jevons. In 1865, he observed that more efficient steam engines were associated with Britain using more coal, rather than less.
+
+The presenter invokes that paradox as a possibility for AI: making a useful operation cheaper can expand how much of it people use. It is a suggestive comparison, not a forecast already proved for decision models.

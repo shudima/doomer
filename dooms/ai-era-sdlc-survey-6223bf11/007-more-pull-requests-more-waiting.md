@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: ai-era-sdlc-survey-6223bf11-007
+title: More pull requests, more waiting
+background_image: images/flow.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Software Development Life Cycle in the AI Era
+source_type: pdf
+source_locator: 'Page 6: Faros AI and DX research'
+sort_order: 7
+language: en
+---
+
+Faros AI's vendor telemetry, as presented here, covered 10,000 developers across 1,255 teams. High AI adoption came with 21% more tasks, 98% more merged pull requests and 91% more review time, without a company-level delivery gain.
+
+The survey also cites DX vendor research reporting longer-run pull-request throughput gains of roughly 10-15%. The measures differ. Both support examining the whole workflow: increased authoring capacity needs review and QA capacity to turn into delivery.

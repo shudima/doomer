@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: jev-trust-observability-bef2a4f9-003
+title: Confidence and evidence differ
+background_image: images/decision.svg
+source_url: https://www.youtube.com/watch?v=_yO_Q7qo0HQ&list=WL&index=3
+source_file: null
+source_title: 'The Problem with Jev: Can You Trust AI Decisions?'
+source_type: video
+source_locator: 00:02:48–00:03:35
+sort_order: 3
+language: en
+---
+
+Jev can return a structured decision with a confidence score such as 97%. Software can consume that directly, without interpreting a paragraph.
+
+But the probability describes the model’s confidence in its answer. It does not necessarily reveal the reason for that answer. The video’s central distinction is between a useful prediction and the evidence needed to justify acting on it.

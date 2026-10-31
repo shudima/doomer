@@ -69,3 +69,44 @@ Original purpose-made SVG backgrounds use relevant decision, workflow, document-
 Each YAML was parsed with PyYAML and validated against the canonical reel schema. Checks cover unique IDs, filename/order agreement, contiguous integer order, consistent source metadata, local nonempty image paths, XML parsing and portrait dimensions. All source locators overlap retrieved caption cues. Each reel contains 40–90 words. Editorial review checked the map for coverage, repetition, unsupported additions, uncertainty and tone.
 
 Phone-size renderer preview: the existing Doomer app successfully loaded this collection at 390×844 using an isolated temporary database, with no changes to the user’s reading state. The first reel, its background, typography and source credit were visually inspected. DOM layout checks across every card found no content/source overlap, clipped source-credit blocks or overlap with the top label after final readability revisions. Several headings and four texts across the batch were tightened while preserving their ideas. App rendering was tested; video visuals were not inspected. Existing Doomer instances cache the catalog at startup and need a restart to discover new collections.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 16 existing dooms retained their identities; 2 labeled illustrative examples added; 18 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The original transcript/caption access and visual-inspection limits above still apply. No new video frames were recovered or passed off as inspected source images.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `jev-decisions-without-text-0dd53b3f-001` | 1 | A model that chooses |
+| `jev-decisions-without-text-0dd53b3f-002` | 2 | Fast judgment, slow thought |
+| `jev-decisions-without-text-0dd53b3f-003` | 3 | One email, three decisions |
+| `jev-decisions-without-text-0dd53b3f-004` | 4 | JSON is not calibrated certainty |
+| `jev-decisions-without-text-0dd53b3f-005` | 5 | Give the decision its state |
+| `jev-decisions-without-text-0dd53b3f-006` | 6 | Probabilities within defined choices |
+| `jev-decisions-without-text-0dd53b3f-007` | 7 | Training can reward a confident voice |
+| `jev-decisions-without-text-0dd53b3f-008` | 8 | Correct answers are another objective |
+| `jev-decisions-without-text-0dd53b3f-009` | 9 | Reward the probability itself |
+| `jev-decisions-without-text-0dd53b3f-010` | 10 | What calibration means |
+| `jev-decisions-without-text-0dd53b3f-017` | 11 | Test a group of confidence predictions |
+| `jev-decisions-without-text-0dd53b3f-011` | 12 | Route uncertainty to a human |
+| `jev-decisions-without-text-0dd53b3f-012` | 13 | An expensive mistake needs more certainty |
+| `jev-decisions-without-text-0dd53b3f-018` | 14 | Match the threshold to the consequence |
+| `jev-decisions-without-text-0dd53b3f-013` | 15 | Guardrails have limits too |
+| `jev-decisions-without-text-0dd53b3f-014` | 16 | Let each model do its part |
+| `jev-decisions-without-text-0dd53b3f-015` | 17 | The name points to Jevons |
+| `jev-decisions-without-text-0dd53b3f-016` | 18 | Cheap judgment changes where it fits |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `jev-decisions-without-text-0dd53b3f-010` | `jev-decisions-without-text-0dd53b3f-017` | Test a group of confidence predictions |
+| `jev-decisions-without-text-0dd53b3f-012` | `jev-decisions-without-text-0dd53b3f-018` | Match the threshold to the consequence |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

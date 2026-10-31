@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: using-local-coding-agents-9b152c44-022
+title: Codex can host a local model workflow
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 9. Codex Setup'
+sort_order: 24
+language: en
+---
+
+The article describes local Ollama use through the open-source Codex CLI. Raschka says the Codex UI did not support non-OpenAI models at the time he wrote it, so the CLI is his route for this experiment.
+
+He recommends a separate Ollama configuration so a normal Codex session can still use the hosted model. Keeping distinct launch choices avoids repeatedly replacing the settings for a working daily setup.

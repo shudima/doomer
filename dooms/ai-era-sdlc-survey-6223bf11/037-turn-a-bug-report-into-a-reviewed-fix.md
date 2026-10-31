@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: ai-era-sdlc-survey-6223bf11-033
+title: Turn a bug report into a reviewed fix
+background_image: images/flow.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Software Development Life Cycle in the AI Era
+source_type: pdf
+source_locator: 'Page 21: Maintenance and bug fixes'
+sort_order: 37
+language: en
+---
+
+Maintenance often gives agents well-scoped, repetitive and verifiable work. The survey describes a pipeline from error tracker to contextual ticket, then a background agent's failing test and proposed fix, followed by human review and a canary release.
+
+Similar workflows can handle dependency upgrades, security fixes and mechanical migrations. Examine whether the patch addresses the cause: an extra null check or exception handler may merely hide a defect. Passing CI offers limited reassurance when the surrounding test coverage is thin.

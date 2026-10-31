@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-040
+title: Stay technical without becoming the critical path
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 6, 30–31: Staying technical'
+sort_order: 44
+language: en
+---
+
+The critical path is the chain of dependent work that determines the earliest possible finish. If an unpredictable principal schedule owns a crucial step, other people can become blocked whenever that person is pulled away.
+
+The survey recommends technical work that builds understanding, sets a useful example or requires unusual expertise, preferably without making ordinary team delivery depend on the principal's availability.

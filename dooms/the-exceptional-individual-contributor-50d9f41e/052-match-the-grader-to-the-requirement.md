@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-048
+title: Match the grader to the requirement
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Page 34: Code, model and human graders'
+sort_order: 52
+language: en
+---
+
+Code-based graders are inexpensive and reproducible when a requirement can be checked directly, such as whether the expected tool was called. Model-based graders can handle more open-ended qualities but need validation against human labels.
+
+The survey also recommends allowing uncertainty instead of forcing invented scores. Human review remains important for **calibration** and for deciding whether either automated approach represents the intended quality standard.

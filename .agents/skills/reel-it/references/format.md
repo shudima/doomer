@@ -26,7 +26,7 @@ Validate metadata against [reel-markdown.schema.json](reel-markdown.schema.json)
 | Field | Meaning |
 | --- | --- |
 | `schema_version` | Integer `2` for Markdown reels. |
-| `id` | Unique `<source-id>-001` identifier. |
+| `id` | Stable, unique `<source-id>-001` identifier; independent of display order. |
 | `title` | Short, plain title for one concept. |
 | `background_image` | A real local portrait asset under `images/`; explanatory figures belong inline too. |
 | `source_url` | Original supplied URL, unchanged; null for an attachment without a public URL. |
@@ -91,4 +91,6 @@ Review the prose and examples against the source separately, and preview the act
 
 Existing version-1 `.yaml` reels remain defined by [reel.schema.json](reel.schema.json), with plain text in `text`. Keep that schema intact because the current application uses it. Do not rewrite existing collections during a skill update or duplicate a reel in both formats.
 
-At this update, `backend/catalog.py` scans `.yaml` files and the React reader renders `text` as plain paragraphs. It does **not** ingest version-2 Markdown files or render their inline assets and Mermaid diagrams. New collections still use the requested Markdown format. Disclose this integration gap until reader support is implemented and verified; publishing files alone is not proof that the app displays them.
+The reader loads both version-1 YAML and version-2 Markdown. Markdown supports GFM tables, lists, code, local figures with an enlarge/zoom viewer, and Mermaid diagrams. Assets are served through the same profile-scoped API as the reader. Keep legacy support for older collections and clients.
+
+When a user authorizes revising an existing collection, preserve its collection ID and every existing doom ID. Reactions and saved progress refer to these IDs. Allocate unused numeric IDs for added example or split cards, and set `sort_order` and filename prefixes to their new reading positions. Never renumber identities to match a changed position. Do not keep both YAML and Markdown copies of the same doom.

@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: coding-with-ai-agents-concepts-40c23e33-011
+title: A pull request can carry an attack
+background_image: images/shield.svg
+source_url: https://www.youtube.com/watch?v=hTAWHgQI4xg&list=WL&index=5
+source_file: null
+source_title: 5 Concepts to Know for Coding with AI Agents
+source_type: video
+source_locator: 00:07:17–00:08:04
+sort_order: 12
+language: en
+---
+
+**Prompt injection** matters when an agent can read untrusted web content, access sensitive information and send data out. The video combines those capabilities in a coding example.
+
+An agent reading a pull request might encounter malicious instructions that try to make it send private credentials elsewhere. The risk comes from how the system connects information and actions, not merely from whether the model can write good code.

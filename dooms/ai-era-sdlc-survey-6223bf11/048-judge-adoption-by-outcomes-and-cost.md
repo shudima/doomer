@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: ai-era-sdlc-survey-6223bf11-044
+title: Judge adoption by outcomes and cost
+background_image: images/measure.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Software Development Life Cycle in the AI Era
+source_type: pdf
+source_locator: 'Pages 24-25: Measuring the impact; page 3: Overall playbook'
+sort_order: 48
+language: en
+---
+
+Weekly tool use and the share of AI-assisted changes help diagnose adoption. The survey warns against using them for individual performance review. Pair them with developer satisfaction, trust and cognitive load, while remembering that perceived speed can mislead.
+
+Track team spend, cost per merged change or resolved ticket and net time saved. Agent token costs can grow quickly. The survey's final practical test is whether changed workflows improve useful delivery, quality and experience at a cost the team understands.

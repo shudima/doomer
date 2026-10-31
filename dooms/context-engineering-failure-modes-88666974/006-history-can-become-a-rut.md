@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: context-engineering-failure-modes-88666974-005
+title: History can become a rut
+background_image: images/flow.svg
+source_url: https://www.youtube.com/watch?v=BwXremQ-i6I&list=WL&index=4
+source_file: null
+source_title: 'Context Engineering for AI Agents: 4 Failure Modes to Avoid'
+source_type: video
+source_locator: 00:05:17–00:06:00
+sort_order: 6
+language: en
+---
+
+Context distraction happens when the accumulated history starts steering the next action. After an hour of similar steps, the agent may keep repeating the strongest pattern in its window.
+
+Instead of asking what the task needs now, it does more of what it has already done. The video describes this as an agent going over old ground because its own activity has become the dominant context.

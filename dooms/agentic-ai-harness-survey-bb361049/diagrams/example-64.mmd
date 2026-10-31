@@ -1,0 +1,8 @@
+flowchart TD
+  A[Assemble context] --> B[Model proposes action]
+  B --> C{Allowed and valid?}
+  C -->|Yes| D[Run tool]
+  C -->|No| E[Return useful error]
+  D --> F[Observe and save state]
+  E --> F
+  F --> B

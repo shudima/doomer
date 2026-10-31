@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: ai-era-sdlc-survey-6223bf11-020
+title: Give agents a fast feedback loop
+background_image: images/flow.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Software Development Life Cycle in the AI Era
+source_type: pdf
+source_locator: 'Page 14: Development practices'
+sort_order: 23
+language: en
+---
+
+The survey's development loop is exploration, planning, implementation and **verification**. Review the plan before generation, establish failing tests where useful and let the agent iterate against tests, types and linters.
+
+Fast local checks make that loop productive. Frequent checkpoints make a wrong direction cheap to discard. Independent tasks can run in separate git worktrees or background sandboxes; focused subagents can return summaries without filling the main context. The human author still needs to explain the submitted change.

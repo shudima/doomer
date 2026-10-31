@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: patterns-for-building-llm-based-systems-products-b4c1a004-024
+title: Improvements can carry an alignment tax
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Fine-tuning — demonstration data and regressions'
+sort_order: 25
+language: en
+---
+
+Adapting a model requires suitable examples and can reduce performance on other tasks. Yan uses InstructGPT's reported regressions to illustrate that better target behavior does not guarantee an improvement everywhere.
+
+This makes evaluation and task **scope** important. A specialized model may be appropriate precisely because it need not preserve every ability of the original general-purpose model across unrelated workloads.

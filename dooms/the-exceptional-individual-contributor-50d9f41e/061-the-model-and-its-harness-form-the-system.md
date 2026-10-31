@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-056
+title: The model and its harness form the system
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 8, 36–37: Harnesses and frameworks'
+sort_order: 61
+language: en
+---
+
+An agent's harness supplies the loop, tools, state handling and context assembly around a model. Evaluating an agent therefore measures their combination rather than the model alone.
+
+The survey recommends understanding framework behavior before depending on it. Useful abstractions can accelerate development, but hidden prompts or unnecessary machinery can make failures harder to explain and fix.

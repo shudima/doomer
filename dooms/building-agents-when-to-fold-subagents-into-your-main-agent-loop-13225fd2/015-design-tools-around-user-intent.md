@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: building-agents-when-to-fold-subagents-into-your-main-agent-loop-13225fd2-014
+title: Design tools around user intent
+background_image: images/background.svg
+source_url: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+source_file: null
+source_title: 'Building agents: When to fold subagents into your main agent loop'
+source_type: article
+source_locator: 'Section: MCP tools'
+sort_order: 15
+language: en
+---
+
+Tools fit actions, live lookups, and fixed-shape results. Anthropic recommends grouping them by user intent instead of mapping every API endpoint directly into a tool definition.
+
+The article warns that selection tends to degrade beyond roughly thirty to fifty tool definitions in the prompt. Tool search and deferred loading reduce that burden, while still allowing the agent to discover capabilities when the user’s task requires them.

@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: how-to-interview-and-hire-ml-ai-engineers-63f4110a-003
+title: Data literacy begins with actual examples
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/how-to-interview/
+source_file: null
+source_title: How to Interview and Hire ML/AI Engineers
+source_type: article
+source_locator: 'Section: What technical skills to consider — data literacy'
+sort_order: 3
+language: en
+---
+
+Strong data work requires understanding how information was collected and what its limitations mean. Yan recommends asking about missing values, outliers, preprocessing and differences between logging sources.
+
+Looking directly at records can reveal problems that a polished aggregate conceals. The goal is not merely running queries, but knowing whether the resulting evidence is suitable for the decision being made.

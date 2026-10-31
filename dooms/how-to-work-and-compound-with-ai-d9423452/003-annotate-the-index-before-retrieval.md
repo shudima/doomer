@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: how-to-work-and-compound-with-ai-d9423452-003
+title: Annotate the index before retrieval
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/working-with-ai/
+source_file: null
+source_title: How to Work and Compound with AI
+source_type: article
+source_locator: 'Section: Context as infrastructure'
+sort_order: 3
+language: en
+---
+
+Connecting organizational tools gives an assistant access to documents and conversations, but access alone does not explain relevance. Yan keeps a project index containing links, owners and short descriptions of when each resource matters.
+
+Those annotations save repeated exploration. The effort spent explaining a document once can improve many later sessions, for both models and human collaborators.

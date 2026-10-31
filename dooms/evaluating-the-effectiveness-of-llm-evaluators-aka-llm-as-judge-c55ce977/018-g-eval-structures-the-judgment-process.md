@@ -1,0 +1,21 @@
+---
+schema_version: 2
+id: evaluating-the-effectiveness-of-llm-evaluators-aka-llm-as-judge-c55ce977-017
+title: G-Eval structures the judgment process
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-evaluators/
+source_file: null
+source_title: Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)
+source_type: article
+source_locator: 'Section: Techniques for prompting LLM-evaluators — G-Eval'
+sort_order: 18
+language: en
+---
+
+G-Eval defines criteria, generates evaluation steps and fills a scoring form. The study combines token probabilities, or repeated samples when probabilities are unavailable, to produce a final score.
+
+Yan reports improved correlation on the tested tasks while retaining a caveat: correlation alone does not reveal the judge's ability to catch inconsistent or irrelevant outputs. More elaborate prompting still needs appropriate validation.
+
+![Overview of G-Eval](images/source-18.webp)
+
+*Source: Eugene Yan’s article; underlying paper credits remain in the figure and linked source. Tap to enlarge; the complete figure is preserved.*

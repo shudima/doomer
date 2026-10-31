@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: using-local-coding-agents-9b152c44-021
+title: The harness changes the outcome
+background_image: images/local-stack.svg
+source_url: https://magazine.sebastianraschka.com/p/using-local-coding-agents
+source_file: null
+source_title: Using Local Coding Agents
+source_type: article
+source_locator: 'Section: 8. Agent Capability Assessment'
+sort_order: 23
+language: en
+---
+
+In the article’s five-task agent assessment, Qwen3.6 and North Mini Code each solved four tasks using Qwen Code. Nemotron 3 Nano, an older model of similar size and compute needs, performed comparably. Gemma 4 E2B struggled.
+
+North Mini’s result is especially useful context: its poor score in the earlier tool-reasoning test did not directly predict its complete-agent result. Evaluate the model and harness together, rather than treating either small test as a universal ranking.

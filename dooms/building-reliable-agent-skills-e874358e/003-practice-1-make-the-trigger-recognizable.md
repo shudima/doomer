@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: building-reliable-agent-skills-e874358e-003
+title: 'Practice 1: make the trigger recognizable'
+background_image: images/decision.svg
+source_url: https://www.youtube.com/watch?v=qYNs80FKIVc&list=WL&index=23
+source_file: null
+source_title: 5 Best Practices for Building AI Agent Skills
+source_type: video
+source_locator: 00:01:27–00:02:37
+sort_order: 3
+language: en
+---
+
+A skill’s name and description help the agent decide whether to use it. At startup, those short metadata fields can be loaded without reading every installed skill in full.
+
+The presenters cite limits of 64 characters for a name and 1,024 for a description. Within that space, the metadata must carry enough information to make the skill’s purpose recognizable on its own.

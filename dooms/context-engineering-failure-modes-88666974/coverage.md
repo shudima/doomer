@@ -61,3 +61,40 @@ Original purpose-made SVG backgrounds use relevant decision, workflow, document-
 Each YAML was parsed with PyYAML and validated against the canonical reel schema. Checks cover unique IDs, filename/order agreement, contiguous integer order, consistent source metadata, local nonempty image paths, XML parsing and portrait dimensions. All source locators overlap retrieved caption cues. Each reel contains 40–90 words. Editorial review checked the map for coverage, repetition, unsupported additions, uncertainty and tone.
 
 Phone-size renderer preview: the existing Doomer app successfully loaded this collection at 390×844 using an isolated temporary database, with no changes to the user’s reading state. The first reel, its background, typography and source credit were visually inspected. DOM layout checks across every card found no content/source overlap, clipped source-credit blocks or overlap with the top label after final readability revisions. Several headings and four texts across the batch were tightened while preserving their ideas. App rendering was tested; video visuals were not inspected. Existing Doomer instances cache the catalog at startup and need a restart to discover new collections.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 12 existing dooms retained their identities; 2 labeled illustrative examples added; 14 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The original transcript/caption access and visual-inspection limits above still apply. No new video frames were recovered or passed off as inspected source images.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `context-engineering-failure-modes-88666974-001` | 1 | Bigger context can work worse |
+| `context-engineering-failure-modes-88666974-002` | 2 | The task becomes the smallest part |
+| `context-engineering-failure-modes-88666974-003` | 3 | Capacity is not attention |
+| `context-engineering-failure-modes-88666974-004` | 4 | Poisoning starts with a bad note |
+| `context-engineering-failure-modes-88666974-013` | 5 | Do not turn a guess into memory |
+| `context-engineering-failure-modes-88666974-005` | 6 | History can become a rut |
+| `context-engineering-failure-modes-88666974-006` | 7 | Too many tools create confusion |
+| `context-engineering-failure-modes-88666974-007` | 8 | A correction can leave a clash |
+| `context-engineering-failure-modes-88666974-014` | 9 | Replace the stale instruction clearly |
+| `context-engineering-failure-modes-88666974-008` | 10 | Validate before saving a conclusion |
+| `context-engineering-failure-modes-88666974-009` | 11 | Compact, with care |
+| `context-engineering-failure-modes-88666974-010` | 12 | Keep detail outside the window |
+| `context-engineering-failure-modes-88666974-011` | 13 | Curate the available tools |
+| `context-engineering-failure-modes-88666974-012` | 14 | Prune the version that is wrong |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `context-engineering-failure-modes-88666974-004` | `context-engineering-failure-modes-88666974-013` | Do not turn a guess into memory |
+| `context-engineering-failure-modes-88666974-007` | `context-engineering-failure-modes-88666974-014` | Replace the stale instruction clearly |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

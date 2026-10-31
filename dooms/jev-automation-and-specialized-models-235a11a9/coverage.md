@@ -59,3 +59,39 @@ Original purpose-made SVG backgrounds use relevant decision, workflow, document-
 Each YAML was parsed with PyYAML and validated against the canonical reel schema. Checks cover unique IDs, filename/order agreement, contiguous integer order, consistent source metadata, local nonempty image paths, XML parsing and portrait dimensions. All source locators overlap retrieved caption cues. Each reel contains 40–90 words. Editorial review checked the map for coverage, repetition, unsupported additions, uncertainty and tone.
 
 Phone-size renderer preview: the existing Doomer app successfully loaded this collection at 390×844 using an isolated temporary database, with no changes to the user’s reading state. The first reel, its background, typography and source credit were visually inspected. DOM layout checks across every card found no content/source overlap, clipped source-credit blocks or overlap with the top label after final readability revisions. Several headings and four texts across the batch were tightened while preserving their ideas. App rendering was tested; video visuals were not inspected. Existing Doomer instances cache the catalog at startup and need a restart to discover new collections.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 11 existing dooms retained their identities; 2 labeled illustrative examples added; 13 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The original transcript/caption access and visual-inspection limits above still apply. No new video frames were recovered or passed off as inspected source images.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `jev-automation-and-specialized-models-235a11a9-001` | 1 | Applications shape the model |
+| `jev-automation-and-specialized-models-235a11a9-002` | 2 | A different optimization target |
+| `jev-automation-and-specialized-models-235a11a9-003` | 3 | Latency changes what is practical |
+| `jev-automation-and-specialized-models-235a11a9-004` | 4 | One token after another adds time |
+| `jev-automation-and-specialized-models-235a11a9-005` | 5 | Sponsor: review a plan first |
+| `jev-automation-and-specialized-models-235a11a9-006` | 6 | Sponsor: choose the model per task |
+| `jev-automation-and-specialized-models-235a11a9-007` | 7 | The interface asks for structure |
+| `jev-automation-and-specialized-models-235a11a9-012` | 8 | A decision can have a small interface |
+| `jev-automation-and-specialized-models-235a11a9-008` | 9 | Three kinds of judgment |
+| `jev-automation-and-specialized-models-235a11a9-009` | 10 | Optimize a specific part of the frontier |
+| `jev-automation-and-specialized-models-235a11a9-013` | 11 | Optimize the workload you actually have |
+| `jev-automation-and-specialized-models-235a11a9-010` | 12 | Specialization has a history |
+| `jev-automation-and-specialized-models-235a11a9-011` | 13 | A wider landscape of models |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `jev-automation-and-specialized-models-235a11a9-007` | `jev-automation-and-specialized-models-235a11a9-012` | A decision can have a small interface |
+| `jev-automation-and-specialized-models-235a11a9-009` | `jev-automation-and-specialized-models-235a11a9-013` | Optimize the workload you actually have |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

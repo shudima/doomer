@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: jev-automation-and-specialized-models-235a11a9-011
+title: A wider landscape of models
+background_image: images/network.svg
+source_url: https://www.youtube.com/watch?v=vj7hysh0mOI&list=WL&index=13
+source_file: null
+source_title: Jev explained in 7min..
+source_type: video
+source_locator: 00:06:34–00:07:11
+sort_order: 13
+language: en
+---
+
+Caleb’s conclusion is about applications expanding horizontally. The opportunity is to build useful products on specialized primitives and let demand support more models optimized for those constraints.
+
+He sees value in an ecosystem that appreciates different kinds of models. General-purpose intelligence remains useful, while particular architectures and training objectives can serve workloads that otherwise become too slow or expensive to automate.

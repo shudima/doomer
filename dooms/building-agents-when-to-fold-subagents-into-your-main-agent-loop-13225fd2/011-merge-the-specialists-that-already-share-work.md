@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: building-agents-when-to-fold-subagents-into-your-main-agent-loop-13225fd2-010
+title: Merge the specialists that already share work
+background_image: images/background.svg
+source_url: https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+source_file: null
+source_title: 'Building agents: When to fold subagents into your main agent loop'
+source_type: article
+source_locator: 'Section: Combining domain agents'
+sort_order: 11
+language: en
+---
+
+Before the first merge, establish a small end-to-end evaluation. Then look for heavily used specialists that touch the same data, depend on one another’s output, or frequently run together.
+
+Such pairs already have a strong context dependency, making them better consolidation candidates than unrelated tasks. The article recommends using observed production chains to choose a migration step instead of merging every domain at once.

@@ -63,3 +63,43 @@ Original purpose-made SVG backgrounds use relevant decision, workflow, document-
 Each YAML was parsed with PyYAML and validated against the canonical reel schema. Checks cover unique IDs, filename/order agreement, contiguous integer order, consistent source metadata, local nonempty image paths, XML parsing and portrait dimensions. All source locators overlap retrieved caption cues. Each reel contains 40–90 words. Editorial review checked the map for coverage, repetition, unsupported additions, uncertainty and tone.
 
 Phone-size renderer preview: the existing Doomer app successfully loaded this collection at 390×844 using an isolated temporary database, with no changes to the user’s reading state. The first reel, its background, typography and source credit were visually inspected. DOM layout checks across every card found no content/source overlap, clipped source-credit blocks or overlap with the top label after final readability revisions. Several headings and four texts across the batch were tightened while preserving their ideas. App rendering was tested; video visuals were not inspected. Existing Doomer instances cache the catalog at startup and need a restart to discover new collections.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 13 existing dooms retained their identities; 2 labeled illustrative examples added; 15 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The original transcript/caption access and visual-inspection limits above still apply. No new video frames were recovered or passed off as inspected source images.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `seven-skills-for-agent-engineering-19b7176f-001` | 1 | A prompt is only the recipe |
+| `seven-skills-for-agent-engineering-19b7176f-002` | 2 | Skill 1: design the system |
+| `seven-skills-for-agent-engineering-19b7176f-014` | 3 | Design the path before adding intelligence |
+| `seven-skills-for-agent-engineering-19b7176f-003` | 4 | Skill 2: make tool contracts precise |
+| `seven-skills-for-agent-engineering-19b7176f-004` | 5 | Skill 3: retrieve useful evidence |
+| `seven-skills-for-agent-engineering-19b7176f-005` | 6 | Chunks, embeddings and reranking matter |
+| `seven-skills-for-agent-engineering-19b7176f-006` | 7 | Skill 4: plan for failed services |
+| `seven-skills-for-agent-engineering-19b7176f-007` | 8 | Skill 5: treat input as an attack surface |
+| `seven-skills-for-agent-engineering-19b7176f-008` | 9 | Permissions limit what a mistake can do |
+| `seven-skills-for-agent-engineering-19b7176f-009` | 10 | Skill 6: reconstruct the run |
+| `seven-skills-for-agent-engineering-19b7176f-010` | 11 | Evaluate with something measurable |
+| `seven-skills-for-agent-engineering-19b7176f-011` | 12 | Skill 7: design for the human |
+| `seven-skills-for-agent-engineering-19b7176f-012` | 13 | Start with one clear tool schema |
+| `seven-skills-for-agent-engineering-19b7176f-013` | 14 | Trace one stubborn failure backward |
+| `seven-skills-for-agent-engineering-19b7176f-015` | 15 | Trace the failure back to its input |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `seven-skills-for-agent-engineering-19b7176f-002` | `seven-skills-for-agent-engineering-19b7176f-014` | Design the path before adding intelligence |
+| `seven-skills-for-agent-engineering-19b7176f-013` | `seven-skills-for-agent-engineering-19b7176f-015` | Trace the failure back to its input |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.
+
+Added diagram: A bounded support flow. Authored for the labeled illustrative example, not reproduced from the source. Editable Mermaid and a portable SVG are included. The SVG is a linear overview; the live Mermaid also shows decision branches.

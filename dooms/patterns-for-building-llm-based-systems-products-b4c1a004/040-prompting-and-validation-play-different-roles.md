@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: patterns-for-building-llm-based-systems-products-b4c1a004-038
+title: Prompting and validation play different roles
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Guardrails — prompts and validators'
+sort_order: 40
+language: en
+---
+
+An instruction can encourage desired behavior, while a validator checks whether the actual output meets a requirement. Yan reviews tools that validate structure, individual values, syntax and content, then filter or regenerate failing responses.
+
+The distinction is operational. A statement of intent inside a prompt should not be confused with evidence that the response satisfied the condition after generation.

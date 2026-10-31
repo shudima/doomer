@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: context-engineering-failure-modes-88666974-004
+title: Poisoning starts with a bad note
+background_image: images/shield.svg
+source_url: https://www.youtube.com/watch?v=BwXremQ-i6I&list=WL&index=4
+source_file: null
+source_title: 'Context Engineering for AI Agents: 4 Failure Modes to Avoid'
+source_type: video
+source_locator: 00:04:34–00:05:17
+sort_order: 4
+language: en
+---
+
+The migration agent skims the new driver’s documentation, misreads it, and records that failed connections are retried automatically. In the example, that conclusion is false.
+
+The agent then treats its own note as fact and deletes working retry code across the project. Context poisoning is the mistake entering the record and continuing to influence later work as though it had already been established.

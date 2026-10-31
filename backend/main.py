@@ -103,7 +103,8 @@ def create_app(settings: Settings | None = None, engine=None):
                 conn.execute(text('SELECT 1'))
                 conn.execute(select(TopicState.user_id).limit(1))
                 conn.execute(select(EmailProfile.email_hash).limit(1))
-            return {'status':'ok', 'topics':len(app.state.catalog.topics)}
+            return {'status':'ok', 'topics':len(app.state.catalog.topics), 'dooms':len(app.state.catalog.dooms),
+                    'markdown_dooms':sum(d['format'] == 'markdown' for t in app.state.catalog.topics.values() for d in t.dooms)}
         except Exception:
             return JSONResponse({'status':'unavailable'}, status_code=503)
 
@@ -182,6 +183,8 @@ def create_app(settings: Settings | None = None, engine=None):
                                                                                  Reaction.doom_id.in_([d['id'] for d in topic.dooms])))}
         rows = [{'id':d['id'], 'title':d['title'], 'text':d['text'], 'sort_order':d['sort_order'],
                  'language':d['language'], 'source_locator':d['source_locator'],
+                 'format':d['format'], 'schema_version':d['schema_version'],
+                 'assets':{name:{'url':f"/api/topics/{topic.id}/assets/{topic.assets[name].token}", 'width':topic.assets[name].width, 'height':topic.assets[name].height} for name in d['asset_names']},
                  'source_type':d['source_type'], 'source_url':d['source_url'],
                  'image_url':f"/api/topics/{topic.id}/images/{d['sort_order']}",
                  'reaction':reactions.get(d['id'])} for d in topic.dooms]
@@ -196,6 +199,15 @@ def create_app(settings: Settings | None = None, engine=None):
         if not file.is_relative_to(topic.folder.resolve()):
             raise HTTPException(404)
         return FileResponse(file)
+
+    @app.get('/api/topics/{topic_id}/assets/{asset_id}')
+    def asset(topic_id: str, asset_id: str, user: Identity = Depends(get_identity)):
+        topic = topic_or_404(topic_id)
+        item = next((item for item in topic.assets.values() if item.token == asset_id), None)
+        if item is None:
+            raise HTTPException(404, 'Asset not found.')
+        media_type = 'text/plain' if item.path.suffix == '.mmd' else None
+        return FileResponse(item.path, media_type=media_type)
 
     @app.put('/api/topics/{topic_id}/progress')
     def progress(topic_id: str, body: ProgressBody, user: Identity = Depends(get_identity), db: Session = Depends(get_db)):

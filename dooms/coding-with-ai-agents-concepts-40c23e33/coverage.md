@@ -63,3 +63,41 @@ Original purpose-made SVG backgrounds use relevant decision, workflow, document-
 Each YAML was parsed with PyYAML and validated against the canonical reel schema. Checks cover unique IDs, filename/order agreement, contiguous integer order, consistent source metadata, local nonempty image paths, XML parsing and portrait dimensions. All source locators overlap retrieved caption cues. Each reel contains 40–90 words. Editorial review checked the map for coverage, repetition, unsupported additions, uncertainty and tone.
 
 Phone-size renderer preview: the existing Doomer app successfully loaded this collection at 390×844 using an isolated temporary database, with no changes to the user’s reading state. The first reel, its background, typography and source credit were visually inspected. DOM layout checks across every card found no content/source overlap, clipped source-credit blocks or overlap with the top label after final readability revisions. Several headings and four texts across the batch were tightened while preserving their ideas. App rendering was tested; video visuals were not inspected. Existing Doomer instances cache the catalog at startup and need a restart to discover new collections.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 13 existing dooms retained their identities; 2 labeled illustrative examples added; 15 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The original transcript/caption access and visual-inspection limits above still apply. No new video frames were recovered or passed off as inspected source images.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `coding-with-ai-agents-concepts-40c23e33-001` | 1 | The pilot running a software team |
+| `coding-with-ai-agents-concepts-40c23e33-002` | 2 | From autocomplete to whole features |
+| `coding-with-ai-agents-concepts-40c23e33-003` | 3 | Write down what done means |
+| `coding-with-ai-agents-concepts-40c23e33-014` | 4 | Describe a small feature completely |
+| `coding-with-ai-agents-concepts-40c23e33-004` | 5 | Developers become conductors |
+| `coding-with-ai-agents-concepts-40c23e33-005` | 6 | Context is a limited resource |
+| `coding-with-ai-agents-concepts-40c23e33-006` | 7 | Engineer the iteration loop |
+| `coding-with-ai-agents-concepts-40c23e33-007` | 8 | An estimate is not an execution |
+| `coding-with-ai-agents-concepts-40c23e33-008` | 9 | Know the inference basics |
+| `coding-with-ai-agents-concepts-40c23e33-009` | 10 | Reusable instructions and automation |
+| `coding-with-ai-agents-concepts-40c23e33-010` | 11 | Delegate a bounded investigation |
+| `coding-with-ai-agents-concepts-40c23e33-011` | 12 | A pull request can carry an attack |
+| `coding-with-ai-agents-concepts-40c23e33-012` | 13 | Give the agent a disposable workspace |
+| `coding-with-ai-agents-concepts-40c23e33-015` | 14 | Give experiments a disposable workspace |
+| `coding-with-ai-agents-concepts-40c23e33-013` | 15 | The AI grid needs engineers |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `coding-with-ai-agents-concepts-40c23e33-003` | `coding-with-ai-agents-concepts-40c23e33-014` | Describe a small feature completely |
+| `coding-with-ai-agents-concepts-40c23e33-012` | `coding-with-ai-agents-concepts-40c23e33-015` | Give experiments a disposable workspace |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

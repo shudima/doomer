@@ -117,8 +117,8 @@ def validate_collection(directory):
                 raise ValueError('Reel body is empty')
             if row['sort_order'] != index or not path.name.startswith(f'{index:03}-'):
                 raise ValueError('Order must be contiguous and match filenames')
-            if row['id'] != f'{folder.name}-{index:03}' or row['id'] in ids:
-                raise ValueError('ID must match collection/order and be unique')
+            if not re.fullmatch(re.escape(folder.name) + r'-[0-9]{3,}', row['id']) or row['id'] in ids:
+                raise ValueError('ID must use the collection prefix plus a unique numeric identity')
             ids.add(row['id'])
             sources.add(tuple(row[field] for field in ('source_url', 'source_file', 'source_title', 'source_type', 'language')))
             background = local_file(folder, row['background_image'])

@@ -63,3 +63,41 @@ Original purpose-made SVG backgrounds use relevant decision, workflow, document-
 Each YAML was parsed with PyYAML and validated against the canonical reel schema. Checks cover unique IDs, filename/order agreement, contiguous integer order, consistent source metadata, local nonempty image paths, XML parsing and portrait dimensions. All source locators overlap retrieved caption cues. Each reel contains 40–90 words. Editorial review checked the map for coverage, repetition, unsupported additions, uncertainty and tone.
 
 Phone-size renderer preview: the existing Doomer app successfully loaded this collection at 390×844 using an isolated temporary database, with no changes to the user’s reading state. The first reel, its background, typography and source credit were visually inspected. DOM layout checks across every card found no content/source overlap, clipped source-credit blocks or overlap with the top label after final readability revisions. Several headings and four texts across the batch were tightened while preserving their ideas. App rendering was tested; video visuals were not inspected. Existing Doomer instances cache the catalog at startup and need a restart to discover new collections.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 13 existing dooms retained their identities; 2 labeled illustrative examples added; 15 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+The original transcript/caption access and visual-inspection limits above still apply. No new video frames were recovered or passed off as inspected source images.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `jev-trust-observability-bef2a4f9-001` | 1 | A probability is not a trust policy |
+| `jev-trust-observability-bef2a4f9-002` | 2 | Text gives you something to inspect |
+| `jev-trust-observability-bef2a4f9-003` | 3 | Confidence and evidence differ |
+| `jev-trust-observability-bef2a4f9-004` | 4 | Why isolate this computer? |
+| `jev-trust-observability-bef2a4f9-005` | 5 | Corrupted input can look convincing |
+| `jev-trust-observability-bef2a4f9-006` | 6 | Keep a reconstructable trail |
+| `jev-trust-observability-bef2a4f9-014` | 7 | Reconstruct one wrong decision |
+| `jev-trust-observability-bef2a4f9-007` | 8 | Break the big decision apart |
+| `jev-trust-observability-bef2a4f9-008` | 9 | Valid output still needs verification |
+| `jev-trust-observability-bef2a4f9-009` | 10 | A small drift can hide |
+| `jev-trust-observability-bef2a4f9-010` | 11 | Wrap the model in controls |
+| `jev-trust-observability-bef2a4f9-011` | 12 | Keep an independent witness |
+| `jev-trust-observability-bef2a4f9-015` | 13 | Verify through an independent observation |
+| `jev-trust-observability-bef2a4f9-012` | 14 | Actions change the stakes |
+| `jev-trust-observability-bef2a4f9-013` | 15 | Observe, audit, then trust |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `jev-trust-observability-bef2a4f9-006` | `jev-trust-observability-bef2a4f9-014` | Reconstruct one wrong decision |
+| `jev-trust-observability-bef2a4f9-011` | `jev-trust-observability-bef2a4f9-015` | Verify through an independent observation |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

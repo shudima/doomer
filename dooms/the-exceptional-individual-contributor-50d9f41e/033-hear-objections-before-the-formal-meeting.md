@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-030
+title: Hear objections before the formal meeting
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 5, 24–25: Pre-wiring'
+sort_order: 33
+language: en
+---
+
+Pre-wiring means discussing a proposal individually with important stakeholders before the meeting where a decision will be made. The purpose is to discover concerns and improve the proposal early.
+
+The survey treats this as constructive organizational work, not secret manipulation. A meeting with fewer surprises can reflect genuine preparation and agreement rather than a stronger argument delivered for the first time to an unprepared audience.

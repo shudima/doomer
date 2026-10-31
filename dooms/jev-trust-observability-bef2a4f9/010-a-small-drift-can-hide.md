@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: jev-trust-observability-bef2a4f9-009
+title: A small drift can hide
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=_yO_Q7qo0HQ&list=WL&index=3
+source_file: null
+source_title: 'The Problem with Jev: Can You Trust AI Decisions?'
+source_type: video
+source_locator: 00:09:22–00:10:38
+sort_order: 10
+language: en
+---
+
+Imagine a compromised decision system becoming just 1% more likely to approve something harmful, perhaps for one class of target. Each individual answer might still appear reasonable.
+
+That is a hypothetical attack scenario in the video. It illustrates why subtle changes can be hard to notice, especially after a long history of good results has trained people to stop questioning the system.

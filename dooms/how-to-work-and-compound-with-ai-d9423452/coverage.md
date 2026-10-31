@@ -39,3 +39,46 @@ The complete original article body, inline examples and figure explanations were
 Every YAML is parsed and checked against the project's JSON Schema. Filenames, unique IDs, ordering, source metadata, word lengths and local asset references are checked. The SVG parses and has a portrait 9:16 canvas. Source-to-doom mapping was checked for substantive section coverage, omitted caveats and duplicate ideas. App preview results are recorded after the representative phone-size checks.
 
 Phone-size preview: the first doom was opened in the actual local Doomer reader at 393×730. Topic title, doom total, original source link, background and full text were inspected; no clipping was observed. This was a desktop browser viewport check, not a physical iPhone test.
+
+
+## Markdown revision — 2026-10-31
+
+Authorized in-place migration: 20 existing dooms retained their identities; 2 labeled illustrative examples added; 22 Markdown dooms now. All original source files are unchanged. `sort_order` is display position, not identity. Earlier coverage references use original doom identities, which remain stable. The table below maps those identities to the new positions.
+
+Every body was checked for paragraph length, exact numeric evidence and meaningful Markdown. Direct rewrites simplify dense explanations; lightly edited cards retain their evidence, qualifications and source examples. Added scenarios are teaching aids, not measured results or real company reports. Composite scenarios in the exceptional-IC source remain identified as composites.
+
+| Doom identity | Current position | Title |
+| --- | ---: | --- |
+| `how-to-work-and-compound-with-ai-d9423452-001` | 1 | Work should improve the next session |
+| `how-to-work-and-compound-with-ai-d9423452-002` | 2 | Give context a navigable home |
+| `how-to-work-and-compound-with-ai-d9423452-003` | 3 | Annotate the index before retrieval |
+| `how-to-work-and-compound-with-ai-d9423452-021` | 4 | Give the index a useful description |
+| `how-to-work-and-compound-with-ai-d9423452-004` | 5 | Onboard each fresh session |
+| `how-to-work-and-compound-with-ai-d9423452-005` | 6 | Separate facts from preferences |
+| `how-to-work-and-compound-with-ai-d9423452-006` | 7 | Describe the collaborator you want |
+| `how-to-work-and-compound-with-ai-d9423452-007` | 8 | Match each rule to its scope |
+| `how-to-work-and-compound-with-ai-d9423452-008` | 9 | Load specialized guidance when needed |
+| `how-to-work-and-compound-with-ai-d9423452-009` | 10 | Turn repeated work into a procedure |
+| `how-to-work-and-compound-with-ai-d9423452-010` | 11 | Build a skill from a real attempt |
+| `how-to-work-and-compound-with-ai-d9423452-011` | 12 | Correct the output inside the session |
+| `how-to-work-and-compound-with-ai-d9423452-012` | 13 | Exploration needs a lighter setup |
+| `how-to-work-and-compound-with-ai-d9423452-013` | 14 | Catch cheap errors early |
+| `how-to-work-and-compound-with-ai-d9423452-014` | 15 | Give the assistant a feedback loop |
+| `how-to-work-and-compound-with-ai-d9423452-015` | 16 | Watch execution and direction separately |
+| `how-to-work-and-compound-with-ai-d9423452-016` | 17 | Delegate a result with success criteria |
+| `how-to-work-and-compound-with-ai-d9423452-017` | 18 | Parallelism moves the bottleneck |
+| `how-to-work-and-compound-with-ai-d9423452-018` | 19 | Make unattended work observable |
+| `how-to-work-and-compound-with-ai-d9423452-019` | 20 | Publish enough context to reproduce the work |
+| `how-to-work-and-compound-with-ai-d9423452-020` | 21 | Let corrections improve the system |
+| `how-to-work-and-compound-with-ai-d9423452-022` | 22 | Turn one correction into a better next run |
+
+### Added examples
+
+| Follows original identity | New identity | Concept |
+| --- | --- | --- |
+| `how-to-work-and-compound-with-ai-d9423452-003` | `how-to-work-and-compound-with-ai-d9423452-021` | Give the index a useful description |
+| `how-to-work-and-compound-with-ai-d9423452-020` | `how-to-work-and-compound-with-ai-d9423452-022` | Turn one correction into a better next run |
+
+### Source figure provenance
+
+No explanatory article figures were needed or available in this collection. Navigation, social icons, advertisements, book covers and unrelated recommendations were excluded. Original access limits above remain in force.

@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-061
+title: Retrieve detail when the task needs it
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Pages 38–39: Tools, references and RAG'
+sort_order: 66
+language: en
+---
+
+Tools can return concise summaries and stable document identifiers, leaving full material available for later **retrieval**. This avoids loading every possibly relevant detail into active context at the beginning.
+
+The survey frames retrieval-augmented generation as one part of this discipline. Chunking, ranking and checking relevance matter more than choosing an impressive storage product if the model ultimately receives poor evidence.

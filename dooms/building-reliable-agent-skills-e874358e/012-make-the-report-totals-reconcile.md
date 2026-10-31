@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: building-reliable-agent-skills-e874358e-011
+title: Make the report totals reconcile
+background_image: images/measure.svg
+source_url: https://www.youtube.com/watch?v=qYNs80FKIVc&list=WL&index=23
+source_file: null
+source_title: 5 Best Practices for Building AI Agent Skills
+source_type: video
+source_locator: 00:09:32–00:10:21
+sort_order: 12
+language: en
+---
+
+One presenter built a compliance-report skill from a real report, yet its first run produced row totals that did not reconcile with column totals. Real expertise alone had not made improvised arithmetic dependable.
+
+The fix was a deterministic math script. The agent calls code to add and reconcile the values, instead of generating the calculation anew. The example shows where a concrete operation belongs outside the model’s improvisation.

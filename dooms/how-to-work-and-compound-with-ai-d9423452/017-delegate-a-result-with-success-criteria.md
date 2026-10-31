@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: how-to-work-and-compound-with-ai-d9423452-016
+title: Delegate a result with success criteria
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/working-with-ai/
+source_file: null
+source_title: How to Work and Compound with AI
+source_type: article
+source_locator: 'Section: Scaling via delegation'
+sort_order: 17
+language: en
+---
+
+As model capability improves, Yan recommends moving beyond one instruction at a time. Define the intended result, constraints and evidence of success, then delegate a larger unit of work.
+
+This depends on **verification**. A detailed plan for an evaluation run, for example, should include reproducibility, output inspection and uncertainty estimates rather than merely asking the assistant to produce an impressive-looking report.

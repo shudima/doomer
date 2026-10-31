@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: ai-era-sdlc-survey-6223bf11-029
+title: Make regression protection sustainable
+background_image: images/quality.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Software Development Life Cycle in the AI Era
+source_type: pdf
+source_locator: 'Pages 18-19: Regression tests'
+sort_order: 33
+language: en
+---
+
+The survey recommends that every bug fix include a test that fails before the fix and passes afterward. Apply mutation testing to critical areas such as privacy, authentication and payments, then target gaps in detection.
+
+Use impact analysis to run relevant tests quickly, with full nightly runs as a backstop. Review test deletions and weakened assertions, assign test ownership and maintain versioned reference datasets. Visual regression tools can suppress rendering noise, but suite bloat and flaky checks still need active maintenance.

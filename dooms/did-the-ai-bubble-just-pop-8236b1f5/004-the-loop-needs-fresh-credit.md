@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: did-the-ai-bubble-just-pop-8236b1f5-004
+title: The loop needs fresh credit
+background_image: images/market.svg
+source_url: https://www.youtube.com/watch?v=nEaJMdM1djM
+source_file: null
+source_title: Did the AI bubble just pop?
+source_type: video
+source_locator: 00:02:11–00:02:35
+sort_order: 4
+language: en
+---
+
+The GPU rental machine can work, Fireship concedes, while rental income beats chip depreciation, AI labs keep buying, and lenders keep supplying money. Remove one condition and the arrangement gets uncomfortable.
+
+The report says CoreWeave had borrowed $52 billion to buy chips and was paying 15% interest. Expensive borrowing is a problem even when the hardware remains useful.

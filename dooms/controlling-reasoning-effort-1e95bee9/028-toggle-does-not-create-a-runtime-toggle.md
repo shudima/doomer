@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: controlling-reasoning-effort-1e95bee9-026
+title: Toggle does not create a runtime toggle
+background_image: images/effort.svg
+source_url: https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms
+source_file: null
+source_title: Controlling Reasoning Effort in LLMs
+source_type: article
+source_locator: 'Section: 6.3.2 What Toggle changes at inference'
+sort_order: 28
+language: en
+---
+
+Despite its name, Toggle alternates training phases, not inference settings. Both phases update the same policy, leaving one final checkpoint without a budgeted-versus-unconstrained selector.
+
+Kimi K2.5 separately offers thinking and instant responses through API or chat-template controls. Its supervised data included both direct-answer and reasoning teachers, but the report does not disclose the exact mixture or a complete instant-mode training recipe. That binary interface should not be confused with Toggle’s training method.

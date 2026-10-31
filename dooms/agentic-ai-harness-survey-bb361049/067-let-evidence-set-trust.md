@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: agentic-ai-harness-survey-bb361049-062
+title: Let evidence set trust
+background_image: images/part-07.svg
+source_url: null
+source_file: source/original.pdf
+source_title: Building and Evaluating Agentic AI Systems
+source_type: pdf
+source_locator: Page 68
+sort_order: 67
+language: en
+---
+
+The survey closes with simple design, an owned loop, code-enforced invariants and model judgement where interpretation is needed.
+
+Design tools and context for what the model actually sees. Contain failure through identity, isolation and meaningful approvals. Verify independently. Measure repeated performance on real tasks, then turn failures into improvements. Trust grows from those measurements.

@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: patterns-for-building-llm-based-systems-products-b4c1a004-047
+title: Feedback supplies evidence of actual usefulness
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Collect user feedback — Why collect user feedback'
+sort_order: 50
+language: en
+---
+
+Offline evaluations measure chosen requirements, while user behavior and direct reactions reveal whether the product helps people. Yan connects this feedback with future evaluations, tuning and guardrails.
+
+He distinguishes explicit feedback, deliberately supplied by the user, from information inferred through ordinary interaction. Designing those signals into the experience can create a continuing source of product-specific learning.

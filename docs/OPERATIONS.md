@@ -12,7 +12,7 @@ Do not send secrets or database credentials into logs. Render's dashboard owns p
 
 ## Backups and recovery
 
-Use the managed Supabase backup plan configured during setup. Check that backups actually exist; a successful app deployment does not configure a database backup plan. The app containers store no durable user state. Back up content and code through the private Git repository as well: database backups do not include the repository's YAML, images or PDFs.
+Use the managed Supabase backup plan configured during setup. Check that backups actually exist; a successful app deployment does not configure a database backup plan. The app containers store no durable user state. Back up content and code through the private Git repository as well: database backups do not include the repository’s Markdown, images, diagrams or PDFs.
 
 For an additional encrypted off-provider copy, export only the private application schema using provider tooling or `pg_dump` into a secure location. Use a supported PostgreSQL client, a password manager or environment secret injection; do not paste secrets into shell history. Keep retention and access under your control.
 
@@ -22,7 +22,7 @@ For recovery, restore to a separate project/database, run migrations if required
 
 Run the project's reel-it workflow. It writes complete packages under `dooms/<source-id>/`. Validate the collection, commit the new files in a private repository and let CI/deployment run. Restart the local preview to load changes without deploying.
 
-The startup catalog validates every collection. A malformed YAML file, missing image or invalid source reference fails startup rather than partially publishing a broken topic. Stable topic slugs and doom IDs preserve personal history. Do not rename existing IDs during cosmetic edits.
+The startup catalog validates every collection. Malformed Markdown/frontmatter or legacy YAML, missing image or invalid source reference fails startup rather than partially publishing a broken topic. Stable topic slugs and doom IDs preserve personal history. Do not rename existing IDs during cosmetic edits.
 
 ## Updating the app
 

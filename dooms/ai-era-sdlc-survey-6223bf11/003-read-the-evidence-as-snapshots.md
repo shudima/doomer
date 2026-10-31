@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: ai-era-sdlc-survey-6223bf11-003
+title: Read the evidence as snapshots
+background_image: images/measure.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Software Development Life Cycle in the AI Era
+source_type: pdf
+source_locator: 'Page 3: Evidence note; page 6: Evidence base; page 26: References'
+sort_order: 3
+language: en
+---
+
+The survey combines randomized research, developer surveys, industrial deployments and vendor telemetry. Those sources measure different populations, tasks and outcomes. Their percentages are not interchangeable estimates of a universal AI speedup.
+
+The document itself warns that independent evidence remains thin and ages quickly. Vendor findings can be useful, but their commercial context matters. Read each result alongside its study design and **scope** before turning it into a team target.

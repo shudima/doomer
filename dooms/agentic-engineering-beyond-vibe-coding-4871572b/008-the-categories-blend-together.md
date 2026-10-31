@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: agentic-engineering-beyond-vibe-coding-4871572b-007
+title: The categories blend together
+background_image: images/network.svg
+source_url: https://www.youtube.com/watch?v=FgaBdwSvOGM&list=WL&index=25
+source_file: null
+source_title: 'Agentic Engineering vs Software Engineering: Beyond Vibe Coding'
+source_type: video
+source_locator: 00:05:24–00:06:20
+sort_order: 8
+language: en
+---
+
+A team may start with natural-language prototyping, move toward agentic coding, and add stronger orchestration as complexity and stakes grow. The presenter stresses that these are overlapping practices.
+
+The broader change is toward collaborating with systems that handle multi-step work under human supervision. Engineers orchestrate more of the process, while the labels remain imperfect descriptions of where a particular workflow sits.

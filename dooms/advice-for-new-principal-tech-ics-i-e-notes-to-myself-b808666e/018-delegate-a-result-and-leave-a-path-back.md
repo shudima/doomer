@@ -1,0 +1,19 @@
+---
+schema_version: 2
+id: advice-for-new-principal-tech-ics-i-e-notes-to-myself-b808666e-023
+title: Delegate a result and leave a path back
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/principal/
+source_file: null
+source_title: Advice for New Principal Tech ICs (i.e., Notes to Myself)
+source_type: article
+source_locator: 'Section: Advice 25; added illustrative example'
+sort_order: 18
+language: en
+---
+
+**Illustrative example**
+
+An engineer takes ownership of a migration. Agree that it must preserve records and finish within the maintenance window. Let them choose the implementation.
+
+Set a review point before the irreversible step, then stay available for questions. This gives them real ownership while keeping support close. Taking every decision back would preserve your control at the cost of their growth.

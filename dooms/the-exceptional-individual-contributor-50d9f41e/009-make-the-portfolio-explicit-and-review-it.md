@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: the-exceptional-individual-contributor-50d9f41e-009
+title: Make the portfolio explicit and review it
+background_image: images/background.svg
+source_url: null
+source_file: source/original.pdf
+source_title: The Exceptional Individual Contributor
+source_type: pdf
+source_locator: 'Page 13: Choosing work — recommended practice'
+sort_order: 9
+language: en
+---
+
+Instead of letting the incoming request queue determine the year, the survey recommends a small, deliberate portfolio. Write down two or three outcomes for the quarter and explain their business importance.
+
+Review the choices with a manager and peer, then track roughly where time actually goes. Reactive work remains necessary, but growing colleagues and finishing existing efforts should receive deliberate capacity rather than leftover attention.

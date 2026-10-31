@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: evaluating-the-effectiveness-of-llm-evaluators-aka-llm-as-judge-c55ce977-022
+title: A diverse panel can beat one expensive judge
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-evaluators/
+source_file: null
+source_title: Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)
+source_type: article
+source_locator: 'Section: Techniques for prompting LLM-evaluators — PoLL'
+sort_order: 24
+language: en
+---
+
+The PoLL study combines independent judgments from three smaller models through voting or score aggregation. On its tested question-answering settings, the panel aligned better with human judgments than the single larger baseline.
+
+Yan reports a cost around one-seventh of that baseline in the study. The finding concerns those models and tasks; its broader invitation is to benchmark diversity and aggregation instead of assuming one expensive model is optimal.

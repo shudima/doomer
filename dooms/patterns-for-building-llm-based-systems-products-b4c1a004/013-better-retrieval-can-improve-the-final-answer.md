@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: patterns-for-building-llm-based-systems-products-b4c1a004-012
+title: Better retrieval can improve the final answer
+background_image: images/background.svg
+source_url: https://eugeneyan.com/writing/llm-patterns/
+source_file: null
+source_title: Patterns for Building LLM-based Systems & Products
+source_type: article
+source_locator: 'Section: Retrieval-Augmented Generation — Dense Passage Retrieval'
+sort_order: 13
+language: en
+---
+
+The DPR work reviewed by Yan trains separate question and passage encoders so relevant pairs have high similarity. Passage vectors are indexed offline; a question vector retrieves candidates at request time.
+
+The study connects **retrieval** quality with end-to-end question-answering accuracy. That makes upstream relevance a system-level concern: the generator cannot reliably compensate for evidence the retrieval stage never supplied.

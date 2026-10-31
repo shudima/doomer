@@ -1,0 +1,17 @@
+---
+schema_version: 2
+id: agent-frameworks-by-system-type-767b05d7-009
+title: Ready for production
+background_image: images/shield.svg
+source_url: https://www.youtube.com/watch?v=ZVPlLaehjLk&list=WL&index=21
+source_file: null
+source_title: 'Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production'
+source_type: video
+source_locator: 00:08:34–00:09:57
+sort_order: 11
+language: en
+---
+
+An operations agent might detect an alert, search relevant documentation, run automation scripts and send a summary inside an organization. That requires integration with APIs, databases and business processes.
+
+For this production-orchestration category, the presenter names Agent Framework, described as combining Semantic Kernel and AutoGen, and LangGraph for structured, multilayer applications. The emphasis shifts from demonstrating an idea to coordinating work in a real operating environment.

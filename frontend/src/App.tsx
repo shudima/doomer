@@ -7,6 +7,8 @@ import { isTopicSwipe, pickTopic, visibleDoomIndex } from './feed';
 import { readProfile, saveProfile } from './profile';
 import type { Profile } from './profile';
 import { TopicExplorer } from './TopicExplorer';
+import { DoomMarkdown } from './DoomMarkdown';
+import type { Figure } from './DoomMarkdown';
 
 function Orbit({ small = false }: { small?: boolean }) {
   return <span className={`orbit ${small ? 'small' : ''}`} aria-hidden="true"><i /><i /><b /></span>;
@@ -72,6 +74,8 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
   const [explorerError, setExplorerError] = useState('');
   const [openingTopicId, setOpeningTopicId] = useState<string | null>(null);
   const [finishDialog, setFinishDialog] = useState(false);
+  const [figure, setFigure] = useState<Figure | null>(null);
+  const [figureZoom, setFigureZoom] = useState(false);
   const [actionBusy, setActionBusy] = useState(false);
   const [online, setOnline] = useState(navigator.onLine);
   const container = useRef<HTMLDivElement>(null);
@@ -227,7 +231,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
   }
 
   async function anotherTopic() {
-    if (loading || actionBusy || finishDialog || menu || transition.current) return;
+    if (loading || actionBusy || finishDialog || figure || menu || transition.current) return;
     try {
       await flushProgress();
       const latest = await api<Library>('/api/topics'); setLibrary(latest);
@@ -298,7 +302,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
   }
   function touchStart(event: TouchEvent) {
     const target = event.target as HTMLElement;
-    if (target.closest('button, a, input')) { swipeStart.current = null; return; }
+    if (target.closest('button, a, input, pre, .markdown-table')) { swipeStart.current = null; return; }
     const touch = event.changedTouches[0];
     swipeStart.current = {x:touch.clientX, y:touch.clientY, at:performance.now()};
   }
@@ -309,7 +313,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
     swipeStart.current = null;
   }
   function keyboard(event: React.KeyboardEvent) {
-    if (menu || finishDialog || (event.target as HTMLElement).closest('button, input, a')) return;
+    if (menu || finishDialog || figure || (event.target as HTMLElement).closest('button, input, a, pre, .markdown-table')) return;
     if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); void anotherTopic(); }
     if (event.key === 'ArrowDown' || event.key === ' ') { event.preventDefault(); nextDoom(); }
     if (event.key === 'ArrowUp' && container.current) { event.preventDefault(); container.current.scrollTo({top:doomTop(container.current, Math.max(0, position - 1)), behavior:'smooth'}); }
@@ -341,7 +345,7 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
      !topic ? <section className="centered feed-state empty"><div className="empty-mark"><CheckCheck size={35} /></div><div className="eyebrow">A LITTLE ROOM TO THINK</div><h1>{library?.total_topics ? 'All caught up.' : 'Good ideas are on their way.'}</h1><p>{library?.total_topics ? 'You’ve finished every topic in your feed. Come back when there’s something new to get lost in.' : 'Your feed will be here when your first topic is added.'}</p><button className="text-button" onClick={() => void loadFeed()}>Check for new topics <RefreshCw size={14} /></button></section> :
      <section className="reader" aria-label="Doom feed">
        <div ref={container} className="doom-scroll" data-position={position} onTouchStart={touchStart} onTouchEnd={touchEnd} onTouchCancel={() => { swipeStart.current = null; }} aria-label="Scroll for dooms; swipe left or right for another topic" tabIndex={0}>
-         {topic.dooms.map((doom, index) => <DoomCard key={doom.id} doom={doom} topic={topic} active={Math.abs(index-position) <= 1} />)}
+         {topic.dooms.map((doom, index) => <DoomCard key={doom.id} doom={doom} topic={topic} active={Math.abs(index-position) <= 1} onFigure={next => { setFigure(next); setFigureZoom(false); }} />)}
        </div>
        <aside className="action-rail" aria-label="Doom actions">
          <button className={`rail-button ${current?.reaction === 'like' ? 'selected liked' : ''}`} onClick={() => void reaction('like')} disabled={actionBusy} aria-label="Like this doom" aria-pressed={current?.reaction === 'like'}><span><Heart size={24} fill={current?.reaction === 'like' ? 'currentColor' : 'none'} strokeWidth={1.6} /></span><small>Like</small></button>
@@ -358,6 +362,11 @@ function Reader({ config, profile, onChangeEmail }: { config: Config; profile: P
       <p>“{topic.title}” will leave your feed for good. Your reactions will stay saved.</p>
       <button className="primary" onClick={() => void finishTopic()} disabled={actionBusy}>{actionBusy ? <LoaderCircle className="spin" size={18} /> : <>Finish topic <CheckCheck size={19} /></>}</button>
       <button className="text-button" onClick={() => setFinishDialog(false)} disabled={actionBusy}>Keep reading</button>
+    </Modal>}
+    {figure && <Modal title="Source figure" className="figure-sheet" onClose={() => setFigure(null)}>
+      <div className="figure-viewer-controls"><button className="text-button" onClick={() => setFigureZoom(!figureZoom)}>{figureZoom ? 'Fit image' : 'Zoom in'}</button></div>
+      <div className={`figure-viewer ${figureZoom ? 'zoomed' : ''}`} tabIndex={0} aria-label="Scrollable source figure"><img src={figure.url} alt={figure.alt} /></div>
+      <p className="figure-viewer-caption">{figure.alt}</p>
     </Modal>}
     {menu && <Modal title="Explore topics" className="explorer-sheet" onClose={() => !openingTopicId && setMenu(false)}>
       <TopicExplorer topics={[...(library?.topics ?? []), ...(library?.finished_topics ?? [])]} currentId={topic?.id} currentPosition={position}
@@ -380,7 +389,7 @@ function SourceReference({ doom }: { doom: Doom }) {
   </div>;
 }
 
-function DoomCard({ doom, topic, active }: { doom:Doom; topic:Topic; active:boolean }) {
+function DoomCard({ doom, topic, active, onFigure }: { doom:Doom; topic:Topic; active:boolean; onFigure:(figure:Figure)=>void }) {
   const [background, setBackground] = useState('');
   useEffect(() => {
     let mounted = true;
@@ -392,7 +401,7 @@ function DoomCard({ doom, topic, active }: { doom:Doom; topic:Topic; active:bool
     <div className="card-shade" />
     <div className="reading-content">
       <h1 className={doom.title.length > 42 ? 'long-title' : ''}>{doom.title}<span className="title-dot">.</span></h1>
-      <div className="prose">{doom.text.split(/\n\s*\n/).map((paragraph,index) => <p key={index}>{paragraph}</p>)}</div>
+      <div className="prose">{doom.format === 'markdown' ? <DoomMarkdown text={doom.text} assets={doom.assets ?? {}} active={active} onFigure={onFigure} /> : doom.text.split(/\n\s*\n/).map((paragraph,index) => <p key={index}>{paragraph}</p>)}</div>
       {doom.sort_order === topic.count && <p className="end-note"><CheckCheck size={13} /> Last doom in this topic. Finish whenever you’re ready.</p>}
     </div>
   </article>;
