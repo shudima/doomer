@@ -1,6 +1,6 @@
 interface:
   display_name: "Reel It"
-  short_description: "Turn articles, videos, and PDFs into readable reels"
-  default_prompt: "Use $reel-it to turn this source into a complete collection of readable YAML reels in /workspace/doomer/dooms/."
+  short_description: "Create clear Markdown reels with examples and source visuals"
+  default_prompt: "Use $reel-it to turn this source into a complete collection of simple, example-led Markdown dooms with relevant source diagrams and images in this project's dooms/ directory."
 policy:
   allow_implicit_invocation: true
